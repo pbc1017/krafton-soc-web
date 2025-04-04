@@ -2,8 +2,11 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 :root {
-  background: linear-gradient(180deg, #eafafc 0px, #ffffff 339.67px);
+  background: #ffffff;
   min-height: 100vh;
+  --font-pretendard:
+    'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
 }
 
 * {
@@ -14,7 +17,7 @@
 * {
   color: #333333;
   font-weight: 400;
-  font-family: var(--next-font-family-pretendard);
+  font-family: var(--font-pretendard);
 }
 
 p,
@@ -42,21 +45,4 @@ a {
 main {
   overflow-x: hidden;
   min-width: 320px;
-}
-
-.viewer-download {
-  color: #fff;
-  font-family: FontAwesome, serif;
-  font-size: 0.75rem;
-  line-height: 1.5rem;
-  text-align: center;
-}
-
-.viewer-download::before {
-  content: '\f019';
-}
-
-.viewer-toolbar > ul > li {
-  margin-left: 5px;
-  margin-right: 5px;
 }
