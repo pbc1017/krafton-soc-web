@@ -8,6 +8,7 @@ alwaysApply: true
 ## 기본 원칙
 - 타입스크립트(.ts, .tsx)만 사용
 - 최소한의 HTML 요소 사용 (div, span 등은 공통 컴포넌트로 대체)
+- Emotion을 활용한 CSS-in-JS 스타일링 사용
 - 래퍼 패턴 활용
 - 관심사 분리와 재사용성 최대화
 
@@ -49,6 +50,12 @@ alwaysApply: true
 ## 컴포넌트 설계 원칙
 - 단일 책임 원칙 준수
 - 최소한의 HTML 요소 사용 (공통 컴포넌트 활용)
+- Emotion styled component 활용
 - 래퍼 컴포넌트 패턴 활용
 - props 타입 명시적 정의
 - 컴포넌트 재사용성 극대화
+
+## 스타일링 규칙
+- CSS-in-JS (Emotion)만 사용
+- 테마 시스템을 활용한 일관된 스타일링
+- 반응형 디자인 적용
