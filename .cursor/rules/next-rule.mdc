@@ -1,0 +1,54 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# 프로젝트 폴더 구조 및 코딩 정책
+
+## 기본 원칙
+- 타입스크립트(.ts, .tsx)만 사용
+- 최소한의 HTML 요소 사용 (div, span 등은 공통 컴포넌트로 대체)
+- 래퍼 패턴 활용
+- 관심사 분리와 재사용성 최대화
+
+## 폴더 구조
+- **app/**: Next.js 라우팅 담당, 오직 frames 컴포넌트 임포트만 수행
+  - `page.tsx`: 해당 경로의 프레임 컴포넌트만 임포트하여 표시
+  - `{EndpointName}/page.tsx`: 해당 경로의 프레임 컴포넌트만 임포트하여 표시
+
+- **frames/**: 페이지 단위 컴포넌트 (각 페이지별 하위 폴더 구성)
+  - `{PageName}/`: 페이지명으로 폴더 구성 (예: Main, About 등)
+    - `{PageName}.tsx`: 해당 페이지 조립 담당 메인 컴포넌트
+    - 페이지 전용 컴포넌트들 (파스칼 케이스 네이밍)
+
+- **components/**: 공용 컴포넌트
+  - `common/`: 범용 UI 컴포넌트 (Image, Text, Button 등)
+  - `{ComponentName}/`: 복잡한 공용 컴포넌트는 자체 폴더로 구성 (Header, Footer 등)
+
+- **styles/**: 전역 스타일 정의
+  - `fonts.ts`: 폰트 정의
+  - `colors.ts`: 색상 정의
+  - `theme.ts`: 테마 설정
+  - `globals.css`: 전역 스타일
+
+- **public/images/**: 이미지 리소스 (기능별 폴더 구성)
+  - `{PageName}/`: 특정 페이지에서만 사용되는 이미지
+  - `{ComponentName}/`: 특정 컴포넌트에서 사용되는 이미지
+  - `common/`: 공통으로 사용되는 이미지
+
+- **types/**: 타입 정의
+- **utils/**: 유틸리티 함수 및 상수
+- **hooks/**: 커스텀 훅
+
+## 네이밍 규칙
+- 컴포넌트: 파스칼 케이스 (MainFrame, StorySection)
+- 함수/변수: 카멜 케이스 (getImage, isActive)
+- 상수: 대문자 스네이크 케이스 (PRIMARY_COLOR, MAX_WIDTH)
+- 타입/인터페이스: 파스칼 케이스 (ButtonProps, ImageType)
+
+## 컴포넌트 설계 원칙
+- 단일 책임 원칙 준수
+- 최소한의 HTML 요소 사용 (공통 컴포넌트 활용)
+- 래퍼 컴포넌트 패턴 활용
+- props 타입 명시적 정의
+- 컴포넌트 재사용성 극대화

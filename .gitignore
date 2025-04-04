@@ -47,6 +47,7 @@ node_modules
 .git/
 
 .env
-
 .env.local
+
+.vscode/
 
