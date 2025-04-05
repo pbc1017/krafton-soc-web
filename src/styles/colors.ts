@@ -4,8 +4,8 @@
 
 export const colors = {
   // 브랜드 색상
-  primary: '#000000',
-  secondary: '#FFFFFF',
+  black: '#000000',
+  white: '#FFFFFF',
 } as const;
 
 export type ColorType = keyof typeof colors;
