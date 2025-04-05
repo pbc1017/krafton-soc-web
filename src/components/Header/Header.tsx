@@ -7,17 +7,8 @@ import Image from 'next/image';
 import { theme } from '@krafton-soc/styles/theme';
 import Text from '@krafton-soc/components/Text';
 import LanguageSwitcher from './LanguageSwitcher';
-
-interface NavItem {
-  label: string;
-  href: string;
-}
-
-const navItems: NavItem[] = [
-  { label: '건립의 여정', href: '/building-journey' },
-  { label: '디자인 이야기', href: '/design-story' },
-  { label: '선한 영향력의 길', href: '/positive-impact' },
-];
+import FoldableNavMenu from './FoldableNavMenu';
+import { navItems } from '@krafton-soc/constants/navItems';
 
 const HeaderContainer = styled.header`
   background-color: ${theme.colors.white};
@@ -28,7 +19,6 @@ const HeaderContainer = styled.header`
   z-index: 100;
   display: flex;
   align-items: center;
-  padding: 0 2rem;
   justify-content: space-between;
 `;
 
@@ -90,7 +80,8 @@ const NavLink = styled.div<{ isActive: boolean }>`
 export const Header: React.FC = () => {
   const pathname = usePathname();
   const router = useRouter();
-  const [isDesktop, setIsDesktop] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(true);
+  const [isFoldableNavMenuOpen, setIsFoldableNavMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -104,51 +95,58 @@ export const Header: React.FC = () => {
   }, []);
 
   return (
-    <HeaderContainer>
-      <LogoContainer>
-        <Image
-          src="/images/common/krafton-soc-logo.svg"
-          alt="KRAFTON X SoC"
-          width={192}
-          height={19}
-          objectFit="contain"
-          onClick={() => router.push('/')}
-        />
-        <Image
-          src="/images/common/soc-logo.svg"
-          alt="KAIST School of Computing"
-          width={127}
-          height={21}
-          objectFit="contain"
-          onClick={() => window.open('https://cs.kaist.ac.kr/', '_blank')}
-        />
-      </LogoContainer>
+    <>
+      {isDesktop || !isFoldableNavMenuOpen ? (
+        <HeaderContainer>
+          <LogoContainer>
+            <Image
+              src="/images/common/krafton-soc-logo.svg"
+              alt="KRAFTON X SoC"
+              width={192}
+              height={19}
+              objectFit="contain"
+              onClick={() => router.push('/')}
+            />
+            <Image
+              src="/images/common/soc-logo.svg"
+              alt="KAIST School of Computing"
+              width={127}
+              height={21}
+              objectFit="contain"
+              onClick={() => window.open('https://cs.kaist.ac.kr/', '_blank')}
+            />
+          </LogoContainer>
 
-      {isDesktop ? (
-        <NavContainer>
-          {navItems.map((item) => (
-            <NavLink
-              key={item.href}
-              isActive={pathname === item.href}
-              onClick={() => router.push(item.href)}
-            >
-              <Text color={theme.colors.black} fs="16px" lh="24px">
-                {item.label}
-              </Text>
-            </NavLink>
-          ))}
-          <LanguageSwitcher />
-        </NavContainer>
+          {isDesktop ? (
+            <NavContainer>
+              {navItems.map((item) => (
+                <NavLink
+                  key={item.href}
+                  isActive={pathname === item.href}
+                  onClick={() => router.push(item.href)}
+                >
+                  <Text color={theme.colors.black} fs="16px" lh="24px">
+                    {item.label}
+                  </Text>
+                </NavLink>
+              ))}
+              <LanguageSwitcher />
+            </NavContainer>
+          ) : (
+            <Image
+              src="/icons/Hamburger.svg"
+              alt="Hamburger"
+              width={24}
+              height={24}
+              style={{ cursor: 'pointer', marginRight: '24px' }}
+              onClick={() => setIsFoldableNavMenuOpen(!isFoldableNavMenuOpen)}
+            />
+          )}
+        </HeaderContainer>
       ) : (
-        <Image
-          src="/icons/Hamburger.svg"
-          alt="Hamburger"
-          width={24}
-          height={24}
-          style={{ cursor: 'pointer' }}
-        />
+        <FoldableNavMenu setIsFoldableNavMenuOpen={setIsFoldableNavMenuOpen} />
       )}
-    </HeaderContainer>
+    </>
   );
 };
 
