@@ -20,7 +20,7 @@ const navItems: NavItem[] = [
 ];
 
 const HeaderContainer = styled.header`
-  background-color: #ffffff;
+  background-color: ${theme.colors.white};
   border-bottom: 1px solid #f5f5f5;
   height: 72px;
   width: 100%;
@@ -99,7 +99,7 @@ const LanguageText = styled.span`
 const LanguageDivider = styled.div`
   width: 1px;
   height: 9px;
-  background-color: #000000;
+  background-color: ${theme.colors.black};
 `;
 
 const MobileMenuButton = styled.button`
@@ -167,7 +167,7 @@ export const Header: React.FC = () => {
               <Text
                 color={theme.colors.black}
                 fs="16px"
-                fw={theme.fonts.weights.regular}
+                fw={theme.fonts.weights.light}
                 lh="24px"
                 style={{
                   letterSpacing: '0.5px',
@@ -182,13 +182,31 @@ export const Header: React.FC = () => {
 
         <LanguageToggle>
           <LanguageText>
-            <Text color={theme.colors.black} fs="12px" fw={theme.fonts.weights.regular} lh="normal">
+            <Text
+              color={theme.colors.black}
+              fs="12px"
+              fw={theme.fonts.weights.light}
+              lh="24px"
+              style={{
+                letterSpacing: '0.5px',
+                textAlign: 'center',
+              }}
+            >
               KR
             </Text>
           </LanguageText>
           <LanguageDivider />
           <LanguageText>
-            <Text color={theme.colors.black} fs="12px" fw={theme.fonts.weights.regular} lh="normal">
+            <Text
+              color={theme.colors.black}
+              fs="12px"
+              fw={theme.fonts.weights.light}
+              lh="24px"
+              style={{
+                letterSpacing: '0.5px',
+                textAlign: 'center',
+              }}
+            >
               EN
             </Text>
           </LanguageText>

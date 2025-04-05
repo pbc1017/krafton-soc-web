@@ -43,7 +43,7 @@ const Arrow = styled.div`
 const ArrowLine = styled.div`
   width: 1px;
   height: 180px;
-  background-color: #ffffff;
+  background-color: ${theme.colors.white};
 `;
 
 const ArrowHead = styled.div`
@@ -51,7 +51,7 @@ const ArrowHead = styled.div`
   height: 0;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-top: 14px solid #ffffff;
+  border-top: 14px solid ${theme.colors.white};
   margin-top: 2px;
 `;
 
@@ -72,9 +72,7 @@ const MainBanner: React.FC = () => {
           color={theme.colors.white}
           fs="32px"
           fw={theme.fonts.weights.medium}
-          lh="normal"
-          ff={theme.fonts.families.pretendard}
-          style={{ whiteSpace: 'nowrap' }}
+          lh="38px"
         >
           Positive Influence, Memories of the Journey
         </Text>

@@ -97,34 +97,16 @@ const StoryCard: React.FC<StoryCardProps> = ({
       </ImageContainer>
 
       <ContentContainer>
-        <Text
-          color={theme.colors.black}
-          fs="52px"
-          fw={theme.fonts.weights.semibold}
-          lh="67.6px"
-          ff={theme.fonts.families.pretendard}
-        >
+        <Text color={theme.colors.black} fs="52px" fw={theme.fonts.weights.semibold} lh="67.6px">
           {title}
         </Text>
 
-        <Text
-          color={theme.colors.black}
-          fs="30px"
-          fw={theme.fonts.weights.medium}
-          lh="48px"
-          ff={theme.fonts.families.pretendard}
-        >
+        <Text color={theme.colors.black} fs="30px" fw={theme.fonts.weights.medium} lh="48px">
           {description}
         </Text>
 
         {speaker && (
-          <Text
-            color={theme.colors.black}
-            fs="18px"
-            fw={theme.fonts.weights.medium}
-            lh="28px"
-            ff={theme.fonts.families.pretendard}
-          >
+          <Text color={theme.colors.black} fs="18px" fw={theme.fonts.weights.medium} lh="28px">
             {speaker}
           </Text>
         )}
@@ -136,7 +118,6 @@ const StoryCard: React.FC<StoryCardProps> = ({
               fs="24px"
               fw={theme.fonts.weights.bold}
               lh="28px"
-              ff={theme.fonts.families.pretendard}
               style={{ whiteSpace: 'nowrap' }}
             >
               {buttonText}

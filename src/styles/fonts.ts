@@ -45,6 +45,7 @@ export const pretendard = localFont({
 
 // 폰트 두께
 export const fontWeights = {
+  light: 300,
   regular: 400,
   medium: 500,
   semibold: 600,

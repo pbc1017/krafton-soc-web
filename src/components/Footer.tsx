@@ -131,25 +131,13 @@ export const Footer: React.FC = () => {
       </KraftonLogoContainer>
 
       <CopyrightContainer>
-        <Text
-          color={theme.colors.black}
-          fs="9px"
-          fw={theme.fonts.weights.regular}
-          lh="normal"
-          ff={theme.fonts.families.pretendard}
-        >
+        <Text color={theme.colors.black} fs="9px" fw={theme.fonts.weights.regular} lh="11.7px">
           ⓒ KAIST School of Computing. All Rights Reserved.
         </Text>
       </CopyrightContainer>
 
       <ContactContainer>
-        <Text
-          color={theme.colors.black}
-          fs="11px"
-          fw={theme.fonts.weights.semibold}
-          lh="16.5px"
-          ff={theme.fonts.families.pretendard}
-        >
+        <Text color={theme.colors.black} fs="11px" fw={theme.fonts.weights.semibold} lh="16.5px">
           수정이 필요하거나 개선할 내용이 있으면 언제든지 아래 이메일로 문의해주시면 감사하겠습니다.
           <br />
           kraftonxsoc@kaist.ac.kr
