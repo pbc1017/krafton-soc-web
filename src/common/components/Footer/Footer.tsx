@@ -17,7 +17,7 @@ const FooterContainer = styled.footer`
   align-items: center;
   padding: 0 2rem;
 
-  @media (max-width: ${theme.breakpoints.tablet}) {
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     height: auto;
     padding: 2rem;
     flex-direction: column;
@@ -32,7 +32,7 @@ const CopyrightContainer = styled.div`
   top: 100px;
   white-space: nowrap;
 
-  @media (max-width: ${theme.breakpoints.tablet}) {
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     position: static;
     margin-top: 1rem;
   }
@@ -45,7 +45,7 @@ const KaistLogoContainer = styled.div`
   left: 109px;
   top: 27px;
 
-  @media (max-width: ${theme.breakpoints.tablet}) {
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     position: static;
     margin-bottom: 1rem;
   }
@@ -58,7 +58,7 @@ const KraftonLogoContainer = styled.div`
   left: 296px;
   top: 26px;
 
-  @media (max-width: ${theme.breakpoints.tablet}) {
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     position: static;
     margin-bottom: 1rem;
   }
@@ -70,7 +70,7 @@ const ContactContainer = styled.div`
   top: 26px;
   width: 474px;
 
-  @media (max-width: ${theme.breakpoints.tablet}) {
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     position: static;
     width: 100%;
   }
