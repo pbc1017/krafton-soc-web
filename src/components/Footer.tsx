@@ -4,7 +4,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { theme } from '@krafton-soc/styles/theme';
 import Image from 'next/image';
-import Text from '@krafton-soc/components/common/Text';
+import Text from '@krafton-soc/components/Text';
 
 const FooterContainer = styled.footer`
   background-color: ${theme.colors.white};
@@ -23,32 +23,6 @@ const FooterContainer = styled.footer`
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
-  }
-`;
-
-const VerticalLine = styled.div`
-  height: 8px;
-  width: 1px;
-  background-color: ${theme.colors.black};
-  position: absolute;
-  left: 166px;
-  top: 73px;
-
-  @media (max-width: ${theme.breakpoints.tablet}) {
-    display: none;
-  }
-`;
-
-const SecondLine = styled.div`
-  height: 8px;
-  width: 1px;
-  background-color: ${theme.colors.black};
-  position: absolute;
-  left: 367px;
-  top: 73px;
-
-  @media (max-width: ${theme.breakpoints.tablet}) {
-    display: none;
   }
 `;
 
@@ -105,9 +79,6 @@ const ContactContainer = styled.div`
 export const Footer: React.FC = () => {
   return (
     <FooterContainer>
-      <VerticalLine />
-      <SecondLine />
-
       <KaistLogoContainer>
         <Image
           src="/images/common/soc-logo.svg"

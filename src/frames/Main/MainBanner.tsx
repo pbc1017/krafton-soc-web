@@ -3,7 +3,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Image from 'next/image';
-import Text from '@krafton-soc/components/common/Text';
+import Text from '@krafton-soc/components/Text';
 import { theme } from '@krafton-soc/styles/theme';
 
 const BannerContainer = styled.section`
@@ -68,12 +68,7 @@ const MainBanner: React.FC = () => {
         />
       </BannerImage>
       <TitleContainer>
-        <Text
-          color={theme.colors.white}
-          fs="32px"
-          fw={theme.fonts.weights.medium}
-          lh="38px"
-        >
+        <Text color={theme.colors.white} fs="32px" fw={theme.fonts.weights.medium} lh="38px">
           Positive Influence, Memories of the Journey
         </Text>
       </TitleContainer>
