@@ -14,39 +14,45 @@ alwaysApply: true
 - Next.js App Router 패턴 적용 ("use client" 지시문 사용)
 
 ## 폴더 구조
-- **app/**: Next.js App Router 담당, 오직 frames 컴포넌트 임포트만 수행
-  - `page.tsx`: 해당 경로의 프레임 컴포넌트만 임포트하여 표시
-  - `layout.tsx`: 전역 레이아웃 설정
+- **src/**: 모든 코드는 src 디렉토리 내에 위치
+  
+  - **app/**: Next.js App Router 담당, features 컴포넌트 임포트만 수행
+    - `page.tsx`: 해당 경로의 feature 컴포넌트만 임포트하여 표시
+    - `layout.tsx`: 전역 레이아웃 설정
 
-- **frames/**: 페이지 단위 컴포넌트 (각 페이지별 하위 폴더 구성)
-  - `{PageName}/`: 페이지명으로 폴더 구성 (예: Main, About 등)
-    - `{PageName}.tsx`: 해당 페이지 조립 담당 메인 컴포넌트
-    - `index.ts`: 페이지 컴포넌트 export (기본적으로 * export 방식 사용)
-    - 페이지 전용 컴포넌트들: `MainBanner.tsx`, `DesignStorySection.tsx` 등
-    - 페이지 전용 재사용 컴포넌트: `StoryCard.tsx` 등
+  - **features/**: 페이지 단위 기능 모음 (각 페이지별 하위 폴더 구성)
+    - `{PageName}/`: 페이지명으로 폴더 구성 (예: Main, DesignStory 등)
+      - `index.ts`: frames/{PageName}.tsx export (기본적으로 default export 방식 사용)
+      - `frames/`: 페이지 프레임 컴포넌트
+        - `{PageName}.tsx`: 해당 페이지 조립 담당 메인 프레임 컴포넌트
+      - `components/`: 페이지 전용 컴포넌트들
+        - `{ComponentName}.tsx`: 페이지 전용 컴포넌트 (예: MainBanner, StorySection 등)
 
-- **components/**: 공용 컴포넌트
-  - `common/`: 범용 UI 컴포넌트 (Text, Image, Button 등)
-  - `{ComponentName}`: 복잡한 공용 컴포넌트는 자체 파일 or 폴더로 구성 (Header, Footer 등)
+  - **common/**: 공통 기능 및 컴포넌트
+    - `components/`: 공용 컴포넌트
+      - `Text.tsx`, 등의 기본 UI 컴포넌트
+      - `{ComponentName}/`: 복잡한 공용 컴포넌트는 자체 폴더로 구성 (Header, Footer 등)
+        - `{ComponentName}.tsx`: 복잡한 컴포넌트의 조립 담당 컴포넌트
+        - `index.ts`: {ComponentName}.tsx export (기본적으로 default export 방식 사용)
+    - `styles/`: 전역 스타일 정의
+      - `fonts.ts`: 폰트 정의
+      - `colors.ts`: 색상 정의
+      - `theme.ts`: 테마 설정
+      - `globals.css`: 전역 스타일
+    - `libs/`: 외부 라이브러리 래퍼
+    - `utils/`: 유틸리티 함수 및 상수
 
-- **styles/**: 전역 스타일 정의
-  - `fonts.ts`: 폰트 정의
-  - `colors.ts`: 색상 정의
-  - `theme.ts`: 테마 설정
-  - `globals.css`: 전역 스타일
-
-- **public/images/**: 이미지 리소스 (기능별 폴더 구성)
-  - `{PageName}/`: 특정 페이지에서만 사용되는 이미지
-  - `common/`: 공통으로 사용되는 이미지 (로고 등)
-
-- **types/**: 타입 정의
-- **utils/**: 유틸리티 함수 및 상수
-- **hooks/**: 커스텀 훅
+- **public/**: 정적 파일 리소스
+  - `images/`: 이미지 리소스 (기능별 폴더 구성)
+    - `{PageName}/`: 특정 페이지에서만 사용되는 이미지
+    - `common/`: 공통으로 사용되는 이미지 (로고 등)
+  - `icons/`: 아이콘 리소스
+    - `{IconName}.svg`: 특정 아이콘을 정의 (IconName은 파스칼케이스 사용)
 
 ## Import 경로 규칙
 - 절대 경로 사용: `@krafton-soc/` 접두사 활용
-  - 예: `import { Text } from '@krafton-soc/components/common/Text'`
-  - 예: `import Main from '@krafton-soc/frames/Main'`
+  - 예: `import { Text } from '@krafton-soc/common/components/Text'`
+  - 예: `import Main from '@krafton-soc/features/Main'`
 
 ## 네이밍 규칙
 - 컴포넌트: 파스칼 케이스 (MainFrame, StorySection)
