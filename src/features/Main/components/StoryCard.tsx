@@ -2,8 +2,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Link from 'next/link';
 import Image from 'next/image';
-import Text from '@krafton-soc/components/Text';
-import { theme } from '@krafton-soc/styles/theme';
+import Text from '@krafton-soc/common/components/Text';
+import { theme } from '@krafton-soc/common/styles/theme';
 
 export interface StoryCardProps {
   title: string;

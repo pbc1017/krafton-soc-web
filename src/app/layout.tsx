@@ -1,8 +1,8 @@
-import Footer from '@krafton-soc/components/Footer';
-import { Header } from '@krafton-soc/components/Header';
-import StyledComponentsRegistry from '@krafton-soc/libs/RootStyleRegistry';
-import { pretendard } from '@krafton-soc/styles/fonts';
-import '@krafton-soc/styles/globals.css';
+import Footer from '@krafton-soc/common/components/Footer';
+import Header from '@krafton-soc/common/components/Header';
+import StyledComponentsRegistry from '@krafton-soc/common/libs/RootStyleRegistry';
+import { pretendard } from '@krafton-soc/common/styles/fonts';
+import '@krafton-soc/common/styles/globals.css';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

@@ -2,12 +2,12 @@
 
 import React from 'react';
 import styled from '@emotion/styled';
-import { theme } from '@krafton-soc/styles/theme';
+import { theme } from '@krafton-soc/common/styles/theme';
 import LanguageSwitcher from './LanguageSwitcher';
 import Image from 'next/image';
-import Text from '@krafton-soc/components/Text';
+import Text from '@krafton-soc/common/components/Text';
 import { useRouter } from 'next/navigation';
-import { navItems } from '@krafton-soc/constants/navItems';
+import { navItems } from '@krafton-soc/common/components/Header/navItems';
 
 const NavMenuWrapper = styled.div`
   width: 100%;

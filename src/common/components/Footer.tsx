@@ -2,9 +2,9 @@
 
 import React from 'react';
 import styled from '@emotion/styled';
-import { theme } from '@krafton-soc/styles/theme';
+import { theme } from '@krafton-soc/common/styles/theme';
 import Image from 'next/image';
-import Text from '@krafton-soc/components/Text';
+import Text from '@krafton-soc/common/components/Text';
 
 const FooterContainer = styled.footer`
   background-color: ${theme.colors.white};

@@ -4,11 +4,11 @@ import React, { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import { usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
-import { theme } from '@krafton-soc/styles/theme';
-import Text from '@krafton-soc/components/Text';
+import { theme } from '@krafton-soc/common/styles/theme';
+import Text from '@krafton-soc/common/components/Text';
 import LanguageSwitcher from './LanguageSwitcher';
 import FoldableNavMenu from './FoldableNavMenu';
-import { navItems } from '@krafton-soc/constants/navItems';
+import { navItems } from '@krafton-soc/common/components/Header/navItems';
 
 const HeaderContainer = styled.header`
   background-color: ${theme.colors.white};
