@@ -1,7 +1,7 @@
 import Footer from '@krafton-soc/common/components/Footer';
 import Header from '@krafton-soc/common/components/Header';
 import StyledComponentsRegistry from '@krafton-soc/common/libs/RootStyleRegistry';
-import { pretendard } from '@krafton-soc/common/styles/fonts';
+import { fontVariables } from '@krafton-soc/common/styles/fonts';
 import '@krafton-soc/common/styles/globals.css';
 import { Metadata } from 'next';
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <StyledComponentsRegistry>
-      <html lang="ko" className={pretendard.variable}>
+      <html lang="ko" className={fontVariables}>
         <body>
           <Header />
           {children}

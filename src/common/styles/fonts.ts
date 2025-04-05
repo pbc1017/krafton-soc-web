@@ -1,7 +1,6 @@
 import localFont from 'next/font/local';
 
-// Pretendard 폰트 (로컬 폰트)
-export const pretendard = localFont({
+const pretendard = localFont({
   src: [
     {
       path: '../../../public/fonts/Pretendard-Regular.woff2',
@@ -43,6 +42,17 @@ export const pretendard = localFont({
   ],
 });
 
+const abeezee = localFont({
+  src: '../../../public/fonts/ABeeZee-Regular.woff2',
+  weight: '400',
+  style: 'normal',
+  variable: '--font-abeezee',
+  display: 'swap',
+  preload: true,
+});
+
+export const fontVariables = `${pretendard.variable} ${abeezee.variable}`;
+
 // 폰트 두께
 export const fontWeights = {
   light: 300,
@@ -59,6 +69,7 @@ export type FontWeightType = keyof typeof fontWeights;
 // 폰트 패밀리
 export const fontFamilies = {
   pretendard: 'var(--font-pretendard)',
+  abeezee: 'var(--font-abeezee)',
   system: '-apple-system, BlinkMacSystemFont, system-ui, Roboto, Helvetica Neue, Arial, sans-serif',
 } as const;
 

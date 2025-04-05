@@ -174,7 +174,7 @@ export const Footer: React.FC = () => {
         </ContactContainer>
       </ContentWrapper>
       <CopyrightContainer>
-        <Text fw={theme.fonts.weights.regular}>
+        <Text fw={theme.fonts.weights.regular} ff={theme.fonts.families.abeezee}>
           ⓒ KAIST School of Computing. All Rights Reserved.
         </Text>
       </CopyrightContainer>
