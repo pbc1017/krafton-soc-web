@@ -18,21 +18,14 @@ const MainContainer = styled.main`
   align-items: center;
 `;
 
-const ContentWrapper = styled.div`
-  width: 100%;
-  position: relative;
-`;
-
 const Main: React.FC = () => {
   return (
     <MainContainer>
       <Header />
-      <ContentWrapper>
-        <MainBanner />
-        <PositiveImpactSection />
-        <DesignStorySection />
-        <BuildingJourneySection />
-      </ContentWrapper>
+      <MainBanner />
+      <PositiveImpactSection />
+      <DesignStorySection />
+      <BuildingJourneySection />
       <Footer />
     </MainContainer>
   );

@@ -3,9 +3,10 @@
 import React, { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
 import Link from 'next/link';
-import { theme } from '@krafton-soc/styles/theme';
 import { usePathname } from 'next/navigation';
-import { Image } from '@krafton-soc/components/common/Image';
+import Image from 'next/image';
+import { theme } from '@krafton-soc/styles/theme';
+import Text from '@krafton-soc/components/common/Text';
 
 interface NavItem {
   label: string;
@@ -64,13 +65,6 @@ const NavContainer = styled.nav`
 `;
 
 const NavLink = styled.a<{ isActive: boolean }>`
-  font-family: 'Pretendard-Light', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  line-height: 24px;
-  text-align: center;
-  color: #000000;
   cursor: pointer;
   white-space: nowrap;
   position: relative;
@@ -82,7 +76,7 @@ const NavLink = styled.a<{ isActive: boolean }>`
     left: 0;
     width: ${({ isActive }) => (isActive ? '100%' : '0')};
     height: 2px;
-    background-color: ${theme.colors.primary};
+    background-color: ${theme.colors.black};
     transition: width 0.3s ease;
   }
 
@@ -99,9 +93,6 @@ const LanguageToggle = styled.div`
 `;
 
 const LanguageText = styled.span`
-  font-size: 12px;
-  font-weight: 300;
-  color: #000000;
   cursor: pointer;
 `;
 
@@ -151,7 +142,6 @@ export const Header: React.FC = () => {
               height={19}
               priority
               objectFit="contain"
-              withContainer={false}
             />
           </KraftonXSoc>
         </Link>
@@ -165,7 +155,6 @@ export const Header: React.FC = () => {
               height={21}
               priority
               objectFit="contain"
-              withContainer={false}
             />
           </KaistSoC>
         </Link>
@@ -174,14 +163,35 @@ export const Header: React.FC = () => {
       <NavContainer>
         {navItems.map((item) => (
           <Link key={item.href} href={item.href} passHref>
-            <NavLink isActive={pathname === item.href}>{item.label}</NavLink>
+            <NavLink isActive={pathname === item.href}>
+              <Text
+                color={theme.colors.black}
+                fs="16px"
+                fw={theme.fonts.weights.regular}
+                lh="24px"
+                style={{
+                  letterSpacing: '0.5px',
+                  textAlign: 'center',
+                }}
+              >
+                {item.label}
+              </Text>
+            </NavLink>
           </Link>
         ))}
 
         <LanguageToggle>
-          <LanguageText>KR</LanguageText>
+          <LanguageText>
+            <Text color={theme.colors.black} fs="12px" fw={theme.fonts.weights.regular} lh="normal">
+              KR
+            </Text>
+          </LanguageText>
           <LanguageDivider />
-          <LanguageText>EN</LanguageText>
+          <LanguageText>
+            <Text color={theme.colors.black} fs="12px" fw={theme.fonts.weights.regular} lh="normal">
+              EN
+            </Text>
+          </LanguageText>
         </LanguageToggle>
       </NavContainer>
 

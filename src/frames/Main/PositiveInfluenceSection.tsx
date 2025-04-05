@@ -16,10 +16,10 @@ const PositiveInfluenceSection: React.FC = () => {
   return (
     <SectionContainer>
       <StoryCard
-        title="선한 영향력,\n그 과정의 기억"
+        title={`선한 영향력, \n그 과정의 기억`}
         description="결국 저의 기부 중 일부는 전산학부 증축에 쓸 것이라는 결심까지 이어졌습니다."
         imageSrc="/images/Main/positive-influence.jpg"
-        speaker="KAIST 전산학부 동문\n장병규 KRAFTON 의장 말씀 중"
+        speaker={`KAIST 전산학부 동문\n장병규 KRAFTON 의장 말씀 중`}
         buttonText="Explore this story"
         buttonLink="/positive-influence"
       />

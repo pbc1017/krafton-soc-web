@@ -3,6 +3,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Image from 'next/image';
+import Text from '@krafton-soc/components/common/Text';
+import { theme } from '@krafton-soc/styles/theme';
 
 const BannerContainer = styled.section`
   position: relative;
@@ -17,20 +19,13 @@ const BannerImage = styled.div`
   height: 100%;
 `;
 
-const BannerTitle = styled.p`
-  color: #ffffff;
-  font-family: 'Pretendard-Medium', Helvetica;
-  font-size: 32px;
-  font-weight: 500;
+const TitleContainer = styled.div`
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  letter-spacing: 0;
-  line-height: normal;
-  text-align: center;
   top: 402px;
-  white-space: nowrap;
   width: 890px;
+  text-align: center;
 `;
 
 const Arrow = styled.div`
@@ -72,7 +67,18 @@ const MainBanner: React.FC = () => {
           objectFit="cover"
         />
       </BannerImage>
-      <BannerTitle>Positive Influence, Memories of the Journey</BannerTitle>
+      <TitleContainer>
+        <Text
+          color={theme.colors.white}
+          fs="32px"
+          fw={theme.fonts.weights.medium}
+          lh="normal"
+          ff={theme.fonts.families.pretendard}
+          style={{ whiteSpace: 'nowrap' }}
+        >
+          Positive Influence, Memories of the Journey
+        </Text>
+      </TitleContainer>
       <Arrow>
         <ArrowLine />
         <ArrowHead />

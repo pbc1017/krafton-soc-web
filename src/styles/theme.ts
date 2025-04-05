@@ -1,5 +1,5 @@
 import { colors } from './colors';
-import { fontWeights } from './fonts';
+import { fontWeights, fontFamilies } from './fonts';
 
 /**
  * 프로젝트 테마 설정
@@ -8,6 +8,7 @@ export const theme = {
   colors,
   fonts: {
     weights: fontWeights,
+    families: fontFamilies,
   },
 
   // 반응형 디자인 브레이크포인트

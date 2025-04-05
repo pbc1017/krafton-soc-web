@@ -54,3 +54,11 @@ export const fontWeights = {
 } as const;
 
 export type FontWeightType = keyof typeof fontWeights;
+
+// 폰트 패밀리
+export const fontFamilies = {
+  pretendard: 'var(--font-pretendard)',
+  system: '-apple-system, BlinkMacSystemFont, system-ui, Roboto, Helvetica Neue, Arial, sans-serif',
+} as const;
+
+export type FontFamilyType = keyof typeof fontFamilies;

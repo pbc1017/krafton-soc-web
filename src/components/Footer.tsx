@@ -3,10 +3,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { theme } from '@krafton-soc/styles/theme';
-import { Image } from '@krafton-soc/components/common/Image';
+import Image from 'next/image';
+import Text from '@krafton-soc/components/common/Text';
 
 const FooterContainer = styled.footer`
-  background-color: #ffffff;
+  background-color: ${theme.colors.white};
   height: 135px;
   position: relative;
   width: 100%;
@@ -28,7 +29,7 @@ const FooterContainer = styled.footer`
 const VerticalLine = styled.div`
   height: 8px;
   width: 1px;
-  background-color: #000000;
+  background-color: ${theme.colors.black};
   position: absolute;
   left: 166px;
   top: 73px;
@@ -41,7 +42,7 @@ const VerticalLine = styled.div`
 const SecondLine = styled.div`
   height: 8px;
   width: 1px;
-  background-color: #000000;
+  background-color: ${theme.colors.black};
   position: absolute;
   left: 367px;
   top: 73px;
@@ -51,10 +52,7 @@ const SecondLine = styled.div`
   }
 `;
 
-const CopyrightText = styled.span`
-  color: #000000;
-  font-size: 9px;
-  font-weight: 400;
+const CopyrightContainer = styled.div`
   position: absolute;
   left: 118px;
   top: 100px;
@@ -104,26 +102,6 @@ const ContactContainer = styled.div`
   }
 `;
 
-const ContactText = styled.p`
-  color: #000000;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 16.5px;
-`;
-
-const KaistText = styled.span`
-  font-size: 10px;
-  font-weight: bold;
-  line-height: 16px;
-  color: #000;
-`;
-
-const SocText = styled.span`
-  font-size: 10px;
-  font-weight: normal;
-  color: #000;
-`;
-
 export const Footer: React.FC = () => {
   return (
     <FooterContainer>
@@ -138,7 +116,6 @@ export const Footer: React.FC = () => {
           height={21}
           priority
           objectFit="contain"
-          withContainer={false}
         />
       </KaistLogoContainer>
 
@@ -150,18 +127,33 @@ export const Footer: React.FC = () => {
           height={18}
           priority
           objectFit="contain"
-          withContainer={false}
         />
       </KraftonLogoContainer>
 
-      <CopyrightText>ⓒ KAIST School of Computing. All Rights Reserved.</CopyrightText>
+      <CopyrightContainer>
+        <Text
+          color={theme.colors.black}
+          fs="9px"
+          fw={theme.fonts.weights.regular}
+          lh="normal"
+          ff={theme.fonts.families.pretendard}
+        >
+          ⓒ KAIST School of Computing. All Rights Reserved.
+        </Text>
+      </CopyrightContainer>
 
       <ContactContainer>
-        <ContactText>
+        <Text
+          color={theme.colors.black}
+          fs="11px"
+          fw={theme.fonts.weights.semibold}
+          lh="16.5px"
+          ff={theme.fonts.families.pretendard}
+        >
           수정이 필요하거나 개선할 내용이 있으면 언제든지 아래 이메일로 문의해주시면 감사하겠습니다.
           <br />
           kraftonxsoc@kaist.ac.kr
-        </ContactText>
+        </Text>
       </ContactContainer>
     </FooterContainer>
   );
