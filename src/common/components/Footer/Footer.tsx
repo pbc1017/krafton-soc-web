@@ -12,6 +12,7 @@ const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: ${theme.colors.white};
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     height: 210px;

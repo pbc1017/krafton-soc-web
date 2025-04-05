@@ -26,7 +26,6 @@ const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 21px;
-  cursor: pointer;
   margin-left: 80px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
@@ -105,6 +104,7 @@ export const Header: React.FC = () => {
               width={192}
               height={19}
               objectFit="contain"
+              style={{ cursor: 'pointer' }}
               onClick={() => router.push('/')}
             />
             <Image
@@ -113,6 +113,7 @@ export const Header: React.FC = () => {
               width={127}
               height={21}
               objectFit="contain"
+              style={{ cursor: 'pointer' }}
               onClick={() => window.open('https://cs.kaist.ac.kr/', '_blank')}
             />
           </LogoContainer>
