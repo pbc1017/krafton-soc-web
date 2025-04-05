@@ -9,6 +9,7 @@ const LanguageToggle = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-left: 40px;
 `;
 
 const LanguageDivider = styled.div`

@@ -13,8 +13,8 @@ export const theme = {
 
   // 반응형 디자인 브레이크포인트
   breakpoints: {
-    mobile: '393px',
-    tablet: '744px',
+    mobileTablet: '768px',
+    tabletDesktop: '1200px',
   },
 } as const;
 

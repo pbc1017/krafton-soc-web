@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import { usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
@@ -38,6 +38,10 @@ const LogoContainer = styled.div`
   gap: 1.5rem;
   cursor: pointer;
   margin-left: 80px;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    margin-left: 24px;
+  }
 `;
 
 const NavContainer = styled.div`
@@ -45,8 +49,9 @@ const NavContainer = styled.div`
   align-items: center;
   gap: 80px;
   margin-right: 80px;
+  gap: 12px;
 
-  @media (max-width: ${theme.breakpoints.tablet}) {
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     display: none;
   }
 `;
@@ -85,46 +90,64 @@ const NavLink = styled.div<{ isActive: boolean }>`
 export const Header: React.FC = () => {
   const pathname = usePathname();
   const router = useRouter();
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > parseInt(theme.breakpoints.tabletDesktop));
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <HeaderContainer>
-      <LogoContainer onClick={() => router.push('/')}>
+      <LogoContainer>
         <Image
           src="/images/common/krafton-soc-logo.svg"
           alt="KRAFTON X SoC"
           width={192}
           height={19}
-          priority
           objectFit="contain"
+          onClick={() => router.push('/')}
         />
         <Image
           src="/images/common/soc-logo.svg"
           alt="KAIST School of Computing"
           width={127}
           height={21}
-          priority
           objectFit="contain"
+          onClick={() => window.open('https://cs.kaist.ac.kr/', '_blank')}
         />
       </LogoContainer>
 
-      <NavContainer>
-        {navItems.map((item) => (
-          <NavLink key={item.href} isActive={pathname === item.href}>
-            <Text
-              color={theme.colors.black}
-              fs="16px"
-              lh="24px"
-              style={{
-                letterSpacing: '0.5px',
-                textAlign: 'center',
-              }}
+      {isDesktop ? (
+        <NavContainer>
+          {navItems.map((item) => (
+            <NavLink
+              key={item.href}
+              isActive={pathname === item.href}
+              onClick={() => router.push(item.href)}
             >
-              {item.label}
-            </Text>
-          </NavLink>
-        ))}
-        <LanguageSwitcher />
-      </NavContainer>
+              <Text color={theme.colors.black} fs="16px" lh="24px">
+                {item.label}
+              </Text>
+            </NavLink>
+          ))}
+          <LanguageSwitcher />
+        </NavContainer>
+      ) : (
+        <Image
+          src="/icons/Hamburger.svg"
+          alt="Hamburger"
+          width={24}
+          height={24}
+          style={{ cursor: 'pointer' }}
+        />
+      )}
     </HeaderContainer>
   );
 };
