@@ -116,10 +116,11 @@ const HighlightLine = styled.div`
 
 export const Footer: React.FC = () => {
   const [isDesktop, setIsDesktop] = useState(true);
-
+  const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth > parseInt(theme.breakpoints.tabletDesktop));
+      setIsDesktop(window.innerWidth >= parseInt(theme.breakpoints.tabletDesktop));
+      setIsMobile(window.innerWidth < parseInt(theme.breakpoints.mobileTablet));
     };
 
     handleResize();
@@ -162,8 +163,9 @@ export const Footer: React.FC = () => {
           <Text fw={theme.fonts.weights.semibold}>
             보다 나은 서비스를 제공하기 위해 여러분의 의견을 소중히 생각합니다.
             <br />
-            사이트 이용 중 불편한 점이나 수정이 필요한 내용이 있다면 언제든지 아래 이메일로 문의해
-            주세요.
+            사이트 이용 중 불편한 점이나 수정이 필요한 내용이 있다면
+            {isMobile ? '\n' : ' '}
+            언제든지 아래 이메일로 문의해주세요.
           </Text>
           <HighlightTextContainer>
             <Text fw={theme.fonts.weights.semibold}>CS@kraftonxsoc.com</Text>

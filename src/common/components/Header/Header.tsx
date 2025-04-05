@@ -85,7 +85,7 @@ export const Header: React.FC = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth > parseInt(theme.breakpoints.tabletDesktop));
+      setIsDesktop(window.innerWidth >= parseInt(theme.breakpoints.tabletDesktop));
     };
 
     handleResize();
