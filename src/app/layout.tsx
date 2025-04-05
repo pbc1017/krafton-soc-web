@@ -1,5 +1,5 @@
 import Footer from '@krafton-soc/components/Footer';
-import Header from '@krafton-soc/components/Header';
+import { Header } from '@krafton-soc/components/Header';
 import StyledComponentsRegistry from '@krafton-soc/libs/RootStyleRegistry';
 import { pretendard } from '@krafton-soc/styles/fonts';
 import '@krafton-soc/styles/globals.css';
