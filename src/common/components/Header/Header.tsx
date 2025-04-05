@@ -25,7 +25,7 @@ const HeaderContainer = styled.header`
 const LogoContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 21px;
   cursor: pointer;
   margin-left: 80px;
 
@@ -125,7 +125,12 @@ export const Header: React.FC = () => {
                   isActive={pathname === item.href}
                   onClick={() => router.push(item.href)}
                 >
-                  <Text color={theme.colors.black} fs="16px" lh="24px">
+                  <Text
+                    color={theme.colors.black}
+                    fs="16px"
+                    lh="24px"
+                    style={{ letterSpacing: '0.5px' }}
+                  >
                     {item.label}
                   </Text>
                 </NavLink>
