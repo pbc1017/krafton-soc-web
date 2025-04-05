@@ -11,19 +11,22 @@ alwaysApply: true
 - Emotion을 활용한 CSS-in-JS 스타일링 사용
 - 래퍼 패턴 활용
 - 관심사 분리와 재사용성 최대화
+- Next.js App Router 패턴 적용 ("use client" 지시문 사용)
 
 ## 폴더 구조
-- **app/**: Next.js 라우팅 담당, 오직 frames 컴포넌트 임포트만 수행
+- **app/**: Next.js App Router 담당, 오직 frames 컴포넌트 임포트만 수행
   - `page.tsx`: 해당 경로의 프레임 컴포넌트만 임포트하여 표시
-  - `{EndpointName}/page.tsx`: 해당 경로의 프레임 컴포넌트만 임포트하여 표시
+  - `layout.tsx`: 전역 레이아웃 설정
 
 - **frames/**: 페이지 단위 컴포넌트 (각 페이지별 하위 폴더 구성)
   - `{PageName}/`: 페이지명으로 폴더 구성 (예: Main, About 등)
     - `{PageName}.tsx`: 해당 페이지 조립 담당 메인 컴포넌트
-    - 페이지 전용 컴포넌트들 (파스칼 케이스 네이밍)
+    - `index.ts`: 페이지 컴포넌트 export (기본적으로 * export 방식 사용)
+    - 페이지 전용 컴포넌트들: `MainBanner.tsx`, `DesignStorySection.tsx` 등
+    - 페이지 전용 재사용 컴포넌트: `StoryCard.tsx` 등
 
 - **components/**: 공용 컴포넌트
-  - `common/`: 범용 UI 컴포넌트 (Image, Text, Button 등)
+  - `common/`: 범용 UI 컴포넌트 (Text, Image, Button 등)
   - `{ComponentName}/`: 복잡한 공용 컴포넌트는 자체 폴더로 구성 (Header, Footer 등)
 
 - **styles/**: 전역 스타일 정의
@@ -34,12 +37,16 @@ alwaysApply: true
 
 - **public/images/**: 이미지 리소스 (기능별 폴더 구성)
   - `{PageName}/`: 특정 페이지에서만 사용되는 이미지
-  - `{ComponentName}/`: 특정 컴포넌트에서 사용되는 이미지
-  - `common/`: 공통으로 사용되는 이미지
+  - `common/`: 공통으로 사용되는 이미지 (로고 등)
 
 - **types/**: 타입 정의
 - **utils/**: 유틸리티 함수 및 상수
 - **hooks/**: 커스텀 훅
+
+## Import 경로 규칙
+- 절대 경로 사용: `@krafton-soc/` 접두사 활용
+  - 예: `import { Text } from '@krafton-soc/components/common/Text'`
+  - 예: `import Main from '@krafton-soc/frames/Main'`
 
 ## 네이밍 규칙
 - 컴포넌트: 파스칼 케이스 (MainFrame, StorySection)
@@ -54,8 +61,13 @@ alwaysApply: true
 - 래퍼 컴포넌트 패턴 활용
 - props 타입 명시적 정의
 - 컴포넌트 재사용성 극대화
+- 클라이언트 컴포넌트는 "use client" 지시문 사용
 
 ## 스타일링 규칙
 - CSS-in-JS (Emotion)만 사용
-- 테마 시스템을 활용한 일관된 스타일링
-- 반응형 디자인 적용
+- 하드코딩된 값 대신 theme 객체 참조
+- 반응형 디자인 적용 (theme.breakpoints 활용)
+
+## 반응형 디자인 브레이크포인트
+- mobile: 393px
+- tablet: 744px 
