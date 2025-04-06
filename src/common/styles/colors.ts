@@ -7,7 +7,7 @@ export const colors = {
   black: '#000000',
   white: '#FFFFFF',
   headerBorder: '#F5F5F5',
-  deviderLine: 'rgba(0, 0, 0, 0.20)',
+  dividerLine: 'rgba(0, 0, 0, 0.20)',
 } as const;
 
 export type ColorType = keyof typeof colors;

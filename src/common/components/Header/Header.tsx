@@ -36,9 +36,8 @@ const LogoContainer = styled.div`
 const NavContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 80px;
-  margin-right: 80px;
   gap: 12px;
+  margin-right: 80px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     display: none;
@@ -84,7 +83,7 @@ export const Header: React.FC = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth >= parseInt(theme.breakpoints.tabletDesktop));
+      setIsDesktop(window.innerWidth > parseInt(theme.breakpoints.tabletDesktop));
     };
 
     handleResize();

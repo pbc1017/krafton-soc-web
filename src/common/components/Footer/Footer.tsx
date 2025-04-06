@@ -56,7 +56,7 @@ const CopyrightContainer = styled.div`
   margin-bottom: 22px;
   margin-left: 118px;
   font-size: 9px;
-  line-height: 11.7px;
+  line-height: 12px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     margin-left: 24px;
@@ -93,26 +93,14 @@ const ContactContainer = styled.div`
   }
 `;
 
-const DeviderLine = styled.div`
+const DividerLine = styled.div`
   margin: 24px 20px;
   height: 1px;
-  background-color: ${theme.colors.deviderLine};
+  background-color: ${theme.colors.dividerLine};
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     margin-top: 13px;
   }
-`;
-
-const HighlightTextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-`;
-
-const HighlightLine = styled.div`
-  width: 100%;
-  height: 1px;
-  background-color: ${theme.colors.black};
 `;
 
 export const Footer: React.FC = () => {
@@ -120,8 +108,8 @@ export const Footer: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth >= parseInt(theme.breakpoints.tabletDesktop));
-      setIsMobile(window.innerWidth < parseInt(theme.breakpoints.mobileTablet));
+      setIsDesktop(window.innerWidth > parseInt(theme.breakpoints.tabletDesktop));
+      setIsMobile(window.innerWidth <= parseInt(theme.breakpoints.mobileTablet));
     };
 
     handleResize();
@@ -159,7 +147,7 @@ export const Footer: React.FC = () => {
             }}
           />
         </LogoContainer>
-        {!isDesktop && <DeviderLine />}
+        {!isDesktop && <DividerLine />}
         <ContactContainer>
           <Text fw={theme.fonts.weights.semibold}>
             보다 나은 서비스를 제공하기 위해 여러분의 의견을 소중히 생각합니다.
@@ -168,10 +156,12 @@ export const Footer: React.FC = () => {
             {isMobile ? '\n' : ' '}
             언제든지 아래 이메일로 문의해주세요.
           </Text>
-          <HighlightTextContainer>
-            <Text fw={theme.fonts.weights.semibold}>CS@kraftonxsoc.com</Text>
-            <HighlightLine />
-          </HighlightTextContainer>
+          <Text
+            fw={theme.fonts.weights.semibold}
+            style={{ textDecoration: 'underline', textUnderlineOffset: '4px' }}
+          >
+            CS@kraftonxsoc.com
+          </Text>
         </ContactContainer>
       </ContentWrapper>
       <CopyrightContainer>
