@@ -79,11 +79,13 @@ export const Header: React.FC = () => {
   const pathname = usePathname();
   const router = useRouter();
   const [isDesktop, setIsDesktop] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
   const [isFoldableNavMenuOpen, setIsFoldableNavMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       setIsDesktop(window.innerWidth > parseInt(theme.breakpoints.tabletDesktop));
+      setIsMobile(window.innerWidth <= parseInt(theme.breakpoints.mobileTablet));
     };
 
     handleResize();
@@ -100,8 +102,8 @@ export const Header: React.FC = () => {
             <Image
               src="/images/common/krafton-soc-logo.svg"
               alt="KRAFTON X SoC"
-              width={192}
-              height={19}
+              width={isMobile ? 140 : 192}
+              height={isMobile ? 13 : 19}
               objectFit="contain"
               style={{ cursor: 'pointer' }}
               onClick={() => router.push('/')}
@@ -109,8 +111,8 @@ export const Header: React.FC = () => {
             <Image
               src="/images/common/soc-logo.svg"
               alt="KAIST School of Computing"
-              width={127}
-              height={21}
+              width={isMobile ? 98 : 127}
+              height={isMobile ? 15 : 21}
               objectFit="contain"
               style={{ cursor: 'pointer' }}
               onClick={() => window.open('https://cs.kaist.ac.kr/', '_blank')}
