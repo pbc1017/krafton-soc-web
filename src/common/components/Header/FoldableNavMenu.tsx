@@ -3,9 +3,13 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 import React from "react";
 
-import { navItems } from "@krafton-soc/common/components/Header/navItems";
+import {
+  getNavItems,
+  NavItem,
+} from "@krafton-soc/common/components/Header/navItems";
 import Text from "@krafton-soc/common/components/Text";
 import { theme } from "@krafton-soc/common/styles/theme";
 
@@ -46,6 +50,9 @@ const FoldableNavMenu: React.FC<{
   setIsFoldableNavMenuOpen: (isOpen: boolean) => void;
 }> = ({ setIsFoldableNavMenuOpen }) => {
   const router = useRouter();
+  const t = useTranslations("Header.nav");
+
+  const navItems = getNavItems(t);
 
   return (
     <NavMenuWrapper>
@@ -57,7 +64,7 @@ const FoldableNavMenu: React.FC<{
         onClick={() => setIsFoldableNavMenuOpen(false)}
         style={{ cursor: "pointer", alignSelf: "flex-end", marginTop: "24px" }}
       />
-      {navItems.map(item => (
+      {navItems.map((item: NavItem) => (
         <NavText key={item.href} onClick={() => router.push(item.href)}>
           {item.label}
         </NavText>

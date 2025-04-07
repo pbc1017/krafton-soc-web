@@ -1,12 +1,17 @@
+import type { useTranslations } from "next-intl";
+
 interface NavItem {
   label: string;
   href: string;
 }
 
-const navItems: NavItem[] = [
-  { label: '건립의 여정', href: '/building-journey' },
-  { label: '디자인 이야기', href: '/design-story' },
-  { label: '선한 영향력의 길', href: '/positive-impact' },
+const getNavItems = (
+  t: ReturnType<typeof useTranslations<"Header.nav">>,
+): NavItem[] => [
+  { label: t("buildingJourney"), href: "/building-journey" },
+  { label: t("designStory"), href: "/design-story" },
+  { label: t("positiveImpact"), href: "/positive-impact" },
 ];
 
-export { navItems };
+export { getNavItems }; // 함수를 export
+export type { NavItem }; // 타입도 export (필요시)
