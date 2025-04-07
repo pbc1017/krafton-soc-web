@@ -7,6 +7,7 @@ alwaysApply: true
 
 ## 기본 원칙
 - 타입스크립트(.ts, .tsx)만 사용
+- pnpm을 패키지 매니저로 사용
 - 최소한의 HTML 요소 사용 (div, span 등은 공통 컴포넌트로 대체)
 - Emotion을 활용한 CSS-in-JS 스타일링 사용
 - 래퍼 패턴 활용
@@ -73,7 +74,3 @@ alwaysApply: true
 - CSS-in-JS (Emotion)만 사용
 - 하드코딩된 값 대신 theme 객체 참조
 - 반응형 디자인 적용 (theme.breakpoints 활용)
-
-## 반응형 디자인 브레이크포인트
-- mobile: 393px
-- tablet: 744px 
