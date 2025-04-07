@@ -38,12 +38,22 @@ const LanguageText = styled(Text)`
   }
 `;
 
-const LanguageSwitcher: React.FC = () => {
+interface LanguageSwitcherProps {
+  onLocaleChange?: () => void;
+}
+
+const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
+  onLocaleChange,
+}) => {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
   const currentLocale = useLocale() as Locale;
 
   const changeLocale = (nextLocale: Locale) => {
+    if (onLocaleChange) {
+      onLocaleChange();
+    }
+
     if (currentLocale === nextLocale || isPending) {
       return;
     }

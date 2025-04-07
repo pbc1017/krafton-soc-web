@@ -70,7 +70,9 @@ const FoldableNavMenu: React.FC<{
         </NavText>
       ))}
       <LanguageSwitcherWrapper>
-        <LanguageSwitcher />
+        <LanguageSwitcher
+          onLocaleChange={() => setIsFoldableNavMenuOpen(false)}
+        />
       </LanguageSwitcherWrapper>
     </NavMenuWrapper>
   );
