@@ -8,6 +8,7 @@ export const colors = {
   white: '#FFFFFF',
   headerBorder: '#F5F5F5',
   dividerLine: 'rgba(0, 0, 0, 0.20)',
+  hoverGray: 'rgba(0, 0, 0, 0.40)',
 } as const;
 
 export type ColorType = keyof typeof colors;
