@@ -1,0 +1,30 @@
+{
+  "Footer": {
+    "contactEmailPrompt": "수정이 필요하거나 개선할 내용이 있으면 언제든지 아래 이메일로 문의해주시면 감사하겠습니다.",
+    "contactEmailPromptMobile": "수정이 필요하거나 개선할 내용이 있으면\n언제든지 아래 이메일로 문의해주시면 감사하겠습니다."
+  },
+  "Header": {
+    "nav": {
+      "buildingJourney": "건립의 여정",
+      "designStory": "디자인 이야기",
+      "positiveImpact": "선한 영향력의 길"
+    }
+  },
+  "Main": {
+    "section1": {
+      "title": "선한 영향력,\n그 과정의 기억",
+      "description": "결국 저의 기부 중 일부는 전산학부 증축에 쓸 것이라는 결심까지 이어졌습니다.",
+      "speaker": "KAIST 전산학부 동문\n장병규 KRAFTON 의장 말씀 중"
+    },
+    "section2": {
+      "title": "KRAFTON X SoC,\n디자인 이야기",
+      "description": "이 공간의 시작은 '연결'이라는 하나의 단어였지만, 그 과정 속에서 우리는 '연결이 어떻게 경험될 수 있는가'에 대한 더 깊은 고민을 담았습니다."
+    },
+    "section3": {
+      "title": "선한 영향력이\n선순환하는 공간",
+      "description": "이곳은 우리 후배들에게 감사함을 나누는 Pay It Forward, 연결의 공간입니다.",
+      "descriptionDesktop": "이곳은 우리 후배들에게 감사함을 나누는 Pay It Forward, 연결의\n공간입니다.",
+      "speaker": "KAIST 전산학부 동문\n류석영 학부장 말씀 중"
+    }
+  }
+}
