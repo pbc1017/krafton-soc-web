@@ -1,10 +1,11 @@
 "use client";
 
 import styled from "@emotion/styled";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import React, { useEffect, useState } from "react";
 
 import { theme } from "@krafton-soc/common/styles/theme";
+import { Locale } from "@krafton-soc/i18n/config";
 
 import MainBanner from "../components/MainBanner";
 import StoryCard from "../components/StoryCard";
@@ -45,6 +46,7 @@ const StoryCardContainer = styled.div`
 
 const Main: React.FC = () => {
   const t = useTranslations("Main");
+  const locale = useLocale() as Locale;
   const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
@@ -70,6 +72,7 @@ const Main: React.FC = () => {
           imageSrc="/images/Main/positive-impact.jpg"
           speaker={t("section1.speaker")}
           buttonLink="/building-journey"
+          locale={locale}
         />
         <StoryCard
           title={t("section2.title")}
@@ -77,6 +80,7 @@ const Main: React.FC = () => {
           imageSrc="/images/Main/design-story.jpg"
           isReversed={true}
           buttonLink="/design-story"
+          locale={locale}
         />
         <StoryCard
           title={t("section3.title")}
@@ -88,6 +92,7 @@ const Main: React.FC = () => {
           imageSrc="/images/Main/building-journey.jpg"
           speaker={t("section3.speaker")}
           buttonLink="/positive-impact"
+          locale={locale}
         />
       </StoryCardContainer>
     </MainContainer>

@@ -1,30 +1,30 @@
 {
   "Footer": {
-    "contactEmailPrompt": "If you have any suggestions for correction or improvement, please feel free to contact us at the email below.",
-    "contactEmailPromptMobile": "If you have any suggestions for correction or improvement,\nplease feel free to contact us at the email below."
+    "contactEmailPrompt": "If you have any suggestions for edits or improvements, please feel free to contact us at the email address below.",
+    "contactEmailPromptMobile": "If you have any suggestions for edits or improvements,\nplease feel free to contact us at the email address below."
   },
   "Header": {
     "nav": {
       "buildingJourney": "Building Journey",
       "designStory": "Design Story",
-      "positiveImpact": "Path of Positive Impact"
+      "positiveImpact": "Positive Impact"
     }
   },
   "Main": {
     "section1": {
-      "title": "Positive Impact,\nThe Memory of the Process",
-      "description": "Eventually, part of my donation led to the decision to use it for the expansion of the School of Computing.",
-      "speaker": "From the remarks of Byung-Gyu Chang, Chairman of KRAFTON, KAIST School of Computing Alumnus"
+      "title": "Positive Influence,\nLasting Memories",
+      "description": "Ultimately, I decided to support the expansion of the School of Computing through my donation.",
+      "speaker": "ByungGyu Chang,\nKRAFTON Chairman and \nKAIST School of Computing \nAlumnus, said"
     },
     "section2": {
       "title": "KRAFTON X SoC,\nDesign Story",
-      "description": "The beginning of this space was the single word 'connection', but in the process, we embedded deeper thoughts on 'how connection can be experienced'."
+      "description": "This space began with a single word: connection. Along the way, we reflected deeply on how that connection can truly be experienced."
     },
     "section3": {
-      "title": "A Space Where\nPositive Impact Circulates",
-      "description": "This is a Pay It Forward space, a space of connection where we share our gratitude with our juniors.",
-      "descriptionDesktop": "This is a Pay It Forward space, a space of connection\nwhere we share our gratitude with our juniors.",
-      "speaker": "From the remarks of Suk-Young Ryu, Head of School, KAIST School of Computing Alumnus"
+      "title": "Where Positive\nInfluence Comes\nFull Circle",
+      "description": "This is a space of connection where we pay it forward with gratitude to our juniors.",
+      "descriptionDesktop": "This is a space of connection where we pay it forward with gratitude to our juniors.",
+      "speaker": "Sukyoung Ryu, \nHead of the KAIST School of \nComputing, said"
     }
   }
 }
