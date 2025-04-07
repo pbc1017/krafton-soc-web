@@ -17,6 +17,11 @@ const MainContainer = styled.main`
     gap: 151px;
     margin-bottom: 252px;
   }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    gap: 75px;
+    margin-bottom: 180px;
+  }
 `;
 
 const StoryCardContainer = styled.div`
@@ -28,6 +33,10 @@ const StoryCardContainer = styled.div`
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     gap: 210px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    gap: 160px;
   }
 `;
 

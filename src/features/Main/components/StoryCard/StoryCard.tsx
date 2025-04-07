@@ -29,6 +29,11 @@ const StoryCardContainer = styled.div<{ isReversed: boolean }>`
     padding: 0 24px;
     margin: 0 auto;
   }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    padding: 0 20px;
+    margin: 0 0;
+  }
 `;
 
 const FlexContainer = styled.div<{ isReversed: boolean }>`
@@ -41,6 +46,10 @@ const FlexContainer = styled.div<{ isReversed: boolean }>`
     flex-direction: column;
     align-items: flex-start;
     width: fit-content;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 100%;
   }
 `;
 
@@ -55,6 +64,12 @@ const ContentContainer = styled.div<{ isReversed: boolean }>`
     margin-top: 80px;
     height: 457px;
   }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 333px;
+    margin-top: 60px;
+    height: 328px;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -66,6 +81,12 @@ const ImageContainer = styled.div`
     width: 577px;
     height: 468px;
   }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 100%;
+    aspect-ratio: 740 / 600;
+    height: 100%;
+  }
 `;
 
 const ButtonContainer = styled.div`
@@ -75,6 +96,11 @@ const ButtonContainer = styled.div`
 const TitleContainer = styled.div`
   font-size: 52px;
   line-height: 67.6px;
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 38px;
+    line-height: 50px;
+  }
 `;
 
 const DescriptionContainer = styled.div`
@@ -87,6 +113,12 @@ const DescriptionContainer = styled.div`
     font-size: 28px;
     line-height: 42px;
   }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 32px;
+  }
 `;
 
 const SpeakerContainer = styled.div`
@@ -98,6 +130,12 @@ const SpeakerContainer = styled.div`
     margin-top: 60px;
     font-size: 18px;
     line-height: 28px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 16.8px;
   }
 `;
 
