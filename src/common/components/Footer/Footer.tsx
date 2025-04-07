@@ -73,9 +73,6 @@ const CopyrightContainer = styled.div`
 const ContactContainer = styled.div`
   margin-top: 25px;
   margin-right: 109px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
   font-size: 12px;
   line-height: 18px;
 
@@ -150,17 +147,10 @@ export const Footer: React.FC = () => {
         {!isDesktop && <DividerLine />}
         <ContactContainer>
           <Text fw={theme.fonts.weights.semibold}>
-            보다 나은 서비스를 제공하기 위해 여러분의 의견을 소중히 생각합니다.
+            수정이 필요하거나 개선할 내용이 있으면 {isMobile ? '\n' : ' '}언제든지 아래 이메일로
+            문의해주시면 감사하겠습니다.
             <br />
-            사이트 이용 중 불편한 점이나 수정이 필요한 내용이 있다면
-            {isMobile ? '\n' : ' '}
-            언제든지 아래 이메일로 문의해주세요.
-          </Text>
-          <Text
-            fw={theme.fonts.weights.semibold}
-            style={{ textDecoration: 'underline', textUnderlineOffset: '4px' }}
-          >
-            CS@kraftonxsoc.com
+            kraftonxsoc@kaist.ac.kr
           </Text>
         </ContactContainer>
       </ContentWrapper>
