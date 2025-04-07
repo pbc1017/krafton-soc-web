@@ -1,10 +1,11 @@
-'use client';
+"use client";
 
-import React, { useEffect, useState } from 'react';
-import styled from '@emotion/styled';
-import Image from 'next/image';
-import Text from '@krafton-soc/common/components/Text';
-import { theme } from '@krafton-soc/common/styles/theme';
+import styled from "@emotion/styled";
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
+
+import Text from "@krafton-soc/common/components/Text";
+import { theme } from "@krafton-soc/common/styles/theme";
 
 const BannerContainer = styled.section`
   margin-top: 72px;
@@ -118,30 +119,37 @@ const MainBanner: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= parseInt(theme.breakpoints.mobileTablet));
+      setIsMobile(
+        window.innerWidth <= parseInt(theme.breakpoints.mobileTablet),
+      );
     };
 
     handleResize();
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
     <BannerContainer>
       <BannerImage>
-        <ScaledImage src="/images/Main/banner.jpg" alt="Krafton SoC Banner" fill priority />
+        <ScaledImage
+          src="/images/Main/banner.jpg"
+          alt="Krafton SoC Banner"
+          fill
+          priority
+        />
       </BannerImage>
       <ContentContainer>
         <TitleContainer>
           <Text color={theme.colors.white} fw={theme.fonts.weights.medium}>
             Positive Influence,
-            {isMobile ? '\n' : ' '}
+            {isMobile ? "\n" : " "}
             Memories of the Journey
           </Text>
         </TitleContainer>
         <ArrowContainer>
-          <div style={{ position: 'relative', height: '100%' }}>
+          <div style={{ position: "relative", height: "100%" }}>
             <ArrowLine />
             <ArrowHead />
           </div>

@@ -1,14 +1,16 @@
-'use client';
+"use client";
 
-import React, { useEffect, useState } from 'react';
-import styled from '@emotion/styled';
-import { usePathname, useRouter } from 'next/navigation';
-import Image from 'next/image';
-import { theme } from '@krafton-soc/common/styles/theme';
-import Text from '@krafton-soc/common/components/Text';
-import LanguageSwitcher from './LanguageSwitcher';
-import FoldableNavMenu from './FoldableNavMenu';
-import { navItems } from '@krafton-soc/common/components/Header/navItems';
+import styled from "@emotion/styled";
+import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
+import React, { useEffect, useState } from "react";
+
+import { navItems } from "@krafton-soc/common/components/Header/navItems";
+import Text from "@krafton-soc/common/components/Text";
+import { theme } from "@krafton-soc/common/styles/theme";
+
+import FoldableNavMenu from "./FoldableNavMenu";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const HeaderContainer = styled.header`
   background-color: ${theme.colors.white};
@@ -60,11 +62,11 @@ const NavLink = styled.div<{ isActive: boolean }>`
   }
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -2px;
     left: 0;
-    width: ${({ isActive }) => (isActive ? '100%' : '0')};
+    width: ${({ isActive }) => (isActive ? "100%" : "0")};
     height: 2px;
     background-color: ${theme.colors.black};
     transition: width 0.3s ease;
@@ -84,14 +86,18 @@ export const Header: React.FC = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth > parseInt(theme.breakpoints.tabletDesktop));
-      setIsMobile(window.innerWidth <= parseInt(theme.breakpoints.mobileTablet));
+      setIsDesktop(
+        window.innerWidth > parseInt(theme.breakpoints.tabletDesktop),
+      );
+      setIsMobile(
+        window.innerWidth <= parseInt(theme.breakpoints.mobileTablet),
+      );
     };
 
     handleResize();
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -105,8 +111,8 @@ export const Header: React.FC = () => {
               width={isMobile ? 140 : 192}
               height={isMobile ? 13 : 19}
               objectFit="contain"
-              style={{ cursor: 'pointer' }}
-              onClick={() => router.push('/')}
+              style={{ cursor: "pointer" }}
+              onClick={() => router.push("/")}
             />
             <Image
               src="/images/common/soc-logo.svg"
@@ -114,14 +120,14 @@ export const Header: React.FC = () => {
               width={isMobile ? 98 : 127}
               height={isMobile ? 15 : 21}
               objectFit="contain"
-              style={{ cursor: 'pointer' }}
-              onClick={() => window.open('https://cs.kaist.ac.kr/', '_blank')}
+              style={{ cursor: "pointer" }}
+              onClick={() => window.open("https://cs.kaist.ac.kr/", "_blank")}
             />
           </LogoContainer>
 
           {isDesktop ? (
             <NavContainer>
-              {navItems.map((item) => (
+              {navItems.map(item => (
                 <NavLink
                   key={item.href}
                   isActive={pathname === item.href}
@@ -131,7 +137,7 @@ export const Header: React.FC = () => {
                     color={theme.colors.black}
                     fs="16px"
                     lh="24px"
-                    style={{ letterSpacing: '0.5px' }}
+                    style={{ letterSpacing: "0.5px" }}
                   >
                     {item.label}
                   </Text>
@@ -145,7 +151,7 @@ export const Header: React.FC = () => {
               alt="Hamburger"
               width={24}
               height={24}
-              style={{ cursor: 'pointer', marginRight: '24px' }}
+              style={{ cursor: "pointer", marginRight: "24px" }}
               onClick={() => setIsFoldableNavMenuOpen(!isFoldableNavMenuOpen)}
             />
           )}

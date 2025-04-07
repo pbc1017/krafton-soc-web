@@ -1,10 +1,12 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import Image from 'next/image';
-import Text from '@krafton-soc/common/components/Text';
-import { theme } from '@krafton-soc/common/styles/theme';
-import { useRouter } from 'next/navigation';
-import ExploreButton from './ExploreButton';
+import styled from "@emotion/styled";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import React from "react";
+
+import Text from "@krafton-soc/common/components/Text";
+import { theme } from "@krafton-soc/common/styles/theme";
+
+import ExploreButton from "./ExploreButton";
 
 export interface StoryCardProps {
   title: string;
@@ -25,7 +27,8 @@ const StoryCardContainer = styled.div<{ isReversed: boolean }>`
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     max-width: 900px;
-    align-items: ${({ isReversed }) => (isReversed ? 'flex-end' : 'flex-start')};
+    align-items: ${({ isReversed }) =>
+      isReversed ? "flex-end" : "flex-start"};
     padding: 0 24px;
     margin: 0 auto;
   }
@@ -40,7 +43,7 @@ const FlexContainer = styled.div<{ isReversed: boolean }>`
   width: 100%;
   justify-content: space-between;
   display: flex;
-  flex-direction: ${({ isReversed }) => (isReversed ? 'row-reverse' : 'row')};
+  flex-direction: ${({ isReversed }) => (isReversed ? "row-reverse" : "row")};
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     flex-direction: column;
@@ -56,7 +59,7 @@ const FlexContainer = styled.div<{ isReversed: boolean }>`
 const ContentContainer = styled.div<{ isReversed: boolean }>`
   display: flex;
   flex-direction: column;
-  width: ${({ isReversed }) => (isReversed ? '435px' : '412px')};
+  width: ${({ isReversed }) => (isReversed ? "435px" : "412px")};
   height: 600px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
@@ -144,7 +147,7 @@ const StoryCard: React.FC<StoryCardProps> = ({
   description,
   imageSrc,
   speaker,
-  buttonLink = '/',
+  buttonLink = "/",
   isReversed = false,
 }) => {
   const router = useRouter();

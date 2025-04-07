@@ -1,7 +1,8 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import Text from '@krafton-soc/common/components/Text';
-import { theme } from '@krafton-soc/common/styles/theme';
+import styled from "@emotion/styled";
+import React from "react";
+
+import Text from "@krafton-soc/common/components/Text";
+import { theme } from "@krafton-soc/common/styles/theme";
 
 interface ExploreButtonProps {
   onClick: () => void;
