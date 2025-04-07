@@ -1,7 +1,5 @@
-export default function Home() {
-  return (
-    <div className="page">
-      <h1>Hello world</h1>
-    </div>
-  );
+import Main from '@krafton-soc/features/Main';
+
+export default function HomePage() {
+  return <Main />;
 }
