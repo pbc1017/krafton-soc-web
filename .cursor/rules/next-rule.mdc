@@ -74,3 +74,4 @@ alwaysApply: true
 - CSS-in-JS (Emotion)만 사용
 - 하드코딩된 값 대신 theme 객체 참조
 - 반응형 디자인 적용 (theme.breakpoints 활용)
+
