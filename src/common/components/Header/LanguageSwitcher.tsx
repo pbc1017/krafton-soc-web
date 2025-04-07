@@ -1,10 +1,14 @@
 "use client";
 
 import styled from "@emotion/styled";
-import React from "react";
+import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
+import React, { useTransition } from "react";
 
 import Text from "@krafton-soc/common/components/Text";
 import { theme } from "@krafton-soc/common/styles/theme";
+import { setUserLocale } from "@krafton-soc/i18n/actions";
+import { Locale } from "@krafton-soc/i18n/config";
 
 const LanguageToggle = styled.div`
   display: flex;
@@ -24,6 +28,8 @@ const LanguageText = styled(Text)`
   font-size: 12px;
   line-height: 24px;
   cursor: pointer;
+  min-width: 20px;
+  text-align: center;
 
   font-weight: ${theme.fonts.weights.light};
 
@@ -33,11 +39,26 @@ const LanguageText = styled(Text)`
 `;
 
 const LanguageSwitcher: React.FC = () => {
+  const [isPending, startTransition] = useTransition();
+  const router = useRouter();
+  const currentLocale = useLocale() as Locale;
+
+  const changeLocale = (nextLocale: Locale) => {
+    if (currentLocale === nextLocale || isPending) {
+      return;
+    }
+
+    startTransition(async () => {
+      await setUserLocale(nextLocale);
+      router.refresh();
+    });
+  };
+
   return (
     <LanguageToggle>
-      <LanguageText>KR</LanguageText>
+      <LanguageText onClick={() => changeLocale("ko")}>KR</LanguageText>
       <LanguageDivider />
-      <LanguageText>EN</LanguageText>
+      <LanguageText onClick={() => changeLocale("en")}>EN</LanguageText>
     </LanguageToggle>
   );
 };
