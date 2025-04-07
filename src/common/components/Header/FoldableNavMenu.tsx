@@ -1,13 +1,15 @@
-'use client';
+"use client";
 
-import React from 'react';
-import styled from '@emotion/styled';
-import { theme } from '@krafton-soc/common/styles/theme';
-import LanguageSwitcher from './LanguageSwitcher';
-import Image from 'next/image';
-import Text from '@krafton-soc/common/components/Text';
-import { useRouter } from 'next/navigation';
-import { navItems } from '@krafton-soc/common/components/Header/navItems';
+import styled from "@emotion/styled";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import React from "react";
+
+import { navItems } from "@krafton-soc/common/components/Header/navItems";
+import Text from "@krafton-soc/common/components/Text";
+import { theme } from "@krafton-soc/common/styles/theme";
+
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const NavMenuWrapper = styled.div`
   width: 100%;
@@ -40,9 +42,9 @@ const LanguageSwitcherWrapper = styled.div`
   margin-bottom: 28px;
 `;
 
-const FoldableNavMenu: React.FC<{ setIsFoldableNavMenuOpen: (isOpen: boolean) => void }> = ({
-  setIsFoldableNavMenuOpen,
-}) => {
+const FoldableNavMenu: React.FC<{
+  setIsFoldableNavMenuOpen: (isOpen: boolean) => void;
+}> = ({ setIsFoldableNavMenuOpen }) => {
   const router = useRouter();
 
   return (
@@ -53,9 +55,9 @@ const FoldableNavMenu: React.FC<{ setIsFoldableNavMenuOpen: (isOpen: boolean) =>
         width={24}
         height={24}
         onClick={() => setIsFoldableNavMenuOpen(false)}
-        style={{ cursor: 'pointer', alignSelf: 'flex-end', marginTop: '24px' }}
+        style={{ cursor: "pointer", alignSelf: "flex-end", marginTop: "24px" }}
       />
-      {navItems.map((item) => (
+      {navItems.map(item => (
         <NavText key={item.href} onClick={() => router.push(item.href)}>
           {item.label}
         </NavText>

@@ -1,10 +1,12 @@
-'use client';
+"use client";
 
-import React, { useEffect, useState } from 'react';
-import styled from '@emotion/styled';
-import MainBanner from '../components/MainBanner';
-import StoryCard from '../components/StoryCard';
-import { theme } from '@krafton-soc/common/styles/theme';
+import styled from "@emotion/styled";
+import React, { useEffect, useState } from "react";
+
+import { theme } from "@krafton-soc/common/styles/theme";
+
+import MainBanner from "../components/MainBanner";
+import StoryCard from "../components/StoryCard";
 
 const MainContainer = styled.main`
   display: flex;
@@ -45,12 +47,14 @@ const Main: React.FC = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth > parseInt(theme.breakpoints.tabletDesktop));
+      setIsDesktop(
+        window.innerWidth > parseInt(theme.breakpoints.tabletDesktop),
+      );
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -74,7 +78,7 @@ const Main: React.FC = () => {
         />
         <StoryCard
           title="선한 영향력이\n선순환하는 공간"
-          description={`이곳은 우리 후배들에게 감사함을 나누는 Pay It Forward, 연결의 ${isDesktop ? '\n' : ''} 공간입니다.`}
+          description={`이곳은 우리 후배들에게 감사함을 나누는 Pay It Forward, 연결의 ${isDesktop ? "\n" : ""} 공간입니다.`}
           imageSrc="/images/Main/building-journey.jpg"
           speaker="KAIST 전산학부 동문\n류석영 학부장 말씀 중"
           buttonLink="/positive-impact"

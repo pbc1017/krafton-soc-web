@@ -1,9 +1,10 @@
-'use client';
+"use client";
 
-import React from 'react';
-import styled from '@emotion/styled';
-import { theme } from '@krafton-soc/common/styles/theme';
-import Text from '@krafton-soc/common/components/Text';
+import styled from "@emotion/styled";
+import React from "react";
+
+import Text from "@krafton-soc/common/components/Text";
+import { theme } from "@krafton-soc/common/styles/theme";
 
 const LanguageToggle = styled.div`
   display: flex;
