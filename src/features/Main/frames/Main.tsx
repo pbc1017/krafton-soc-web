@@ -1,9 +1,11 @@
 "use client";
 
 import styled from "@emotion/styled";
+import { useLocale, useTranslations } from "next-intl";
 import React, { useEffect, useState } from "react";
 
 import { theme } from "@krafton-soc/common/styles/theme";
+import { Locale } from "@krafton-soc/i18n/config";
 
 import MainBanner from "../components/MainBanner";
 import StoryCard from "../components/StoryCard";
@@ -43,6 +45,8 @@ const StoryCardContainer = styled.div`
 `;
 
 const Main: React.FC = () => {
+  const t = useTranslations("Main");
+  const locale = useLocale() as Locale;
   const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
@@ -63,25 +67,32 @@ const Main: React.FC = () => {
       <MainBanner />
       <StoryCardContainer>
         <StoryCard
-          title="선한 영향력,\n그 과정의 기억"
-          description="결국 저의 기부 중 일부는 전산학부 증축에 쓸 것이라는 결심까지 이어졌습니다."
+          title={t("section1.title")}
+          description={t("section1.description")}
           imageSrc="/images/Main/positive-impact.jpg"
-          speaker="KAIST 전산학부 동문\n장병규 KRAFTON 의장 말씀 중"
+          speaker={t("section1.speaker")}
           buttonLink="/building-journey"
+          locale={locale}
         />
         <StoryCard
-          title="KRAFTON X SoC,\n디자인 이야기"
-          description="이 공간의 시작은 '연결'이라는 하나의 단어였지만, 그 과정 속에서 우리는 '연결이 어떻게 경험될 수 있는가'에 대한 더 깊은 고민을 담았습니다."
+          title={t("section2.title")}
+          description={t("section2.description")}
           imageSrc="/images/Main/design-story.jpg"
           isReversed={true}
           buttonLink="/design-story"
+          locale={locale}
         />
         <StoryCard
-          title="선한 영향력이\n선순환하는 공간"
-          description={`이곳은 우리 후배들에게 감사함을 나누는 Pay It Forward, 연결의 ${isDesktop ? "\n" : ""} 공간입니다.`}
+          title={t("section3.title")}
+          description={
+            isDesktop
+              ? t("section3.descriptionDesktop")
+              : t("section3.description")
+          }
           imageSrc="/images/Main/building-journey.jpg"
-          speaker="KAIST 전산학부 동문\n류석영 학부장 말씀 중"
+          speaker={t("section3.speaker")}
           buttonLink="/positive-impact"
+          locale={locale}
         />
       </StoryCardContainer>
     </MainContainer>

@@ -5,6 +5,7 @@ import React from "react";
 
 import Text from "@krafton-soc/common/components/Text";
 import { theme } from "@krafton-soc/common/styles/theme";
+import { Locale } from "@krafton-soc/i18n/config";
 
 import ExploreButton from "./ExploreButton";
 
@@ -15,6 +16,7 @@ export interface StoryCardProps {
   speaker?: string;
   buttonLink?: string;
   isReversed?: boolean;
+  locale: Locale;
 }
 
 const StoryCardContainer = styled.div<{ isReversed: boolean }>`
@@ -56,7 +58,7 @@ const FlexContainer = styled.div<{ isReversed: boolean }>`
   }
 `;
 
-const ContentContainer = styled.div<{ isReversed: boolean }>`
+const ContentContainer = styled.div<{ isReversed: boolean; locale: Locale }>`
   display: flex;
   flex-direction: column;
   width: ${({ isReversed }) => (isReversed ? "435px" : "412px")};
@@ -65,13 +67,13 @@ const ContentContainer = styled.div<{ isReversed: boolean }>`
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     width: 457px;
     margin-top: 80px;
-    height: 457px;
+    height: ${({ locale }) => (locale === "ko" ? "457px" : "527px")};
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     width: 333px;
     margin-top: 60px;
-    height: 328px;
+    height: ${({ locale }) => (locale === "ko" ? "328px" : "388px")};
   }
 `;
 
@@ -96,9 +98,9 @@ const ButtonContainer = styled.div`
   margin-top: auto;
 `;
 
-const TitleContainer = styled.div`
-  font-size: 52px;
-  line-height: 67.6px;
+const TitleContainer = styled.div<{ locale: Locale }>`
+  font-size: ${({ locale }) => (locale === "ko" ? "52px" : "47px")};
+  line-height: ${({ locale }) => (locale === "ko" ? "67.6px" : "54.6px")};
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     font-size: 38px;
@@ -124,19 +126,19 @@ const DescriptionContainer = styled.div`
   }
 `;
 
-const SpeakerContainer = styled.div`
+const SpeakerContainer = styled.div<{ locale: Locale }>`
   font-size: 18px;
   line-height: 28px;
   margin-top: 48px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    margin-top: 60px;
+    margin-top: ${({ locale }) => (locale === "ko" ? "60px" : "30px")};
     font-size: 18px;
     line-height: 28px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    margin-top: 30px;
+    margin-top: ${({ locale }) => (locale === "ko" ? "30px" : "15px")};
     font-size: 12px;
     line-height: 16.8px;
   }
@@ -149,8 +151,10 @@ const StoryCard: React.FC<StoryCardProps> = ({
   speaker,
   buttonLink = "/",
   isReversed = false,
+  locale,
 }) => {
   const router = useRouter();
+
   return (
     <StoryCardContainer isReversed={isReversed}>
       <FlexContainer isReversed={isReversed}>
@@ -158,8 +162,8 @@ const StoryCard: React.FC<StoryCardProps> = ({
           <Image src={imageSrc} alt={title} fill objectFit="cover" priority />
         </ImageContainer>
 
-        <ContentContainer isReversed={isReversed}>
-          <TitleContainer>
+        <ContentContainer isReversed={isReversed} locale={locale}>
+          <TitleContainer locale={locale}>
             <Text fw={theme.fonts.weights.semibold}>{title}</Text>
           </TitleContainer>
 
@@ -168,7 +172,7 @@ const StoryCard: React.FC<StoryCardProps> = ({
           </DescriptionContainer>
 
           {speaker && (
-            <SpeakerContainer>
+            <SpeakerContainer locale={locale}>
               <Text fw={theme.fonts.weights.medium}>{speaker}</Text>
             </SpeakerContainer>
           )}

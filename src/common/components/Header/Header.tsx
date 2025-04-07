@@ -3,9 +3,10 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 import React, { useEffect, useState } from "react";
 
-import { navItems } from "@krafton-soc/common/components/Header/navItems";
+import { getNavItems } from "@krafton-soc/common/components/Header/navItems";
 import Text from "@krafton-soc/common/components/Text";
 import { theme } from "@krafton-soc/common/styles/theme";
 
@@ -78,11 +79,14 @@ const NavLink = styled.div<{ isActive: boolean }>`
 `;
 
 export const Header: React.FC = () => {
+  const t = useTranslations("Header.nav");
   const pathname = usePathname();
   const router = useRouter();
   const [isDesktop, setIsDesktop] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
   const [isFoldableNavMenuOpen, setIsFoldableNavMenuOpen] = useState(false);
+
+  const navItems = getNavItems(t);
 
   useEffect(() => {
     const handleResize = () => {

@@ -2,6 +2,7 @@
 
 import styled from "@emotion/styled";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import React, { useEffect, useState } from "react";
 
 import Text from "@krafton-soc/common/components/Text";
@@ -102,6 +103,7 @@ const DividerLine = styled.div`
 `;
 
 export const Footer: React.FC = () => {
+  const t = useTranslations("Footer");
   const [isDesktop, setIsDesktop] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -152,8 +154,7 @@ export const Footer: React.FC = () => {
         {!isDesktop && <DividerLine />}
         <ContactContainer>
           <Text fw={theme.fonts.weights.semibold}>
-            수정이 필요하거나 개선할 내용이 있으면 {isMobile ? "\n" : " "}
-            언제든지 아래 이메일로 문의해주시면 감사하겠습니다.
+            {isMobile ? t("contactEmailPromptMobile") : t("contactEmailPrompt")}
             <br />
             kraftonxsoc@kaist.ac.kr
           </Text>

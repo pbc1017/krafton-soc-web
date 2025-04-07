@@ -1,0 +1,30 @@
+{
+  "Footer": {
+    "contactEmailPrompt": "If you have any suggestions for edits or improvements, please feel free to contact us at the email address below.",
+    "contactEmailPromptMobile": "If you have any suggestions for edits or improvements,\nplease feel free to contact us at the email address below."
+  },
+  "Header": {
+    "nav": {
+      "buildingJourney": "Building Journey",
+      "designStory": "Design Story",
+      "positiveImpact": "Positive Impact"
+    }
+  },
+  "Main": {
+    "section1": {
+      "title": "Positive Influence,\nLasting Memories",
+      "description": "Ultimately, I decided to support the expansion of the School of Computing through my donation.",
+      "speaker": "ByungGyu Chang,\nKRAFTON Chairman and \nKAIST School of Computing \nAlumnus, said"
+    },
+    "section2": {
+      "title": "KRAFTON X SoC,\nDesign Story",
+      "description": "This space began with a single word: connection. Along the way, we reflected deeply on how that connection can truly be experienced."
+    },
+    "section3": {
+      "title": "Where Positive\nInfluence Comes\nFull Circle",
+      "description": "This is a space of connection where we pay it forward with gratitude to our juniors.",
+      "descriptionDesktop": "This is a space of connection where we pay it forward with gratitude to our juniors.",
+      "speaker": "Sukyoung Ryu, \nHead of the KAIST School of \nComputing, said"
+    }
+  }
+}
