@@ -23,7 +23,11 @@ const LanguageDivider = styled.div`
   background-color: ${theme.colors.black};
 `;
 
-const LanguageText = styled(Text)`
+interface LanguageTextProps {
+  isActive: boolean;
+}
+
+const LanguageText = styled(Text)<LanguageTextProps>`
   color: ${theme.colors.black};
   font-size: 12px;
   line-height: 24px;
@@ -31,7 +35,8 @@ const LanguageText = styled(Text)`
   min-width: 20px;
   text-align: center;
 
-  font-weight: ${theme.fonts.weights.light};
+  font-weight: ${({ isActive }) =>
+    isActive ? theme.fonts.weights.bold : theme.fonts.weights.light};
 
   &:hover {
     font-weight: ${theme.fonts.weights.bold};
@@ -66,9 +71,19 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
 
   return (
     <LanguageToggle>
-      <LanguageText onClick={() => changeLocale("ko")}>KR</LanguageText>
+      <LanguageText
+        isActive={currentLocale === "ko"}
+        onClick={() => changeLocale("ko")}
+      >
+        KR
+      </LanguageText>
       <LanguageDivider />
-      <LanguageText onClick={() => changeLocale("en")}>EN</LanguageText>
+      <LanguageText
+        isActive={currentLocale === "en"}
+        onClick={() => changeLocale("en")}
+      >
+        EN
+      </LanguageText>
     </LanguageToggle>
   );
 };

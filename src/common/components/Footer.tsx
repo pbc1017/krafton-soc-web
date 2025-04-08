@@ -73,7 +73,7 @@ const CopyrightContainer = styled.div`
 `;
 
 const ContactContainer = styled.div`
-  margin-top: 25px;
+  margin-top: 23px;
   margin-right: 109px;
   font-size: 12px;
   line-height: 18px;
