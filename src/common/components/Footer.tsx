@@ -3,10 +3,12 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import Text from "@krafton-soc/common/components/Text";
 import { theme } from "@krafton-soc/common/styles/theme";
+
+import { useResponsiveStore } from "../stores/useResponsiveStore";
 
 const FooterContainer = styled.footer`
   height: 135px;
@@ -104,23 +106,10 @@ const DividerLine = styled.div`
 
 export const Footer: React.FC = () => {
   const t = useTranslations("Footer");
-  const [isDesktop, setIsDesktop] = useState(true);
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(
-        window.innerWidth > parseInt(theme.breakpoints.tabletDesktop),
-      );
-      setIsMobile(
-        window.innerWidth <= parseInt(theme.breakpoints.mobileTablet),
-      );
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const { isDesktop, isMobile } = useResponsiveStore(state => ({
+    isDesktop: state.isDesktop,
+    isMobile: state.isMobile,
+  }));
 
   return (
     <FooterContainer>
