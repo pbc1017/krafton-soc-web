@@ -117,9 +117,7 @@ const ScaledImage = styled(Image)`
 `;
 
 const MainBanner: React.FC = () => {
-  const { isMobile } = useResponsiveStore(state => ({
-    isMobile: state.isMobile,
-  }));
+  const isMobile = useResponsiveStore(state => state.isMobile);
 
   return (
     <BannerContainer>

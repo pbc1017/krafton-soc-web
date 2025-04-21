@@ -83,10 +83,8 @@ export const Header: React.FC = () => {
   const t = useTranslations("Header.nav");
   const pathname = usePathname();
   const router = useRouter();
-  const { isDesktop, isMobile } = useResponsiveStore(state => ({
-    isDesktop: state.isDesktop,
-    isMobile: state.isMobile,
-  }));
+  const isDesktop = useResponsiveStore(state => state.isDesktop);
+  const isMobile = useResponsiveStore(state => state.isMobile);
   const [isFoldableNavMenuOpen, setIsFoldableNavMenuOpen] = useState(false);
 
   const navItems = getNavItems(t);

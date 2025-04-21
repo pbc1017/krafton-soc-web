@@ -106,10 +106,8 @@ const DividerLine = styled.div`
 
 export const Footer: React.FC = () => {
   const t = useTranslations("Footer");
-  const { isDesktop, isMobile } = useResponsiveStore(state => ({
-    isDesktop: state.isDesktop,
-    isMobile: state.isMobile,
-  }));
+  const isDesktop = useResponsiveStore(state => state.isDesktop);
+  const isMobile = useResponsiveStore(state => state.isMobile);
 
   return (
     <FooterContainer>
