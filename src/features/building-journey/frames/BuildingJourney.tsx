@@ -1,9 +1,22 @@
 "use client";
 
-import Text from "@krafton-soc/common/components/Text";
+import styled from "@emotion/styled";
 
+import BuildingJourneyBanner from "../components/BuildingJourneyBanner";
+
+const BuildingJourneyContainer = styled.main`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 240px;
+  margin-bottom: 300px;
+`;
 const BuildingJourney: React.FC = () => {
-  return <Text>Building Journey</Text>;
+  return (
+    <BuildingJourneyContainer>
+      <BuildingJourneyBanner />
+    </BuildingJourneyContainer>
+  );
 };
 
 export default BuildingJourney;
