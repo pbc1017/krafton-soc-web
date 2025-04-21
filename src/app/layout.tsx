@@ -5,6 +5,7 @@ import { getMessages } from "next-intl/server";
 
 import Footer from "@krafton-soc/common/components/Footer";
 import Header from "@krafton-soc/common/components/Header";
+import { StoreInitializer } from "@krafton-soc/common/components/StoreInitializer";
 import StyledComponentsRegistry from "@krafton-soc/common/libs/RootStyleRegistry";
 import { fontVariables } from "@krafton-soc/common/styles/fonts";
 import { getUserLocale } from "@krafton-soc/i18n/actions"; // 경로 별칭 사용
@@ -27,6 +28,7 @@ export default async function RootLayout({
     <StyledComponentsRegistry>
       <html lang={locale} className={fontVariables}>
         <body>
+          <StoreInitializer />
           <NextIntlClientProvider locale={locale} messages={messages}>
             <Header />
             {children}
