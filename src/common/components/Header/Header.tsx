@@ -4,10 +4,11 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { getNavItems } from "@krafton-soc/common/components/Header/navItems";
 import Text from "@krafton-soc/common/components/Text";
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 import FoldableNavMenu from "./FoldableNavMenu";
@@ -82,27 +83,11 @@ export const Header: React.FC = () => {
   const t = useTranslations("Header.nav");
   const pathname = usePathname();
   const router = useRouter();
-  const [isDesktop, setIsDesktop] = useState(true);
-  const [isMobile, setIsMobile] = useState(false);
+  const isDesktop = useResponsiveStore(state => state.isDesktop);
+  const isMobile = useResponsiveStore(state => state.isMobile);
   const [isFoldableNavMenuOpen, setIsFoldableNavMenuOpen] = useState(false);
 
   const navItems = getNavItems(t);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(
-        window.innerWidth > parseInt(theme.breakpoints.tabletDesktop),
-      );
-      setIsMobile(
-        window.innerWidth <= parseInt(theme.breakpoints.mobileTablet),
-      );
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <>
