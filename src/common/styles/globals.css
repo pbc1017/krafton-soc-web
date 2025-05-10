@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+:root {
+  background: #ffffff;
+  min-height: 100vh;
+  --font-pretendard:
+    'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Default Font Styles */
+* {
+  color: #333333;
+  font-weight: 400;
+  font-family: var(--font-pretendard);
+}
+
+p,
+body {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  overflow-x: hidden;
+  min-width: 320px;
+}

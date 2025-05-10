@@ -7,38 +7,53 @@ alwaysApply: true
 
 ## 기본 원칙
 - 타입스크립트(.ts, .tsx)만 사용
+- pnpm을 패키지 매니저로 사용
 - 최소한의 HTML 요소 사용 (div, span 등은 공통 컴포넌트로 대체)
+- Emotion을 활용한 CSS-in-JS 스타일링 사용
 - 래퍼 패턴 활용
 - 관심사 분리와 재사용성 최대화
+- Next.js App Router 패턴 적용 ("use client" 지시문 사용)
 
 ## 폴더 구조
-- **app/**: Next.js 라우팅 담당, 오직 frames 컴포넌트 임포트만 수행
-  - `page.tsx`: 해당 경로의 프레임 컴포넌트만 임포트하여 표시
-  - `{EndpointName}/page.tsx`: 해당 경로의 프레임 컴포넌트만 임포트하여 표시
+- **src/**: 모든 코드는 src 디렉토리 내에 위치
+  
+  - **app/**: Next.js App Router 담당, features 컴포넌트 임포트만 수행
+    - `page.tsx`: 해당 경로의 feature 컴포넌트만 임포트하여 표시
+    - `layout.tsx`: 전역 레이아웃 설정
 
-- **frames/**: 페이지 단위 컴포넌트 (각 페이지별 하위 폴더 구성)
-  - `{PageName}/`: 페이지명으로 폴더 구성 (예: Main, About 등)
-    - `{PageName}.tsx`: 해당 페이지 조립 담당 메인 컴포넌트
-    - 페이지 전용 컴포넌트들 (파스칼 케이스 네이밍)
+  - **features/**: 페이지 단위 기능 모음 (각 페이지별 하위 폴더 구성)
+    - `{PageName}/`: 페이지명으로 폴더 구성 (예: Main, DesignStory 등)
+      - `index.ts`: frames/{PageName}.tsx export (기본적으로 default export 방식 사용)
+      - `frames/`: 페이지 프레임 컴포넌트
+        - `{PageName}.tsx`: 해당 페이지 조립 담당 메인 프레임 컴포넌트
+      - `components/`: 페이지 전용 컴포넌트들
+        - `{ComponentName}.tsx`: 페이지 전용 컴포넌트 (예: MainBanner, StorySection 등)
 
-- **components/**: 공용 컴포넌트
-  - `common/`: 범용 UI 컴포넌트 (Image, Text, Button 등)
-  - `{ComponentName}/`: 복잡한 공용 컴포넌트는 자체 폴더로 구성 (Header, Footer 등)
+  - **common/**: 공통 기능 및 컴포넌트
+    - `components/`: 공용 컴포넌트
+      - `Text.tsx`, 등의 기본 UI 컴포넌트
+      - `{ComponentName}/`: 복잡한 공용 컴포넌트는 자체 폴더로 구성 (Header, Footer 등)
+        - `{ComponentName}.tsx`: 복잡한 컴포넌트의 조립 담당 컴포넌트
+        - `index.ts`: {ComponentName}.tsx export (기본적으로 default export 방식 사용)
+    - `styles/`: 전역 스타일 정의
+      - `fonts.ts`: 폰트 정의
+      - `colors.ts`: 색상 정의
+      - `theme.ts`: 테마 설정
+      - `globals.css`: 전역 스타일
+    - `libs/`: 외부 라이브러리 래퍼
+    - `utils/`: 유틸리티 함수 및 상수
 
-- **styles/**: 전역 스타일 정의
-  - `fonts.ts`: 폰트 정의
-  - `colors.ts`: 색상 정의
-  - `theme.ts`: 테마 설정
-  - `globals.css`: 전역 스타일
+- **public/**: 정적 파일 리소스
+  - `images/`: 이미지 리소스 (기능별 폴더 구성)
+    - `{PageName}/`: 특정 페이지에서만 사용되는 이미지
+    - `common/`: 공통으로 사용되는 이미지 (로고 등)
+  - `icons/`: 아이콘 리소스
+    - `{IconName}.svg`: 특정 아이콘을 정의 (IconName은 파스칼케이스 사용)
 
-- **public/images/**: 이미지 리소스 (기능별 폴더 구성)
-  - `{PageName}/`: 특정 페이지에서만 사용되는 이미지
-  - `{ComponentName}/`: 특정 컴포넌트에서 사용되는 이미지
-  - `common/`: 공통으로 사용되는 이미지
-
-- **types/**: 타입 정의
-- **utils/**: 유틸리티 함수 및 상수
-- **hooks/**: 커스텀 훅
+## Import 경로 규칙
+- 절대 경로 사용: `@krafton-soc/` 접두사 활용
+  - 예: `import { Text } from '@krafton-soc/common/components/Text'`
+  - 예: `import Main from '@krafton-soc/features/Main'`
 
 ## 네이밍 규칙
 - 컴포넌트: 파스칼 케이스 (MainFrame, StorySection)
@@ -49,6 +64,14 @@ alwaysApply: true
 ## 컴포넌트 설계 원칙
 - 단일 책임 원칙 준수
 - 최소한의 HTML 요소 사용 (공통 컴포넌트 활용)
+- Emotion styled component 활용
 - 래퍼 컴포넌트 패턴 활용
 - props 타입 명시적 정의
 - 컴포넌트 재사용성 극대화
+- 클라이언트 컴포넌트는 "use client" 지시문 사용
+
+## 스타일링 규칙
+- CSS-in-JS (Emotion)만 사용
+- 하드코딩된 값 대신 theme 객체 참조
+- 반응형 디자인 적용 (theme.breakpoints 활용)
+
