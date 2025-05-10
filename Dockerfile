@@ -1,6 +1,6 @@
 # Stage 1: Build
-# Node.js 18 Alpine 이미지를 기반으로 빌드 환경을 구성합니다.
-FROM node:18-alpine AS builder
+# Node.js 20 Alpine 이미지를 기반으로 빌드 환경을 구성합니다.
+FROM node:20-alpine AS builder
 WORKDIR /app
 
 # pnpm을 전역으로 설치합니다.
@@ -18,8 +18,8 @@ COPY . .
 RUN pnpm build
 
 # Stage 2: Production
-# 경량화된 Node.js 18 Alpine 이미지를 기반으로 프로덕션 환경을 구성합니다.
-FROM node:18-alpine AS runner
+# 경량화된 Node.js 20 Alpine 이미지를 기반으로 프로덕션 환경을 구성합니다.
+FROM node:20-alpine AS runner
 WORKDIR /app
 
 # 빌드 단계에서 생성된 .next 폴더 (빌드 결과물)를 복사합니다.
