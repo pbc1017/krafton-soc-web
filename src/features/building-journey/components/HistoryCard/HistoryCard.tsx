@@ -42,6 +42,8 @@ const HistoryCardTextContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
 
+  overflow: visible;
+
   width: 653px;
 
   font-family: ${theme.fonts.families.pretendard};
@@ -139,7 +141,7 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
           <HistoryCardDescriptionContainer>
             <HistoryCardTitleContainer>
               <HistoryCardTitle>
-                <Text>{title}</Text>
+                <Text whiteSpace="nowrap">{title}</Text>
               </HistoryCardTitle>
               {link && <HistoryCardLinkButton link={link} />}
               {modalImage && (
