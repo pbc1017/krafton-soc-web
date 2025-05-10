@@ -11,7 +11,7 @@ import { theme } from "@krafton-soc/common/styles/theme";
 const BannerContainer = styled.section`
   width: 100%;
   margin-top: 72px;
-  height: 837px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,6 +47,9 @@ const BannerImage = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
+
+  display: flex;
+  align-items: center;
   object-fit: cover;
   overflow: hidden;
   z-index: 0;
@@ -57,21 +60,25 @@ const ChairmanMessageContainer = styled.div`
   font-style: normal;
   font-weight: ${theme.fonts.weights.regular};
   font-family: "Pretendard";
-  gap: 40px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
   line-height: 32px;
 `;
 
 const MessageContainer = styled.div`
   font-size: 18px;
 
-  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+  width: 642px;
+  height: 256px;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     font-size: 14px;
   }
 `;
 
 const IntroductionContainer = styled.div`
-  gap: 60px;
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     gap: 8px;
   }
@@ -79,7 +86,6 @@ const IntroductionContainer = styled.div`
 
 const NameContainer = styled.div`
   line-height: 32px;
-  gap: 0px;
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     line-height: 17px;
   }

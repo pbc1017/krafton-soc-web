@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
 
+import PartHeader from "../PartHeader";
+
 const PreparingPartContainer = styled.section`
   display: flex;
   flex-direction: column;
@@ -7,16 +9,15 @@ const PreparingPartContainer = styled.section`
   gap: 24px;
 `;
 
-const PartHeader = styled.h2`
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 32px;
-`;
-
 const PreparingPart = () => {
   return (
     <PreparingPartContainer>
-      <PartHeader></PartHeader>
+      <PartHeader
+        part={1}
+        title="증축 준비"
+        startTerm="2020.08"
+        endTerm="2021.05"
+      />
     </PreparingPartContainer>
   );
 };
