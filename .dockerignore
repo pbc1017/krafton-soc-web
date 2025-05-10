@@ -1,0 +1,62 @@
+# Git
+.git
+.gitignore
+
+# Node modules
+node_modules
+
+# Next.js build output
+.next
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Environment variables
+.env*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local development
+.vscode/
+*.local
+
+# Test files (if not needed in image)
+# __tests__/
+# *.test.js
+# *.spec.js
+
+# Optional: Next.js static export output (if not used for something else)
+# out/
+
+# OS-specific
+.DS_Store
+Thumbs.db 
+
+# Editor/IDE specific
+.history/
+.cursor/
+
+# Husky
+.husky/
+
+# Config files
+.prettierrc.json
+commitlint.config.cjs
+eslint.config.mjs
+.commitlintrc.json
+
+# TypeScript build cache
+tsconfig.tsbuildinfo
+
+# Documentation (optional, usually excluded)
+README.md
+
+# Next.js specific types (not needed in prod image)
+next-env.d.ts 
