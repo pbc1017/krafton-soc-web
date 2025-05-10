@@ -68,6 +68,6 @@ jobs:
 
           curl -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
-            -H "X-Webhook-Secret: \"$WEBHOOK_SECRET\"" \
+            -H "X-Webhook-Secret: $WEBHOOK_SECRET" \
             -d "$JSON_PAYLOAD" \
             --fail-with-body
