@@ -4,12 +4,21 @@ import styled from "@emotion/styled";
 import React from "react";
 
 import Text from "@krafton-soc/common/components/Text";
+import { theme } from "@krafton-soc/common/styles/theme";
 
 const YearHeaderContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+
+  font-family: ${theme.fonts.families.pretendard};
+  font-size: 30px;
+  font-weight: ${theme.fonts.weights.bold};
+  line-height: 32px;
+  color: ${theme.colors.black};
+  background-color: red;
 `;
 
 interface YearHeaderProps {
