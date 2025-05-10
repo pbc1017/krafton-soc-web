@@ -4,8 +4,6 @@
 name: Krafton SoC Web PR CI
 
 on:
-  push:
-    branches: ["main", "dev"]
   pull_request:
     branches: ["main", "dev"]
 
