@@ -4,8 +4,6 @@
 name: Krafton SoC Web PR CI
 
 on:
-  push:
-    branches: ["main", "dev"]
   pull_request:
     branches: ["main", "dev"]
 
@@ -17,7 +15,6 @@ jobs:
     strategy:
       matrix:
         node-version: ["20.x"] # Use Node.js 20 LTS
-        pnpm-version: ["9"] # Use the latest pnpm v9
 
     steps:
       - name: Checkout code
@@ -25,8 +22,6 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: ${{ matrix.pnpm-version }}
 
       - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4

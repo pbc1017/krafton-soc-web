@@ -2,9 +2,10 @@
 
 import styled from "@emotion/styled";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import Text from "@krafton-soc/common/components/Text";
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const BannerContainer = styled.section`
@@ -116,19 +117,7 @@ const ScaledImage = styled(Image)`
 `;
 
 const MainBanner: React.FC = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(
-        window.innerWidth <= parseInt(theme.breakpoints.mobileTablet),
-      );
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const isMobile = useResponsiveStore(state => state.isMobile);
 
   return (
     <BannerContainer>
