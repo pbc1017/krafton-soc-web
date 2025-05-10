@@ -215,7 +215,7 @@ const partContents = [
             },
             title: "전산학부 구성원 대상 증축기금 조성",
             modalImage: {
-              src: "/images/BuildingJourney/modal/20210626.png",
+              src: "/images/BuildingJourney/modal/210626.jpg",
               alt: "전산학부 구성원 대상 증축기금 조성 사진",
             },
           },
@@ -321,7 +321,7 @@ const partContents = [
             detail:
               "03.16 증축 공사 설계 공모 심사 안내 및 사전 자료 교부\n03.17 공모 설계안 선정을 위한 논의\n03.18 증축 공사 설계 공모 심사 개최\n03.27 증축 공사 착공 KAIST 내 공식 공지\n04.06-10 증축 기공식, 사회환원 의미로 미 개최 \n04.26 증축 공사 설계 공모 심사 완료 및 선정",
             modalImage: {
-              src: "/images/BuildingJourney/modal/20220316_KR.png",
+              src: "/images/BuildingJourney/modal/220316_KR.jpg",
               alt: "전산학부 증축 공사 실행을 위한 설계 공모 개최 및 확정 사진",
             },
           },
@@ -447,7 +447,7 @@ const partContents = [
             detail:
               "09.10~10.30 기부자 대상, 건물명 & 기부자 메시지 공모 및 리스트 취합",
             modalImage: {
-              src: "/images/BuildingJourney/modal/20240910_KR.png",
+              src: "/images/BuildingJourney/modal/241100_KR.jpg",
               alt: "기부의 의미 전달을 위한 메시지 & 건물 네이밍 공모 사진",
             },
           },
@@ -469,6 +469,10 @@ const partContents = [
               "11월 기부자 2인 메시지 선정\n11.17 채택된 기부 메시지 & 건물명 공지\n12.03 KRAFTON SoC 건물명 및 추가 기부, KRAFTON-KAIST 간  부가 합의서 작성 진행",
             image: {
               src: "/images/BuildingJourney/part4/20241100.png",
+              alt: "KRAFTON X SoC 건물명 확정 및 공표 사진",
+            },
+            modalImage: {
+              src: "/images/BuildingJourney/modal/241100_KR.jpg",
               alt: "KRAFTON X SoC 건물명 확정 및 공표 사진",
             },
           },
