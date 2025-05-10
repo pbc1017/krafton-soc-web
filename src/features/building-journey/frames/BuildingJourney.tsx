@@ -215,7 +215,7 @@ const partContents = [
             },
             title: "전산학부 구성원 대상 증축기금 조성",
             modalImage: {
-              src: "/images/BuildingJourney/modal/210626.jpg",
+              src: "/images/BuildingJourney/modal/210626_KR.jpg",
               alt: "전산학부 구성원 대상 증축기금 조성 사진",
             },
           },
@@ -447,7 +447,7 @@ const partContents = [
             detail:
               "09.10~10.30 기부자 대상, 건물명 & 기부자 메시지 공모 및 리스트 취합",
             modalImage: {
-              src: "/images/BuildingJourney/modal/241100_KR.jpg",
+              src: "/images/BuildingJourney/modal/240910_KR.jpg",
               alt: "기부의 의미 전달을 위한 메시지 & 건물 네이밍 공모 사진",
             },
           },

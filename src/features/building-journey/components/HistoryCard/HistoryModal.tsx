@@ -1,7 +1,7 @@
 "use client";
 import styled from "@emotion/styled";
 import Image from "next/image";
-import React from "react";
+import React, { useCallback, useEffect } from "react";
 import ReactDOM from "react-dom";
 
 import { theme } from "@krafton-soc/common/styles/theme";
@@ -21,14 +21,17 @@ const ModalBackground = styled.div`
 `;
 
 // 모달 콘텐츠 스타일
-const ModalContent = styled.div`
+const ModalContent = styled.div<{ scrollable: boolean }>`
   position: relative;
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
+
   max-width: 90%;
   max-height: 90%;
-  overflow: scroll;
+  overflow: ${({ scrollable }) => (scrollable ? "scroll" : "hidden")};
+  object-fit: contain;
+  background-color: ${({ scrollable }) =>
+    scrollable
+      ? "white"
+      : "none"}; // bug: 왜 백그라운드 컬러가 보이는지 모르겠음 패딩 제거 등을 해봐도 먹지 않아서 그냥 색상을 설정
 `;
 
 // 닫기 버튼 스타일
@@ -62,13 +65,37 @@ const CloseButton = styled.button`
 interface HistoryModalProps {
   onClose: () => void;
   children: React.ReactNode;
+  scrollable?: boolean;
 }
 
 // 모달 컴포넌트
-const HistoryModal = ({ onClose, children }: HistoryModalProps) => {
+const HistoryModal = ({
+  onClose,
+  children,
+  scrollable = true,
+}: HistoryModalProps) => {
+  const handleEscKey = useCallback(
+    (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        onClose();
+      }
+    },
+    [onClose],
+  );
+
+  // ESC 키 이벤트 리스너 등록
+  useEffect(() => {
+    document.addEventListener("keydown", handleEscKey);
+
+    // 컴포넌트 언마운트 시 이벤트 리스너 제거
+    return () => {
+      document.removeEventListener("keydown", handleEscKey);
+    };
+  }, [handleEscKey]);
+
   return ReactDOM.createPortal(
     <ModalBackground onClick={onClose}>
-      <ModalContent onClick={e => e.stopPropagation()}>
+      <ModalContent onClick={e => e.stopPropagation()} scrollable={scrollable}>
         {children}
         <CloseButton onClick={onClose}>
           <Image
