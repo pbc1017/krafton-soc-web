@@ -18,7 +18,7 @@ const YearHeaderContainer = styled.div`
   font-weight: ${theme.fonts.weights.bold};
   line-height: 32px;
   color: ${theme.colors.black};
-  background-color: red;
+  // background-color: red;
 `;
 
 interface YearHeaderProps {

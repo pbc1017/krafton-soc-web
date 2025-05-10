@@ -18,13 +18,14 @@ const HistoryCardContainer = styled.div`
   width: 100%;
 
   gap: 20px;
-  background-color: darkcyan;
+  // background-color: darkcyan;
 `;
 
 const HistoryCardBorderLine = styled.div`
   width: 100%;
   height: 1px;
   background-color: ${theme.colors.historyCardLine};
+  transform: scaleY(1); // 선을 균일하게 만들기 위해 추가
 `;
 
 const HistoryCardContentContainer = styled.div`
@@ -33,7 +34,7 @@ const HistoryCardContentContainer = styled.div`
   justify-content: space-between;
 
   width: 100%;
-  background-color: aqua;
+  // background-color: aqua;
 `;
 
 const HistoryCardTextContainer = styled.div`
@@ -46,7 +47,7 @@ const HistoryCardTextContainer = styled.div`
   width: 653px;
 
   font-family: ${theme.fonts.families.pretendard};
-  background-color: red;
+  // background-color: red;
 `;
 
 const HistoryCardDuration = styled.div`
@@ -56,7 +57,7 @@ const HistoryCardDuration = styled.div`
   font-weight: ${theme.fonts.weights.regular};
   line-height: 25px;
   color: ${theme.colors.black};
-  background-color: blue;
+  // background-color: blue;
 `;
 
 const HistoryCardDescriptionContainer = styled.div`
@@ -67,7 +68,7 @@ const HistoryCardDescriptionContainer = styled.div`
   width: 562px;
 
   overflow: visible;
-  background-color: orange;
+  // background-color: orange;
 `;
 
 const HistoryCardTitleContainer = styled.div`
@@ -79,7 +80,7 @@ const HistoryCardTitleContainer = styled.div`
 
   gap: 5px;
   overflow: visible;
-  background-color: purple;
+  // background-color: purple;
 `;
 
 const HistoryCardTitle = styled.div`
@@ -88,7 +89,7 @@ const HistoryCardTitle = styled.div`
   font-weight: ${theme.fonts.weights.bold};
   line-height: 25px;
   overflow: visible;
-  background-color: pink;
+  // background-color: pink;
 `;
 
 const HistoryCardDetail = styled.div`
@@ -96,7 +97,7 @@ const HistoryCardDetail = styled.div`
   font-size: 15px;
   font-weight: ${theme.fonts.weights.regular};
   line-height: 25px;
-  background-color: brown;
+  // background-color: brown;
 `;
 
 export interface HistoryCardProps {

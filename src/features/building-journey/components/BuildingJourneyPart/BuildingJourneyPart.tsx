@@ -13,7 +13,7 @@ const PartContainer = styled.section`
   gap: 166px;
 
   width: 1067px;
-  background-color: darkkhaki;
+  // background-color: darkkhaki;
 `;
 
 const PartContentContainer = styled.div`
@@ -24,7 +24,7 @@ const PartContentContainer = styled.div`
 
   width: 100%;
 
-  background-color: saddlebrown;
+  // background-color: saddlebrown;
 `;
 
 const YearContainer = styled.div`
@@ -33,7 +33,7 @@ const YearContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  background-color: darkblue;
+  // background-color: darkblue;
 `;
 
 const HistoryCardContainer = styled.div`
@@ -42,7 +42,7 @@ const HistoryCardContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
-  background-color: magenta;
+  // background-color: magenta;
 `;
 
 interface PartProps {

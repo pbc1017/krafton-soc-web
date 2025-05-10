@@ -11,7 +11,7 @@ const BuildingJourneyContainer = styled.main`
   align-items: center;
   gap: 333px;
   margin-bottom: 74px;
-  background-color: pink;
+  // background-color: pink;
 `;
 
 const PartContainer = styled.div`
@@ -20,7 +20,7 @@ const PartContainer = styled.div`
   align-items: center;
   gap: 170px;
   padding-bottom: 57px;
-  background-color: orange;
+  //background-color: orange;
 `;
 
 const partContents = [

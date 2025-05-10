@@ -13,7 +13,7 @@ const PartHeaderContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 44px;
-  background-color: darksalmon;
+  // background-color: darksalmon;
 `;
 
 const PartNumber = styled.div`
