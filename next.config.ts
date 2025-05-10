@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
   compiler: {
     emotion: true,
   },
+  output: "standalone",
 };
 
 export default withNextIntl(nextConfig);
