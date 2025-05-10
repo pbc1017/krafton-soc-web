@@ -50,7 +50,7 @@ jobs:
         env:
           WEBHOOK_URL: ${{ secrets.REMOTE_WEBHOOK_URL }}
           WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET_TOKEN }}
-          IMAGE_NAME: ${{ needs.build-and-push-docker-image.outputs.image_name }}
+          IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPONAME }}
           IMAGE_TAG: ${{ needs.build-and-push-docker-image.outputs.image_tag_latest }}
         run: |
           echo "Sending webhook to: $WEBHOOK_URL"
@@ -68,6 +68,6 @@ jobs:
 
           curl -X POST "$WEBHOOK_URL" \
             -H "Content-Type: application/json" \
-            -H "X-Webhook-Secret: "$WEBHOOK_SECRET"" \
+            -H "X-Webhook-Secret: \"$WEBHOOK_SECRET\"" \
             -d "$JSON_PAYLOAD" \
             --fail-with-body
