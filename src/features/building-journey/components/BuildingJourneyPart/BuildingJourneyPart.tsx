@@ -5,7 +5,7 @@ import { HistoryCardProps } from "../HistoryCard/HistoryCard";
 import PartHeader from "./PartHeader";
 import YearHeader from "./YearHeader";
 
-const PreparingPartContainer = styled.section`
+const PartContainer = styled.section`
   display: flex;
 
   flex-direction: column;
@@ -13,7 +13,7 @@ const PreparingPartContainer = styled.section`
   gap: 166px;
 
   width: 1067px;
-  background-color: black;
+  background-color: darkkhaki;
 `;
 
 const PartContentContainer = styled.div`
@@ -64,7 +64,7 @@ const BuildingJourneyPart = ({
   detailsByYear,
 }: PartProps) => {
   return (
-    <PreparingPartContainer>
+    <PartContainer>
       <PartHeader
         part={part}
         title={title}
@@ -83,7 +83,7 @@ const BuildingJourneyPart = ({
           </YearContainer>
         ))}
       </PartContentContainer>
-    </PreparingPartContainer>
+    </PartContainer>
   );
 };
 

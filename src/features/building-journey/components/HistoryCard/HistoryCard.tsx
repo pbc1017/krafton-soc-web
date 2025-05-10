@@ -1,7 +1,6 @@
 "use client";
 
 import styled from "@emotion/styled";
-import Image from "next/image";
 import React from "react";
 
 import Text from "@krafton-soc/common/components/Text";
@@ -114,8 +113,6 @@ export interface HistoryCardProps {
   modalImage?: {
     src: string;
     alt: string;
-    width: number;
-    height: number;
   };
   link?: string;
 }
@@ -145,14 +142,10 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
               </HistoryCardTitle>
               {link && <HistoryCardLinkButton link={link} />}
               {modalImage && (
-                <HistoryCardModalButton>
-                  <Image
-                    src={modalImage.src}
-                    alt={modalImage.alt}
-                    width={modalImage.width}
-                    height={modalImage.height}
-                  />
-                </HistoryCardModalButton>
+                <HistoryCardModalButton
+                  src={modalImage.src}
+                  alt={modalImage.alt}
+                />
               )}
             </HistoryCardTitleContainer>
             {detail && (
