@@ -12,7 +12,7 @@ const DesignStoryConceptFinalContainer = styled.section`
   align-items: center;
   justify-content: center;
   gap: 90px;
-  background-color: pink;
+  //background-color: pink;
 `;
 
 const DesignStoryConceptFinalQuoteContainer = styled.div`
@@ -21,7 +21,7 @@ const DesignStoryConceptFinalQuoteContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 27px;
-  background-color: red;
+  //background-color: red;
 `;
 
 const DesignStoryConceptFinalQuoteText = styled.div`
@@ -35,7 +35,7 @@ const DesignStoryConceptFinalQuoteText = styled.div`
   color: ${theme.colors.black};
   line-height: 130%;
   text-align: center;
-  background-color: green;
+  //background-color: green;
 `;
 
 const DesignStoryConceptFinalQuoteAuthor = styled.div`
@@ -50,7 +50,7 @@ const DesignStoryConceptFinalQuoteAuthor = styled.div`
   color: ${theme.colors.black};
   line-height: 180%;
 
-  background-color: blue;
+  //background-color: blue;
 `;
 
 const DesignStoryConceptFinalWish = styled.div`
@@ -65,7 +65,7 @@ const DesignStoryConceptFinalWish = styled.div`
   color: ${theme.colors.black};
   line-height: 180%;
 
-  background-color: magenta;
+  //background-color: magenta;
 `;
 
 const DesignStoryConceptFinal = () => {

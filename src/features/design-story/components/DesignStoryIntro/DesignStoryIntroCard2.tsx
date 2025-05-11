@@ -20,7 +20,7 @@ const ImageContainer = styled.div`
   align-items: flex-end;
   justify-content: center;
   gap: 10px;
-  background-color: pink;
+  //background-color: pink;
 `;
 
 const TextContainer = styled.div`
@@ -30,7 +30,7 @@ const TextContainer = styled.div`
   align-items: flex-start;
   justify-content: center;
   gap: 53px;
-  background-color: blue;
+  //background-color: blue;
 `;
 
 const DesignStoryIntroConnect = () => {

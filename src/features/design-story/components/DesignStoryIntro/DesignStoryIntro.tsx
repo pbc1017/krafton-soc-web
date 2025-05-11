@@ -12,7 +12,7 @@ const DesignStoryIntroContainer = styled.section`
   align-items: center;
   justify-content: center;
   gap: 200px;
-  background-color: rebeccapurple;
+  //background-color: rebeccapurple;
 `;
 
 const DesignStoryIntro = () => {

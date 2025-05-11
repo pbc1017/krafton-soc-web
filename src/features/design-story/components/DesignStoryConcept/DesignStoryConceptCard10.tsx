@@ -12,7 +12,7 @@ const CardContainer = styled.section`
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
-  background-color: green;
+  //background-color: green;
 `;
 
 const CardText = styled.div`
@@ -29,7 +29,7 @@ const CardText = styled.div`
   line-height: 180%;
   color: ${theme.colors.black};
 
-  background-color: blue;
+  //background-color: blue;
 `;
 
 const CardImage = styled.div`
@@ -37,7 +37,7 @@ const CardImage = styled.div`
   height: 597px;
 
   position: relative;
-  background-color: red;
+  //background-color: red;
 `;
 
 const DesignStoryConceptCard10 = () => {

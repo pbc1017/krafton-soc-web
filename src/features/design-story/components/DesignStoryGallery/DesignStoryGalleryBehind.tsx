@@ -10,7 +10,7 @@ const BehindContainer = styled.div`
   align-items: flex-end;
 
   gap: 23px;
-  background-color: yellow;
+  //background-color: yellow;
 `;
 
 const BehindTitle = styled.div`

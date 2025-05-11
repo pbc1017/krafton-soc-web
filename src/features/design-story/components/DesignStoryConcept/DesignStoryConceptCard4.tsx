@@ -12,7 +12,7 @@ const CardContainer = styled.section`
   justify-content: space-between;
   align-items: flex-start;
 
-  background-color: red;
+  //background-color: red;
 `;
 
 const CardImage = styled.div`
@@ -20,7 +20,7 @@ const CardImage = styled.div`
   height: 100%;
   position: relative;
 
-  background-color: pink;
+  //background-color: pink;
 `;
 
 const CardRightContainer = styled.section`
@@ -30,7 +30,7 @@ const CardRightContainer = styled.section`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  background-color: green;
+  //background-color: green;
 `;
 
 const CardRightText = styled.div`
@@ -44,14 +44,14 @@ const CardRightText = styled.div`
   line-height: 180%;
   color: ${theme.colors.black};
 
-  background-color: yellowgreen;
+  //background-color: yellowgreen;
 `;
 
 const CardRightImage = styled.div`
   width: 325px;
   height: 193px;
   position: relative;
-  background-color: orange;
+  //background-color: orange;
 `;
 
 const DesignStoryConceptCard4 = () => {

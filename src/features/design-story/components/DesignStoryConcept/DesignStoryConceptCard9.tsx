@@ -12,7 +12,7 @@ const CardContainer = styled.section`
   justify-content: space-between;
   align-items: flex-start;
 
-  background-color: red;
+  //background-color: red;
 `;
 
 const CardLeftContainer = styled.section`
@@ -25,7 +25,7 @@ const CardLeftContainer = styled.section`
 
   gap: 10px;
 
-  background-color: yellowgreen;
+  //background-color: yellowgreen;
 `;
 
 const CardLeftImage = styled.div`
@@ -33,7 +33,7 @@ const CardLeftImage = styled.div`
   height: 469px;
   position: relative;
 
-  background-color: blue;
+  //background-color: blue;
 `;
 
 const CardLeftImageCaption = styled.div`
@@ -48,7 +48,7 @@ const CardLeftImageCaption = styled.div`
   line-height: 120%;
   color: ${theme.colors.black};
 
-  background-color: orange;
+  //background-color: orange;
 `;
 
 const CardRightContainer = styled.section`
@@ -58,7 +58,7 @@ const CardRightContainer = styled.section`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  background-color: green;
+  //background-color: green;
 `;
 
 const CardRightTextContainer = styled.section`
@@ -67,7 +67,7 @@ const CardRightTextContainer = styled.section`
   flex-direction: column;
   justify-content: space-between;
   gap: 40px;
-  background-color: magenta;
+  //background-color: magenta;
 `;
 
 const CardRightTitle = styled.div`
@@ -81,7 +81,7 @@ const CardRightTitle = styled.div`
   line-height: 120%;
   color: ${theme.colors.black};
 
-  background-color: pink;
+  //background-color: pink;
 `;
 
 const CardRightText = styled.div`
@@ -95,7 +95,7 @@ const CardRightText = styled.div`
   line-height: 180%;
   color: ${theme.colors.black};
 
-  background-color: yellow;
+  //background-color: yellow;
 `;
 
 const CardRightImage = styled.div`
@@ -103,7 +103,7 @@ const CardRightImage = styled.div`
   height: 230px;
   position: relative;
 
-  background-color: blue;
+  //background-color: blue;
 `;
 
 const DesignStoryConceptCard9 = () => {

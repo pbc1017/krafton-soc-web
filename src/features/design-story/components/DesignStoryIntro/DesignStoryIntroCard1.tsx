@@ -12,13 +12,13 @@ const IntroStartContainer = styled.section`
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: pink;
+  //background-color: pink;
 `;
 
 const ImageContainer = styled.section`
   position: relative;
   width: 740px;
-  background-color: orange;
+  //background-color: orange;
   gap: 7px;
 `;
 
@@ -28,7 +28,7 @@ const TextContainer = styled.section`
   flex-direction: column;
   justify-content: flex-start;
   gap: 45px;
-  background-color: yellow;
+  //background-color: yellow;
 `;
 
 const DesignStoryIntroStart = () => {

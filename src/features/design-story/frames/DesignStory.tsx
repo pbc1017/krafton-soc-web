@@ -27,7 +27,7 @@ const IntroContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  //background-color: red;
 `;
 
 const ConceptContainer = styled.div`
@@ -36,7 +36,7 @@ const ConceptContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blue;
+  //background-color: blue;
 `;
 
 const GalleryContainer = styled.div`
@@ -45,7 +45,7 @@ const GalleryContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: green;
+  //background-color: green;
 `;
 
 const DesignStory: React.FC = () => {

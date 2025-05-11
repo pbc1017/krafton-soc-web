@@ -16,7 +16,7 @@ const GalleryContainer = styled.section`
 
   gap: 65px;
 
-  background-color: red;
+  //background-color: red;
 `;
 
 const GalleryTitle = styled.div`
@@ -34,7 +34,7 @@ const GalleryTitle = styled.div`
 
   margin-bottom: 120px;
 
-  background-color: green;
+  //background-color: green;
 `;
 
 const DesignStoryGallery = () => {

@@ -12,14 +12,14 @@ const Card1Container = styled.section`
   flex-direction: column;
   align-items: flex-start;
   gap: 7px;
-  background-color: green;
+  //background-color: green;
 `;
 
 const CardImage = styled.div`
   width: 100%;
   height: 600px;
   position: relative;
-  background-color: red;
+  //background-color: red;
 `;
 
 const CardImageCaption = styled.div`
@@ -28,7 +28,7 @@ const CardImageCaption = styled.div`
   font-weight: ${theme.fonts.weights.regular};
   line-height: 120%;
   color: ${theme.colors.black};
-  background-color: yellowgreen;
+  //background-color: yellowgreen;
 `;
 
 const DesignStoryConceptCard1 = () => {

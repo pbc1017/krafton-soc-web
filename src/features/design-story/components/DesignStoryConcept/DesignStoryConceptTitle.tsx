@@ -14,7 +14,7 @@ const TitleContainer = styled.div`
   justify-content: center;
   gap: 150px;
 
-  background-color: pink;
+  //background-color: pink;
 `;
 
 const SubTitleContainer = styled.div`
@@ -25,7 +25,7 @@ const SubTitleContainer = styled.div`
   align-items: flex-start;
   justify-content: space-between;
 
-  background-color: red;
+  //background-color: red;
 `;
 
 const SubTitleLeft = styled.div`
@@ -34,7 +34,7 @@ const SubTitleLeft = styled.div`
   font-weight: ${theme.fonts.weights.medium};
   color: ${theme.colors.black};
   line-height: 120%;
-  background-color: cyan;
+  //background-color: cyan;
 `;
 
 const SubTitleRight = styled.div`
@@ -44,7 +44,7 @@ const SubTitleRight = styled.div`
   font-weight: ${theme.fonts.weights.regular};
   color: ${theme.colors.black};
   line-height: 180%;
-  background-color: yellow;
+  //background-color: yellow;
 `;
 
 const DesignStoryConceptTitle = () => {
