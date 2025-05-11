@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 
 import PositiveImpactBanner from "../components/PositiveImpactBanner";
 import PositiveImpactDonner from "../components/PositiveImpactDonner";
-import PositiveImpactMessage from "../components/PositiveImpactMessage";
+import PositiveImpactMessage from "../components/PositiveImpactMessage/PositiveImpactMessage";
 
 const PositiveImpactContainer = styled.div`
   width: 100%;
