@@ -19,6 +19,7 @@ const ImageContainer = styled.div`
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  gap: 10px;
   background-color: pink;
 `;
 

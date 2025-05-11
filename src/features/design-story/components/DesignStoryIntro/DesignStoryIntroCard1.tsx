@@ -19,6 +19,7 @@ const ImageContainer = styled.section`
   position: relative;
   width: 740px;
   background-color: orange;
+  gap: 7px;
 `;
 
 const TextContainer = styled.section`
