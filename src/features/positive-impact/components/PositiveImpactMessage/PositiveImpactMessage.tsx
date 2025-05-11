@@ -58,6 +58,7 @@ const MessageCardContent = styled.div`
   font-size: 40px;
   line-height: 56px;
   font-weight: ${theme.fonts.weights.semibold};
+  letter-spacing: 0.47px;
 `;
 
 const MessageCardIntroduction = styled.div`
