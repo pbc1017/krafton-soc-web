@@ -1,6 +1,6 @@
 import DesignStory from "@krafton-soc/features/design-story";
 
-export const DesignStoryPage = () => {
+const DesignStoryPage = () => {
   return <DesignStory />;
 };
 
