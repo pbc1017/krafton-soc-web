@@ -51,16 +51,13 @@ export const useResponsiveStore = create<ResponsiveState>((set, get) => ({
       const deviceType = getDeviceType(width);
 
       set({
+        windowWidth: width,
         deviceType,
         isMobile: deviceType === "mobile",
         isTablet: deviceType === "tablet",
         isDesktop: deviceType === "desktop",
         orientation:
           window.innerWidth > window.innerHeight ? "landscape" : "portrait",
-        cleanup: () => {
-          window.removeEventListener("resize", handleResize);
-          set({ isInitialized: false });
-        },
       });
     };
 
