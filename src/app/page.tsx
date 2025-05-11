@@ -1,6 +1,6 @@
 import Main from "@krafton-soc/features/Main";
 
-export const HomePage = () => {
+const HomePage = () => {
   return <Main />;
 };
 
