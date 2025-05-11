@@ -24,16 +24,28 @@ const BannerContainer = styled.div`
 const IntroContainer = styled.div`
   width: 100%;
   padding-bottom: 365px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
 `;
 
 const ConceptContainer = styled.div`
   width: 100%;
   padding-bottom: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
 `;
 
 const GalleryContainer = styled.div`
   width: 100%;
   padding-bottom: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
 `;
 
 const DesignStory: React.FC = () => {

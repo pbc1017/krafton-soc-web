@@ -58,7 +58,7 @@ const DesignStoryBanner: React.FC = () => {
           fs="32px"
           fw={theme.fonts.weights.medium}
           color={theme.colors.white}
-          lh="110%  "
+          lh="110%"
         >
           KRAFTON X SoC, Design Story
         </Text>
