@@ -23,10 +23,13 @@ const BannerImage = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
 `;
 
 const BannerTextContainer = styled.div`
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   width: 100%;
   height: 93px;
   display: flex;
@@ -36,40 +39,37 @@ const BannerTextContainer = styled.div`
   z-index: 1;
 `;
 
-const BannerTitle = styled.div`
-  font-size: 32px;
-  font-weight: ${theme.fonts.weights.medium};
-  line-height: 110%;
-  color: ${theme.colors.white};
-`;
-
-const BannerSubTitle = styled.div`
-  font-size: 24px;
-  font-weight: ${theme.fonts.weights.regular};
-  line-height: 110%;
-  color: ${theme.colors.white};
-`;
-
 const DesignStoryBanner: React.FC = () => {
   const { windowWidth } = useResponsiveStore();
-
+  console.log(windowWidth);
   return (
     <BannerContainer>
       <BannerImage>
         <Image
           src="/images/DesignStory/design-story.jpg"
           alt="Design Story Banner"
-          width={windowWidth}
-          height={628}
+          fill
+          style={{ objectFit: "cover" }}
+          quality={100}
         />
       </BannerImage>
       <BannerTextContainer>
-        <BannerTitle>
-          <Text>KRAFTON X SoC, Design Story</Text>
-        </BannerTitle>
-        <BannerSubTitle>
-          <Text>KRAFTON X SoC, 디자인 이야기</Text>
-        </BannerSubTitle>
+        <Text
+          fs="32px"
+          fw={theme.fonts.weights.medium}
+          color={theme.colors.white}
+          lh="110%  "
+        >
+          KRAFTON X SoC, Design Story
+        </Text>
+        <Text
+          fs="24px"
+          fw={theme.fonts.weights.regular}
+          color={theme.colors.white}
+          lh="110%"
+        >
+          KRAFTON X SoC, 디자인 이야기
+        </Text>
       </BannerTextContainer>
     </BannerContainer>
   );
