@@ -8,6 +8,7 @@ interface TextProps extends React.HTMLAttributes<HTMLDivElement> {
   fw?: string | number;
   lh?: string;
   ff?: string;
+  whiteSpace?: string;
 }
 
 interface StyledTextProps {
@@ -16,15 +17,16 @@ interface StyledTextProps {
   fw?: string | number;
   lh?: string;
   ff?: string;
+  whiteSpace?: string;
 }
 
 const StyledText = styled.div<StyledTextProps>`
-  white-space: pre-wrap;
   color: ${({ color }) => color || "inherit"};
   font-size: ${({ fs }) => fs || "inherit"};
   font-weight: ${({ fw }) => fw || "inherit"};
   line-height: ${({ lh }) => lh || "inherit"};
   font-family: ${({ ff }) => ff || "inherit"};
+  white-space: ${({ whiteSpace }) => whiteSpace || "pre-wrap"};
 `;
 
 const processNewlines = (text: string): React.ReactNode => {
@@ -38,8 +40,17 @@ const processNewlines = (text: string): React.ReactNode => {
   ));
 };
 
-const Text = ({ children, color, fs, fw, lh, ff, ...props }: TextProps) => {
-  const styledProps: StyledTextProps = { color, fs, fw, lh, ff };
+const Text = ({
+  children,
+  color,
+  fs,
+  fw,
+  lh,
+  ff,
+  whiteSpace,
+  ...props
+}: TextProps) => {
+  const styledProps: StyledTextProps = { color, fs, fw, lh, ff, whiteSpace };
 
   const processedChildren =
     typeof children === "string" ? processNewlines(children) : children;
