@@ -69,7 +69,7 @@ const Main: React.FC = () => {
         <StoryCard
           title={t("section1.title")}
           description={t("section1.description")}
-          imageSrc="/images/Main/positive-impact.jpg"
+          imageSrc="/images/Main/building-journey.jpg"
           speaker={t("section1.speaker")}
           buttonLink="/building-journey"
           locale={locale}
@@ -89,7 +89,7 @@ const Main: React.FC = () => {
               ? t("section3.descriptionDesktop")
               : t("section3.description")
           }
-          imageSrc="/images/Main/building-journey.jpg"
+          imageSrc="/images/Main/positive-impact.jpg"
           speaker={t("section3.speaker")}
           buttonLink="/positive-impact"
           locale={locale}
