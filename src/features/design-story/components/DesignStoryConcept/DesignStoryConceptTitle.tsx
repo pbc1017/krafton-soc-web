@@ -65,7 +65,7 @@ const DesignStoryConceptTitle = () => {
         <SubTitleRight>
           <Text>
             {
-              "이러한 연결에 대한 고민은 KAIST 전산학부와 KRAFTON이 공유하는 ‘Human-Centric’ 이념, 즉 기술의 발전은 결국 \n인간을 향해야 한다는 명확한 가치에서 출발했습니다."
+              "이러한 연결에 대한 고민은 KAIST 전산학부와 KRAFTON이 공유하는 ‘Human-Centric’ 이념, \n즉 기술의 발전은 결국 인간을 향해야 한다는 명확한 가치에서 출발했습니다."
             }
           </Text>
         </SubTitleRight>

@@ -53,7 +53,7 @@ const DesignStoryConceptCard2 = () => {
         />
       </CardImage>
       <CardText>
-        <Text>{`공간 설계는 수많은 고민을 거듭하며 단순한 기능적 배치나 장식적 요소를 넘어, 사용자들이 직관적으로 경험하고 참여할 수 있도록 이루어졌습니다.`}</Text>
+        <Text>{`공간 설계는 수많은 고민을 거듭하며 단순한 기능적 배치나 장식적 요소를 넘어, 사용자들이 직관적으로 경험하고 \n참여할 수 있도록 이루어졌습니다.`}</Text>
       </CardText>
     </CardContainer>
   );
