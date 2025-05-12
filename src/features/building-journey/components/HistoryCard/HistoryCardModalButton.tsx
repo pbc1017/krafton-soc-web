@@ -4,13 +4,16 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import { useState } from "react";
 
+import { theme } from "@krafton-soc/common/styles/theme";
+
 import HistoryModal from "./HistoryModal";
+
 const HistoryCardModalButtonStyle = styled.div`
   width: 22px;
   height: 22px;
   flex-shrink: 0;
   aspect-ratio: 1/1;
-  background-color: white;
+  background-color: ${theme.colors.white};
 `;
 
 interface HistoryCardModalButtonProps {

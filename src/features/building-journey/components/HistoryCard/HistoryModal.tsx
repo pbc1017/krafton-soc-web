@@ -13,7 +13,7 @@ const ModalBackground = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4); // 그레이 배경 색 확인 필요
+  background-color: ${theme.colors.hoverGray};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,10 +39,7 @@ const CloseButton = styled.button`
   position: absolute;
   top: 10px;
   right: 10px;
-  background: transparent;
   border: none;
-  font-size: 20px;
-  color: black;
   cursor: pointer;
   transition: color 0.3s;
   flex-shrink: 0;
