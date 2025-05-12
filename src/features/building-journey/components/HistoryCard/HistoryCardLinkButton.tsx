@@ -21,12 +21,7 @@ const HistoryCardLinkButton = ({ link }: HistoryCardLinkButtonProps) => {
 
   return (
     <HistoryCardLinkButtonImage onClick={handleClick}>
-      <Image
-        src="/images/BuildingJourney/history-card-link.svg"
-        alt="link-button"
-        width={25}
-        height={25}
-      />
+      <Image src="/icons/link.svg" alt="link-button" width={25} height={25} />
     </HistoryCardLinkButtonImage>
   );
 };

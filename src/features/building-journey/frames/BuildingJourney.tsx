@@ -40,7 +40,7 @@ const partContents = [
             title:
               "SW사관학교 정글 업무 협약식에서 전산학부 건물 증축의 필요성 논의",
             image: {
-              src: "/images/BuildingJourney/part1/20200807.png",
+              src: "/images/building-journey/part1/20200807.png",
               alt: "SW사관학교 정글 업무 협약식 사진",
             },
           },
@@ -63,7 +63,7 @@ const partContents = [
             title: "류석영 교수 학부장 취임",
             link: "https://cs.kaist.ac.kr/content?menu=134",
             image: {
-              src: "/images/BuildingJourney/part1/20210300.png",
+              src: "/images/building-journey/part1/20210300.png",
               alt: "류석영 교수 학부장 취임 사진",
             },
           },
@@ -107,7 +107,7 @@ const partContents = [
             detail:
               "06학번 홍성진, 09학번 명노준, 10학번 원대영, 10학번 이준성, 11학번 이창원, \n11학번 최낙현, 12학번 마재의, 14학번 정성윤, 14학번 황태현, 15학번 이준수, \n16학번 황재영",
             image: {
-              src: "/images/BuildingJourney/part2/20210326.png",
+              src: "/images/building-journey/part2/20210326.png",
               alt: "데브시스터즈의 전산학부 동문 11인 기부 사진",
             },
             link: "https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=9697&menu=83",
@@ -118,7 +118,7 @@ const partContents = [
             },
             title: "학부 93학번 김범준 동문 1억 원 기부",
             image: {
-              src: "/images/BuildingJourney/part2/20210408.png",
+              src: "/images/building-journey/part2/20210408.png",
               alt: "학부 93학번 김범준 동문 1억 원 기부 사진",
             },
             link: "https://news.kaist.ac.kr/news/html/news/?mode=V&mng_no=13590",
@@ -133,7 +133,7 @@ const partContents = [
             detail:
               "장병규 20억, 김창한 6억, 조웅희 6억, 신승우 6억, 류성중 5억, 박진석 5억, \n김상균 1억, 심재한 1억원, 이창호 1억, 정우재 1억, 양재헌 3억",
             image: {
-              src: "/images/BuildingJourney/part2/20210430.png",
+              src: "/images/building-journey/part2/20210430.png",
               alt: "장병규, 김창한 등 11인, 기부 입장 표명 및 기부금 약정식 준비 사진",
             },
           },
@@ -143,7 +143,7 @@ const partContents = [
             },
             title: "KAIST 건설팀과 증축 실행 구체화 및 예산 논의",
             image: {
-              src: "/images/BuildingJourney/part2/20210504.png",
+              src: "/images/building-journey/part2/20210504.png",
               alt: "KAIST 건설팀과 증축 실행 구체화 및 예산 논의 사진",
             },
           },
@@ -154,7 +154,7 @@ const partContents = [
             title:
               "학부 95학번 서하연, 96학번 한동훈 동문 부부 2,000만 원 기부",
             image: {
-              src: "/images/BuildingJourney/part2/20210507.png",
+              src: "/images/building-journey/part2/20210507.png",
               alt: "학부 95학번 서하연, 96학번 한동훈 동문 부부 2,000만 원 기부 사진",
             },
           },
@@ -187,7 +187,7 @@ const partContents = [
               "크래프톤 & 전산학부 동문, KAIST 전산학부 기부 약정식 및 인터뷰 개최",
             link: "https://www.kaist.ac.kr/Upload/kr/download/KAISTian_Newsletter_2021Summer_20210827.pdf",
             image: {
-              src: "/images/BuildingJourney/part2/20210604-1.png",
+              src: "/images/building-journey/part2/20210604-1.png",
               alt: "크래프톤 & 전산학부 동문, KAIST 전산학부 기부 약정식 및 인터뷰 개최 사진",
             },
           },
@@ -198,7 +198,7 @@ const partContents = [
             title: "크래프톤, KAIST에 110억 원 기부 공식 발표",
             link: "https://www.mk.co.kr/news/society/9900467",
             image: {
-              src: "/images/BuildingJourney/part2/20210604-2.png",
+              src: "/images/building-journey/part2/20210604-2.png",
               alt: "크래프톤, KAIST에 110억 원 기부 공식 발표 사진",
             },
           },
@@ -215,7 +215,7 @@ const partContents = [
             },
             title: "전산학부 구성원 대상 증축기금 조성",
             modalImage: {
-              src: "/images/BuildingJourney/modal/210626_KR.jpg",
+              src: "/images/building-journey/modal/210626_KR.jpg",
               alt: "전산학부 구성원 대상 증축기금 조성 사진",
             },
           },
@@ -254,7 +254,7 @@ const partContents = [
             title: "학부 99학번 박준하 동문 1억 원 기부",
             link: "https://news.kaist.ac.kr/news/html/news/?mode=V&mng_no=17031",
             image: {
-              src: "/images/BuildingJourney/part2/20211104.png",
+              src: "/images/building-journey/part2/20211104.png",
               alt: "학부 99학번 박준하 동문 1억 원 기부 사진",
             },
           },
@@ -266,7 +266,7 @@ const partContents = [
             detail: "김수인, 김창현, 박정국",
             link: "https://news.kaist.ac.kr/news/html/news/?mode=V&mng_no=17251&skey=college&sval=%EA%B3%B5%EA%B3%BC%EB%8C%80%ED%95%99&list_s_date=&list_e_date=&GotoPage=52",
             image: {
-              src: "/images/BuildingJourney/part2/20211114.png",
+              src: "/images/building-journey/part2/20211114.png",
               alt: "엘리스 임직원(김재원 외 3인) 3억 원 기부 사진",
             },
           },
@@ -284,7 +284,7 @@ const partContents = [
               "KRAFTON HQ, PUBG STUDIOS 10인, 5minlab 7인 총 17인\n김건우, 김상현, 김시환, 김정헌, 김찬수, 박경도, 박문형, 박수찬, 변현찬, \n오진석, 이상헌, 이성원, 이승민, 이해찬, 장병규, 정기량, 최윤묵",
             link: "https://www.yna.co.kr/view/AKR20220429053800063?input=1195m",
             image: {
-              src: "/images/BuildingJourney/part2/20220429.png",
+              src: "/images/building-journey/part2/20220429.png",
               alt: "크래프톤 재직 동문 17인 1억 원 기부 사진",
             },
           },
@@ -321,7 +321,7 @@ const partContents = [
             detail:
               "03.16 증축 공사 설계 공모 심사 안내 및 사전 자료 교부\n03.17 공모 설계안 선정을 위한 논의\n03.18 증축 공사 설계 공모 심사 개최\n03.27 증축 공사 착공 KAIST 내 공식 공지\n04.06-10 증축 기공식, 사회환원 의미로 미 개최 \n04.26 증축 공사 설계 공모 심사 완료 및 선정",
             modalImage: {
-              src: "/images/BuildingJourney/modal/220316_KR.jpg",
+              src: "/images/building-journey/modal/220316_KR.jpg",
               alt: "전산학부 증축 공사 실행을 위한 설계 공모 개최 및 확정 사진",
             },
           },
@@ -334,7 +334,7 @@ const partContents = [
             detail:
               "03.29 전산학부 주변 건설 부지 수목 이식 공사 진행\n04.05-09 증축 건물과 기존 건물 간의 연결 및 타설 작업 진행\n05.25-06.23 증축 건축 실제 공사 착수\n07.08 태양광 발전기 설치를 위한 주차 공간 추가 공사\n07.19-08.01 태양광 발전기 설치를 위한 주차 공간 추가 2차 공사\n07.28 장마로 인해 중단되었던 건물 공사 재착수\n09.23 태양광 발전기 설치를 위한 주차 공간 추가 3차 공사",
             image: {
-              src: "/images/BuildingJourney/part3/20220329.png",
+              src: "/images/building-journey/part3/20220329.png",
               alt: "전산학부 증축 외부 빌딩 공사 착공 및 시공 진행 사진",
             },
           },
@@ -397,7 +397,7 @@ const partContents = [
             detail:
               "04.13 증축 건물 네이밍 및 공간 경험 디자인 방향성 논의 회의 개최\n08.29 KAIST 현장 답사 및 외부 환경 조사\n09.04-11.27 공간 경험 디자인 방향성 논의 회의 개최 및 피드백 수렴\n12.18 인테리어 업체 선정 진행",
             image: {
-              src: "/images/BuildingJourney/part4/20230413.png",
+              src: "/images/building-journey/part4/20230413.png",
               alt: "KRAFTON X SoC 공간 경험 디자인 방향 설정 사진",
             },
           },
@@ -424,7 +424,7 @@ const partContents = [
             detail:
               "06.15-07.04 인테리어 업체와 상세 디자인 설계 관련 논의 진행\n07.18-08.15 인테리어 설계 격주 정기 회의 진행\n09.10-09.27 기부자 공간 구성을 위한 디자인 시안 제작 \n10.01-12.10 마이크로 사이트 제작, 재학생 협업 진행 및 제작 방향성 논의\n12.11 외부 창호 보강을 위한 자재 변경",
             image: {
-              src: "/images/BuildingJourney/part4/20240615.png",
+              src: "/images/building-journey/part4/20240615.png",
               alt: "인테리어 디자인 설계 및 공사 진행 사진",
             },
           },
@@ -434,7 +434,7 @@ const partContents = [
             },
             title: "기부자 공간 인테리어 시공 진행",
             image: {
-              src: "/images/BuildingJourney/part4/20241104.png",
+              src: "/images/building-journey/part4/20241104.png",
               alt: "기부자 공간 인테리어 시공 진행 사진",
             },
           },
@@ -447,7 +447,7 @@ const partContents = [
             detail:
               "09.10~10.30 기부자 대상, 건물명 & 기부자 메시지 공모 및 리스트 취합",
             modalImage: {
-              src: "/images/BuildingJourney/modal/240910_KR.jpg",
+              src: "/images/building-journey/modal/240910_KR.jpg",
               alt: "기부의 의미 전달을 위한 메시지 & 건물 네이밍 공모 사진",
             },
           },
@@ -468,11 +468,11 @@ const partContents = [
             detail:
               "11월 기부자 2인 메시지 선정\n11.17 채택된 기부 메시지 & 건물명 공지\n12.03 KRAFTON SoC 건물명 및 추가 기부, KRAFTON-KAIST 간  부가 합의서 작성 진행",
             image: {
-              src: "/images/BuildingJourney/part4/20241100.png",
+              src: "/images/building-journey/part4/20241100.png",
               alt: "KRAFTON X SoC 건물명 확정 및 공표 사진",
             },
             modalImage: {
-              src: "/images/BuildingJourney/modal/241100_KR.jpg",
+              src: "/images/building-journey/modal/241100_KR.jpg",
               alt: "KRAFTON X SoC 건물명 확정 및 공표 사진",
             },
           },

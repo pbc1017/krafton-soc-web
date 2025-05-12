@@ -28,7 +28,7 @@ const HistoryCardModalButton = ({ src, alt }: HistoryCardModalButtonProps) => {
     <>
       <HistoryCardModalButtonStyle onClick={openModal}>
         <Image
-          src="/images/BuildingJourney/history-card-modal-button.svg"
+          src="/icons/modal-button.svg"
           alt="history-card-modal-button"
           width={22}
           height={22}

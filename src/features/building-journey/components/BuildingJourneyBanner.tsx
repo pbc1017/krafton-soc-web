@@ -107,7 +107,7 @@ const ChairmanMessage: React.FC = () => {
       <ImageContainer>
         <BannerImage>
           <Image
-            src="/images/BuildingJourney/building-journey.jpg"
+            src="/images/building-journey/building-journey.jpg"
             alt="Building Journey Page Banner Image"
             fill
             style={{ objectFit: "cover" }}

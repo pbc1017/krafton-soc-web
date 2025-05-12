@@ -99,7 +99,7 @@ const HistoryModal = ({
         {children}
         <CloseButton onClick={onClose}>
           <Image
-            src="/images/BuildingJourney/history-card-modal-close.svg"
+            src="/icons/Cancel.svg"
             alt="history-card-modal-close"
             width={16}
             height={16}
