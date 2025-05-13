@@ -4,9 +4,6 @@ import Text from "@krafton-soc/common/components/Text";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const ChiefContainer = styled.section`
-  margin-top: 186px;
-  margin-bottom: 186px;
-
   width: 100%;
 
   display: flex;

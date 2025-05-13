@@ -2,6 +2,9 @@
 
 import styled from "@emotion/styled";
 
+import VerticalLine from "@krafton-soc/common/components/VerticalLine";
+import { theme } from "@krafton-soc/common/styles/theme";
+
 import PositiveImpactBanner from "../components/PositiveImpactBanner";
 import PositiveImpactDonner from "../components/PositiveImpactDonner";
 import PositiveImpactMessage from "../components/PositiveImpactMessage";
@@ -18,6 +21,12 @@ const PositiveImpact = () => {
   return (
     <PositiveImpactContainer>
       <PositiveImpactBanner />
+      <VerticalLine
+        height={150}
+        color={theme.colors.black}
+        marginTop={65}
+        marginBottom={65}
+      />
       <PositiveImpactMessage />
       <PositiveImpactDonner />
     </PositiveImpactContainer>
