@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import React from "react";
 
 import Text from "@krafton-soc/common/components/Text";
+import VerticalLine from "@krafton-soc/common/components/VerticalLine";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const BannerContainer = styled.section`
@@ -16,7 +17,6 @@ const BannerContainer = styled.section`
   flex-direction: column;
   align-items: center;
   z-index: 0;
-  gap: 330px;
 `;
 
 const ImageContainer = styled.div`
@@ -114,6 +114,12 @@ const ChairmanMessage: React.FC = () => {
           />
         </BannerImage>
       </ImageContainer>
+      <VerticalLine
+        height={200}
+        color={theme.colors.black}
+        marginTop={70}
+        marginBottom={70}
+      />
       <ChairmanMessageContainer>
         <MessageContainer>
           <Text color={theme.colors.black}>{t("chairmanMessage.message")}</Text>

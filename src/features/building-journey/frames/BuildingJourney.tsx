@@ -488,6 +488,7 @@ const BuildingJourney: React.FC = () => {
   return (
     <BuildingJourneyContainer>
       <BuildingJourneyBanner />
+
       <PartContainer>
         {partContents.map(part => (
           <BuildingJourneyPart key={part.part} {...part} />
