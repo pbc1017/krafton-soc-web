@@ -100,7 +100,7 @@ const DesignStoryConceptCard3 = () => {
           <Text>{`Heritage, \nNot a Narrative`}</Text>
         </CardTextTitle>
         <CardTextContent>
-          <Text>{`‘Heritage, Not a Narrative’는 이번 프로젝트를 \n관통하는 가장 중요한 개념이었습니다. \n기부자들이 자신의 존재를 부각시키기보다, 후배들에게 \n자연스럽게 유산을 남기고자 하는 의지를 담아 \n공간 속에서 은은하게 드러나도록 디자인했습니다.\n\n함께 성장하는 ‘Reflective Jungle’(가칭)의 식물 사이로 슈퍼미러에 새겨진 기부자의 메시지는 단순한 일방적인 기념물이 아니라, 사용자의 움직임에 따라 변화하고 \n투영되는 요소로 작용합니다.`}</Text>
+          <Text>{`‘Heritage, Not a Narrative’는 이번 프로젝트를 \n관통하는 가장 중요한 개념이었습니다. \n기부자들이 자신의 존재를 부각시키기보다, 후배들에게 \n자연스럽게 유산을 남기고자 하는 의지를 담아 \n공간 속에서 은은하게 드러나도록 디자인했습니다.\n\n함께 성장하는 ‘Reflective Jungle’의 식물 사이로 슈퍼미러에 새겨진 기부자의 메시지는 단순한 일방적인 기념물이 아니라, 사용자의 움직임에 따라 변화하고 \n투영되는 요소로 작용합니다.`}</Text>
         </CardTextContent>
       </CardTextContainer>
       <CardImageContainer>

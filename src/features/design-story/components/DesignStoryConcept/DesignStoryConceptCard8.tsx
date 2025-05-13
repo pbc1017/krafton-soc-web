@@ -68,7 +68,7 @@ const DesignStoryConceptCard8 = () => {
         <CardRightText>
           <Text>
             {
-              "‘Along, A-long Table’(가칭)과 같은 오브제를 통해 \n유산(Legacy)의 지속성과 연속성이 테이블까지 이어지며, \n이를 사용하는 후배들에게 자연스럽게 전해지기를 바랐습니다."
+              "‘Along, A-long Table’과 같은 오브제를 통해 \n유산(Legacy)의 지속성과 연속성이 테이블까지 이어지며, \n이를 사용하는 후배들에게 자연스럽게 전해지기를 바랐습니다."
             }
           </Text>
         </CardRightText>
