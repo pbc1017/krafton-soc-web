@@ -115,8 +115,8 @@ const ChairmanMessage: React.FC = () => {
         </BannerImage>
       </ImageContainer>
       <VerticalLine
-        height={200}
-        color={theme.colors.black}
+        height={{ pc: 200, tablet: 120, mobile: 120 }}
+        lineColor={theme.colors.black}
         marginTop={70}
         marginBottom={70}
       />

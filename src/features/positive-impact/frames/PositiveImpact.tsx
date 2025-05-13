@@ -23,7 +23,7 @@ const PositiveImpact = () => {
       <PositiveImpactBanner />
       <VerticalLine
         height={150}
-        color={theme.colors.black}
+        lineColor={theme.colors.black}
         marginTop={65}
         marginBottom={65}
       />
