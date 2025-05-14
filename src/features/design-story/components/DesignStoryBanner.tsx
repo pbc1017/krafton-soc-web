@@ -92,7 +92,7 @@ const DesignStoryBanner: React.FC = () => {
     <BannerContainer>
       <BannerImage>
         <Image
-          src="/images/DesignStory/design-story.jpg"
+          src={`/images/DesignStory/디자인이야기_hero_${deviceType}.png`}
           alt="Design Story Banner"
           fill
           style={{ objectFit: "cover" }}

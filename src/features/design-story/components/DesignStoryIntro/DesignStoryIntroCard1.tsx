@@ -145,7 +145,7 @@ const DesignStoryIntroStart = () => {
       <ImageContainer>
         <CardImage>
           <Image
-            src="/images/DesignStory/Intro/card1.png"
+            src={`/images/DesignStory/Intro/디자인이야기_Con1_${deviceType}.png`}
             alt="Design Story Intro Card 1"
             fill
           />

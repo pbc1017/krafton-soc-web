@@ -165,7 +165,7 @@ const DesignStoryIntroConnect = () => {
       <ImageContainer>
         <CardImage>
           <Image
-            src="/images/DesignStory/Intro/card2.png"
+            src={`/images/DesignStory/Intro/디자인이야기_Con2_${deviceType}.png`}
             alt="Design Story Intro Card 2"
             fill
           />
