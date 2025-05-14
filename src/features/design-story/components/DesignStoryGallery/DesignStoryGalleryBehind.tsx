@@ -79,7 +79,7 @@ const behindMemberData: BehindMemberData[] = [
   },
   {
     title: "Interior Design",
-    members: ["Jisoo Yim"],
+    members: ["Jisoo Yim", "Jongseok Seo"],
   },
   {
     title: "Website Build",
