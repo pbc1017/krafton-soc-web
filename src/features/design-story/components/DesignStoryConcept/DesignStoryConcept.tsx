@@ -2,6 +2,8 @@
 
 import styled from "@emotion/styled";
 
+import { theme } from "@krafton-soc/common/styles/theme";
+
 import DesignStoryConceptCard1 from "./DesignStoryConceptCard1";
 import DesignStoryConceptCard2 from "./DesignStoryConceptCard2";
 import DesignStoryConceptCard3 from "./DesignStoryConceptCard3";
@@ -21,7 +23,21 @@ const DesignStoryConceptContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 180px;
+`;
+
+const DesignStoryConceptTitleContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 190px;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    margin-bottom: 120px;
+  }
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    margin-bottom: 80px;
+  }
 `;
 
 const DesignStoryConceptCardContainer = styled.div`
@@ -33,10 +49,28 @@ const DesignStoryConceptCardContainer = styled.div`
   gap: 250px;
 `;
 
+const DesignStoryConceptCardEndingContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 328px;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    margin-top: 300px;
+  }
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    margin-top: 220px;
+  }
+`;
+
 const DesignStoryConcept = () => {
   return (
     <DesignStoryConceptContainer>
-      <DesignStoryConceptTitle />
+      <DesignStoryConceptTitleContainer>
+        <DesignStoryConceptTitle />
+      </DesignStoryConceptTitleContainer>
       <DesignStoryConceptCardContainer>
         <DesignStoryConceptCard1 />
         <DesignStoryConceptCard2 />
@@ -49,7 +83,9 @@ const DesignStoryConcept = () => {
         <DesignStoryConceptCard9 />
         <DesignStoryConceptCard10 />
       </DesignStoryConceptCardContainer>
-      <DesignStoryConceptFinal />
+      <DesignStoryConceptCardEndingContainer>
+        <DesignStoryConceptFinal />
+      </DesignStoryConceptCardEndingContainer>
     </DesignStoryConceptContainer>
   );
 };

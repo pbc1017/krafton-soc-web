@@ -80,6 +80,28 @@
           "mobile": "KRAFTON X SoC 공간은 사람들이 머물고\n교류하며 새로운 아이디어를 나누는 장이 되어\n‘지식과 사람’, ‘기술과 사람', ‘사람과 사람’ 이\n연결되고 그안에 인간이 중심이 되어있다는\n의미를 담고자 하였습니다. \n\n시작은 ‘연결’이라는 하나의 단어였지만, 그 과정\n속에서 우리는 ‘연결이 어떻게 경험될 수 있는가’에\n대한 더 깊은 고민을 담았습니다."
         }
       }
+    },
+    "Concept": {
+      "Title": {
+        "subTitle": {
+          "desktop": "이러한 연결에 대한 고민은 KAIST 전산학부와 KRAFTON이 공유하는 ‘Human-Centric’ 이념, \n즉 기술의 발전은 결국 인간을 향해야 한다는 명확한 가치에서 출발했습니다.",
+          "tablet": "이러한 연결에 대한 고민은 KAIST 전산학부와\nKRAFTON이 공유하는 ‘Human-Centric’ 이념, \n즉 기술의 발전은 결국 인간을 향해야 한다는\n명확한 가치에서 출발했습니다.",
+          "mobile": "이러한 연결에 대한 고민은 KAIST 전산학부와 KRAFTON이 공유하는 ‘Human-Centric’ 이념, \n즉 기술의 발전은 결국 인간을 향해야 한다는 명확한 가치에서 출발했습니다."
+        }
+      },
+      "Final": {
+        "quote": {
+          "desktop": "The function of good software is to make\nthe complex appear to be simple",
+          "tablet": "The function of good software is to make the complex appear\nto be simple",
+          "mobile": "The function of good\nsoftware is to make\nthe complex appear\nto be simple"
+        },
+
+        "wish": {
+          "desktop": "마치 건축 디자인에서 하나의 선을 지우기 위해 숨어 있는 수많은 기술이 필요하듯,\n이 공간에서도 무의식적으로 평온한 공간을 최적화하기 위해 구조적, 기술적 한계를\n넘어서려 했습니다. 이러한 모든 과정이 공간에 녹아들어, 우리의 의지가 학생들과 이곳을 \n방문하는 모든 이들에게 오롯이 전달되기를 바랍니다.",
+          "tablet": "마치 건축 디자인에서 하나의 선을 지우기 위해 숨어 있는 수많은 기술이 필요하듯,\n이 공간에서도 무의식적으로 평온한 공간을 최적화하기 위해 구조적, 기술적 한계를\n넘어서려 했습니다. 이러한 모든 과정이 공간에 녹아들어, 우리의 의지가 학생들과 이곳을 \n방문하는 모든 이들에게 오롯이 전달되기를 바랍니다.",
+          "mobile": "마치 건축 디자인에서 하나의 선을 지우기 위해\n숨어 있는 수많은 기술이 필요하듯, 이 공간에서도\n무의식적으로 평온한 공간을 최적화하기 위해\n구조적, 기술적 한계를 넘어서려 했습니다.\n이러한 모든 과정이 공간에 녹아들어,\n우리의 의지가 학생들과 이곳을 방문하는 모든 이들에게\n오롯이 전달되기를 바랍니다."
+        }
+      }
     }
   }
 }

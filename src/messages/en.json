@@ -80,6 +80,26 @@
           "mobile": "The KRAFTON X SoC space was created as a place where people stay, connect, and share new ideas—linking knowledge and people, technology and people, and people to people, with humanity at the center.\n\nIt began with a single word: connection. Along the way, we reflected deeply on how that connection can truly be experienced."
         }
       }
+    },
+    "Concept": {
+      "Title": {
+        "subTitle": {
+          "desktop": "This exploration of connection began with a shared belief between the KAIST School of Computing and\nKRAFTON: a human-centric philosophy — the clear value that technological advancement must\nultimately serve humanity.",
+          "tablet": "This exploration of connection began with a shared belief\nbetween the KAIST School of Computing and KRAFTON: \na human-centric philosophy — the clear value\nthat technological advancement must\nultimately serve humanity.",
+          "mobile": "This exploration of connection began with a shared belief between the KAIST School of Computing and KRAFTON: a human-centric philosophy — the clear value that technological advancement must ultimately serve humanity."
+        }
+      },
+      "Card1": {
+        "title": "Human-Centered Ideology",
+        "content": "We believe that the true value of design lies in its ability to connect people and technology, and that the best designs are those that are human-centered and user-friendly."
+      },
+      "Final": {
+        "wish": {
+          "desktop": "Just as countless hidden techniques are required in architecture to erase a\nsingle visible line, this space, too, pushes beyond structural and technical\nlimits to quietly optimize a sense of calm. We hope that all of these efforts\nare seamlessly embedded into the space—so that our intentions are fully felt\nby the students and everyone who visits here.",
+          "tablet": "Just as countless hidden techniques are required in architecture to erase a single visible line, this space, too, pushes beyond structural and technical limits to quietly optimize a sense of calm. We hope that all of these efforts are seamlessly embedded into the space—so that our intentions are fully felt by the students and everyone who visits here.",
+          "mobile": "Just as countless hidden techniques are required in architecture to erase a single visible line, this space, too, pushes beyond structural and technical limits to quietly optimize a sense of calm. We hope that all of these efforts are seamlessly embedded into the space—so that our intentions are fully felt by the students and everyone who visits here."
+        }
+      }
     }
   }
 }

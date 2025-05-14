@@ -1,17 +1,29 @@
 "use client";
 
 import styled from "@emotion/styled";
+import { useTranslations } from "next-intl";
 
 import Text from "@krafton-soc/common/components/Text";
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const DesignStoryConceptFinalContainer = styled.section`
-  width: 1285px;
+  width: min(1285px, 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 90px;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 696px;
+    gap: 56px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: min(100%, 353px);
+    gap: 40px;
+  }
   //background-color: pink;
 `;
 
@@ -21,6 +33,14 @@ const DesignStoryConceptFinalQuoteContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 27px;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    gap: 29px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    gap: 18px;
+  }
   //background-color: red;
 `;
 
@@ -35,6 +55,10 @@ const DesignStoryConceptFinalQuoteText = styled.div`
   color: ${theme.colors.black};
   line-height: 130%;
   text-align: center;
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 26px;
+  }
   //background-color: green;
 `;
 
@@ -65,26 +89,29 @@ const DesignStoryConceptFinalWish = styled.div`
   color: ${theme.colors.black};
   line-height: 180%;
 
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 16px;
+  }
+
   //background-color: magenta;
 `;
 
 const DesignStoryConceptFinal = () => {
+  const t = useTranslations("DesignStory.Concept.Final");
+  const { deviceType } = useResponsiveStore();
+
   return (
     <DesignStoryConceptFinalContainer>
       <DesignStoryConceptFinalQuoteContainer>
         <DesignStoryConceptFinalQuoteText>
-          <Text>
-            {`The function of good software is to make\nthe complex appear to be simple`}
-          </Text>
+          <Text>{t(`quote.${deviceType}`)}</Text>
         </DesignStoryConceptFinalQuoteText>
         <DesignStoryConceptFinalQuoteAuthor>
           <Text>{`- Grady Booch (Developer of UML) -`}</Text>
         </DesignStoryConceptFinalQuoteAuthor>
       </DesignStoryConceptFinalQuoteContainer>
       <DesignStoryConceptFinalWish>
-        <Text>
-          {`마치 건축 디자인에서 하나의 선을 지우기 위해 숨어 있는 수많은 기술이 필요하듯,\n이 공간에서도 무의식적으로 평온한 공간을 최적화하기 위해 구조적, 기술적 한계를\n넘어서려 했습니다. 이러한 모든 과정이 공간에 녹아들어, 우리의 의지가 학생들과 이곳을 \n방문하는 모든 이들에게 오롯이 전달되기를 바랍니다.`}
-        </Text>
+        <Text>{t(`wish.${deviceType}`)}</Text>
       </DesignStoryConceptFinalWish>
     </DesignStoryConceptFinalContainer>
   );

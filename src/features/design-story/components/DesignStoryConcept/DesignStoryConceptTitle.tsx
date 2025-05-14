@@ -1,12 +1,14 @@
 "use client";
 
 import styled from "@emotion/styled";
+import { useTranslations } from "next-intl";
 
 import Text from "@krafton-soc/common/components/Text";
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const TitleContainer = styled.div`
-  width: 1285px;
+  width: min(1285px, 100%);
 
   display: flex;
   flex-direction: column;
@@ -14,7 +16,35 @@ const TitleContainer = styled.div`
   justify-content: center;
   gap: 150px;
 
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 696px;
+    gap: 200px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: min(100%, 353px);
+    gap: 120px;
+  }
+
   //background-color: pink;
+`;
+
+const TitleText = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 48px;
+  font-weight: ${theme.fonts.weights.bold};
+  color: ${theme.colors.black};
+  line-height: 100%;
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+  }
 `;
 
 const SubTitleContainer = styled.div`
@@ -25,49 +55,65 @@ const SubTitleContainer = styled.div`
   align-items: flex-start;
   justify-content: space-between;
 
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+  }
   //background-color: red;
 `;
 
 const SubTitleLeft = styled.div`
-  width: 350px;
   font-size: 42px;
   font-weight: ${theme.fonts.weights.medium};
   color: ${theme.colors.black};
   line-height: 120%;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    font-size: 32px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+  }
   //background-color: cyan;
 `;
 
 const SubTitleRight = styled.div`
-  width: 849px;
-
   font-size: 18px;
   font-weight: ${theme.fonts.weights.regular};
   color: ${theme.colors.black};
   line-height: 180%;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    font-size: 16px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    line-height: 175%;
+  }
+
   //background-color: yellow;
 `;
 
 const DesignStoryConceptTitle = () => {
+  const t = useTranslations("DesignStory.Concept.Title");
+  const { deviceType } = useResponsiveStore();
+
   return (
     <TitleContainer>
-      <Text
-        fs="48px"
-        fw={theme.fonts.weights.bold}
-        color={theme.colors.black}
-        lh="100%"
-      >
-        DESIGN CONCEPTS
-      </Text>
+      <TitleText>
+        <Text>DESIGN CONCEPTS</Text>
+      </TitleText>
       <SubTitleContainer>
         <SubTitleLeft>
-          <Text>{"Human-Centered \nIdeology"}</Text>
+          <Text>{"Human-Centered\nIdeology"}</Text>
         </SubTitleLeft>
         <SubTitleRight>
-          <Text>
-            {
-              "이러한 연결에 대한 고민은 KAIST 전산학부와 KRAFTON이 공유하는 ‘Human-Centric’ 이념, \n즉 기술의 발전은 결국 인간을 향해야 한다는 명확한 가치에서 출발했습니다."
-            }
-          </Text>
+          <Text>{t(`subTitle.${deviceType}`)}</Text>
         </SubTitleRight>
       </SubTitleContainer>
     </TitleContainer>
