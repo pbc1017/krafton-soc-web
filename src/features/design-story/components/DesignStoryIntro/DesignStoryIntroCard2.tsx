@@ -2,74 +2,188 @@
 
 import styled from "@emotion/styled";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import Text from "@krafton-soc/common/components/Text";
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
-const IntroCard2Container = styled.div`
+const IntroCard2Container = styled.section`
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-`;
 
-const ImageContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 10px;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 25px;
+    gap: 88px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    margin-right: 0px;
+    gap: 60px;
+  }
+
   //background-color: pink;
 `;
 
-const TextContainer = styled.div`
-  width: 521px;
+const ImageContainer = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 53px;
+  justify-content: flex-end;
+
+  width: 680px;
+  gap: 10px;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 577px;
+    gap: 10px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 373px;
+    gap: 10px;
+  }
+  //background-color: orange;
+`;
+
+const CardImage = styled.div`
+  position: relative;
+  width: 100%;
+
+  height: 600px;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    height: 509px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    height: 329px;
+  }
+`;
+
+const CardImageCaption = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  font-size: 14px;
+  font-weight: ${theme.fonts.weights.regular};
+  line-height: 130%;
+  color: ${theme.colors.black};
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    font-size: 12px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    margin-right: 20px;
+  }
+
+  //background-color: green;
+`;
+
+const TextContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 521px;
+
+  gap: 45px;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 577px;
+    padding-right: 20px;
+    gap: 27px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 353px;
+    margin-right: 20px;
+    gap: 40px;
+  }
+  //background-color: yellow;
+`;
+
+const TextTitle = styled.div`
+  width: 100%;
+  font-size: 64px;
+  font-weight: ${theme.fonts.weights.semibold};
+  line-height: 130%;
+  color: ${theme.colors.black};
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    font-size: 56px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  //background-color: red;
+`;
+
+const TextContent = styled.div`
+  width: 100%;
+
+  font-size: 18px;
+  font-weight: ${theme.fonts.weights.regular};
+  line-height: 180%;
+  color: ${theme.colors.black};
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    padding-right: 20px;
+  }
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 16px;
+    line-height: 175%;
+  }
+
   //background-color: blue;
 `;
 
 const DesignStoryIntroConnect = () => {
+  const t = useTranslations("DesignStory.Intro.Card2");
+
+  const { isDesktop, deviceType } = useResponsiveStore();
   return (
     <IntroCard2Container>
-      <TextContainer>
-        <Text
-          fs="64px"
-          fw={theme.fonts.weights.semibold}
-          color={theme.colors.black}
-          lh="130%"
-        >
-          {"모든 것을 연결하다"}
-        </Text>
-        <Text
-          fs="18px"
-          fw={theme.fonts.weights.regular}
-          color={theme.colors.black}
-          lh="180%"
-        >
-          {`KRAFTON X SoC 공간은 사람들이 머물고 교류하며 새로운 아이디어를 나누는 장이 되어 ‘지식과 사람’, ‘기술과 사람', ‘사람과 사람’ 이 연결되고\n그안에 인간이 중심이 되어있다는 의미를 담고자 하였습니다. \n\n시작은 ‘연결’이라는 하나의 단어였지만, 그 과정 속에서 우리는\n‘연결이 어떻게 경험될 수 있는가’에 대한 더 깊은 고민을 담았습니다.`}
-        </Text>
-      </TextContainer>
+      {isDesktop && (
+        <TextContainer>
+          <TextTitle>
+            <Text>{t(`title.${deviceType}`)}</Text>
+          </TextTitle>
+          <TextContent>
+            <Text>{t(`content.${deviceType}`)}</Text>
+          </TextContent>
+        </TextContainer>
+      )}
       <ImageContainer>
-        <Image
-          src="/images/DesignStory/Intro/card2.png"
-          alt="Design Story Intro Card 2"
-          width={680}
-          height={600}
-        />
-        <Text
-          fs="14px"
-          fw={theme.fonts.weights.regular}
-          color={theme.colors.black}
-          lh="130%"
-        >
-          1F Openable Window Linking Indoor and Outdoor Spaces
-        </Text>
+        <CardImage>
+          <Image
+            src="/images/DesignStory/Intro/card2.png"
+            alt="Design Story Intro Card 2"
+            fill
+          />
+        </CardImage>
+        <CardImageCaption>
+          <Text>{"1F Openable Window Linking Indoor and Outdoor Spaces"}</Text>
+        </CardImageCaption>
       </ImageContainer>
+      {!isDesktop && (
+        <TextContainer>
+          <TextTitle>
+            <Text>{t(`title.${deviceType}`)}</Text>
+          </TextTitle>
+          <TextContent>
+            <Text>{t(`content.${deviceType}`)}</Text>
+          </TextContent>
+        </TextContainer>
+      )}
     </IntroCard2Container>
   );
 };

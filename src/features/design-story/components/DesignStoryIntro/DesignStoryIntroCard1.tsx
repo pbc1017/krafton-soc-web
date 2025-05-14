@@ -29,7 +29,7 @@ const IntroStartContainer = styled.section`
     gap: 60px;
   }
 
-  background-color: pink;
+  //background-color: pink;
 `;
 
 const ImageContainer = styled.section`
@@ -46,7 +46,7 @@ const ImageContainer = styled.section`
     width: 373px;
     gap: 10px;
   }
-  background-color: orange;
+  //background-color: orange;
 `;
 
 const CardImage = styled.div`
@@ -99,7 +99,7 @@ const TextContainer = styled.section`
     margin-left: 20px;
     gap: 40px;
   }
-  background-color: yellow;
+  //background-color: yellow;
 `;
 
 const TextTitle = styled.div`
@@ -118,7 +118,7 @@ const TextTitle = styled.div`
     line-height: 120%;
   }
 
-  background-color: red;
+  //background-color: red;
 `;
 
 const TextContent = styled.div`
@@ -134,7 +134,7 @@ const TextContent = styled.div`
     line-height: 175%;
   }
 
-  background-color: blue;
+  //background-color: blue;
 `;
 
 const DesignStoryIntroStart = () => {
