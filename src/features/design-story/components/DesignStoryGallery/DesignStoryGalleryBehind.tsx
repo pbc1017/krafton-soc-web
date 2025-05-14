@@ -4,12 +4,22 @@ import Text from "@krafton-soc/common/components/Text";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const BehindContainer = styled.div`
+  margin-top: 65px;
   width: 173px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 
   gap: 23px;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    margin-top: 160px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    margin-top: 220px;
+  }
+
   //background-color: yellow;
 `;
 
@@ -21,6 +31,10 @@ const BehindTitle = styled.div`
   line-height: 100%;
   font-weight: ${theme.fonts.weights.semibold};
   color: ${theme.colors.black};
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 20px;
+  }
 `;
 
 const BehindMemberCardContainer = styled.div`

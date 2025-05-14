@@ -7,20 +7,27 @@ import DesignStoryGalleryBehind from "./DesignStoryGalleryBehind";
 import DesignStoryGalleryPhoto from "./DesignStoryGalleryPhoto";
 
 const GalleryContainer = styled.section`
-  width: 1285px;
+  width: min(100%, 1285px);
 
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
 
-  gap: 65px;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: min(100%, 696px);
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: min(100%, 353px);
+  }
 
   //background-color: red;
 `;
 
 const GalleryTitle = styled.div`
   width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +40,12 @@ const GalleryTitle = styled.div`
   color: ${theme.colors.black};
 
   margin-bottom: 120px;
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+  }
 
   //background-color: green;
 `;

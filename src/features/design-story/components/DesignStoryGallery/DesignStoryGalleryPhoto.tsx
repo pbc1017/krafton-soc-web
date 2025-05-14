@@ -2,11 +2,12 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import { useState } from "react";
 
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const BehindPhotoContainer = styled.div`
   width: 100%;
-  height: 800px;
+  aspect-ratio: 1285/800;
   position: relative;
 
   //background-color: green;
@@ -72,13 +73,14 @@ type PhotoDataType = {
   alt: string;
 };
 
-const photoData: PhotoDataType[] = [
-  { src: "/images/DesignStory/Gallery/image0.png", alt: "photo0" },
-  { src: "/images/DesignStory/Gallery/image1.png", alt: "photo1" },
-  { src: "/images/DesignStory/Gallery/image2.png", alt: "photo2" },
-];
 const DesignStoryGalleryPhoto = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const { deviceType } = useResponsiveStore();
+
+  const photoData: PhotoDataType[] = Array.from({ length: 21 }, (_, index) => ({
+    src: `/images/DesignStory/Gallery/디자인이야기_Gallery${String(index + 1).padStart(2, "0")}_${deviceType}.png`,
+    alt: `photo${String(index + 1).padStart(2, "0")}`,
+  }));
 
   const handleLeftButtonClick = () => {
     setCurrentIndex((photoData.length + currentIndex - 1) % photoData.length);
