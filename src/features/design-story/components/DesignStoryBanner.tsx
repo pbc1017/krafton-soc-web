@@ -11,12 +11,21 @@ import { Locale } from "@krafton-soc/i18n/config";
 
 const BannerContainer = styled.section`
   width: 100%;
-  height: 628px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 0;
   position: relative;
+
+  height: 628px;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    height: 380px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    height: 500px;
+  }
 `;
 
 const BannerImage = styled.div`
