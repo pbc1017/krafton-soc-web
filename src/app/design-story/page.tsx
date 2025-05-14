@@ -1,4 +1,4 @@
-import DesignStory from "@krafton-soc/features/design-story";
+import DesignStory from "@krafton-soc/features/DesignStory";
 
 const DesignStoryPage = () => {
   return <DesignStory />;

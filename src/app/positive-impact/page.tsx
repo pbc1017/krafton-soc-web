@@ -1,4 +1,4 @@
-import PositiveImpact from "@krafton-soc/features/positive-impact/frames/PositiveImpact";
+import PositiveImpact from "@krafton-soc/features/PositiveImpact/frames/PositiveImpact";
 
 const PositiveImpactPage = () => {
   return <PositiveImpact />;
