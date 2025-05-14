@@ -17,7 +17,6 @@ const MessageContainer = styled.section`
 `;
 
 const MessageCardListContainer = styled.div`
-  margin-top: 145px;
   width: 100%;
 
   display: flex;
@@ -93,7 +92,7 @@ const PositiveImpactMessage = () => {
   return (
     <MessageContainer>
       <PositiveImpactMessageChief />
-      <DividerLine />
+      <DividerLine marginTop={100} marginBottom={145} />
       <MessageCardListContainer>
         <MessageCardContainer>
           <MessageCardImage>

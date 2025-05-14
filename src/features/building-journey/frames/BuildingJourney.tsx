@@ -10,7 +10,7 @@ const BuildingJourneyContainer = styled.main`
   flex-direction: column;
   align-items: center;
   gap: 333px;
-  margin-bottom: 74px;
+  margin-bottom: 130px;
   // background-color: pink;
 `;
 
@@ -19,7 +19,7 @@ const PartContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 170px;
-  padding-bottom: 57px;
+
   //background-color: orange;
 `;
 
@@ -72,7 +72,8 @@ const partContents = [
               startTerm: "01.20",
               endTerm: "03.16",
             },
-            title: "전산학부 증축 준비 논의",
+            title:
+              "KAIST 전산학부 증축 공간 활용 및 KRAFTON 연계 프로그램 논의",
             detail:
               "01.20 KAIST-KRAFTON 연계 활동 및 프로그램 추진 협의\n03.09-16 KAIST-KRAFTON 연계 활동 및 프로그램 구체화",
           },
@@ -157,6 +158,7 @@ const partContents = [
               src: "/images/building-journey/part2/20210507.png",
               alt: "학부 95학번 서하연, 96학번 한동훈 동문 부부 2,000만 원 기부 사진",
             },
+            link: "https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=9680&menu=83",
           },
           {
             duration: {
@@ -486,6 +488,7 @@ const BuildingJourney: React.FC = () => {
   return (
     <BuildingJourneyContainer>
       <BuildingJourneyBanner />
+
       <PartContainer>
         {partContents.map(part => (
           <BuildingJourneyPart key={part.part} {...part} />
