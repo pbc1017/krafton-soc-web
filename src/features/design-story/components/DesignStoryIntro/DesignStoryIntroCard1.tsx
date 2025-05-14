@@ -2,8 +2,10 @@
 
 import styled from "@emotion/styled";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import Text from "@krafton-soc/common/components/Text";
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const IntroStartContainer = styled.section`
@@ -27,7 +29,7 @@ const IntroStartContainer = styled.section`
     gap: 60px;
   }
 
-  //background-color: pink;
+  background-color: pink;
 `;
 
 const ImageContainer = styled.section`
@@ -44,7 +46,7 @@ const ImageContainer = styled.section`
     width: 373px;
     gap: 10px;
   }
-  //background-color: orange;
+  background-color: orange;
 `;
 
 const CardImage = styled.div`
@@ -78,44 +80,66 @@ const CardImageCaption = styled.div`
 `;
 
 const TextContainer = styled.section`
-  width: 458px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
+  width: 458px;
+
   gap: 45px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 577px;
+    padding-right: 20px;
+    gap: 56px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 353px;
     margin-left: 20px;
+    gap: 40px;
   }
-  //background-color: yellow;
+  background-color: yellow;
 `;
 
 const TextTitle = styled.div`
+  width: 100%;
   font-size: 64px;
   font-weight: ${theme.fonts.weights.semibold};
   line-height: 130%;
   color: ${theme.colors.black};
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    font-size: 48px;
+    font-size: 56px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    font-size: 32px;
+    font-size: 40px;
+    line-height: 120%;
   }
+
+  background-color: red;
 `;
 
 const TextContent = styled.div`
+  width: 100%;
+
   font-size: 18px;
   font-weight: ${theme.fonts.weights.regular};
   line-height: 180%;
   color: ${theme.colors.black};
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 16px;
+    line-height: 175%;
+  }
+
+  background-color: blue;
 `;
 
 const DesignStoryIntroStart = () => {
+  const t = useTranslations("DesignStory.Intro.Card1");
+  const { deviceType } = useResponsiveStore();
   return (
     <IntroStartContainer>
       <ImageContainer>
@@ -132,12 +156,10 @@ const DesignStoryIntroStart = () => {
       </ImageContainer>
       <TextContainer>
         <TextTitle>
-          <Text>{"우리의 시작을\n돌아보다"}</Text>
+          <Text>{t(`title.${deviceType}`)}</Text>
         </TextTitle>
         <TextContent>
-          <Text>
-            {`처음 논의가 시작될 때, 우리가 가장 중요하게 던진 질문은\n"이 공간이 사용자들에게 어떤 의미를 가질 것인가?"였습니다.\n단순히 하나의 결과물로서 완성되는 것이 아닌,\n보이지 않는 선한 영향력을 공간을 통해 가시화하고자 했습니다.\n\n이 공간은 거대한 연결의 흐름 속에서 눈에 보이는 하나의 \n연결점이자 이정표와 같은 역할을 합니다. 그렇기에 이곳이 하나의 \n끝이 아니라, 새로운 연결이 시작되는 장소가 되기를 바랍니다.\n\n이 공간을 경험하는 사람들이 거대한 고리로 연결되어, 어떤 \n변화를 만들어 가는지, 그리고 자신은 그 흐름 속에서 어떤 \n연결을 만들어갈 것인지 자연스럽게 느낄 수 있기를 기대합니다.`}
-          </Text>
+          <Text>{t(`content.${deviceType}`)}</Text>
         </TextContent>
       </TextContainer>
     </IntroStartContainer>

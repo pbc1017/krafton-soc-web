@@ -54,6 +54,20 @@
         "tablet": "KRAFTON X SoC, Design Story",
         "mobile": "KRAFTON X SoC, Design Story"
       }
+    },
+    "Intro": {
+      "Card1": {
+        "title": {
+          "desktop": "Looking Back,\nOur Beginning",
+          "tablet": "Looking Back,\nOur Beginning",
+          "mobile": "Looking Back,\nOur Beginning"
+        },
+        "content": {
+          "desktop": "When the first discussions began, the question we asked was: “What meaning will this space hold for its users?” Rather than seeing it as a finished product, we aimed to make invisible positive impact visible through space.\n\nThis space stands as a tangible point of connection within a larger flow—a marker, not an endpoint. We hope it becomes a starting point for new connection.\n\nMay those who experience this space feel part of a greater chain of change—and discover the connections they, too, will create.",
+          "tablet": "When the first discussions began, the question we asked was: “What meaning will this space hold for its users?” Rather than seeing it as a finished product, we aimed to make invisible positive impact visible through space.\n\nThis space stands as a tangible point of connection within a larger flow—a marker, not an endpoint. We hope it becomes a starting point for new connections.\n\nMay those who experience this space feel part of a greater chain of change—and discover the connections they, too, will create.",
+          "mobile": "When the first discussions began, the question we asked was: “What meaning will this space hold for its users?” Rather than seeing it as a finished product, we aimed to make invisible positive impact visible through space.\n\nThis space stands as a tangible point of connection within a larger flow—a marker, not an endpoint. We hope it becomes a starting point for new connections.\n\nMay those who experience this space feel part of a greater chain of change—and discover the connections they, too, will create."
+        }
+      }
     }
   }
 }

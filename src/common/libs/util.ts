@@ -20,3 +20,15 @@ export const getResponsiveValue = <T extends number | string>(
     return wrappingNumberToPx(value);
   return wrappingNumberToPx(defaultValue);
 };
+
+export const getTranslatedValue = (
+  ko: string | number,
+  en: string | number,
+) => {
+  return (locale: "ko" | "en") => {
+    if (locale === "ko") {
+      return wrappingNumberToPx(ko);
+    }
+    return wrappingNumberToPx(en);
+  };
+};

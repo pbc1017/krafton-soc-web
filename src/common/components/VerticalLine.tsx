@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 
 import { theme } from "@krafton-soc/common/styles/theme";
 
-import { getResponsiveValue, ResponsiveType } from "../libs/responsive.util";
+import { getResponsiveValue, ResponsiveType } from "../libs/util";
 
 const VerticalLineStyle = styled.div<VerticalLineProps>`
   // 반응형 PC
