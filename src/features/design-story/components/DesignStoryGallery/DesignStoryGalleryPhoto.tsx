@@ -77,7 +77,7 @@ const DesignStoryGalleryPhoto = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const { deviceType } = useResponsiveStore();
 
-  const photoData: PhotoDataType[] = Array.from({ length: 21 }, (_, index) => ({
+  const photoData: PhotoDataType[] = Array.from({ length: 20 }, (_, index) => ({
     src: `/images/DesignStory/Gallery/디자인이야기_Gallery${String(index + 1).padStart(2, "0")}_${deviceType}.png`,
     alt: `photo${String(index + 1).padStart(2, "0")}`,
   }));
