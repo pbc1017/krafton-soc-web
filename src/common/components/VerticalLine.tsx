@@ -4,33 +4,60 @@ import styled from "@emotion/styled";
 
 import { theme } from "@krafton-soc/common/styles/theme";
 
+import { getResponsiveValue, ResponsiveType } from "../libs/util";
+
 const VerticalLineStyle = styled.div<VerticalLineProps>`
-  width: 1px;
-  height: ${({ height }) => (height ? `${height}px` : "100%")};
-  background-color: ${({ color }) => color || theme.colors.dividerLine};
-  transform: scaleX(1); // 선을 균일하게 만들기 위해 추가
-  margin-top: ${({ marginTop }) => (marginTop ? `${marginTop}px` : "0")};
+  // 반응형 PC
+  height: ${({ height }) => getResponsiveValue(height, "pc", "100%")};
+  background-color: ${({ lineColor }) =>
+    getResponsiveValue(lineColor, "pc", theme.colors.dividerLine)};
+  margin-top: ${({ marginTop }) => getResponsiveValue(marginTop, "pc", 0)};
   margin-bottom: ${({ marginBottom }) =>
-    marginBottom ? `${marginBottom}px` : "0"};
+    getResponsiveValue(marginBottom, "pc", 0)};
+
+  // 반응형 태블릿
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    height: ${({ height }) => getResponsiveValue(height, "tablet", "100%")};
+    background-color: ${({ lineColor }) =>
+      getResponsiveValue(lineColor, "tablet", theme.colors.dividerLine)};
+    margin-top: ${({ marginTop }) =>
+      getResponsiveValue(marginTop, "tablet", 0)};
+    margin-bottom: ${({ marginBottom }) =>
+      getResponsiveValue(marginBottom, "tablet", 0)};
+  }
+
+  // 반응형 모바일
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    height: ${({ height }) => getResponsiveValue(height, "mobile", "100%")};
+    background-color: ${({ lineColor }) =>
+      getResponsiveValue(lineColor, "mobile", theme.colors.dividerLine)};
+    margin-top: ${({ marginTop }) =>
+      getResponsiveValue(marginTop, "mobile", 0)};
+    margin-bottom: ${({ marginBottom }) =>
+      getResponsiveValue(marginBottom, "mobile", 0)};
+  }
+
+  width: 1px;
+  transform: scaleX(0.5); // 선을 균일하게 만들기 위해 추가
 `;
 
 type VerticalLineProps = {
-  height?: number;
-  color?: string;
-  marginTop?: number;
-  marginBottom?: number;
+  height?: ResponsiveType<number>;
+  lineColor?: ResponsiveType<string>;
+  marginTop?: ResponsiveType<number>;
+  marginBottom?: ResponsiveType<number>;
 };
 
 const VerticalLine = ({
   height,
-  color,
+  lineColor,
   marginTop,
   marginBottom,
 }: VerticalLineProps) => {
   return (
     <VerticalLineStyle
       height={height}
-      color={color}
+      lineColor={lineColor}
       marginTop={marginTop}
       marginBottom={marginBottom}
     />

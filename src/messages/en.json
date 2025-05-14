@@ -26,5 +26,80 @@
       "descriptionDesktop": "This is a space of connection where we pay it forward with gratitude to our juniors.",
       "speaker": "Sukyoung Ryu, \nHead of the KAIST School of \nComputing, said"
     }
+  },
+  "BuildingJourney": {
+    "chairmanMessage": {
+      "message": {
+        "desktop": "“I first met Professor Young-Gul Kim, Executive Director of the KAIST Development Foundation, in October 2017. That encounter led to the beginning of donations such as the KAIST-Indonesia Volunteer Corps, and the trust built through this relationship eventually extended to the KAIST 50th Anniversary Memorial Hall project, which was initiated around 2020 by President Sung-Chul Shin.\n\nWhile meeting various people involved in the 50th Anniversary Memorial Hall project, I had the opportunity to meet Professor Myung-Ho Kim, then Head of the School of Computing. At that time, I decided to dedicate a portion of the donation I had pledged to KAIST to the expansion of the School of Computing. Around that period, I also began exchanging thoughts with several fellow alumni and acquaintances, which ultimately led to KRAFTON’s 11 billion KRW matching grant donation in 2021.”",
+        "tablet": "“제가 KAIST 발전재단 상임이사 김영걸 교수님을 처음 만난 것은 2017년 10월이었습니다. \n이 인연으로 KAIST-인도네시아 봉사단 같은 기부가 시작되었고, 이 신뢰 관계는 \n2020년 즈음 신성철 총장님이 추진하신 50주년 기념관 사업까지 이어졌습니다.\n\n50주년 기념관 관련하여 여러 사람들을 만나는 중 전산학부 학부장 김명호 교수님을 만났고,\n당시 제가 KAIST에 약정한 기부금 중 일부는 전산학부 증축에 쓰겠다고 결심했습니다.\n 이 즈음부터 모교 출신인 여러 동료이자 지인들과 이야기가 오갔고, \n결과적으로 2021년 110억원 크래프톤 매칭 그랜트 기부까지 이어졌습니다.”",
+        "mobile": "“제가 KAIST 발전재단 상임이사 김영걸 교수님을 처음 만난 것은 2017년 10월이었습니다. \n이 인연으로 KAIST-인도네시아 봉사단 같은 기부가 시작되었고, 이 신뢰 관계는 \n2020년 즈음 신성철 총장님이 추진하신 50주년 기념관 사업까지 이어졌습니다.\n\n50주년 기념관 관련하여 여러 사람들을 만나는 중 전산학부 학부장 김명호 교수님을 만났고,\n당시 제가 KAIST에 약정한 기부금 중 일부는 전산학부 증축에 쓰겠다고 결심했습니다.\n 이 즈음부터 모교 출신인 여러 동료이자 지인들과 이야기가 오갔고, \n결과적으로 2021년 110억원 크래프톤 매칭 그랜트 기부까지 이어졌습니다.”"
+      },
+      "introduction": "KAIST 전산학부 동문 장병규 KRAFTON 의장",
+      "date": "2025. 04. 03."
+    },
+    "introduction": {
+      "title": "건립의 여정",
+      "description": "건립의 여정"
+    }
+  },
+  "DesignStory": {
+    "banner": {
+      "title": {
+        "desktop": "KRAFTON X SoC, Design Story",
+        "tablet": "KRAFTON X SoC, Design Story",
+        "mobile": "KRAFTON X SoC,\nDesign Story"
+      },
+      "subTitle": {
+        "desktop": "KRAFTON X SoC, Design Story",
+        "tablet": "KRAFTON X SoC, Design Story",
+        "mobile": "KRAFTON X SoC, Design Story"
+      }
+    },
+    "Intro": {
+      "Card1": {
+        "title": {
+          "desktop": "Looking Back,\nOur Beginning",
+          "tablet": "Looking Back,\nOur Beginning",
+          "mobile": "Looking Back,\nOur Beginning"
+        },
+        "content": {
+          "desktop": "When the first discussions began, the question we asked was: “What meaning will this space hold for its users?” Rather than seeing it as a finished product, we aimed to make invisible positive impact visible through space.\n\nThis space stands as a tangible point of connection within a larger flow—a marker, not an endpoint. We hope it becomes a starting point for new connection.\n\nMay those who experience this space feel part of a greater chain of change—and discover the connections they, too, will create.",
+          "tablet": "When the first discussions began, the question we asked was: “What meaning will this space hold for its users?” Rather than seeing it as a finished product, we aimed to make invisible positive impact visible through space.\n\nThis space stands as a tangible point of connection within a larger flow—a marker, not an endpoint. We hope it becomes a starting point for new connections.\n\nMay those who experience this space feel part of a greater chain of change—and discover the connections they, too, will create.",
+          "mobile": "When the first discussions began, the question we asked was: “What meaning will this space hold for its users?” Rather than seeing it as a finished product, we aimed to make invisible positive impact visible through space.\n\nThis space stands as a tangible point of connection within a larger flow—a marker, not an endpoint. We hope it becomes a starting point for new connections.\n\nMay those who experience this space feel part of a greater chain of change—and discover the connections they, too, will create."
+        }
+      },
+      "Card2": {
+        "title": {
+          "desktop": "Connecting\nEverything",
+          "tablet": "Connecting\nEverything",
+          "mobile": "Connecting\nEverything"
+        },
+        "content": {
+          "desktop": "The KRAFTON X SoC space was created as a place where people stay, connect, and share new ideas—linking knowledge and people, technology and people, and people to people, with humanity at the center.\n\nIt began with a single word: connection. Along the way, we reflected deeply on how that connection can truly be experienced.",
+          "tablet": "The KRAFTON X SoC space was created as a place where people stay, connect, and share new ideas—linking knowledge and people, technology and people, and people to people, with humanity at the center.\n\nIt began with a single word: connection. Along the way, we reflected deeply on how that connection can truly be experienced.",
+          "mobile": "The KRAFTON X SoC space was created as a place where people stay, connect, and share new ideas—linking knowledge and people, technology and people, and people to people, with humanity at the center.\n\nIt began with a single word: connection. Along the way, we reflected deeply on how that connection can truly be experienced."
+        }
+      }
+    },
+    "Concept": {
+      "Title": {
+        "subTitle": {
+          "desktop": "This exploration of connection began with a shared belief between the KAIST School of Computing and\nKRAFTON: a human-centric philosophy — the clear value that technological advancement must\nultimately serve humanity.",
+          "tablet": "This exploration of connection began with a shared belief\nbetween the KAIST School of Computing and KRAFTON: \na human-centric philosophy — the clear value\nthat technological advancement must\nultimately serve humanity.",
+          "mobile": "This exploration of connection began with a shared belief between the KAIST School of Computing and KRAFTON: a human-centric philosophy — the clear value that technological advancement must ultimately serve humanity."
+        }
+      },
+      "Card1": {
+        "title": "Human-Centered Ideology",
+        "content": "We believe that the true value of design lies in its ability to connect people and technology, and that the best designs are those that are human-centered and user-friendly."
+      },
+      "Final": {
+        "wish": {
+          "desktop": "Just as countless hidden techniques are required in architecture to erase a\nsingle visible line, this space, too, pushes beyond structural and technical\nlimits to quietly optimize a sense of calm. We hope that all of these efforts\nare seamlessly embedded into the space—so that our intentions are fully felt\nby the students and everyone who visits here.",
+          "tablet": "Just as countless hidden techniques are required in architecture to erase a single visible line, this space, too, pushes beyond structural and technical limits to quietly optimize a sense of calm. We hope that all of these efforts are seamlessly embedded into the space—so that our intentions are fully felt by the students and everyone who visits here.",
+          "mobile": "Just as countless hidden techniques are required in architecture to erase a single visible line, this space, too, pushes beyond structural and technical limits to quietly optimize a sense of calm. We hope that all of these efforts are seamlessly embedded into the space—so that our intentions are fully felt by the students and everyone who visits here."
+        }
+      }
+    }
   }
 }
