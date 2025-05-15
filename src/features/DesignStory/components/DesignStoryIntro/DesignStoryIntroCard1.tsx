@@ -12,54 +12,56 @@ const IntroStartContainer = styled.section`
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-between;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 24px;
     gap: 110px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 0px;
     gap: 60px;
   }
-
-  //background-color: pink;
 `;
 
 const ImageContainer = styled.section`
   position: relative;
-  width: 740px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 740px;
   gap: 7px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     width: 577px;
-    gap: 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    width: 373px;
-    gap: 10px;
+    padding-right: 20px;
+    width: 100%;
   }
-  //background-color: orange;
 `;
 
 const CardImage = styled.div`
   position: relative;
   width: 100%;
+  height: auto;
+  aspect-ratio: 740 / 600;
+  flex-shrink: 1;
 
-  height: 600px;
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     height: 468px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    height: 303px;
+    height: auto;
   }
 `;
 
@@ -82,11 +84,9 @@ const CardImageCaption = styled.div`
 const TextContainer = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-
+  justify-content: space-between;
+  flex-shrink: 0;
   width: 458px;
-
-  gap: 45px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     width: 577px;
@@ -96,10 +96,9 @@ const TextContainer = styled.section`
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     width: 353px;
-    margin-left: 20px;
-    gap: 40px;
+    padding-right: 0px;
+    padding-left: 20px;
   }
-  //background-color: yellow;
 `;
 
 const TextTitle = styled.div`
@@ -117,8 +116,6 @@ const TextTitle = styled.div`
     font-size: 40px;
     line-height: 120%;
   }
-
-  //background-color: red;
 `;
 
 const TextContent = styled.div`
@@ -133,8 +130,16 @@ const TextContent = styled.div`
     font-size: 16px;
     line-height: 175%;
   }
+`;
 
-  //background-color: blue;
+const Spacer = styled.div`
+  flex-shrink: 0;
+  width: 27px;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 0;
+    height: 0;
+  }
 `;
 
 const DesignStoryIntroStart = () => {
@@ -154,6 +159,7 @@ const DesignStoryIntroStart = () => {
           <Text>1F Concrete Wall & Table</Text>
         </CardImageCaption>
       </ImageContainer>
+      <Spacer />
       <TextContainer>
         <TextTitle>
           <Text>{t(`title.${deviceType}`)}</Text>
