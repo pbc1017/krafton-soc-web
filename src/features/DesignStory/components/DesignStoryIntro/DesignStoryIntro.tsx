@@ -20,10 +20,12 @@ const DesignStoryIntroContainer = styled.section`
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     max-width: 1000px;
     padding: 0 25px;
+    gap: 140px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     padding: 0 0px;
+    gap: 120px;
   }
 `;
 

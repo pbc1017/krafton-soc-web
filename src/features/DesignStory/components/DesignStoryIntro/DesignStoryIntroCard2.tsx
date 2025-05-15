@@ -17,8 +17,12 @@ const IntroCard2Container = styled.section`
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     flex-direction: column;
-    gap: 88px;
     align-items: flex-end;
+    gap: 100px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    gap: 60px;
   }
 `;
 
