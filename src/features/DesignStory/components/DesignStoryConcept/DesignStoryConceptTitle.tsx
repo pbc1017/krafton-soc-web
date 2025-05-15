@@ -13,20 +13,20 @@ const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 150px;
+  padding: 0 30px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    width: 696px;
+    max-width: 1000px;
     gap: 200px;
+    padding: 0 24px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    width: min(100%, 353px);
     gap: 120px;
+    padding: 0 20px;
   }
-
-  //background-color: pink;
 `;
 
 const TitleText = styled.div`
