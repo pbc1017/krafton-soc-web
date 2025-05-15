@@ -8,24 +8,20 @@ import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStor
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const TitleContainer = styled.div`
-  width: min(1285px, 100%);
-
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 150px;
-  padding: 0 30px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     max-width: 1000px;
     gap: 200px;
-    padding: 0 24px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     gap: 120px;
-    padding: 0 20px;
   }
 `;
 

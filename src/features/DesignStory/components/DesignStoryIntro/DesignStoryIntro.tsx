@@ -8,7 +8,7 @@ import DesignStoryIntroCard1 from "./DesignStoryIntroCard1";
 import DesignStoryIntroCard2 from "./DesignStoryIntroCard2";
 
 const DesignStoryIntroContainer = styled.section`
-  max-width: 1385px;
+  max-width: 1345px;
   width: 100%;
   display: flex;
   flex-direction: column;
