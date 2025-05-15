@@ -15,14 +15,13 @@ const GalleryContainer = styled.section`
   justify-content: center;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    width: min(100%, 696px);
+    max-width: 1000px;
+    padding: 0 24px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    width: min(100%, 353px);
+    padding: 0 20px;
   }
-
-  //background-color: red;
 `;
 
 const GalleryTitle = styled.div`
@@ -46,8 +45,6 @@ const GalleryTitle = styled.div`
     letter-spacing: 0.5px;
     margin-bottom: 40px;
   }
-
-  //background-color: green;
 `;
 
 const DesignStoryGallery = () => {
