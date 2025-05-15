@@ -7,6 +7,7 @@ import React from "react";
 
 import Text from "@krafton-soc/common/components/Text";
 import VerticalLine from "@krafton-soc/common/components/VerticalLine";
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const BannerContainer = styled.section`
@@ -101,13 +102,14 @@ const DateContainer = styled.div`
 `;
 
 const ChairmanMessage: React.FC = () => {
-  const t = useTranslations("BuildingJourney");
+  const t = useTranslations("BuildingJourney.chairmanMessage");
+  const { deviceType } = useResponsiveStore();
   return (
     <BannerContainer>
       <ImageContainer>
         <BannerImage>
           <Image
-            src="/images/building-journey/building-journey.jpg"
+            src={`/images/BuildingJourney/건립의여정_hero_${deviceType}.png`}
             alt="Building Journey Page Banner Image"
             fill
             style={{ objectFit: "cover" }}
@@ -122,17 +124,15 @@ const ChairmanMessage: React.FC = () => {
       />
       <ChairmanMessageContainer>
         <MessageContainer>
-          <Text color={theme.colors.black}>{t("chairmanMessage.message")}</Text>
+          <Text color={theme.colors.black}>{t(`message.${deviceType}`)}</Text>
         </MessageContainer>
 
         <IntroductionContainer>
           <NameContainer>
-            <Text color={theme.colors.black}>
-              {t("chairmanMessage.introduction")}
-            </Text>
+            <Text color={theme.colors.black}>{t("introduction")}</Text>
           </NameContainer>
           <DateContainer>
-            <Text color={theme.colors.black}>{t("chairmanMessage.date")}</Text>
+            <Text color={theme.colors.black}>{t("date")}</Text>
           </DateContainer>
         </IntroductionContainer>
       </ChairmanMessageContainer>
