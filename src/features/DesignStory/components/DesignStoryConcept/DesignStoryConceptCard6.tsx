@@ -46,15 +46,15 @@ const CardImage = styled.div`
   //background-color: magenta;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    width: calc(100% - 93px);
-    min-width: unset;
+    width: 100%;
     max-width: 100%;
     flex-grow: 0;
     flex-shrink: 0;
-    margin-left: 93px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: calc(100% - 93px);
+    margin-left: 93px;
     align-self: flex-end;
   }
 `;
