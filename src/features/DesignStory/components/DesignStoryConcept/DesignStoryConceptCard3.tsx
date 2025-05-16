@@ -74,6 +74,7 @@ const CardTextContent = styled.section`
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     font-size: 16px;
+    width: 333px;
   }
 `;
 
@@ -93,8 +94,6 @@ const CardImageContainer = styled.section`
     align-items: flex-start;
     flex-grow: 0;
     flex-shrink: 0;
-  }
-  @media (max-width: ${theme.breakpoints.mobileTablet}) {
   }
 `;
 

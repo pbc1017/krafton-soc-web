@@ -6,22 +6,16 @@ import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStor
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const CardContainer = styled.section`
-  width: 1285px;
-  height: 600px;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
 
   margin-top: 250px;
-
-  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    margin-top: 160px;
-  }
+  gap: 80px;
 `;
 
 const CardLeftContainer = styled.section`
-  width: 762px;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -33,7 +27,7 @@ const CardLeftContainer = styled.section`
 
 const CardLeftImage = styled.div`
   width: 100%;
-  height: 469px;
+  aspect-ratio: 762 / 469;
   position: relative;
 `;
 
@@ -50,21 +44,12 @@ const CardLeftImageCaption = styled.div`
   color: ${theme.colors.black};
 `;
 
-const CardRightContainer = styled.section`
-  width: 432px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-`;
-
-const CardRightTextContainer = styled.section`
+const CardTextContainer = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 40px;
+  gap: 60px;
 `;
 
 const CardRightTitle = styled.div`
@@ -93,15 +78,27 @@ const CardRightText = styled.div`
 
 const CardRightImage = styled.div`
   width: 232px;
-  height: 230px;
+  aspect-ratio: 232 / 258;
   position: relative;
 `;
 
-const DesignStoryConceptCard9 = () => {
+const DesignStoryConceptCard9small = () => {
   const { deviceType } = useResponsiveStore();
 
   return (
     <CardContainer>
+      <CardTextContainer>
+        <CardRightTitle>
+          <Text>{"Beyond Boundaries,\nConnecting Views"}</Text>
+        </CardRightTitle>
+        <CardRightText>
+          <Text>
+            {
+              "폐쇄적인 건물 내부에 갇힌 학생들의 공간이 아닌, 5개의\n중첩된 레이어(외부 조경, 콘크리트 테이블, 실내 조경, 평상,\n외부 석재 조경)를 통해 내 외부 시선이 자연스럽게 연결되도록\n디자인했습니다."
+            }
+          </Text>
+        </CardRightText>
+      </CardTextContainer>
       <CardLeftContainer>
         <CardLeftImage>
           <Image
@@ -114,19 +111,9 @@ const DesignStoryConceptCard9 = () => {
           <Text>{"Along, A-long Table and Concrete Wall"}</Text>
         </CardLeftImageCaption>
       </CardLeftContainer>
-      <CardRightContainer>
-        <CardRightTextContainer>
-          <CardRightTitle>
-            <Text>{"Beyond Boundaries,\nConnecting Views"}</Text>
-          </CardRightTitle>
-          <CardRightText>
-            <Text>
-              {
-                "폐쇄적인 건물 내부에 갇힌 학생들의 공간이 아닌, 5개의\n중첩된 레이어(외부 조경, 콘크리트 테이블, 실내 조경, 평상,\n외부 석재 조경)를 통해 내 외부 시선이 자연스럽게 연결되도록\n디자인했습니다."
-              }
-            </Text>
-          </CardRightText>
-        </CardRightTextContainer>
+      <div
+        style={{ width: "100%", display: "flex", justifyContent: "flex-end" }}
+      >
         <CardRightImage>
           <Image
             src={`/images/DesignStory/Concept/디자인이야기_Con14_${deviceType}.png`}
@@ -134,9 +121,9 @@ const DesignStoryConceptCard9 = () => {
             fill
           />
         </CardRightImage>
-      </CardRightContainer>
+      </div>
     </CardContainer>
   );
 };
 
-export default DesignStoryConceptCard9;
+export default DesignStoryConceptCard9small;

@@ -36,7 +36,7 @@ const CardLeftContainer = styled.section`
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    width: 353px;
+    width: 333px;
     gap: 40px;
   }
 `;
