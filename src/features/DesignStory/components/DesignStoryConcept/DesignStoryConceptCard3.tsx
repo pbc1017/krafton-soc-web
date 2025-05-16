@@ -4,11 +4,10 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+import Spacer from "@krafton-soc/common/components/Spacer";
 import Text from "@krafton-soc/common/components/Text";
 import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
-
-const MIN_GAP_PC = "24px";
 
 const CardContainer = styled.section`
   width: 100%;
@@ -128,18 +127,8 @@ const CardImageCaption = styled.section`
   }
 `;
 
-const Spacer = styled.div`
-  flex-shrink: 0;
-  width: ${MIN_GAP_PC};
-
-  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    width: 0;
-    height: 0;
-  }
-`;
-
 const DesignStoryConceptCard3 = () => {
-  const { deviceType } = useResponsiveStore();
+  const { deviceType, isDesktop } = useResponsiveStore();
   const t = useTranslations("DesignStory.Concept.Card3");
 
   return (
@@ -152,7 +141,7 @@ const DesignStoryConceptCard3 = () => {
           <Text>{t(`content.${deviceType}`)}</Text>
         </CardTextContent>
       </CardTextContainer>
-      <Spacer />
+      {isDesktop && <Spacer width={24} />}
       <CardImageContainer>
         <CardImage>
           <Image

@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+import Spacer from "@krafton-soc/common/components/Spacer";
 import Text from "@krafton-soc/common/components/Text";
 import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
@@ -136,16 +137,6 @@ const TextContent = styled.div`
   }
 `;
 
-const Spacer = styled.div`
-  flex-shrink: 0;
-  width: 27px;
-
-  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    width: 0;
-    height: 0;
-  }
-`;
-
 const DesignStoryIntroConnect = () => {
   const t = useTranslations("DesignStory.Intro.Card2");
 
@@ -162,7 +153,7 @@ const DesignStoryIntroConnect = () => {
           </TextContent>
         </TextContainer>
       )}
-      {isDesktop && <Spacer />}
+      {isDesktop && <Spacer width={27} />}
       <ImageContainer>
         <CardImage>
           <Image
