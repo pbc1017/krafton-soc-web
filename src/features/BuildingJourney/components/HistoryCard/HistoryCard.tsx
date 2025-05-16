@@ -34,14 +34,18 @@ const HistoryCardContentContainer = styled.div`
   // background-color: aqua;
 `;
 
-const HistoryCardTextContainer = styled.div`
+interface DescriptionContainerProps {
+  hasImage: boolean;
+}
+
+const HistoryCardTextContainer = styled.div<DescriptionContainerProps>`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-
+  justify-content: flex-start;
+  gap: 30px;
   overflow: visible;
 
-  width: 653px;
+  width: ${({ hasImage }) => (hasImage ? "746px" : "100%")};
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     width: 100%;
@@ -72,12 +76,12 @@ const HistoryCardDuration = styled.div`
   // background-color: blue;
 `;
 
-const HistoryCardDescriptionContainer = styled.div`
+const HistoryCardDescriptionContainer = styled.div<DescriptionContainerProps>`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
-  width: 562px;
+  width: ${({ hasImage }) => (hasImage ? "655px" : "calc(100% - 86px)")};
 
   gap: 13px;
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
@@ -171,7 +175,7 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
     <HistoryCardContainer>
       <DividerLine lineColor={theme.colors.historyCardLine} />
       <HistoryCardContentContainer>
-        <HistoryCardTextContainer>
+        <HistoryCardTextContainer hasImage={!!image}>
           <HistoryCardDuration>
             {duration.endTerm
               ? !isMobile
@@ -179,12 +183,10 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
                 : `${duration.startTerm}-${duration.endTerm}`
               : duration.startTerm}
           </HistoryCardDuration>
-          <HistoryCardDescriptionContainer>
+          <HistoryCardDescriptionContainer hasImage={!!image}>
             <HistoryCardTitleContainer>
               <HistoryCardTitle>
-                <Text whiteSpace={isMobile ? undefined : "nowrap"}>
-                  {title}
-                </Text>
+                <Text>{title}</Text>
               </HistoryCardTitle>
               {link && <HistoryCardLinkButton link={link} />}
               {modalImage && (

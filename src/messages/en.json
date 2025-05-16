@@ -41,6 +41,49 @@
       },
 
       "date": "April 3, 2025"
+    },
+    "Parts": {
+      "Part1": {
+        "PartHeader": {
+          "title": {
+            "desktop": "Preparing for Expansion",
+            "tablet": "Preparing for Expansion",
+            "mobile": "Preparing for Expansion"
+          }
+        },
+        "Card1": {
+          "duration": {
+            "startTerm": "08.07",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "Discussion on the Need for Expansion at the School of\nComputing During SW Junggle MOU Ceremony",
+            "tablet": "Discussion on the Need for Expansion at the School of\nComputing During SW Junggle MOU Ceremony",
+            "mobile": "Discussion on the Need for Expansion at the School of\nComputing During SW Junggle MOU Ceremony"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card2": {
+          "duration": {
+            "startTerm": "09.21",
+            "endTerm": "10.05"
+          },
+          "title": {
+            "desktop": "Discussion on KRAFTON's Donation to KAIST and Support for Expansion",
+            "tablet": "Discussion on KRAFTON's Donation to KAIST and Support for Expansion",
+            "mobile": "Discussion on KRAFTON's Donation to KAIST and Support for Expansion"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        }
+      }
     }
   },
   "DesignStory": {
