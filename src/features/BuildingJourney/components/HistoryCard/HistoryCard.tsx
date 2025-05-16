@@ -3,6 +3,7 @@
 import styled from "@emotion/styled";
 import React from "react";
 
+import DividerLine from "@krafton-soc/common/components/DividerLine";
 import Text from "@krafton-soc/common/components/Text";
 import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
@@ -20,13 +21,6 @@ const HistoryCardContainer = styled.div`
 
   gap: 20px;
   // background-color: darkcyan;
-`;
-
-const HistoryCardBorderLine = styled.div`
-  width: 100%;
-  height: 1px;
-  background-color: ${theme.colors.historyCardLine};
-  transform: scaleY(1); // 선을 균일하게 만들기 위해 추가
 `;
 
 const HistoryCardContentContainer = styled.div`
@@ -133,7 +127,7 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
 
   return (
     <HistoryCardContainer>
-      <HistoryCardBorderLine />
+      <DividerLine lineColor={theme.colors.historyCardLine} />
       <HistoryCardContentContainer>
         <HistoryCardTextContainer>
           <HistoryCardDuration>
