@@ -8,7 +8,6 @@ import { theme } from "@krafton-soc/common/styles/theme";
 import DonnerTable from "./PositiveImpactDonnerTable";
 
 const DonnerContainer = styled.div`
-  margin-top: 145px;
   width: 1066px;
 
   display: flex;
