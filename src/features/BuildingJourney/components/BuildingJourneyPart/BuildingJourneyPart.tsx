@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
 
+import { theme } from "@krafton-soc/common/styles/theme";
+
 import HistoryCard from "../HistoryCard";
 import { HistoryCardProps } from "../HistoryCard/HistoryCard";
 import PartHeader from "./PartHeader";
@@ -13,6 +15,16 @@ const PartContainer = styled.section`
   gap: 166px;
 
   width: 1067px;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: max(696px, calc(696 / 744 * 100%));
+    gap: 170px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: max(353px, calc(353 / 393 * 100%));
+    gap: 170px;
+  }
   // background-color: darkkhaki;
 `;
 
@@ -20,9 +32,17 @@ const PartContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+
   gap: 80px;
 
-  width: 100%;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    gap: 120px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    gap: 100px;
+  }
 
   // background-color: saddlebrown;
 `;
@@ -33,6 +53,7 @@ const YearContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 25px;
+
   // background-color: darkblue;
 `;
 
@@ -45,7 +66,7 @@ const HistoryCardContainer = styled.div`
   // background-color: magenta;
 `;
 
-interface PartProps {
+export interface PartProps {
   part: number;
   title: string;
   startTerm: string;
