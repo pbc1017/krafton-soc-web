@@ -102,7 +102,18 @@ const PositiveImpactMessage = () => {
   return (
     <MessageContainer>
       <PositiveImpactMessageChief />
-      <DividerLine marginTop={100} marginBottom={145} />
+      <DividerLine
+        marginTop={{
+          desktop: 100,
+          tablet: 40,
+          mobile: 60,
+        }}
+        marginBottom={{
+          desktop: 145,
+          tablet: 120,
+          mobile: 100,
+        }}
+      />
       <MessageCardListContainer>
         <MessageCardContainer>
           <MessageCardImage>
