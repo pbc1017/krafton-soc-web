@@ -2,6 +2,7 @@
 
 import styled from "@emotion/styled";
 
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 import DesignStoryConceptCard1 from "./DesignStoryConceptCard1";
@@ -13,6 +14,7 @@ import DesignStoryConceptCard6 from "./DesignStoryConceptCard6";
 import DesignStoryConceptCard7 from "./DesignStoryConceptCard7";
 import DesignStoryConceptCard8 from "./DesignStoryConceptCard8";
 import DesignStoryConceptCard9 from "./DesignStoryConceptCard9";
+import DesignStoryConceptCard9small from "./DesignStoryConceptCard9small";
 import DesignStoryConceptCard10 from "./DesignStoryConceptCard10";
 import DesignStoryConceptFinal from "./DesignStoryConceptFinal";
 import DesignStoryConceptTitle from "./DesignStoryConceptTitle";
@@ -75,6 +77,8 @@ const DesignStoryConceptCardEndingContainer = styled.div`
 `;
 
 const DesignStoryConcept = () => {
+  const { isDesktop } = useResponsiveStore();
+
   return (
     <DesignStoryConceptContainer>
       <DesignStoryConceptTitleContainer>
@@ -89,7 +93,11 @@ const DesignStoryConcept = () => {
         <DesignStoryConceptCard6 />
         <DesignStoryConceptCard7 />
         <DesignStoryConceptCard8 />
-        <DesignStoryConceptCard9 />
+        {isDesktop ? (
+          <DesignStoryConceptCard9 />
+        ) : (
+          <DesignStoryConceptCard9small />
+        )}
         <DesignStoryConceptCard10 />
       </DesignStoryConceptCardContainer>
       <DesignStoryConceptCardEndingContainer>
