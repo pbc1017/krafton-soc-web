@@ -10,7 +10,9 @@ import { theme } from "@krafton-soc/common/styles/theme";
 
 import HistoryCardImage from "./HistoryCardImage";
 import HistoryCardLinkButton from "./HistoryCardLinkButton";
-import HistoryCardModalButton from "./HistoryCardModalButton";
+import HistoryCardModalButton, {
+  HistoryCardModalButtonProps,
+} from "./HistoryCardModalButton";
 
 const HistoryCardContainer = styled.div`
   display: flex;
@@ -107,11 +109,7 @@ export interface HistoryCardProps {
     srcNumber: number;
     alt: string;
   };
-  modalImage?: {
-    part: number;
-    filename: string;
-    alt: string;
-  };
+  modalImage?: HistoryCardModalButtonProps;
   link?: string;
 }
 
@@ -148,6 +146,7 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
               {modalImage && (
                 <HistoryCardModalButton
                   part={modalImage.part}
+                  modalNumber={modalImage.modalNumber}
                   filename={modalImage.filename}
                   alt={modalImage.alt}
                 />

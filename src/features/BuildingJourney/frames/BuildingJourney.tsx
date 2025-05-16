@@ -290,6 +290,7 @@ const BuildingJourney: React.FC = () => {
               title: "전산학부 구성원 대상 증축기금 조성",
               modalImage: {
                 part: 2,
+                modalNumber: 1,
                 filename: "0626_전산학부 구성원 대상 증축기금 조성",
                 alt: "전산학부 구성원 대상 증축기금 조성 사진",
               },
@@ -400,6 +401,7 @@ const BuildingJourney: React.FC = () => {
                 "03.16 증축 공사 설계 공모 심사 안내 및 사전 자료 교부\n03.17 공모 설계안 선정을 위한 논의\n03.18 증축 공사 설계 공모 심사 개최\n03.27 증축 공사 착공 KAIST 내 공식 공지\n04.06-10 증축 기공식, 사회환원 의미로 미 개최 \n04.26 증축 공사 설계 공모 심사 완료 및 선정",
               modalImage: {
                 part: 3,
+                modalNumber: 2,
                 filename:
                   "0316_전산학부 증축 공사 실행을 위한 설계 공모 개최 및 확정",
                 alt: "전산학부 증축 공사 실행을 위한 설계 공모 개최 및 확정 사진",
@@ -532,6 +534,7 @@ const BuildingJourney: React.FC = () => {
                 "09.10~10.30 기부자 대상, 건물명 & 기부자 메시지 공모 및 리스트 취합",
               modalImage: {
                 part: 4,
+                modalNumber: 3,
                 filename:
                   "0910_기부의 의미 전달을 위한 메시지 & 건물 네이밍 공모",
                 alt: "기부의 의미 전달을 위한 메시지 & 건물 네이밍 공모 사진",
@@ -560,6 +563,7 @@ const BuildingJourney: React.FC = () => {
               },
               modalImage: {
                 part: 4,
+                modalNumber: 4,
                 filename: "11월_KRAFTON X SoC 건물명 확정 및 공표",
                 alt: "KRAFTON X SoC 건물명 확정 및 공표 사진",
               },

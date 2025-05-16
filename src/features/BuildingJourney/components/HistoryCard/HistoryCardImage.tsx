@@ -30,24 +30,34 @@ const getImageModalSrc = (
 ) =>
   `/images/BuildingJourney/part${part}/Par${part}_${String(imageNumber).padStart(2, "0")}_${deviceType}.png`;
 
-const getThumnailImageSize = (deviceType: DeviceType) => {
-  if (deviceType === "desktop") {
-    return { width: 320, height: 170 };
-  }
-  if (deviceType === "tablet") {
-    return { width: 320, height: 170 };
-  }
-  return { width: 353, height: 188 };
+const thumbnailSize = {
+  desktop: {
+    width: 320,
+    height: 170,
+  },
+  tablet: {
+    width: 320,
+    height: 170,
+  },
+  mobile: {
+    width: 353,
+    height: 188,
+  },
 };
 
-const getModalImageSize = (deviceType: DeviceType) => {
-  if (deviceType === "desktop") {
-    return { width: 907, height: 535 };
-  }
-  if (deviceType === "tablet") {
-    return { width: 670, height: 356 };
-  }
-  return { width: 353, height: 188 };
+const modalSize = {
+  desktop: {
+    width: 907,
+    height: 535,
+  },
+  tablet: {
+    width: 670,
+    height: 356,
+  },
+  mobile: {
+    width: 353,
+    height: 188,
+  },
 };
 
 const HistoryCardImage = ({ part, srcNumber, alt }: HistoryCardImageProps) => {
@@ -58,13 +68,10 @@ const HistoryCardImage = ({ part, srcNumber, alt }: HistoryCardImageProps) => {
   const closeModal = () => setIsModalOpen(false);
 
   const thumbnailImageSize = useMemo(
-    () => getThumnailImageSize(deviceType),
+    () => thumbnailSize[deviceType],
     [deviceType],
   );
-  const modalImageSize = useMemo(
-    () => getModalImageSize(deviceType),
-    [deviceType],
-  );
+  const modalImageSize = useMemo(() => modalSize[deviceType], [deviceType]);
 
   console.log(modalImageSize);
   return (

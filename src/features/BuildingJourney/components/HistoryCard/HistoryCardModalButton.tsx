@@ -3,7 +3,7 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
 import { Locale, useLocale } from "next-intl";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 import {
   DeviceType,
@@ -21,8 +21,11 @@ const HistoryCardModalButtonStyle = styled.div`
   background-color: ${theme.colors.white};
 `;
 
-interface HistoryCardModalButtonProps {
+type ModalNumber = 1 | 2 | 3 | 4;
+
+export interface HistoryCardModalButtonProps {
   part: number;
+  modalNumber: ModalNumber;
   filename: string;
   alt: string;
 }
@@ -35,15 +38,166 @@ const getImageSrc = (
 ) =>
   `/images/BuildingJourney/modal/Part${part}_${filename}_${locale === "ko" ? "KR" : "EN"}_${deviceType}.png`;
 
+type ModalImageSize = {
+  width: number;
+  height: number;
+};
+
+const modalImageSize: Record<
+  ModalNumber,
+  Record<Locale, Record<DeviceType, ModalImageSize>>
+> = {
+  1: {
+    ko: {
+      desktop: {
+        width: 740,
+        height: 1033,
+      },
+      tablet: {
+        width: 740,
+        height: 1033,
+      },
+      mobile: {
+        width: 350,
+        height: 1277,
+      },
+    },
+    en: {
+      desktop: {
+        width: 740,
+        height: 1033,
+      },
+      tablet: {
+        width: 740,
+        height: 1033,
+      },
+      mobile: {
+        width: 350,
+        height: 1438,
+      },
+    },
+  },
+  2: {
+    ko: {
+      desktop: {
+        width: 740,
+        height: 1033,
+      },
+      tablet: {
+        width: 740,
+        height: 1033,
+      },
+      mobile: {
+        width: 350,
+        height: 1501,
+      },
+    },
+    en: {
+      desktop: {
+        width: 740,
+        height: 1033,
+      },
+      tablet: {
+        width: 740,
+        height: 1033,
+      },
+      mobile: {
+        width: 350,
+        height: 1943,
+      },
+    },
+  },
+  3: {
+    ko: {
+      desktop: {
+        width: 740,
+        height: 1033,
+      },
+      tablet: {
+        width: 740,
+        height: 1033,
+      },
+      mobile: {
+        width: 350,
+        height: 814,
+      },
+    },
+    en: {
+      desktop: {
+        width: 740,
+        height: 1033,
+      },
+      tablet: {
+        width: 740,
+        height: 1033,
+      },
+      mobile: {
+        width: 350,
+        height: 1064,
+      },
+    },
+  },
+  4: {
+    ko: {
+      desktop: {
+        width: 740,
+        height: 1033,
+      },
+      tablet: {
+        width: 740,
+        height: 1033,
+      },
+      mobile: {
+        width: 350,
+        height: 1164,
+      },
+    },
+    en: {
+      desktop: {
+        width: 740,
+        height: 1033,
+      },
+      tablet: {
+        width: 740,
+        height: 1033,
+      },
+      mobile: {
+        width: 350,
+        height: 1455,
+      },
+    },
+  },
+};
+
+const getModalImageSize = (
+  modalNumber: ModalNumber,
+  locale: Locale,
+  deviceType: DeviceType,
+  windowWidth: number,
+) => {
+  const size = modalImageSize[modalNumber][locale][deviceType];
+  return {
+    width: windowWidth * 0.85,
+    height: ((windowWidth * 0.85) / size.width) * size.height,
+  };
+};
 const HistoryCardModalButton = ({
   part,
+  modalNumber,
   filename,
   alt,
 }: HistoryCardModalButtonProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const locale = useLocale() as Locale;
-  const { deviceType } = useResponsiveStore();
+  const { deviceType, windowWidth } = useResponsiveStore();
+
+  const { width, height } = useMemo(
+    () => getModalImageSize(modalNumber, locale, deviceType, windowWidth),
+    [modalNumber, locale, deviceType, windowWidth],
+  );
+
+  console.log(width, height);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -63,8 +217,8 @@ const HistoryCardModalButton = ({
           <Image
             src={getImageSrc(part, filename, locale, deviceType)}
             alt={alt}
-            width={739}
-            height={1032}
+            width={width}
+            height={height}
           />
         </HistoryModal>
       )}
