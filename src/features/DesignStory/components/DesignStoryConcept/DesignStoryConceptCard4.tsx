@@ -88,7 +88,7 @@ const CardRightText = styled.div`
     align-self: flex-start;
   }
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    width: 353px !important;
+    width: 333px !important;
   }
 `;
 
