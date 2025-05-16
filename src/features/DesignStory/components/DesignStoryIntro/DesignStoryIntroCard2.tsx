@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+import Spacer from "@krafton-soc/common/components/Spacer";
 import Text from "@krafton-soc/common/components/Text";
 import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
@@ -12,55 +13,55 @@ const IntroCard2Container = styled.section`
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-between;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     flex-direction: column;
     align-items: flex-end;
-    margin-right: 25px;
-    gap: 88px;
+    gap: 100px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    margin-right: 0px;
     gap: 60px;
   }
-
-  //background-color: pink;
 `;
 
 const ImageContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
-  width: 680px;
+  max-width: 680px;
+  flex-grow: 1;
+  flex-shrink: 1;
   gap: 10px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     width: 577px;
-    gap: 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    width: 373px;
-    gap: 10px;
+    padding-left: 20px;
+    width: 100%;
+    align-self: flex-end;
+    box-sizing: border-box;
   }
-  //background-color: orange;
 `;
 
 const CardImage = styled.div`
   position: relative;
   width: 100%;
+  height: auto;
+  aspect-ratio: 680 / 600;
 
-  height: 600px;
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     height: 509px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    height: 329px;
+    height: auto;
   }
 `;
 
@@ -81,18 +82,15 @@ const CardImageCaption = styled.div`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     margin-right: 20px;
   }
-
-  //background-color: green;
 `;
 
 const TextContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
-  width: 521px;
-
-  gap: 45px;
+  width: 516px;
+  flex-shrink: 0;
+  gap: 52px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     width: 577px;
@@ -102,17 +100,18 @@ const TextContainer = styled.section`
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     width: 353px;
-    margin-right: 20px;
+    padding-right: 0px;
+    padding-left: 20px;
     gap: 40px;
+    align-self: flex-start;
   }
-  //background-color: yellow;
 `;
 
 const TextTitle = styled.div`
   width: 100%;
   font-size: 64px;
   font-weight: ${theme.fonts.weights.semibold};
-  line-height: 130%;
+  line-height: 83px;
   color: ${theme.colors.black};
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
@@ -123,27 +122,19 @@ const TextTitle = styled.div`
     font-size: 40px;
     line-height: 120%;
   }
-
-  //background-color: red;
 `;
 
 const TextContent = styled.div`
   width: 100%;
-
   font-size: 18px;
   font-weight: ${theme.fonts.weights.regular};
   line-height: 180%;
   color: ${theme.colors.black};
 
-  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    padding-right: 20px;
-  }
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     font-size: 16px;
     line-height: 175%;
   }
-
-  //background-color: blue;
 `;
 
 const DesignStoryIntroConnect = () => {
@@ -162,6 +153,7 @@ const DesignStoryIntroConnect = () => {
           </TextContent>
         </TextContainer>
       )}
+      {isDesktop && <Spacer width={27} />}
       <ImageContainer>
         <CardImage>
           <Image

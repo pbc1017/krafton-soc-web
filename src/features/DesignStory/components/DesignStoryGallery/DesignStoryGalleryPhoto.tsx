@@ -9,14 +9,11 @@ const BehindPhotoContainer = styled.div`
   width: 100%;
   aspect-ratio: 1285/800;
   position: relative;
-
-  //background-color: green;
 `;
 
 const BehindPhoto = styled.div`
   width: 100%;
   height: 100%;
-  //background-color: ${theme.colors.hoverGray};
 `;
 
 const LeftButton = styled.div`
@@ -42,8 +39,6 @@ const LeftButton = styled.div`
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
       hue-rotate(0deg) brightness(100%) contrast(100%);
   }
-
-  //background-color: darkslateblue;
 `;
 
 const RightButton = styled.div`
@@ -54,8 +49,6 @@ const RightButton = styled.div`
 
   width: 49px;
   height: 49px;
-
-  //background-color: darkblue;
 
   transform: rotate(0deg);
   img {

@@ -23,6 +23,16 @@ const DesignStoryConceptContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 30px;
+  max-width: 1345px;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    padding: 0 24px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    padding: 0 20px;
+  }
 `;
 
 const DesignStoryConceptTitleContainer = styled.div`
@@ -31,7 +41,7 @@ const DesignStoryConceptTitleContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 190px;
+  margin-bottom: 180px;
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     margin-bottom: 120px;
   }
@@ -46,7 +56,6 @@ const DesignStoryConceptCardContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 250px;
 `;
 
 const DesignStoryConceptCardEndingContainer = styled.div`

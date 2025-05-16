@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 
 import Text from "@krafton-soc/common/components/Text";
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const CardContainer = styled.section`
@@ -11,6 +12,12 @@ const CardContainer = styled.section`
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+
+  margin-top: 250px;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    margin-top: 160px;
+  }
 
   //background-color: red;
 `;
@@ -107,12 +114,14 @@ const CardRightImage = styled.div`
 `;
 
 const DesignStoryConceptCard9 = () => {
+  const { deviceType } = useResponsiveStore();
+
   return (
     <CardContainer>
       <CardLeftContainer>
         <CardLeftImage>
           <Image
-            src={"/images/DesignStory/Concept/card9.png"}
+            src={`/images/DesignStory/Concept/디자인이야기_Con13_${deviceType}.png`}
             alt="design-story-concept-card-9"
             fill
           />
@@ -136,7 +145,7 @@ const DesignStoryConceptCard9 = () => {
         </CardRightTextContainer>
         <CardRightImage>
           <Image
-            src={"/images/DesignStory/Concept/card9-2.png"}
+            src={`/images/DesignStory/Concept/디자인이야기_Con14_${deviceType}.png`}
             alt="design-story-concept-card-9-2"
             fill
           />

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
 
+import Spacer from "@krafton-soc/common/components/Spacer";
 import Text from "@krafton-soc/common/components/Text";
 import { theme } from "@krafton-soc/common/styles/theme";
 import { Locale } from "@krafton-soc/i18n/config";
@@ -147,16 +148,6 @@ const SpeakerContainer = styled.div<{ locale: Locale }>`
   }
 `;
 
-const Spacer = styled.div<{ isReversed: boolean }>`
-  flex-shrink: 0;
-  width: ${({ isReversed }) => (isReversed ? "64px" : "87.7px")};
-
-  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    width: 0;
-    height: 0;
-  }
-`;
-
 const StoryCard: React.FC<StoryCardProps> = ({
   title,
   description,
@@ -174,7 +165,7 @@ const StoryCard: React.FC<StoryCardProps> = ({
         <ImageContainer>
           <Image src={imageSrc} alt={title} fill objectFit="cover" priority />
         </ImageContainer>
-        <Spacer isReversed={isReversed} />
+        <Spacer width={isReversed ? 64 : 87.7} />
         <ContentContainer isReversed={isReversed} locale={locale}>
           <TitleContainer locale={locale}>
             <Text fw={theme.fonts.weights.semibold}>{title}</Text>
