@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import Text from "@krafton-soc/common/components/Text";
 import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
@@ -46,6 +47,7 @@ const CardText = styled.div`
 
 const DesignStoryConceptCard6 = () => {
   const { deviceType } = useResponsiveStore();
+  const t = useTranslations("DesignStory.Concept.Card6");
 
   return (
     <CardContainer>
@@ -57,11 +59,7 @@ const DesignStoryConceptCard6 = () => {
         />
       </CardImage>
       <CardText>
-        <Text>
-          {
-            "우리는 작은 기부가 모여 더 큰 의미를 만들고,\n연결된 마음들이 새로운 가능성을 만들어 가는 \n과정을 시각적으로 표현하고자 했습니다. \n이 플레이트로 단순한 기록이 아니라, \n선한 영향력이 끊임없이 이어지는 공간이 되기를 \n바랐습니다. "
-          }
-        </Text>
+        <Text>{t(`text.${deviceType}`)}</Text>
       </CardText>
     </CardContainer>
   );
