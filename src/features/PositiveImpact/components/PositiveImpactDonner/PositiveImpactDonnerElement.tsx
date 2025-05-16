@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 
 import Text from "@krafton-soc/common/components/Text";
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 export interface DonnerDataType {
@@ -15,9 +16,6 @@ const DonnerTableElementContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  width: 176px;
-  height: 63px;
 `;
 
 // 기본적인 한국인 기부자
@@ -35,6 +33,12 @@ const TableElementPerson = styled.div`
   color: ${theme.colors.black};
 
   letter-spacing: 4.8px;
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-weight: ${theme.fonts.weights.regular};
+    font-size: 14px;
+    letter-spacing: 2.8px;
+  }
 `;
 
 // 외국인 기부자 (지글러 교수님)
@@ -50,6 +54,11 @@ const TableElementForeigner = styled.div`
   font-weight: ${theme.fonts.weights.semibold};
 
   color: ${theme.colors.black};
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-weight: ${theme.fonts.weights.regular};
+    font-size: 12px;
+    letter-spacing: 2.8px;
+  }
 `;
 
 // 기업 기부자
@@ -72,6 +81,11 @@ const TableElementCompanyName = styled.div`
   font-weight: ${theme.fonts.weights.semibold};
 
   color: ${theme.colors.black};
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-weight: ${theme.fonts.weights.regular};
+    font-size: 13.6px;
+    letter-spacing: 2.8px;
+  }
 `;
 //// (주)
 const TableElementCompanyType = styled.div`
@@ -86,6 +100,11 @@ const TableElementCompanyType = styled.div`
   font-weight: ${theme.fonts.weights.semibold};
 
   color: ${theme.colors.black};
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-weight: ${theme.fonts.weights.regular};
+    font-size: 8px;
+  }
 `;
 // 트윈빌딩
 const TableElementTwinBuildingContainer = styled.div`
@@ -109,6 +128,11 @@ const TableElementTwinBuildingName = styled.div`
   color: ${theme.colors.black};
 
   letter-spacing: 4.8px;
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-weight: ${theme.fonts.weights.regular};
+    font-size: 14px;
+    letter-spacing: 2.8px;
+  }
 `;
 // 트윈빌딩
 const TableElementTwinBuildingText = styled.div`
@@ -125,6 +149,12 @@ const TableElementTwinBuildingText = styled.div`
   color: ${theme.colors.black};
 
   letter-spacing: 2.4px;
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-weight: ${theme.fonts.weights.regular};
+    font-size: 8px;
+    letter-spacing: 1.6px;
+  }
 `;
 
 type TableElementNameProps = {
@@ -132,10 +162,15 @@ type TableElementNameProps = {
 };
 
 const TableElementCompany: React.FC<TableElementNameProps> = ({ name }) => {
+  const { isMobile } = useResponsiveStore();
   return (
     <TableElementCompanyContainer>
       <TableElementCompanyType>{"(주)"}</TableElementCompanyType>
-      <TableElementCompanyName>{name}</TableElementCompanyName>
+      <TableElementCompanyName>
+        <Text fs={name.length > 4 ? (isMobile ? "10px" : "23px") : undefined}>
+          {name}
+        </Text>
+      </TableElementCompanyName>
     </TableElementCompanyContainer>
   );
 };

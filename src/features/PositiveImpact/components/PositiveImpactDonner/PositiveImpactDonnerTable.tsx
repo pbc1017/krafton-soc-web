@@ -248,15 +248,15 @@ const donnerData: DonnerDataType[] = [
 ];
 
 const DonnerTableContainer = styled.div`
-  font-size: 18px;
-  line-height: 36px;
-  font-weight: ${theme.fonts.weights.regular};
-
-  width: 940px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   row-gap: 0px;
   column-gap: 15px;
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    column-gap: 0;
+  }
 `;
 
 const DonnerTable: React.FC = () => {
