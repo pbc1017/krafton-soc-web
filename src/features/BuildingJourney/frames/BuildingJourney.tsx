@@ -93,7 +93,6 @@ const BuildingJourney: React.FC = () => {
     [t, deviceType],
   );
 
-  console.log(partContent(1, 1).title);
   const partContents: PartProps[] = [
     {
       part: 1,

@@ -73,7 +73,6 @@ const HistoryCardImage = ({ part, srcNumber, alt }: HistoryCardImageProps) => {
   );
   const modalImageSize = useMemo(() => modalSize[deviceType], [deviceType]);
 
-  console.log(modalImageSize);
   return (
     <>
       <Image
@@ -106,6 +105,3 @@ const HistoryCardImage = ({ part, srcNumber, alt }: HistoryCardImageProps) => {
 };
 
 export default HistoryCardImage;
-
-// backlog:
-// 이미지 누르면 모달 뜨는 기능
