@@ -41,7 +41,7 @@ const DesignStoryConceptTitleContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 190px;
+  margin-bottom: 180px;
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     margin-bottom: 120px;
   }
@@ -56,7 +56,6 @@ const DesignStoryConceptCardContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 250px;
 `;
 
 const DesignStoryConceptCardEndingContainer = styled.div`
