@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import DividerLine from "@krafton-soc/common/components/DividerLine";
 import Text from "@krafton-soc/common/components/Text";
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 import PositiveImpactMessageChief from "./PositiveImpactMessageChief";
@@ -89,6 +90,7 @@ const MessageIntroduction = styled.div`
 `;
 
 const PositiveImpactMessage = () => {
+  const { deviceType } = useResponsiveStore();
   return (
     <MessageContainer>
       <PositiveImpactMessageChief />
@@ -97,7 +99,7 @@ const PositiveImpactMessage = () => {
         <MessageCardContainer>
           <MessageCardImage>
             <Image
-              src="/images/positive-impact/card1.png"
+              src={`/images/PositiveImpact/선한영향력의길_Con01_${deviceType}.png`}
               alt="card1"
               fill
               objectFit="cover"
@@ -131,7 +133,7 @@ const PositiveImpactMessage = () => {
           </MessageCardTextContainer>
           <MessageCardImage>
             <Image
-              src="/images/positive-impact/card2.png"
+              src={`/images/PositiveImpact/선한영향력의길_Con02_${deviceType}.png`}
               alt="card2"
               fill
               objectFit="cover"
