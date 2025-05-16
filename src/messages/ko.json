@@ -40,6 +40,49 @@
         "mobile": "KAIST 전산학부 동문 장병규 KRAFTON 의장"
       },
       "date": "2025. 04. 03."
+    },
+    "Parts": {
+      "Part1": {
+        "PartHeader": {
+          "title": {
+            "desktop": "증축 준비",
+            "tablet": "증축 준비",
+            "mobile": "증축 준비"
+          }
+        },
+        "Card1": {
+          "duration": {
+            "startTerm": "08.07",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "SW사관학교 정글 업무협약식에서 전산학부 건물 증축의 필요성 논의",
+            "tablet": "SW사관학교 정글 업무협약식에서 전산학부 건물 증축의 필요성 논의",
+            "mobile": "SW사관학교 정글 업무협약식에서\n전산학부 건물 증축의 필요성 논의"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card2": {
+          "duration": {
+            "startTerm": "09.21",
+            "endTerm": "10.05"
+          },
+          "title": {
+            "desktop": "크래프톤 KAIST 기부 및 전산학부 증축 지원 논의",
+            "tablet": "크래프톤 KAIST 기부 및 전산학부 증축 지원 논의",
+            "mobile": "크래프톤 KAIST 기부 및 전산학부 증축 지원 논의"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        }
+      }
     }
   },
   "DesignStory": {

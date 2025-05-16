@@ -58,7 +58,7 @@ const HistoryCardContainer = styled.div`
   background-color: magenta;
 `;
 
-interface PartProps {
+export interface PartProps {
   part: number;
   title: string;
   startTerm: string;

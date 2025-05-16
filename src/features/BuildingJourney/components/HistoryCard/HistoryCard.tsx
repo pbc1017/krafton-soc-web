@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import React from "react";
 
 import Text from "@krafton-soc/common/components/Text";
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 import HistoryCardImage from "./HistoryCardImage";
@@ -108,11 +109,13 @@ export interface HistoryCardProps {
   title: string;
   detail?: string;
   image?: {
-    src: string;
+    part: number;
+    srcNumber: number;
     alt: string;
   };
   modalImage?: {
-    src: string;
+    part: number;
+    filename: string;
     alt: string;
   };
   link?: string;
@@ -126,6 +129,8 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
   modalImage,
   link,
 }) => {
+  const { isMobile } = useResponsiveStore();
+
   return (
     <HistoryCardContainer>
       <HistoryCardBorderLine />
@@ -133,18 +138,23 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
         <HistoryCardTextContainer>
           <HistoryCardDuration>
             {duration.endTerm
-              ? `${duration.startTerm}\n-${duration.endTerm}`
+              ? isMobile
+                ? `${duration.startTerm}\n-${duration.endTerm}`
+                : `${duration.startTerm}-${duration.endTerm}`
               : duration.startTerm}
           </HistoryCardDuration>
           <HistoryCardDescriptionContainer>
             <HistoryCardTitleContainer>
               <HistoryCardTitle>
-                <Text whiteSpace="nowrap">{title}</Text>
+                <Text whiteSpace={isMobile ? undefined : "nowrap"}>
+                  {title}
+                </Text>
               </HistoryCardTitle>
               {link && <HistoryCardLinkButton link={link} />}
               {modalImage && (
                 <HistoryCardModalButton
-                  src={modalImage.src}
+                  part={modalImage.part}
+                  filename={modalImage.filename}
                   alt={modalImage.alt}
                 />
               )}
@@ -158,7 +168,11 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
         </HistoryCardTextContainer>
 
         {image ? (
-          <HistoryCardImage src={image.src} alt={image.alt} />
+          <HistoryCardImage
+            part={image.part}
+            srcNumber={image.srcNumber}
+            alt={image.alt}
+          />
         ) : undefined}
       </HistoryCardContentContainer>
     </HistoryCardContainer>
