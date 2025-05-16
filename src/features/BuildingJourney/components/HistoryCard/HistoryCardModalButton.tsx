@@ -177,8 +177,8 @@ const getModalImageSize = (
 ) => {
   const size = modalImageSize[modalNumber][locale][deviceType];
   return {
-    width: windowWidth * 0.85,
-    height: ((windowWidth * 0.85) / size.width) * size.height,
+    width: windowWidth * 0.8,
+    height: ((windowWidth * 0.8) / size.width) * size.height,
   };
 };
 const HistoryCardModalButton = ({

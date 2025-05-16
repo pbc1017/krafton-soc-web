@@ -43,6 +43,16 @@ const HistoryCardTextContainer = styled.div`
 
   width: 653px;
 
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 100%;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
   font-family: ${theme.fonts.families.pretendard};
   // background-color: red;
 `;
@@ -54,6 +64,11 @@ const HistoryCardDuration = styled.div`
   font-weight: ${theme.fonts.weights.regular};
   line-height: 25px;
   color: ${theme.colors.black};
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 100%;
+    font-size: 16px;
+  }
   // background-color: blue;
 `;
 
@@ -63,6 +78,15 @@ const HistoryCardDescriptionContainer = styled.div`
   align-items: flex-start;
 
   width: 562px;
+
+  gap: 13px;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: calc(100% - 86px);
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 100%;
+  }
 
   overflow: visible;
   // background-color: orange;
@@ -86,6 +110,10 @@ const HistoryCardTitle = styled.div`
   font-weight: ${theme.fonts.weights.bold};
   line-height: 25px;
   overflow: visible;
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 18px;
+  }
   // background-color: pink;
 `;
 
@@ -94,7 +122,23 @@ const HistoryCardDetail = styled.div`
   font-size: 15px;
   font-weight: ${theme.fonts.weights.regular};
   line-height: 25px;
+  width: 100%;
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 14px;
+    line-height: 23px;
+  }
   // background-color: brown;
+`;
+
+const HistoryCardTabletImageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 100%;
+  margin-top: 30px;
 `;
 
 export interface HistoryCardProps {
@@ -121,7 +165,7 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
   modalImage,
   link,
 }) => {
-  const { isMobile } = useResponsiveStore();
+  const { isMobile, isDesktop } = useResponsiveStore();
 
   return (
     <HistoryCardContainer>
@@ -130,7 +174,7 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
         <HistoryCardTextContainer>
           <HistoryCardDuration>
             {duration.endTerm
-              ? isMobile
+              ? !isMobile
                 ? `${duration.startTerm}\n-${duration.endTerm}`
                 : `${duration.startTerm}-${duration.endTerm}`
               : duration.startTerm}
@@ -157,10 +201,19 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
                 <Text>{detail}</Text>
               </HistoryCardDetail>
             )}
+            {image && !isDesktop && (
+              <HistoryCardTabletImageContainer>
+                <HistoryCardImage
+                  part={image.part}
+                  srcNumber={image.srcNumber}
+                  alt={image.alt}
+                />
+              </HistoryCardTabletImageContainer>
+            )}
           </HistoryCardDescriptionContainer>
         </HistoryCardTextContainer>
 
-        {image ? (
+        {image && isDesktop ? (
           <HistoryCardImage
             part={image.part}
             srcNumber={image.srcNumber}
