@@ -101,5 +101,23 @@
         }
       }
     }
+  },
+  "PositiveImpact": {
+    "Banner": {
+      "title": {
+        "desktop": "Where Positive Influence Comes Full Circle",
+        "tablet": "Where Positive Influence Comes Full Circle",
+        "mobile": "Where Positive Influence\nComes Full Circle"
+      },
+      "subTitle": {
+        "desktop": "Where Positive Influence Comes Full Circle",
+        "tablet": "Where Positive Influence Comes Full Circle",
+        "mobile": "Where Positive Influence Comes Full Circle"
+      }
+    },
+    "Message": {
+      "title": "선한 영향력의 길",
+      "description": "선한 영향력의 길"
+    }
   }
 }

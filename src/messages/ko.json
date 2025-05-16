@@ -103,5 +103,33 @@
         }
       }
     }
+  },
+  "PositiveImpact": {
+    "Banner": {
+      "title": {
+        "desktop": "Where Positive Influence Comes Full Circle",
+        "tablet": "Where Positive Influence Comes Full Circle",
+        "mobile": "Where Positive Influence\nComes Full Circle"
+      },
+      "subTitle": {
+        "desktop": "선한 영향력이 선순환하는 공간",
+        "tablet": "선한 영향력이 선순환하는 공간",
+        "mobile": "선한 영향력이 선순환하는 공간"
+      }
+    },
+    "Message": {
+      "ChiefMessage": {
+        "title": "선한 영향력의 길",
+        "description": "선한 영향력의 길"
+      },
+      "Card1": {
+        "title": "선한 영향력의 길",
+        "description": "선한 영향력의 길"
+      },
+      "Card2": {
+        "title": "선한 영향력의 길",
+        "description": "선한 영향력의 길"
+      }
+    }
   }
 }

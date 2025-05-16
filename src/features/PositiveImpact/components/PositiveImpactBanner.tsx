@@ -2,30 +2,38 @@
 
 import styled from "@emotion/styled";
 import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
 
 import Text from "@krafton-soc/common/components/Text";
 import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const BannerContainer = styled.section`
-  margin-top: 72px;
   width: 100%;
-  height: 626px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: -1;
+  z-index: 0;
   position: relative;
+
+  height: 626px;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    height: 380px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    height: 500px;
+  }
 `;
 
 const BannerImage = styled.div`
   width: 100%;
   height: 100%;
-
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 0;
 `;
 
 const BannerTextContainer = styled.div`
@@ -33,16 +41,14 @@ const BannerTextContainer = styled.div`
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
-  height: 93px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  z-index: 2;
+  z-index: 1;
 `;
 
-const BannerTitle = styled.div`
-  width: 100%;
+const BannerTitleText = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,27 +56,35 @@ const BannerTitle = styled.div`
 
   text-align: center;
   font-size: 32px;
-  line-height: 110%;
   font-weight: ${theme.fonts.weights.medium};
+  line-height: 110%;
   color: ${theme.colors.white};
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 28px;
+  }
 `;
 
-const BannerText = styled.div`
-  width: 100%;
+const BannerSubText = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
   text-align: center;
-  font-size: 18px;
-  line-height: 110%;
+  font-size: 24px;
   font-weight: ${theme.fonts.weights.regular};
+  line-height: 110%;
   color: ${theme.colors.white};
-`;
 
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 20px;
+  }
+`;
 const PositiveImpactBanner: React.FC = () => {
   const { deviceType } = useResponsiveStore();
+  const t = useTranslations("PositiveImpact.Banner");
+  const locale = useLocale();
   return (
     <BannerContainer>
       <BannerImage>
@@ -83,12 +97,19 @@ const PositiveImpactBanner: React.FC = () => {
         />
       </BannerImage>
       <BannerTextContainer>
-        <BannerTitle>
-          <Text>{"Where Positive Influence Comes Full Circle"}</Text>
-        </BannerTitle>
-        <BannerText>
-          <Text>{"선한 영향력이 선순환하는 공간"}</Text>
-        </BannerText>
+        <BannerTitleText>
+          <Text>{t(`title.${deviceType}`)}</Text>
+        </BannerTitleText>
+        {locale === "ko" && (
+          <>
+            <BannerTitleText>
+              <Text>{"\n"}</Text>
+            </BannerTitleText>
+            <BannerSubText>
+              <Text>{t(`subTitle.${deviceType}`)}</Text>
+            </BannerSubText>
+          </>
+        )}
       </BannerTextContainer>
     </BannerContainer>
   );
