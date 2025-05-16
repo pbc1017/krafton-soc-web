@@ -205,16 +205,18 @@
           "desktop": "KAIST 전산학부 동문 류석영 학부장",
           "tablet": "KAIST 전산학부 동문 류석영 학부장",
           "mobile": "KAIST 전산학부 동문 류석영 학부장"
-        }
+        },
+        "date": "2025. 03. 18."
       },
       "Card1": {
-        "title": "선한 영향력의 길",
-        "description": "선한 영향력의 길"
+        "content": "데이터와 사람의 연결.\n그 한계를 넘어 마음과 마음을 \n이어줄 수 있는 사람이 되어 주세요.",
+        "introduction": "KAIST 전산학부 동문 이성원"
       },
       "Card2": {
-        "title": "선한 영향력의 길",
-        "description": "선한 영향력의 길"
-      }
+        "content": "기술은 사람을 위한 것, \n당신의 도전이 사람들의 삶을 \n변화시킬 것입니다.",
+        "introduction": "KAIST 전산학부 동문 홍성진"
+      },
+      "Introduction": "전산학부 증축 기념 메시지 공모 선정자 2인의 메시지"
     }
   }
 }

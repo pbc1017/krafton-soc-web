@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import DividerLine from "@krafton-soc/common/components/DividerLine";
 import Text from "@krafton-soc/common/components/Text";
@@ -162,6 +163,7 @@ const MessageIntroduction = styled.div`
 
 const PositiveImpactMessage = () => {
   const { deviceType, isMobile } = useResponsiveStore();
+  const t = useTranslations("PositiveImpact.Message");
   return (
     <MessageContainer>
       <PositiveImpactMessageChief />
@@ -190,14 +192,10 @@ const PositiveImpactMessage = () => {
             </MessageCardImage>
             <MessageCardTextContainer>
               <MessageCardContent>
-                <Text>
-                  {
-                    "데이터와 사람의 연결.\n그 한계를 넘어 마음과 마음을 \n이어줄 수 있는 사람이 되어 주세요."
-                  }
-                </Text>
+                <Text>{t("Card1.content")}</Text>
               </MessageCardContent>
               <MessageCardIntroduction>
-                <Text>{"KAIST 전산학부 동문 이성원"}</Text>
+                <Text>{t("Card1.introduction")}</Text>
               </MessageCardIntroduction>
             </MessageCardTextContainer>
           </MessageCardContainer>
@@ -207,14 +205,10 @@ const PositiveImpactMessage = () => {
             {!isMobile && (
               <MessageCardTextContainer>
                 <MessageCardContent>
-                  <Text>
-                    {
-                      "기술은 사람을 위한 것, \n당신의 도전이 사람들의 삶을 \n변화시킬 것입니다."
-                    }
-                  </Text>
+                  <Text>{t("Card2.content")}</Text>
                 </MessageCardContent>
                 <MessageCardIntroduction>
-                  <Text>{"KAIST 전산학부 동문 홍성진"}</Text>
+                  <Text>{t("Card2.introduction")}</Text>
                 </MessageCardIntroduction>
               </MessageCardTextContainer>
             )}
@@ -229,14 +223,10 @@ const PositiveImpactMessage = () => {
             {isMobile && (
               <MessageCardTextContainer>
                 <MessageCardContent>
-                  <Text>
-                    {
-                      "기술은 사람을 위한 것, \n당신의 도전이 사람들의 삶을 \n변화시킬 것입니다."
-                    }
-                  </Text>
+                  <Text>{t("Card2.content")}</Text>
                 </MessageCardContent>
                 <MessageCardIntroduction>
-                  <Text>{"KAIST 전산학부 동문 홍성진"}</Text>
+                  <Text>{t("Card2.introduction")}</Text>
                 </MessageCardIntroduction>
               </MessageCardTextContainer>
             )}
@@ -244,7 +234,7 @@ const PositiveImpactMessage = () => {
         </MessageCardDirectionContainer>
       </MessageCardListContainer>
       <MessageIntroduction>
-        <Text>{"전산학부 증축 기념 메시지 공모 선정자 2인의 메시지"}</Text>
+        <Text>{t("Introduction")}</Text>
       </MessageIntroduction>
       <DividerLine
         marginTop={{

@@ -124,7 +124,7 @@ const PositiveImpactMessageChief = () => {
         <Text>{t(`introduction.${deviceType}`)}</Text>
       </ChiefIntroduction>
       <MessageDate>
-        <Text>{"2025. 03. 18."}</Text>
+        <Text>{t("date")}</Text>
       </MessageDate>
     </ChiefContainer>
   );
