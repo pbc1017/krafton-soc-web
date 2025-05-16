@@ -31,6 +31,8 @@ const PartContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+
   gap: 170px;
 
   //background-color: orange;

@@ -19,6 +19,10 @@ const YearHeaderContainer = styled.div`
   line-height: 32px;
   color: ${theme.colors.black};
   // background-color: red;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    font-size: 26px;
+  }
 `;
 
 interface YearHeaderProps {

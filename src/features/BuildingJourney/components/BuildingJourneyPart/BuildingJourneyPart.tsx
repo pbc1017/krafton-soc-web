@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
 
+import { theme } from "@krafton-soc/common/styles/theme";
+
 import HistoryCard from "../HistoryCard";
 import { HistoryCardProps } from "../HistoryCard/HistoryCard";
 import PartHeader from "./PartHeader";
@@ -13,7 +15,17 @@ const PartContainer = styled.section`
   gap: 166px;
 
   width: 1067px;
-  // background-color: darkkhaki;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: max(696px, calc(696 / 744 * 100%));
+    gap: 170px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: max(353px, calc(353 / 393 * 100%));
+    gap: 170px;
+  }
+  background-color: darkkhaki;
 `;
 
 const PartContentContainer = styled.div`
@@ -24,7 +36,7 @@ const PartContentContainer = styled.div`
 
   width: 100%;
 
-  // background-color: saddlebrown;
+  background-color: saddlebrown;
 `;
 
 const YearContainer = styled.div`
@@ -33,7 +45,8 @@ const YearContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  // background-color: darkblue;
+
+  background-color: darkblue;
 `;
 
 const HistoryCardContainer = styled.div`
@@ -42,7 +55,7 @@ const HistoryCardContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
-  // background-color: magenta;
+  background-color: magenta;
 `;
 
 interface PartProps {
