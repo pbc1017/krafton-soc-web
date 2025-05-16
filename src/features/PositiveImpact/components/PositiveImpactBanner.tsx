@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 
 import Text from "@krafton-soc/common/components/Text";
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const BannerContainer = styled.section`
@@ -69,11 +70,12 @@ const BannerText = styled.div`
 `;
 
 const PositiveImpactBanner: React.FC = () => {
+  const { deviceType } = useResponsiveStore();
   return (
     <BannerContainer>
       <BannerImage>
         <Image
-          src="/images/positive-impact/banner.png"
+          src={`/images/PositiveImpact/선한영향력의길_hero_${deviceType}.png`}
           alt="Positive Impact Banner"
           fill
           style={{ objectFit: "cover" }}
