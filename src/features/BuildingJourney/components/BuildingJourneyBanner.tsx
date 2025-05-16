@@ -7,6 +7,7 @@ import React from "react";
 
 import Text from "@krafton-soc/common/components/Text";
 import VerticalLine from "@krafton-soc/common/components/VerticalLine";
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const BannerContainer = styled.section`
@@ -65,74 +66,99 @@ const ChairmanMessageContainer = styled.div`
   align-items: center;
   gap: 60px;
   line-height: 32px;
+
+  width: 100%;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    gap: 40px;
+  }
 `;
 
 const MessageContainer = styled.div`
   font-size: 18px;
-
-  width: 642px;
-  height: 256px;
+  line-height: 32px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    font-size: 14px;
+    width: 680px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: min(345px, 100%);
+    font-size: 16px;
+    line-height: 30px;
   }
 `;
 
 const IntroductionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    gap: 0px;
+  }
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     gap: 8px;
   }
 `;
 
 const NameContainer = styled.div`
+  font-size: 18px;
   line-height: 32px;
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    line-height: 17px;
+    font-size: 14px;
+    line-height: normal;
   }
 `;
 
 const DateContainer = styled.div`
   font-size: 14px;
+  line-height: 32px;
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     font-size: 10px;
-    line-height: 12px;
+    line-height: normal;
   }
 `;
 
 const ChairmanMessage: React.FC = () => {
-  const t = useTranslations("BuildingJourney");
+  const t = useTranslations("BuildingJourney.chairmanMessage");
+  const { deviceType } = useResponsiveStore();
   return (
     <BannerContainer>
       <ImageContainer>
         <BannerImage>
           <Image
-            src="/images/building-journey/building-journey.jpg"
+            src={`/images/BuildingJourney/건립의여정_hero_${deviceType}.png`}
             alt="Building Journey Page Banner Image"
             fill
             style={{ objectFit: "cover" }}
+            priority
           />
         </BannerImage>
       </ImageContainer>
       <VerticalLine
         height={{ pc: 200, tablet: 120, mobile: 120 }}
         lineColor={theme.colors.black}
-        marginTop={70}
-        marginBottom={70}
+        marginTop={{ pc: 70, tablet: 52, mobile: 40 }}
+        marginBottom={{ pc: 70, tablet: 52, mobile: 40 }}
       />
       <ChairmanMessageContainer>
         <MessageContainer>
-          <Text color={theme.colors.black}>{t("chairmanMessage.message")}</Text>
+          <Text color={theme.colors.black}>{t(`message.${deviceType}`)}</Text>
         </MessageContainer>
 
         <IntroductionContainer>
           <NameContainer>
             <Text color={theme.colors.black}>
-              {t("chairmanMessage.introduction")}
+              {t(`introduction.${deviceType}`)}
             </Text>
           </NameContainer>
           <DateContainer>
-            <Text color={theme.colors.black}>{t("chairmanMessage.date")}</Text>
+            <Text color={theme.colors.black}>{t("date")}</Text>
           </DateContainer>
         </IntroductionContainer>
       </ChairmanMessageContainer>

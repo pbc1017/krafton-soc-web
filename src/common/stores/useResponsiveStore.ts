@@ -2,7 +2,7 @@ import { create } from "zustand";
 
 import { theme } from "@krafton-soc/common/styles/theme";
 
-type DeviceType = "mobile" | "tablet" | "desktop";
+export type DeviceType = "mobile" | "tablet" | "desktop";
 
 // 두 방식을 혼합하여 사용
 interface ResponsiveState {
