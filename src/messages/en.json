@@ -145,5 +145,44 @@
         }
       }
     }
+  },
+  "PositiveImpact": {
+    "Banner": {
+      "title": {
+        "desktop": "Where Positive Influence Comes Full Circle",
+        "tablet": "Where Positive Influence Comes Full Circle",
+        "mobile": "Where Positive Influence\nComes Full Circle"
+      },
+      "subTitle": {
+        "desktop": "Where Positive Influence Comes Full Circle",
+        "tablet": "Where Positive Influence Comes Full Circle",
+        "mobile": "Where Positive Influence Comes Full Circle"
+      }
+    },
+    "Message": {
+      "ChiefMessage": {
+        "title": "A New Beginning",
+        "content": {
+          "desktop": "“This space is where positive impact flows in a virtuous cycle. It began with a generous donation from KRAFTON alumni and employees, and since then, more and more alumni, professors, and even current students have joined the movement.\nWhat drives this wave of giving is gratitude—gratitude for the open and free communication fostered by brilliant professors and inspiring students, for a space where diverse individuals could feel at ease in their differences, and for the time when we could dream freely and boldly.\nThough we can never fully repay our teachers and peers who gave us those precious moments and that nurturing space, we can pay it forward. This is a space of connection where we share our gratitude with the next generation. I hope that in this space, free spirits will soar and spark innovations that lead to a happier world for all.”",
+          "tablet": "“This space is where positive impact flows in a virtuous cycle. It began with a generous donation from KRAFTON alumni and employees, and since then, more and more alumni, professors, and even current students have joined the movement.\nWhat drives this wave of giving is gratitude—gratitude for the open and free communication fostered by brilliant professors and inspiring students, for a space where diverse individuals could feel at ease in their differences, and for the time when we could dream freely and boldly.\nThough we can never fully repay our teachers and peers who gave us those precious moments and that nurturing space, we can pay it forward. This is a space of connection where we share our gratitude with the next generation. I hope that in this space, free spirits will soar and spark innovations that lead to a happier world for all.”",
+          "mobile": "“This space is where positive impact flows in a virtuous cycle. It began with a generous donation from KRAFTON alumni and employees, and since then, more and more alumni, professors, and even current students have joined the movement.\nWhat drives this wave of giving is gratitude—gratitude for the open and free communication fostered by brilliant professors and inspiring students, for a space where diverse individuals could feel at ease in their differences, and for the time when we could dream freely and boldly.\nThough we can never fully repay our teachers and peers who gave us those precious moments and that nurturing space, we can pay it forward. This is a space of connection where we share our gratitude with the next generation. I hope that in this space, free spirits will soar and spark innovations that lead to a happier world for all.”"
+        },
+        "introduction": {
+          "desktop": "Sukyoung Ryu, Head of the KAIST School of Computing",
+          "tablet": "Sukyoung Ryu, Head of the KAIST School of Computing",
+          "mobile": "Sukyoung Ryu,\nHead of the KAIST School of Computing"
+        },
+        "date": "March 18, 2025"
+      },
+      "Card1": {
+        "content": "Connecting Data and People.\nBeyond limits, be someone\nwho connects hearts.",
+        "introduction": "Seongwon Lee, KAIST School of Computing Alumnus"
+      },
+      "Card2": {
+        "content": "Technology Exists for People.\nYour challenge will change\nlives.",
+        "introduction": "Sungjin Hong, KAIST School of Computing Alumnus"
+      },
+      "Introduction": "Messages from Two Selected Contributors to the School of Computing Expansion"
+    }
   }
 }

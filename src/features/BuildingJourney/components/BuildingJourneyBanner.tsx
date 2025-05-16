@@ -141,10 +141,10 @@ const ChairmanMessage: React.FC = () => {
         </BannerImage>
       </ImageContainer>
       <VerticalLine
-        height={{ pc: 200, tablet: 120, mobile: 120 }}
+        height={{ desktop: 200, tablet: 120, mobile: 120 }}
         lineColor={theme.colors.black}
-        marginTop={{ pc: 70, tablet: 52, mobile: 40 }}
-        marginBottom={{ pc: 70, tablet: 52, mobile: 40 }}
+        marginTop={{ desktop: 70, tablet: 52, mobile: 40 }}
+        marginBottom={{ desktop: 70, tablet: 52, mobile: 40 }}
       />
       <ChairmanMessageContainer>
         <MessageContainer>
