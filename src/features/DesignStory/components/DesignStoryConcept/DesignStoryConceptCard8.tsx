@@ -6,8 +6,7 @@ import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStor
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const CardContainer = styled.section`
-  width: 1285px;
-  height: 726px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -16,52 +15,74 @@ const CardContainer = styled.section`
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     margin-top: 100px;
+    flex-direction: column;
+    gap: 60px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     margin-top: 80px;
+    flex-direction: column;
+    gap: 60px;
   }
-
-  //background-color: red;
 `;
 
 const CardImage = styled.div`
   width: 520px;
-  height: 100%;
+  height: 726px;
   position: relative;
-
-  //background-color: pink;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 457px;
+    height: 638px;
+    position: relative;
+  }
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 300px;
+    height: 400px;
+    position: relative;
+  }
 `;
 
 const CardRightContainer = styled.section`
   width: 432px;
-  height: 100%;
+  height: 726px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  //background-color: green;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    justify-content: unset;
+    width: 100%;
+    gap: 40px;
+    height: 480px;
+  }
 `;
 
 const CardRightText = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-
+  align-items: flex-end;
   text-align: left;
   font-size: 18px;
   font-weight: ${theme.fonts.weights.regular};
   line-height: 180%;
   color: ${theme.colors.black};
-
-  //background-color: yellowgreen;
 `;
 
 const CardRightImage = styled.div`
   width: 100%;
   height: 378px;
   position: relative;
-  //background-color: orange;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 400px;
+    height: 350px;
+    position: relative;
+  }
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 300px;
+    height: 250px;
+    position: relative;
+  }
 `;
 
 const DesignStoryConceptCard8 = () => {

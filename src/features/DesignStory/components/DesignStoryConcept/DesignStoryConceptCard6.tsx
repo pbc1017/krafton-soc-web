@@ -1,40 +1,72 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
+import Spacer from "@krafton-soc/common/components/Spacer";
 import Text from "@krafton-soc/common/components/Text";
 import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const CardContainer = styled.div`
-  width: 1280px;
-
+  max-width: 1285px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   margin-top: 250px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     margin-top: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding-left: 239px;
+    box-sizing: border-box;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     margin-top: 80px;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 0px;
+    // padding-left: 239px; 는 tabletDesktop에서 상속됩니다.
+    // 모바일용 패딩 조정이 필요하면 여기에 추가합니다. 예: padding-left: 20px; padding-right: 20px;
   }
 `;
 
 const CardImage = styled.div`
-  width: 871px;
-  height: 618px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 435px;
+  aspect-ratio: 871 / 618;
   position: relative;
+  max-width: 871px;
 
   //background-color: magenta;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 100%;
+    max-width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: calc(100% - 93px);
+    margin-left: 93px;
+    align-self: flex-end;
+  }
 `;
 
 const CardText = styled.div`
   width: 335px;
-  text-align: left;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+  text-align: left;
   font-size: 18px;
   font-weight: ${theme.fonts.weights.regular};
   line-height: 180%;
@@ -42,10 +74,20 @@ const CardText = styled.div`
   font-family: ${theme.fonts.families.pretendard};
 
   //background-color: green;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 457px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    align-self: flex-start;
+    width: 353px !important;
+  }
 `;
 
 const DesignStoryConceptCard6 = () => {
   const { deviceType } = useResponsiveStore();
+  const t = useTranslations("DesignStory.Concept.Card6");
 
   return (
     <CardContainer>
@@ -56,12 +98,9 @@ const DesignStoryConceptCard6 = () => {
           fill
         />
       </CardImage>
+      {deviceType === "desktop" && <Spacer width={24} />}
       <CardText>
-        <Text>
-          {
-            "우리는 작은 기부가 모여 더 큰 의미를 만들고,\n연결된 마음들이 새로운 가능성을 만들어 가는 \n과정을 시각적으로 표현하고자 했습니다. \n이 플레이트로 단순한 기록이 아니라, \n선한 영향력이 끊임없이 이어지는 공간이 되기를 \n바랐습니다. "
-          }
-        </Text>
+        <Text>{t(`text.${deviceType}`)}</Text>
       </CardText>
     </CardContainer>
   );
