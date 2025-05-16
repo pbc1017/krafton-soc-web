@@ -2,6 +2,8 @@
 
 import styled from "@emotion/styled";
 
+import { theme } from "@krafton-soc/common/styles/theme";
+
 import BuildingJourneyBanner from "../components/BuildingJourneyBanner";
 import BuildingJourneyPart from "../components/BuildingJourneyPart/BuildingJourneyPart";
 
@@ -10,7 +12,18 @@ const BuildingJourneyContainer = styled.main`
   flex-direction: column;
   align-items: center;
   gap: 333px;
+
   margin-bottom: 130px;
+  width: 100%;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    gap: 223px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    gap: 200px;
+  }
+
   // background-color: pink;
 `;
 
