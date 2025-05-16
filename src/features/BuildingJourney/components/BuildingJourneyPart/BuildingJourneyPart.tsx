@@ -32,9 +32,17 @@ const PartContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+
   gap: 80px;
 
-  width: 100%;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    gap: 120px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    gap: 100px;
+  }
 
   background-color: saddlebrown;
 `;
