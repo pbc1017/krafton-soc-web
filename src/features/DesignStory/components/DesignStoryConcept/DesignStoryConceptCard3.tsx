@@ -104,6 +104,11 @@ const CardImage = styled.div`
   height: auto;
   aspect-ratio: 764 / 573;
   position: relative;
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: calc(100% + 60px);
+    margin: 0 -30px;
+  }
 `;
 
 const CardImageCaption = styled.section`
@@ -120,10 +125,6 @@ const CardImageCaption = styled.section`
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     font-size: 12px;
-    align-items: flex-start;
-    text-align: left;
-  }
-  @media (max-width: ${theme.breakpoints.mobileTablet}) {
   }
 `;
 
