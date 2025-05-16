@@ -1,27 +1,44 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
+import Spacer from "@krafton-soc/common/components/Spacer";
 import Text from "@krafton-soc/common/components/Text";
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const CardContainer = styled.section`
-  width: 1285px;
-  height: 600px;
+  width: 100%;
+  max-width: 1285px;
+  min-height: 600px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-
-  //background-color: red;
+  align-items: stretch;
+  margin-top: 278px;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    margin-top: 160px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 90px;
+  }
 `;
 
 const CardLeftContainer = styled.section`
   width: 460px;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  gap: 153px;
+  justify-content: space-between;
 
-  //background-color: green;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    gap: 60px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 353px;
+    gap: 40px;
+  }
 `;
 
 const CardLeftTitle = styled.div`
@@ -35,7 +52,9 @@ const CardLeftTitle = styled.div`
   line-height: 120%;
   color: ${theme.colors.black};
 
-  //background-color: pink;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    font-size: 32px;
+  }
 `;
 
 const CardLeftText = styled.div`
@@ -49,12 +68,14 @@ const CardLeftText = styled.div`
   line-height: 180%;
   color: ${theme.colors.black};
 
-  //background-color: yellow;
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 16px;
+  }
 `;
 
 const CardRightContainer = styled.section`
-  width: 567px;
-  height: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -62,15 +83,28 @@ const CardRightContainer = styled.section`
 
   gap: 19px;
 
-  //background-color: yellowgreen;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 100%;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 100%;
+    align-items: flex-start;
+  }
 `;
 
 const CardRightImage = styled.div`
   width: 100%;
-  height: 432px;
+  height: auto;
+  max-width: 567px;
+  aspect-ratio: 567 / 432;
   position: relative;
 
-  //background-color: blue;
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: calc(100% + 60px) !important;
+    max-width: unset;
+    margin: 0 -30px;
+  }
 `;
 
 const CardRightImageCaption = styled.div`
@@ -85,10 +119,15 @@ const CardRightImageCaption = styled.div`
   line-height: 120%;
   color: ${theme.colors.black};
 
-  //background-color: orange;
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 12px;
+  }
 `;
 
 const DesignStoryConceptCard5 = () => {
+  const { deviceType } = useResponsiveStore();
+  const t = useTranslations("DesignStory.Concept.Card5");
+
   return (
     <CardContainer>
       <CardLeftContainer>
@@ -96,17 +135,14 @@ const DesignStoryConceptCard5 = () => {
           <Text>{"A Line of Giving, \nA Cycle of Connection"}</Text>
         </CardLeftTitle>
         <CardLeftText>
-          <Text>
-            {
-              "기부자 명단 플레이트는 단순한 이름의 나열이 아닙니다.\n앞선 기부자의 이름이 다음 기부자의 이름과 한 줄로 이어지는 \n방식은, 기부가 단절된 행위가 아니라 하나의 선순환적 흐름이라는 \n의미를 담고 있습니다. \n\n단순히 기부자를 기리는 것을 넘어, ‘Pay It Forward’ 정신이 \n자연스럽게 확장될 수 있도록 구성되었습니다.\n기부를 받은 후배들은 이곳을 지나며 선배들의 따뜻한 마음을 \n기억하고, 언젠가 자신도 이 선 위에 이름을 남길 날을 \n떠올릴 수 있도록 의도했습니다."
-            }
-          </Text>
+          <Text>{t(`text.${deviceType}`)}</Text>
         </CardLeftText>
       </CardLeftContainer>
+      <Spacer width={20} />
       <CardRightContainer>
         <CardRightImage>
           <Image
-            src={"/images/DesignStory/Concept/card5.png"}
+            src={`/images/DesignStory/Concept/디자인이야기_Con8_${deviceType}.png`}
             alt="design-story-concept-card-5"
             fill
           />

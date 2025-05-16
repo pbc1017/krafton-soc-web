@@ -8,25 +8,21 @@ import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStor
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const TitleContainer = styled.div`
-  width: min(1285px, 100%);
-
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 150px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    width: 696px;
+    max-width: 1000px;
     gap: 200px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    width: min(100%, 353px);
     gap: 120px;
   }
-
-  //background-color: pink;
 `;
 
 const TitleText = styled.div`

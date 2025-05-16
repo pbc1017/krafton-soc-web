@@ -24,7 +24,6 @@ const DesignStoryConceptFinalContainer = styled.section`
     width: min(100%, 353px);
     gap: 40px;
   }
-  //background-color: pink;
 `;
 
 const DesignStoryConceptFinalQuoteContainer = styled.div`
@@ -41,7 +40,6 @@ const DesignStoryConceptFinalQuoteContainer = styled.div`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     gap: 18px;
   }
-  //background-color: red;
 `;
 
 const DesignStoryConceptFinalQuoteText = styled.div`
@@ -59,7 +57,6 @@ const DesignStoryConceptFinalQuoteText = styled.div`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     font-size: 26px;
   }
-  //background-color: green;
 `;
 
 const DesignStoryConceptFinalQuoteAuthor = styled.div`
@@ -73,8 +70,6 @@ const DesignStoryConceptFinalQuoteAuthor = styled.div`
   font-weight: ${theme.fonts.weights.medium};
   color: ${theme.colors.black};
   line-height: 180%;
-
-  //background-color: blue;
 `;
 
 const DesignStoryConceptFinalWish = styled.div`
@@ -92,8 +87,6 @@ const DesignStoryConceptFinalWish = styled.div`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     font-size: 16px;
   }
-
-  //background-color: magenta;
 `;
 
 const DesignStoryConceptFinal = () => {
