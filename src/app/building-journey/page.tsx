@@ -1,4 +1,4 @@
-import BuildingJourney from "@krafton-soc/features/building-journey";
+import BuildingJourney from "@krafton-soc/features/BuildingJourney";
 
 const BuildingJourneyPage = () => {
   return <BuildingJourney />;

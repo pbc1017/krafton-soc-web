@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
 
+import Spacer from "@krafton-soc/common/components/Spacer";
 import Text from "@krafton-soc/common/components/Text";
 import { theme } from "@krafton-soc/common/styles/theme";
 import { Locale } from "@krafton-soc/i18n/config";
@@ -24,11 +25,11 @@ const StoryCardContainer = styled.div<{ isReversed: boolean }>`
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 0 10px;
-  max-width: 1283px;
+  padding: 0 50px;
+  max-width: 1363px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    max-width: 900px;
+    max-width: 1000px;
     align-items: ${({ isReversed }) =>
       isReversed ? "flex-end" : "flex-start"};
     padding: 0 24px;
@@ -46,6 +47,7 @@ const FlexContainer = styled.div<{ isReversed: boolean }>`
   justify-content: space-between;
   display: flex;
   flex-direction: ${({ isReversed }) => (isReversed ? "row-reverse" : "row")};
+  align-items: stretch;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     flex-direction: column;
@@ -62,7 +64,8 @@ const ContentContainer = styled.div<{ isReversed: boolean; locale: Locale }>`
   display: flex;
   flex-direction: column;
   width: ${({ isReversed }) => (isReversed ? "435px" : "412px")};
-  height: 600px;
+  flex-shrink: 0;
+  height: auto;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     width: 457px;
@@ -80,7 +83,8 @@ const ContentContainer = styled.div<{ isReversed: boolean; locale: Locale }>`
 const ImageContainer = styled.div`
   position: relative;
   width: 740px;
-  height: 600px;
+  height: auto;
+  aspect-ratio: 740 / 600;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     width: 577px;
@@ -161,7 +165,7 @@ const StoryCard: React.FC<StoryCardProps> = ({
         <ImageContainer>
           <Image src={imageSrc} alt={title} fill objectFit="cover" priority />
         </ImageContainer>
-
+        <Spacer width={isReversed ? 64 : 87.7} />
         <ContentContainer isReversed={isReversed} locale={locale}>
           <TitleContainer locale={locale}>
             <Text fw={theme.fonts.weights.semibold}>{title}</Text>

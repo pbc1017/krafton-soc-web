@@ -26,5 +26,124 @@
       "descriptionDesktop": "This is a space of connection where we pay it forward with gratitude to our juniors.",
       "speaker": "Sukyoung Ryu, \nHead of the KAIST School of \nComputing, said"
     }
+  },
+  "BuildingJourney": {
+    "chairmanMessage": {
+      "message": {
+        "desktop": "“I first met Professor Young-Gul Kim, Executive Director of the KAIST Development\nFoundation, in October 2017. That encounter led to the beginning of donations such\nas the KAIST-Indonesia Volunteer Corps, and the trust built through this\nrelationship eventually extended to the KAIST 50th Anniversary Memorial Hall\nproject, which was initiated around 2020 by President Sung-Chul Shin.\n\nWhile meeting various people involved in the 50th Anniversary Memorial Hall\nproject, I had the opportunity to meet Professor Myung-Ho Kim, then Head of the\nSchool of Computing. At that time, I decided to dedicate a portion of the donation I\nhad pledged to KAIST to the expansion of the School of Computing. Around that\nperiod, I also began exchanging thoughts with several fellow alumni and\nacquaintances, which ultimately led to KRAFTON’s 11 billion KRW matching grant\ndonation in 2021.”",
+        "tablet": "“I first met Professor Young-Gul Kim, Executive Director of the KAIST Development\nFoundation, in October 2017. That encounter led to the beginning of donations such\nas the KAIST-Indonesia Volunteer Corps, and the trust built through this\nrelationship eventually extended to the KAIST 50th Anniversary Memorial Hall\nproject, which was initiated around 2020 by President Sung-Chul Shin.\n\nWhile meeting various people involved in the 50th Anniversary Memorial Hall\nproject, I had the opportunity to meet Professor Myung-Ho Kim, then Head of the\nSchool of Computing. At that time, I decided to dedicate a portion of the donation I\nhad pledged to KAIST to the expansion of the School of Computing. Around that\nperiod, I also began exchanging thoughts with several fellow alumni and\nacquaintances, which ultimately led to KRAFTON’s 11 billion KRW matching grant\ndonation in 2021.”",
+        "mobile": "“I first met Professor Young-Gul Kim, Executive Director of the KAIST Development\nFoundation, in October 2017. That encounter led to the beginning of donations such\nas the KAIST-Indonesia Volunteer Corps, and the trust built through this\nrelationship eventually extended to the KAIST 50th Anniversary Memorial Hall\nproject, which was initiated around 2020 by President Sung-Chul Shin.\n\nWhile meeting various people involved in the 50th Anniversary Memorial Hall\nproject, I had the opportunity to meet Professor Myung-Ho Kim, then Head of the\nSchool of Computing. At that time, I decided to dedicate a portion of the donation I\nhad pledged to KAIST to the expansion of the School of Computing. Around that\nperiod, I also began exchanging thoughts with several fellow alumni and\nacquaintances, which ultimately led to KRAFTON’s 11 billion KRW matching grant\ndonation in 2021.”"
+      },
+      "introduction": {
+        "desktop": "ByungGyu Chang, KRAFTON Chairman and KAIST School of Computing Alumnus",
+        "tablet": "ByungGyu Chang,\nKRAFTON Chairman and KAIST School of Computing Alumnus",
+        "mobile": "ByungGyu Chang,\nKRAFTON Chairman and KAIST School of Computing Alumnus"
+      },
+
+      "date": "April 3, 2025"
+    },
+    "Parts": {
+      "Part1": {
+        "PartHeader": {
+          "title": {
+            "desktop": "Preparing for Expansion",
+            "tablet": "Preparing for Expansion",
+            "mobile": "Preparing for Expansion"
+          }
+        },
+        "Card1": {
+          "duration": {
+            "startTerm": "08.07",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "Discussion on the Need for Expansion at the School of\nComputing During SW Junggle MOU Ceremony",
+            "tablet": "Discussion on the Need for Expansion at the School of\nComputing During SW Junggle MOU Ceremony",
+            "mobile": "Discussion on the Need for Expansion at the School of\nComputing During SW Junggle MOU Ceremony"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card2": {
+          "duration": {
+            "startTerm": "09.21",
+            "endTerm": "10.05"
+          },
+          "title": {
+            "desktop": "Discussion on KRAFTON's Donation to KAIST and Support for Expansion",
+            "tablet": "Discussion on KRAFTON's Donation to KAIST and Support for Expansion",
+            "mobile": "Discussion on KRAFTON's Donation to KAIST and Support for Expansion"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        }
+      }
+    }
+  },
+  "DesignStory": {
+    "banner": {
+      "title": {
+        "desktop": "KRAFTON X SoC, Design Story",
+        "tablet": "KRAFTON X SoC, Design Story",
+        "mobile": "KRAFTON X SoC,\nDesign Story"
+      },
+      "subTitle": {
+        "desktop": "KRAFTON X SoC, Design Story",
+        "tablet": "KRAFTON X SoC, Design Story",
+        "mobile": "KRAFTON X SoC, Design Story"
+      }
+    },
+    "Intro": {
+      "Card1": {
+        "title": {
+          "desktop": "Looking Back,\nOur Beginning",
+          "tablet": "Looking Back,\nOur Beginning",
+          "mobile": "Looking Back,\nOur Beginning"
+        },
+        "content": {
+          "desktop": "When the first discussions began, the question we asked was: “What meaning will this space hold for its users?” Rather than seeing it as a finished product, we aimed to make invisible positive impact visible through space.\n\nThis space stands as a tangible point of connection within a larger flow—a marker, not an endpoint. We hope it becomes a starting point for new connection.\n\nMay those who experience this space feel part of a greater chain of change—and discover the connections they, too, will create.",
+          "tablet": "When the first discussions began, the question we asked was: “What meaning will this space hold for its users?” Rather than seeing it as a finished product, we aimed to make invisible positive impact visible through space.\n\nThis space stands as a tangible point of connection within a larger flow—a marker, not an endpoint. We hope it becomes a starting point for new connections.\n\nMay those who experience this space feel part of a greater chain of change—and discover the connections they, too, will create.",
+          "mobile": "When the first discussions began, the question we asked was: “What meaning will this space hold for its users?” Rather than seeing it as a finished product, we aimed to make invisible positive impact visible through space.\n\nThis space stands as a tangible point of connection within a larger flow—a marker, not an endpoint. We hope it becomes a starting point for new connections.\n\nMay those who experience this space feel part of a greater chain of change—and discover the connections they, too, will create."
+        }
+      },
+      "Card2": {
+        "title": {
+          "desktop": "Connecting\nEverything",
+          "tablet": "Connecting\nEverything",
+          "mobile": "Connecting\nEverything"
+        },
+        "content": {
+          "desktop": "The KRAFTON X SoC space was created as a place where people stay, connect, and share new ideas—linking knowledge and people, technology and people, and people to people, with humanity at the center.\n\nIt began with a single word: connection. Along the way, we reflected deeply on how that connection can truly be experienced.",
+          "tablet": "The KRAFTON X SoC space was created as a place where people stay, connect, and share new ideas—linking knowledge and people, technology and people, and people to people, with humanity at the center.\n\nIt began with a single word: connection. Along the way, we reflected deeply on how that connection can truly be experienced.",
+          "mobile": "The KRAFTON X SoC space was created as a place where people stay, connect, and share new ideas—linking knowledge and people, technology and people, and people to people, with humanity at the center.\n\nIt began with a single word: connection. Along the way, we reflected deeply on how that connection can truly be experienced."
+        }
+      }
+    },
+    "Concept": {
+      "Title": {
+        "subTitle": {
+          "desktop": "This exploration of connection began with a shared belief between the KAIST School of Computing and\nKRAFTON: a human-centric philosophy — the clear value that technological advancement must\nultimately serve humanity.",
+          "tablet": "This exploration of connection began with a shared belief\nbetween the KAIST School of Computing and KRAFTON: \na human-centric philosophy — the clear value\nthat technological advancement must\nultimately serve humanity.",
+          "mobile": "This exploration of connection began with a shared belief between the KAIST School of Computing and KRAFTON: a human-centric philosophy — the clear value that technological advancement must ultimately serve humanity."
+        }
+      },
+      "Card1": {
+        "title": "Human-Centered Ideology",
+        "content": "We believe that the true value of design lies in its ability to connect people and technology, and that the best designs are those that are human-centered and user-friendly."
+      },
+      "Final": {
+        "wish": {
+          "desktop": "Just as countless hidden techniques are required in architecture to erase a\nsingle visible line, this space, too, pushes beyond structural and technical\nlimits to quietly optimize a sense of calm. We hope that all of these efforts\nare seamlessly embedded into the space—so that our intentions are fully felt\nby the students and everyone who visits here.",
+          "tablet": "Just as countless hidden techniques are required in architecture to erase a single visible line, this space, too, pushes beyond structural and technical limits to quietly optimize a sense of calm. We hope that all of these efforts are seamlessly embedded into the space—so that our intentions are fully felt by the students and everyone who visits here.",
+          "mobile": "Just as countless hidden techniques are required in architecture to erase a single visible line, this space, too, pushes beyond structural and technical limits to quietly optimize a sense of calm. We hope that all of these efforts are seamlessly embedded into the space—so that our intentions are fully felt by the students and everyone who visits here."
+        }
+      }
+    }
   }
 }

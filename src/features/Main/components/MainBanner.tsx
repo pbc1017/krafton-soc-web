@@ -104,26 +104,24 @@ const ArrowHead = styled.div`
 
 const ScaledImage = styled(Image)`
   object-fit: cover;
-  transform: scale(1.8);
+
   transform-origin: center bottom;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    transform: scale(1.5);
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    transform: scale(1.2);
   }
 `;
 
 const MainBanner: React.FC = () => {
-  const isMobile = useResponsiveStore(state => state.isMobile);
+  const { deviceType, isMobile } = useResponsiveStore();
 
   return (
     <BannerContainer>
       <BannerImage>
         <ScaledImage
-          src="/images/Main/banner.jpg"
+          src={`/images/Main/_Main_hero_${deviceType}.png`}
           alt="Krafton SoC Banner"
           fill
           priority

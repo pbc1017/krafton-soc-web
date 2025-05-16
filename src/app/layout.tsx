@@ -11,7 +11,7 @@ import { fontVariables } from "@krafton-soc/common/styles/fonts";
 import { getUserLocale } from "@krafton-soc/i18n/actions"; // 경로 별칭 사용
 
 export const metadata: Metadata = {
-  title: "KRAFTON X KAIST SoC",
+  title: "KRAFTON X SoC",
   description: "Positive Influence, Memories of the Journey",
 };
 
@@ -27,6 +27,9 @@ export default async function RootLayout({
   return (
     <StyledComponentsRegistry>
       <html lang={locale} className={fontVariables}>
+        <head>
+          <link rel="icon" href="/favicon.ico" />
+        </head>
         <body>
           <StoreProvider>
             <NextIntlClientProvider locale={locale} messages={messages}>

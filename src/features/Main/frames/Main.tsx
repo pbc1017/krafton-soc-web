@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import { useLocale, useTranslations } from "next-intl";
 import React, { useEffect, useState } from "react";
 
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 import { Locale } from "@krafton-soc/i18n/config";
 
@@ -48,7 +49,7 @@ const Main: React.FC = () => {
   const t = useTranslations("Main");
   const locale = useLocale() as Locale;
   const [isDesktop, setIsDesktop] = useState(true);
-
+  const { deviceType } = useResponsiveStore();
   useEffect(() => {
     const handleResize = () => {
       setIsDesktop(
@@ -69,7 +70,7 @@ const Main: React.FC = () => {
         <StoryCard
           title={t("section1.title")}
           description={t("section1.description")}
-          imageSrc="/images/Main/building-journey.jpg"
+          imageSrc={`/images/Main/_Main_con1_${deviceType}.png`}
           speaker={t("section1.speaker")}
           buttonLink="/building-journey"
           locale={locale}
@@ -77,7 +78,7 @@ const Main: React.FC = () => {
         <StoryCard
           title={t("section2.title")}
           description={t("section2.description")}
-          imageSrc="/images/Main/design-story.jpg"
+          imageSrc={`/images/Main/_Main_con2_${deviceType}.png`}
           isReversed={true}
           buttonLink="/design-story"
           locale={locale}
@@ -89,7 +90,7 @@ const Main: React.FC = () => {
               ? t("section3.descriptionDesktop")
               : t("section3.description")
           }
-          imageSrc="/images/Main/positive-impact.jpg"
+          imageSrc={`/images/Main/_Main_con3_${deviceType}.png`}
           speaker={t("section3.speaker")}
           buttonLink="/positive-impact"
           locale={locale}
