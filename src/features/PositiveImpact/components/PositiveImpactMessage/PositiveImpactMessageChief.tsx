@@ -24,6 +24,14 @@ const MessageTitle = styled.div`
   line-height: 52px;
   font-weight: ${theme.fonts.weights.medium};
   color: ${theme.colors.black};
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 32px;
+    font-weight: ${theme.fonts.weights.regular};
+  }
 `;
 
 const MessageContent = styled.div`
@@ -38,6 +46,17 @@ const MessageContent = styled.div`
   font-size: 18px;
   line-height: 38px;
   font-weight: ${theme.fonts.weights.regular};
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    margin-top: 37px;
+    line-height: 35px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 30px;
+  }
 `;
 
 const ChiefIntroduction = styled.div`
@@ -52,6 +71,15 @@ const ChiefIntroduction = styled.div`
   font-size: 18px;
   line-height: 38px;
   font-weight: ${theme.fonts.weights.regular};
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    margin-top: 40px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 14px;
+    line-height: normal;
+  }
 `;
 
 const MessageDate = styled.div`
@@ -66,6 +94,16 @@ const MessageDate = styled.div`
   font-size: 14px;
   line-height: 32px;
   font-weight: ${theme.fonts.weights.regular};
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    margin-top: 0px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    margin-top: 8px;
+    font-size: 10px;
+    line-height: normal;
+  }
 `;
 
 const PositiveImpactMessageChief = () => {

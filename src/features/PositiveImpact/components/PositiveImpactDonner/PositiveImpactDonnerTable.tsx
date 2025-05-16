@@ -252,7 +252,7 @@ const DonnerTableContainer = styled.div`
   line-height: 36px;
   font-weight: ${theme.fonts.weights.regular};
 
-  width: 940px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   row-gap: 0px;

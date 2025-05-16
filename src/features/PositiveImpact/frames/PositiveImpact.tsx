@@ -29,8 +29,16 @@ const PositiveImpact = () => {
           mobile: 120,
         }}
         lineColor={theme.colors.black}
-        marginTop={65}
-        marginBottom={65}
+        marginTop={{
+          desktop: 65,
+          tablet: 37,
+          mobile: 37,
+        }}
+        marginBottom={{
+          desktop: 65,
+          tablet: 37,
+          mobile: 37,
+        }}
       />
       <PositiveImpactMessage />
       <PositiveImpactDonner />

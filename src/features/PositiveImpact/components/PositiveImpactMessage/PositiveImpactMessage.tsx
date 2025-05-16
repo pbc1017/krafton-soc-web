@@ -15,6 +15,14 @@ const MessageContainer = styled.section`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: calc(100% * 690 / 744);
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: calc(100% * 353 / 393);
+  }
 `;
 
 const MessageCardListContainer = styled.div`

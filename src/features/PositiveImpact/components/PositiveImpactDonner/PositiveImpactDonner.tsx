@@ -9,7 +9,7 @@ import DonnerTable from "./PositiveImpactDonnerTable";
 
 const DonnerContainer = styled.div`
   margin-top: 145px;
-  width: 100%;
+  width: 1066px;
 
   display: flex;
   flex-direction: column;
@@ -17,6 +17,16 @@ const DonnerContainer = styled.div`
   justify-content: center;
 
   gap: 91px;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    //width: calc(100% * 690 / 744);
+    width: 690px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    //width: calc(100% * 353 / 393);
+    width: 353px;
+  }
 `;
 
 const DonnerTitle = styled.div`
