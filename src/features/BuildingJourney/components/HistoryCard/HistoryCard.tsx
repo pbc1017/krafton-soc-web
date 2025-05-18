@@ -147,10 +147,10 @@ const HistoryCardTabletImageContainer = styled.div`
 
 export interface HistoryCardProps {
   duration: {
-    startTerm: string;
+    startTerm?: string;
     endTerm?: string;
   };
-  title: string;
+  title?: string;
   detail?: string;
   image?: {
     part: number;
@@ -177,16 +177,17 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
       <HistoryCardContentContainer>
         <HistoryCardTextContainer hasImage={!!image}>
           <HistoryCardDuration>
-            {duration.endTerm
-              ? !isMobile
-                ? `${duration.startTerm}\n-${duration.endTerm}`
-                : `${duration.startTerm}-${duration.endTerm}`
-              : duration.startTerm}
+            {duration.startTerm &&
+              (duration.endTerm
+                ? !isMobile
+                  ? `${duration.startTerm}\n-${duration.endTerm}`
+                  : `${duration.startTerm}-${duration.endTerm}`
+                : duration.startTerm)}
           </HistoryCardDuration>
           <HistoryCardDescriptionContainer hasImage={!!image}>
             <HistoryCardTitleContainer>
               <HistoryCardTitle>
-                <Text>{title}</Text>
+                <Text>{title ?? ""}</Text>
               </HistoryCardTitle>
               {link && <HistoryCardLinkButton link={link} />}
               {modalImage && (
@@ -198,11 +199,7 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
                 />
               )}
             </HistoryCardTitleContainer>
-            {detail && (
-              <HistoryCardDetail>
-                <Text>{detail}</Text>
-              </HistoryCardDetail>
-            )}
+            {detail && <HistoryCardDetail>{detail}</HistoryCardDetail>}
             {image && !isDesktop && (
               <HistoryCardTabletImageContainer>
                 <HistoryCardImage
