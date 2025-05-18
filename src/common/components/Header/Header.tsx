@@ -57,7 +57,8 @@ const NavLink = styled.div<{ isActive: boolean }>`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: ${theme.fonts.weights.light};
+  font-weight: ${({ isActive }) =>
+    isActive ? theme.fonts.weights.bold : theme.fonts.weights.light};
 
   &:hover {
     font-weight: ${theme.fonts.weights.bold};
