@@ -2,7 +2,7 @@
 
 import styled from "@emotion/styled";
 import { useLocale, useTranslations } from "next-intl";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
@@ -48,20 +48,7 @@ const StoryCardContainer = styled.div`
 const Main: React.FC = () => {
   const t = useTranslations("Main");
   const locale = useLocale() as Locale;
-  const [isDesktop, setIsDesktop] = useState(true);
   const { deviceType } = useResponsiveStore();
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(
-        window.innerWidth > parseInt(theme.breakpoints.tabletDesktop),
-      );
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <MainContainer>
@@ -85,11 +72,7 @@ const Main: React.FC = () => {
         />
         <StoryCard
           title={t("section3.title")}
-          description={
-            isDesktop
-              ? t("section3.descriptionDesktop")
-              : t("section3.description")
-          }
+          description={t("section3.description")}
           imageSrc={`/images/Main/_Main_con3_${deviceType}.png`}
           speaker={t("section3.speaker")}
           buttonLink="/positive-impact"
