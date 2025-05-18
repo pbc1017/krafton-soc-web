@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 import { useTranslations } from "next-intl";
 
 import Text from "@krafton-soc/common/components/Text";
-import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const ChiefContainer = styled.section`
@@ -10,7 +9,7 @@ const ChiefContainer = styled.section`
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 `;
 
@@ -38,7 +37,7 @@ const MessageTitle = styled.div`
 
 const MessageContent = styled.div`
   margin-top: 35px;
-  width: 100%;
+  width: 769px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,12 +51,14 @@ const MessageContent = styled.div`
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     margin-top: 37px;
     line-height: 35px;
+    width: 642px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     margin-top: 32px;
     font-size: 16px;
     line-height: 30px;
+    width: 309px;
   }
 `;
 
@@ -110,7 +111,6 @@ const MessageDate = styled.div`
 
 const PositiveImpactMessageChief = () => {
   const t = useTranslations("PositiveImpact.Message.ChiefMessage");
-  const { deviceType } = useResponsiveStore();
 
   return (
     <ChiefContainer>
@@ -118,10 +118,10 @@ const PositiveImpactMessageChief = () => {
         <Text>{t("title")}</Text>
       </MessageTitle>
       <MessageContent>
-        <Text>{t(`content.${deviceType}`)}</Text>
+        <Text>{t(`content`)}</Text>
       </MessageContent>
       <ChiefIntroduction>
-        <Text>{t(`introduction.${deviceType}`)}</Text>
+        <Text>{t(`introduction`)}</Text>
       </ChiefIntroduction>
       <MessageDate>
         <Text>{t("date")}</Text>

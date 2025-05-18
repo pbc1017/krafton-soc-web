@@ -104,14 +104,18 @@ const MessageCardContent = styled.div`
   font-weight: ${theme.fonts.weights.semibold};
   letter-spacing: 0.47px;
 
+  width: 569px;
+
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     font-size: 26px;
     line-height: 34px;
+    width: 309px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     font-size: 24px;
     line-height: 32px;
+    width: 285px;
   }
 `;
 
