@@ -81,6 +81,424 @@
             "tablet": "UNDEFINED",
             "mobile": "UNDEFINED"
           }
+        },
+        "Card3": {
+          "duration": {
+            "startTerm": "3월",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "류석영 교수 학부장 취임",
+            "tablet": "류석영 교수 학부장 취임",
+            "mobile": "류석영 교수 학부장 취임"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card4": {
+          "duration": {
+            "startTerm": "01.20",
+            "endTerm": "03.16"
+          },
+          "title": {
+            "desktop": "KAIST 전산학부 증축 공간 활용 및 KRAFTON 연계 프로그램 논의",
+            "tablet": "KAIST 전산학부 증축 공간 활용 및 KRAFTON 연계 프로그램 논의",
+            "mobile": "KAIST 전산학부 증축 공간 활용 및 KRAFTON 연계 프로그램 논의"
+          },
+          "detail": {
+            "desktop": "01.20 KAIST-KRAFTON 연계 활동 및 프로그램 추진 협의\n03.09-16 KAIST-KRAFTON 연계 활동 및 프로그램 구체화",
+            "tablet": "01.20 KAIST-KRAFTON 연계 활동 및 프로그램 추진 협의\n03.09-16 KAIST-KRAFTON 연계 활동 및 프로그램 구체화",
+            "mobile": "01.20 KAIST-KRAFTON 연계 활동 및 프로그램 추진 협의\n03.09-16 KAIST-KRAFTON 연계 활동 및 프로그램 구체화"
+          }
+        },
+        "Card5": {
+          "duration": {
+            "startTerm": "04.21",
+            "endTerm": "5월"
+          },
+          "title": {
+            "desktop": "크래프톤 KAIST 기부 관련 협의체 구성 및 논의",
+            "tablet": "크래프톤 KAIST 기부 관련 협의체 구성 및 논의",
+            "mobile": "크래프톤 KAIST 기부 관련 협의체 구성 및 논의"
+          },
+          "detail": {
+            "desktop": "04.21 증축 기부 협의 및 약정식(MOU) 체결 추진을 위한 논의\n04.28 증축 개발 구체화, 200억 규모 1개 동 건립 계획, 약정식(MOU)을 통한 실행\n4월 증축 기부 계획 및 Matching Grant 추진 방향 논의\n5월 증축 기부 방향 확정 및 개인/매칭 구체적인 기부 규모 조율",
+            "tablet": "04.21 증축 기부 협의 및 약정식(MOU) 체결 추진을 위한 논의\n04.28 증축 개발 구체화, 200억 규모 1개 동 건립 계획, 약정식(MOU)을 통한 실행\n4월 증축 기부 계획 및 Matching Grant 추진 방향 논의\n5월 증축 기부 방향 확정 및 개인/매칭 구체적인 기부 규모 조율",
+            "mobile": "04.21 증축 기부 협의 및 약정식(MOU) 체결 추진을 위한 논의\n04.28 증축 개발 구체화, 200억 규모 1개 동 건립 계획, 약정식(MOU)을 통한 실행\n4월 증축 기부 계획 및 Matching Grant 추진 방향 논의\n5월 증축 기부 방향 확정 및 개인/매칭 구체적인 기부 규모 조율"
+          }
+        }
+      },
+      "Part2": {
+        "PartHeader": {
+          "title": {
+            "desktop": "증축 실행 & 기부금 모금",
+            "tablet": "증축 실행 & 기부금 모금",
+            "mobile": "증축 실행 & 기부금 모금"
+          }
+        },
+        "Card1": {
+          "duration": {
+            "startTerm": "03.26",
+            "endTerm": "05.06"
+          },
+          "title": {
+            "desktop": "데브시스터즈의 전산학부 동문 11인 기부",
+            "tablet": "데브시스터즈의 전산학부 동문 11인 기부",
+            "mobile": "데브시스터즈의 전산학부 동문 11인 기부"
+          },
+          "detail": {
+            "desktop": "06학번 홍성진, 09학번 명노준, 10학번 원대영, 10학번 이준성, 11학번 이창원,\n11학번 최낙현, 12학번 마재의, 14학번 정성윤, 14학번 황태현, 15학번 이준수,\n16학번 황재영",
+            "tablet": "06학번 홍성진, 09학번 명노준, 10학번 원대영, 10학번 이준성, 11학번 이창원,\n11학번 최낙현, 12학번 마재의, 14학번 정성윤, 14학번 황태현, 15학번 이준수,\n16학번 황재영",
+            "mobile": "06학번 홍성진, 09학번 명노준, 10학번 원대영, 10학번 이준성,\n11학번 이창원, 11학번 최낙현, 12학번 마재의, 14학번 정성윤,\n14학번 황태현, 15학번 이준수, 16학번 황재영"
+          }
+        },
+        "Card2": {
+          "duration": {
+            "startTerm": "04.08",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "학부 93학번 김범준 동문 1억 원 기부",
+            "tablet": "학부 93학번 김범준 동문 1억 원 기부",
+            "mobile": "학부 93학번 김범준 동문 1억 원 기부"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card3": {
+          "duration": {
+            "startTerm": "04.30",
+            "endTerm": "05.31"
+          },
+          "title": {
+            "desktop": "장병규, 김창한 등 11인, 기부 입장 표명 및 기부금 약정식 준비",
+            "tablet": "장병규, 김창한 등 11인, 기부 입장 표명 및 기부금 약정식 준비",
+            "mobile": "장병규, 김창한 등 11인, 기부 입장 표명 및 \n기부금 약정식 준비"
+          },
+          "detail": {
+            "desktop": "장병규 20억, 김창한 6억, 조웅희 6억, 신승우 6억, 류성중 5억, 박진석 5억, \n김상균 1억, 심재한 1억원, 이창호 1억, 정우재 1억, 양재헌 3억",
+            "tablet": "장병규 20억, 김창한 6억, 조웅희 6억, 신승우 6억, 류성중 5억, 박진석 5억, \n김상균 1억, 심재한 1억원, 이창호 1억, 정우재 1억, 양재헌 3억",
+            "mobile": "장병규 20억, 김창한 6억, 조웅희 6억, 신승우 6억, 류성중 5억,\n박진석 5억, 김상균 1억, 심재한 1억원, 이창호 1억, 정우재 1억,\n양재헌 3억"
+          }
+        },
+        "Card4": {
+          "duration": {
+            "startTerm": "05.04",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "KAIST 건설팀과 증축 실행 구체화 및 예산 논의",
+            "tablet": "KAIST 건설팀과 증축 실행 구체화 및 예산 논의",
+            "mobile": "KAIST 건설팀과 증축 실행 구체화 및 예산 논의"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card5": {
+          "duration": {
+            "startTerm": "05.07",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "학부 95학번 서하연, 96학번 한동훈 동문 부부 2,000만 원 기부",
+            "tablet": "학부 95학번 서하연, 96학번 한동훈 동문 부부 2,000만 원 기부",
+            "mobile": "학부 95학번 서하연, 96학번 한동훈 동문 부부 2,000만 원 기부"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card6": {
+          "duration": {
+            "startTerm": "05.10",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "KRAFTON-KAIST 전산학부 증축 건립 프로젝트 관련 약정식(MOU) 체결 논의",
+            "tablet": "KRAFTON-KAIST 전산학부 증축 건립 프로젝트 관련 약정식(MOU) 체결 논의",
+            "mobile": "KRAFTON-KAIST 전산학부 증축 건립 프로젝트 관련 약정식(MOU) 체결 논의"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card7": {
+          "duration": {
+            "startTerm": "05.17",
+            "endTerm": "05.28"
+          },
+          "title": {
+            "desktop": "기부금 집행, 개인 기부자 약정식(MOU) 조율 완료 및 기부 최종 확정 준비",
+            "tablet": "기부금 집행, 개인 기부자 약정식(MOU) 조율 완료 및 기부 최종 확정 준비",
+            "mobile": "UNDEF기부금 집행, 개인 기부자 약정식(MOU) 조율 완료 및 기부 최종 확정 준비INED"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card8": {
+          "duration": {
+            "startTerm": "05.21",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "전산학부 증축 건립을 위한 예상 일정 및 소요 비용 논의",
+            "tablet": "전산학부 증축 건립을 위한 예상 일정 및 소요 비용 논의",
+            "mobile": "전산학부 증축 건립을 위한 예상 일정 및 소요 비용 논의"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card9": {
+          "duration": {
+            "startTerm": "06.04",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "크래프톤 & 전산학부 동문, KAIST 전산학부 기부 약정식 및 인터뷰 개최",
+            "tablet": "크래프톤 & 전산학부 동문, KAIST 전산학부 기부 약정식 및 인터뷰 개최",
+            "mobile": "크래프톤 & 전산학부 동문, KAIST 전산학부\n기부 약정식 및 인터뷰 개최"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card10": {
+          "duration": {
+            "startTerm": "06.04",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "크래프톤, KAIST에 110억 원 기부 공식 발표",
+            "tablet": "크래프톤, KAIST에 110억 원 기부 공식 발표",
+            "mobile": "크래프톤, KAIST에 110억 원 기부 공식 발표"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card11": {
+          "duration": {
+            "startTerm": "06.25",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "전산학부 증축 건립 추진위원회 발족",
+            "tablet": "전산학부 증축 건립 추진위원회 발족",
+            "mobile": "전산학부 증축 건립 추진위원회 발족"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card12": {
+          "duration": {
+            "startTerm": "06.26",
+            "endTerm": "07.07"
+          },
+          "title": {
+            "desktop": "전산학부 구성원 대상 증축기금 조성",
+            "tablet": "전산학부 구성원 대상 증축기금 조성",
+            "mobile": "전산학부 구성원 대상 증축기금 조성"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card13": {
+          "duration": {
+            "startTerm": "06.30",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "크래프톤 재직 동문 2인 기부",
+            "tablet": "크래프톤 재직 동문 2인 기부",
+            "mobile": "크래프톤 재직 동문 2인 기부"
+          },
+          "detail": {
+            "desktop": "김성용, 허재석",
+            "tablet": "김성용, 허재석",
+            "mobile": "김성용, 허재석"
+          }
+        },
+        "Card14": {
+          "duration": {
+            "startTerm": "07.08",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "증축 설계 및 크래프톤 기업 정체성 반영 협의",
+            "tablet": "증축 설계 및 크래프톤 기업 정체성 반영 협의",
+            "mobile": "증축 설계 및 크래프톤 기업 정체성 반영 협의"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card15": {
+          "duration": {
+            "startTerm": "07.20",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "전산학부 증축 건립 추진위원회 2차 회의",
+            "tablet": "전산학부 증축 건립 추진위원회 2차 회의",
+            "mobile": "전산학부 증축 건립 추진위원회 2차 회의"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card16": {
+          "duration": {
+            "startTerm": "08.23",
+            "endTerm": "11.05"
+          },
+          "title": {
+            "desktop": "전산학부 증축 심의 및 후속 절차 진행",
+            "tablet": "전산학부 증축 심의 및 후속 절차 진행",
+            "mobile": "전산학부 증축 심의 및 후속 절차 진행"
+          },
+          "detail": {
+            "desktop": "08.23 증축 건설위원회 심의 완료\n09.07 증축 사업 추진 일정 조정 및 건설위원회 심의 완료, 후속 절차 진행\n11.05 공공건축 사전 검토 완료 및 심의위원회 구성 준비",
+            "tablet": "08.23 증축 건설위원회 심의 완료\n09.07 증축 사업 추진 일정 조정 및 건설위원회 심의 완료, 후속 절차 진행\n11.05 공공건축 사전 검토 완료 및 심의위원회 구성 준비",
+            "mobile": "08.23 증축 건설위원회 심의 완료\n09.07 증축 사업 추진 일정 조정 및 건설위원회 심의 완료, 후속 절차 진행\n11.05 공공건축 사전 검토 완료 및 심의위원회 구성 준비"
+          }
+        },
+        "Card17": {
+          "duration": {
+            "startTerm": "11.04",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "학부 99학번 박준하 동문 1억 원 기부",
+            "tablet": "학부 99학번 박준하 동문 1억 원 기부",
+            "mobile": "학부 99학번 박준하 동문 1억 원 기부"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card18": {
+          "duration": {
+            "startTerm": "11.14",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "엘리스 임직원(김재원 외 3인) 3억 원 기부",
+            "tablet": "엘리스 임직원(김재원 외 3인) 3억 원 기부",
+            "mobile": "엘리스 임직원(김재원 외 3인) 3억 원 기부"
+          },
+          "detail": {
+            "desktop": "김수인, 김창현, 박정국",
+            "tablet": "김수인, 김창현, 박정국",
+            "mobile": "김수인, 김창현, 박정국"
+          }
+        },
+        "Card19": {
+          "duration": {
+            "startTerm": "04.29",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "크래프톤 재직 동문 17인 1억 원 기부",
+            "tablet": "크래프톤 재직 동문 17인 1억 원 기부",
+            "mobile": "크래프톤 재직 동문 17인 1억 원 기부"
+          },
+          "detail": {
+            "desktop": "KRAFTON HQ, PUBG STUDIOS 10인, 5minlab 7인 총 17인\n김건우, 김상현, 김시환, 김정헌, 김찬수, 박경도, 박문형, 박수찬, 변현찬, \n오진석, 이상헌, 이성원, 이승민, 이해찬, 장병규, 정기량, 최윤묵",
+            "tablet": "KRAFTON HQ, PUBG STUDIOS 10인, 5minlab 7인 총 17인\n김건우, 김상현, 김시환, 김정헌, 김찬수, 박경도, 박문형, 박수찬, 변현찬, \n오진석, 이상헌, 이성원, 이승민, 이해찬, 장병규, 정기량, 최윤묵",
+            "mobile": "KRAFTON HQ, PUBG STUDIOS 10인, 5minlab 7인 총 17인\n김건우, 김상현, 김시환, 김정헌, 김찬수, 박경도, 박문형, 박수찬, 변현찬, \n오진석, 이상헌, 이성원, 이승민, 이해찬, 장병규, 정기량, 최윤묵"
+          }
+        }
+      },
+      "Part3": {
+        "PartHeader": {
+          "title": {
+            "desktop": "증축 사업 추진",
+            "tablet": "증축 사업 추진",
+            "mobile": "증축 사업 추진"
+          }
+        },
+        "Card1": {
+          "duration": {
+            "startTerm": "12.28",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "전산학부 증축 사업 설명회 개최",
+            "tablet": "전산학부 증축 사업 설명회 개최",
+            "mobile": "전산학부 증축 사업 설명회 개최"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card2": {
+          "duration": {
+            "startTerm": "03.16",
+            "endTerm": "04.26"
+          },
+          "title": {
+            "desktop": "전산학부 증축 공사 실행을 위한 설계 공모 개최 및 확정",
+            "tablet": "전산학부 증축 공사 실행을 위한 설계 공모 개최 및 확정",
+            "mobile": "전산학부 증축 공사 실행을 위한 설계 공모 개최 및 확정"
+          },
+          "detail": {
+            "desktop": "03.16 증축 공사 설계 공모 심사 안내 및 사전 자료 교부\n03.17 공모 설계안 선정을 위한 논의\n03.18 증축 공사 설계 공모 심사 개최\n03.27 증축 공사 착공 KAIST 내 공식 공지\n04.06-10 증축 기공식, 사회환원 의미로 미 개최 \n04.26 증축 공사 설계 공모 심사 완료 및 선정",
+            "tablet": "03.16 증축 공사 설계 공모 심사 안내 및 사전 자료 교부\n03.17 공모 설계안 선정을 위한 논의\n03.18 증축 공사 설계 공모 심사 개최\n03.27 증축 공사 착공 KAIST 내 공식 공지\n04.06-10 증축 기공식, 사회환원 의미로 미 개최 \n04.26 증축 공사 설계 공모 심사 완료 및 선정",
+            "mobile": "03.16 증축 공사 설계 공모 심사 안내 및 사전 자료 교부\n03.17 공모 설계안 선정을 위한 논의\n03.18 증축 공사 설계 공모 심사 개최\n03.27 증축 공사 착공 KAIST 내 공식 공지\n04.06-10 증축 기공식, 사회환원 의미로 미 개최 \n04.26 증축 공사 설계 공모 심사 완료 및 선정"
+          }
+        },
+        "Card3": {
+          "duration": {
+            "startTerm": "03.29",
+            "endTerm": "09.23"
+          },
+          "title": {
+            "desktop": "전산학부 증축 외부 빌딩 공사 착공 및 시공 진행",
+            "tablet": "전산학부 증축 외부 빌딩 공사 착공 및 시공 진행",
+            "mobile": "전산학부 증축 외부 빌딩 공사 착공 및 시공 진행"
+          },
+          "detail": {
+            "desktop": "03.29 전산학부 주변 건설 부지 수목 이식 공사 진행\n04.05-09 증축 건물과 기존 건물 간의 연결 및 타설 작업 진행\n05.25-06.23 증축 건축 실제 공사 착수\n07.08 태양광 발전기 설치를 위한 주차 공간 추가 공사\n07.19-08.01 태양광 발전기 설치를 위한 주차 공간 추가 2차 공사\n07.28 장마로 인해 중단되었던 건물 공사 재착수\n09.23 태양광 발전기 설치를 위한 주차 공간 추가 3차 공사",
+            "tablet": "03.29 전산학부 주변 건설 부지 수목 이식 공사 진행\n04.05-09 증축 건물과 기존 건물 간의 연결 및 타설 작업 진행\n05.25-06.23 증축 건축 실제 공사 착수\n07.08 태양광 발전기 설치를 위한 주차 공간 추가 공사\n07.19-08.01 태양광 발전기 설치를 위한 주차 공간 추가 2차 공사\n07.28 장마로 인해 중단되었던 건물 공사 재착수\n09.23 태양광 발전기 설치를 위한 주차 공간 추가 3차 공사",
+            "mobile": "03.29 전산학부 주변 건설 부지 수목 이식 공사 진행\n04.05-09 증축 건물과 기존 건물 간의 연결 및 타설 작업 진행\n05.25-06.23 증축 건축 실제 공사 착수\n07.08 태양광 발전기 설치를 위한 주차 공간 추가 공사\n07.19-08.01 태양광 발전기 설치를 위한 주차 공간 추가 2차 공사\n07.28 장마로 인해 중단되었던 건물 공사 재착수\n09.23 태양광 발전기 설치를 위한 주차 공간 추가 3차 공사"
+          }
         }
       }
     }
