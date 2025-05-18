@@ -25,6 +25,10 @@ const NavMenuWrapper = styled.div`
   gap: 24px;
   padding: 0 24px;
 
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    border-bottom: 1px solid ${theme.colors.black};
+  }
+
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     gap: 20px;
   }
