@@ -154,7 +154,9 @@ const ChairmanMessage: React.FC = () => {
 
         <IntroductionContainer>
           <NameContainer>
-            <Text color={theme.colors.black}>{t(`introduction`)}</Text>
+            <Text color={theme.colors.black}>
+              {t(`introduction.${deviceType}`)}
+            </Text>
           </NameContainer>
           <DateContainer>
             <Text color={theme.colors.black}>{t("date")}</Text>

@@ -28,14 +28,22 @@
   },
   "BuildingJourney": {
     "chairmanMessage": {
-      "message": "““I first met Professor Young-Gul Kim, Executive Director of the KAIST Development Foundation, in October 2017. That encounter led to the beginning of donations such as the KAIST-Indonesia Volunteer Corps, and the trust built through this relationship eventually extended to the KAIST 50th Anniversary Memorial Hall project, which was initiated around 2020 by President Sung-Chul Shin.\n\nWhile meeting various people involved in the 50th Anniversary Memorial Hall project, I had the opportunity to meet Professor Myung-Ho Kim, then Head of the School of Computing. At that time, I decided to dedicate a portion of the donation I had pledged to KAIST to the expansion of the School of Computing. Around that period, I also began exchanging thoughts with several fellow alumni and acquaintances, which ultimately led to KRAFTON’s 11 billion KRW matching grant donation in 2021.”",
-      "introduction": "ByungGyu Chang, KRAFTON Chairman and KAIST School of Computing Alumnus",
+      "message": "“I first met Professor Young-Gul Kim, Executive Director of the KAIST Development Foundation, in October 2017. That encounter led to the beginning of donations such as the KAIST-Indonesia Volunteer Corps, and the trust built through this relationship eventually extended to the KAIST 50th Anniversary Memorial Hall project, which was initiated around 2020 by President Sung-Chul Shin.\n\nWhile meeting various people involved in the 50th Anniversary Memorial Hall project, I had the opportunity to meet Professor Myung-Ho Kim, then Head of the School of Computing. At that time, I decided to dedicate a portion of the donation I had pledged to KAIST to the expansion of the School of Computing. Around that period, I also began exchanging thoughts with several fellow alumni and acquaintances, which ultimately led to KRAFTON’s 11 billion KRW matching grant donation in 2021.”",
+      "introduction": {
+        "desktop": "ByungGyu Chang, KRAFTON Chairman and KAIST School of Computing Alumnus",
+        "tablet": "ByungGyu Chang, KRAFTON Chairman and KAIST School of Computing Alumnus",
+        "mobile": "ByungGyu Chang,\nKRAFTON Chairman and KAIST School of Computing Alumnus"
+      },
       "date": "April 3, 2025"
     },
     "Parts": {
       "Part1": {
         "PartHeader": {
-          "title": "Preparing for Expansion"
+          "title": {
+            "desktop": "Preparing for Expansion",
+            "tablet": "Preparing for Expansion",
+            "mobile": "Preparing for Expansion"
+          }
         },
         "startTerm": "2020.08",
         "endTerm": "2021.05",
@@ -79,7 +87,7 @@
           "title": {
             "desktop": "Professor Sukyoung Ryu Appointed as\nHead of the School of Computing",
             "tablet": "Professor Sukyoung Ryu Appointed as\nHead of the School of Computing",
-            "mobile": "Professor Sukyoung Ryu Appointed\nas Head of the School of\nComputing"
+            "mobile": "Professor Sukyoung Ryu Appointed\nas Head of the School of Computing"
           },
           "detail": {
             "desktop": "UNDEFINED",
@@ -128,6 +136,8 @@
             "mobile": "Expansion Execution & Fundraising"
           }
         },
+        "startTerm": "2021.03",
+        "endTerm": "2022.04",
         "Card1": {
           "duration": {
             "startTerm": "08.07",
@@ -442,6 +452,8 @@
             "mobile": "Expansion Project Implementation"
           }
         },
+        "startTerm": "2021.12",
+        "endTerm": "2023.04",
         "Card1": {
           "duration": {
             "startTerm": "12.28",
@@ -488,6 +500,177 @@
             "desktop": "03.29 Tree Relocation Work on Construction Site Around the School of Computing\n04.05-09 Connection and Pouring Work Between New and Existing Buildings\n05.25-06.23 Main Construction of the Expansion Building Begins\n07.08 Additional Parking Construction for Solar Panel Installation\n07.19-08.01 Second Phase of Parking Construction for Solar Panel Installation\n07.28 Resumption of Building Construction After Suspension Due to Heavy Rain\n09.23 Third Phase of Parking Construction for Solar Panel Installation",
             "tablet": "03.29 Tree Relocation Work on Construction Site Around the School of Computing\n04.05-09 Connection and Pouring Work Between New and Existing Buildings\n05.25-06.23 Main Construction of the Expansion Building Begins\n07.08 Additional Parking Construction for Solar Panel Installation\n07.19-08.01 Second Phase of Parking Construction for Solar Panel Installation\n07.28 Resumption of Building Construction After Suspension Due to Heavy Rain\n09.23 Third Phase of Parking Construction for Solar Panel Installation",
             "mobile": "03.29 Tree Relocation Work on Construction Site Around the School of Computing\n04.05-09 Connection and Pouring Work Between New and Existing Buildings\n05.25-06.23 Main Construction of the Expansion Building Begins\n07.08 Additional Parking Construction for Solar Panel Installation\n07.19-08.01 Second Phase of Parking Construction for Solar Panel Installation\n07.28 Resumption of Building Construction After Suspension Due to Heavy Rain\n09.23 Third Phase of Parking Construction for Solar Panel Installation"
+          }
+        },
+        "Card4": {
+          "duration": {
+            "startTerm": "05.02",
+            "endTerm": "08.11"
+          },
+          "title": {
+            "desktop": "Implementation of Architectural Design for the School of Computing Expansion",
+            "tablet": "Implementation of Architectural Design for the School of Computing Expansion",
+            "mobile": "Implementation of Architectural Design for the School of Computing Expansion"
+          },
+          "detail": {
+            "desktop": "05.02 Mid-Design Review Meeting for the School of Computing Expansion\n08.11 Discussion on Mid-Design Coordination Items\n08.11 Value Engineering (VE) Review of Mid-Design for the Expansion",
+            "tablet": "05.02 Mid-Design Review Meeting for the School of Computing Expansion\n08.11 Discussion on Mid-Design Coordination Items\n08.11 Value Engineering (VE) Review of Mid-Design for the Expansion",
+            "mobile": "05.02 Mid-Design Review Meeting for the School of Computing Expansion\n08.11 Discussion on Mid-Design Coordination Items\n08.11 Value Engineering (VE) Review of Mid-Design for the Expansion"
+          }
+        },
+        "Card5": {
+          "duration": {
+            "startTerm": "02.09",
+            "endTerm": "04.13"
+          },
+          "title": {
+            "desktop": "Execution of School of Computing Expansion Construction",
+            "tablet": "Execution of School of Computing Expansion Construction",
+            "mobile": "Execution of School of Computing Expansion Construction"
+          },
+          "detail": {
+            "desktop": "02.09 Final Report on Detailed Design for the School of Computing Expansion\n04.13 Presentation of Interior Design Plan for the School of Computing Expansion",
+            "tablet": "02.09 Final Report on Detailed Design for the School of Computing Expansion\n04.13 Presentation of Interior Design Plan for the School of Computing Expansion",
+            "mobile": "02.09 Final Report on Detailed Design for the School of Computing Expansion\n04.13 Presentation of Interior Design Plan for the School of Computing Expansion"
+          }
+        }
+      },
+      "Part4": {
+        "PartHeader": {
+          "title": {
+            "desktop": "KRAFTON X SoC\nSpace Experience Design",
+            "tablet": "KRAFTON X SoC\nSpace Experience Design",
+            "mobile": "KRAFTON X SoC\nSpace Experience Design"
+          }
+        },
+        "startTerm": "2022.03",
+        "endTerm": "2024.12",
+        "Card1": {
+          "duration": {
+            "startTerm": "03.24",
+            "endTerm": "04.04"
+          },
+          "title": {
+            "desktop": "KRAFTON X SoC Space Experience Design Working Group Formed",
+            "tablet": "KRAFTON X SoC Space Experience Design Working Group Formed",
+            "mobile": "KRAFTON X SoC Space Experience Design Working Group Formed"
+          },
+          "detail": {
+            "desktop": "03.24 Initial Discussion on Space Experience Design in Expansion Building\n04.04 Working-Level Meeting on Space Design for Expansion Building",
+            "tablet": "03.24 Initial Discussion on Space Experience Design in Expansion Building\n04.04 Working-Level Meeting on Space Design for Expansion Building",
+            "mobile": "03.24 Initial Discussion on Space Experience Design in Expansion Building\n04.04 Working-Level Meeting on Space Design for Expansion Building"
+          }
+        },
+        "Card2": {
+          "duration": {
+            "startTerm": "04.13",
+            "endTerm": "12.18"
+          },
+          "title": {
+            "desktop": "Direction Setting for KRAFTON X SoC Space Design",
+            "tablet": "Direction Setting for KRAFTON X SoC Space Design",
+            "mobile": "Direction Setting for KRAFTON X SoC Space Design"
+          },
+          "detail": {
+            "desktop": "04.13 Naming & Design Direction Meeting\n08.29 On-Site Visit and Environmental Survey at KAIST\n09.04-11.27 Design Direction Meetings and Feedback Collection\n12.18 Interior Design Firm Selection Underway",
+            "tablet": "04.13 Naming & Design Direction Meeting\n08.29 On-Site Visit and Environmental Survey at KAIST\n09.04-11.27 Design Direction Meetings and Feedback Collection\n12.18 Interior Design Firm Selection Underway",
+            "mobile": "04.13 Naming & Design Direction Meeting\n08.29 On-Site Visit and Environmental Survey at KAIST\n09.04-11.27 Design Direction Meetings and Feedback Collection\n12.18 Interior Design Firm Selection Underway"
+          }
+        },
+        "Card3": {
+          "duration": {
+            "startTerm": "01.31",
+            "endTerm": "06.13"
+          },
+          "title": {
+            "desktop": "Interior Design Firm Selection and Planning",
+            "tablet": "Interior Design Firm Selection and Planning",
+            "mobile": "Interior Design Firm Selection and Planning"
+          },
+          "detail": {
+            "desktop": "01.31 First Phase of Interior Design Planning\n02.21 First Meeting Between Interior Firm and KAIST Working Team\n04.02 Proposal and Discussion on Space Utilization with KRAFTON HR\n06.11-13 Second Phase of Design Planning and Second Meeting with KAIST Team",
+            "tablet": "01.31 First Phase of Interior Design Planning\n02.21 First Meeting Between Interior Firm and KAIST Working Team\n04.02 Proposal and Discussion on Space Utilization with KRAFTON HR\n06.11-13 Second Phase of Design Planning and Second Meeting with KAIST Team",
+            "mobile": "01.31 First Phase of Interior Design Planning\n02.21 First Meeting Between Interior Firm and KAIST Working Team\n04.02 Proposal and Discussion on Space Utilization with KRAFTON HR\n06.11-13 Second Phase of Design Planning and Second Meeting with KAIST Team"
+          }
+        },
+        "Card4": {
+          "duration": {
+            "startTerm": "06.15",
+            "endTerm": "12.11"
+          },
+          "title": {
+            "desktop": "Interior Design Execution",
+            "tablet": "Interior Design Execution",
+            "mobile": "Interior Design Execution"
+          },
+          "detail": {
+            "desktop": "06.15-07.04 Detailed Design Discussions with Interior Firm\n07.18-08.15 Biweekly Interior Design Review Meetings\n09.10-09.27 Draft Designs for Donor Recognition Space\n10.01-12.10 Microsite Development, Collaboration with Students, and Direction Planning\n12.11 Material Change for Reinforcement of Exterior Windows",
+            "tablet": "06.15-07.04 Detailed Design Discussions with Interior Firm\n07.18-08.15 Biweekly Interior Design Review Meetings\n09.10-09.27 Draft Designs for Donor Recognition Space\n10.01-12.10 Microsite Development, Collaboration with Students, and Direction Planning\n12.11 Material Change for Reinforcement of Exterior Windows",
+            "mobile": "06.15-07.04 Detailed Design Discussions with Interior Firm\n07.18-08.15 Biweekly Interior Design Review Meetings\n09.10-09.27 Draft Designs for Donor Recognition Space\n10.01-12.10 Microsite Development, Collaboration with Students, and Direction Planning\n12.11 Material Change for Reinforcement of Exterior Windows"
+          }
+        },
+        "Card5": {
+          "duration": {
+            "startTerm": "11.04",
+            "endTerm": "UNDEFINED"
+          },
+          "title": {
+            "desktop": "Donor Space Interior Construction in Progress",
+            "tablet": "Donor Space Interior Construction in Progress",
+            "mobile": "Donor Space Interior Construction in Progress"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
+        },
+        "Card6": {
+          "duration": {
+            "startTerm": "09.10",
+            "endTerm": "10.30"
+          },
+          "title": {
+            "desktop": "Donor Space Interior Construction in Progress",
+            "tablet": "Donor Space Interior Construction in Progress",
+            "mobile": "Donor Space Interior Construction in Progress"
+          },
+          "detail": {
+            "desktop": "09.10-10.30 Naming and Message Contest for Donors; List Compilation",
+            "tablet": "09.10-10.30 Naming and Message Contest for Donors; List Compilation",
+            "mobile": "09.10-10.30 Naming and Message Contest for Donors; List Compilation"
+          }
+        },
+        "Card7": {
+          "duration": {
+            "startTerm": "10.29",
+            "endTerm": "10.31"
+          },
+          "title": {
+            "desktop": "KRAFTON X SoC Representative Message Finalized & Building Name Discussion",
+            "tablet": "KRAFTON X SoC Representative Message Finalized & Building Name Discussion",
+            "mobile": "KRAFTON X SoC Representative Message Finalized & Building Name Discussion"
+          },
+          "detail": {
+            "desktop": "10.29-10.31 KRAFTON X SoC Representative Message Finalized & Building Name Discussion",
+            "tablet": "10.29-10.31 KRAFTON X SoC Representative Message Finalized & Building Name Discussion",
+            "mobile": "10.29-10.31 KRAFTON X SoC Representative Message Finalized & Building Name Discussion"
+          }
+        },
+        "Card8": {
+          "duration": {
+            "startTerm": "11월",
+            "endTerm": "12.03"
+          },
+          "title": {
+            "desktop": "KRAFTON X SoC Building Name Finalized & Announced",
+            "tablet": "KRAFTON X SoC Building Name Finalized & Announced",
+            "mobile": "KRAFTON X SoC Building Name Finalized & Announced"
+          },
+          "detail": {
+            "desktop": "November: Two Donor Messages Selected\n11.17 Announcement of Selected Donor Messages & Building Name\n12.03 Finalization of Building Name, Additional Donation, and Supplemental Agreement Between KRAFTON and KAIST",
+            "tablet": "November: Two Donor Messages Selected\n11.17 Announcement of Selected Donor Messages & Building Name\n12.03 Finalization of Building Name, Additional Donation, and Supplemental Agreement Between KRAFTON and KAIST",
+            "mobile": "November: Two Donor Messages Selected\n11.17 Announcement of Selected Donor Messages & Building Name\n12.03 Finalization of Building Name, Additional Donation, and Supplemental Agreement Between KRAFTON and KAIST"
           }
         }
       }
