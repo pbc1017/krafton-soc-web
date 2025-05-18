@@ -199,7 +199,11 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
                 />
               )}
             </HistoryCardTitleContainer>
-            {detail && <HistoryCardDetail>{detail}</HistoryCardDetail>}
+            {detail && (
+              <HistoryCardDetail>
+                <Text>{detail}</Text>
+              </HistoryCardDetail>
+            )}
             {image && !isDesktop && (
               <HistoryCardTabletImageContainer>
                 <HistoryCardImage

@@ -1,7 +1,11 @@
+import { DeviceType } from "@krafton-soc/common/stores/useResponsiveStore";
 import { PartProps } from "@krafton-soc/features/BuildingJourney/components/BuildingJourneyPart/BuildingJourneyPart";
 
-const getPartHeaderTitle = (part: number, t: (key: string) => string) =>
-  t(`Part${part}.PartHeader.title`);
+const getPartHeaderTitle = (
+  part: number,
+  t: (key: string) => string,
+  deviceType: DeviceType,
+) => t(`Part${part}.PartHeader.title.${deviceType}`);
 
 const safeTranslate = (t: (key: string) => string, key: string) => {
   return t(key) === "UNDEFINED" ? undefined : t(key);
@@ -11,6 +15,7 @@ const getPartContent = (
   part: number,
   cardNumber: number,
   t: (key: string) => string,
+  deviceType: DeviceType,
 ) => {
   return {
     duration: {
@@ -20,17 +25,21 @@ const getPartContent = (
         `Part${part}.Card${cardNumber}.duration.endTerm`,
       ),
     },
-    title: t(`Part${part}.Card${cardNumber}.title`),
-    detail: safeTranslate(t, `Part${part}.Card${cardNumber}.detail`),
+    title: t(`Part${part}.Card${cardNumber}.title.${deviceType}`),
+    detail: safeTranslate(
+      t,
+      `Part${part}.Card${cardNumber}.detail.${deviceType}`,
+    ),
   };
 };
 
 export const generatePartContents = (
   t: (key: string) => string,
+  deviceType: DeviceType,
 ): PartProps[] => [
   {
     part: 1,
-    title: getPartHeaderTitle(1, t),
+    title: getPartHeaderTitle(1, t, deviceType),
     startTerm: t("Part1.startTerm"),
     endTerm: safeTranslate(t, "Part1.endTerm"),
     detailsByYear: [
@@ -38,7 +47,7 @@ export const generatePartContents = (
         year: 2020,
         cardContents: [
           {
-            ...getPartContent(1, 1, t),
+            ...getPartContent(1, 1, t, deviceType),
             image: {
               part: 1,
               srcNumber: 1,
@@ -46,7 +55,7 @@ export const generatePartContents = (
             },
           },
           {
-            ...getPartContent(1, 2, t),
+            ...getPartContent(1, 2, t, deviceType),
           },
         ],
       },
@@ -54,7 +63,7 @@ export const generatePartContents = (
         year: 2021,
         cardContents: [
           {
-            ...getPartContent(1, 3, t),
+            ...getPartContent(1, 3, t, deviceType),
             link: "https://cs.kaist.ac.kr/content?menu=134",
             image: {
               part: 1,
@@ -63,10 +72,10 @@ export const generatePartContents = (
             },
           },
           {
-            ...getPartContent(1, 4, t),
+            ...getPartContent(1, 4, t, deviceType),
           },
           {
-            ...getPartContent(1, 5, t),
+            ...getPartContent(1, 5, t, deviceType),
           },
         ],
       },
@@ -74,7 +83,7 @@ export const generatePartContents = (
   },
   {
     part: 2,
-    title: getPartHeaderTitle(2, t),
+    title: getPartHeaderTitle(2, t, deviceType),
     startTerm: t("Part2.startTerm"),
     endTerm: safeTranslate(t, "Part2.endTerm"),
     detailsByYear: [
@@ -82,7 +91,7 @@ export const generatePartContents = (
         year: 2021,
         cardContents: [
           {
-            ...getPartContent(2, 1, t),
+            ...getPartContent(2, 1, t, deviceType),
             image: {
               part: 2,
               srcNumber: 1,
@@ -91,7 +100,7 @@ export const generatePartContents = (
             link: "https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=9697&menu=83",
           },
           {
-            ...getPartContent(2, 2, t),
+            ...getPartContent(2, 2, t, deviceType),
             image: {
               part: 2,
               srcNumber: 2,
@@ -100,7 +109,7 @@ export const generatePartContents = (
             link: "https://news.kaist.ac.kr/news/html/news/?mode=V&mng_no=13590",
           },
           {
-            ...getPartContent(2, 3, t),
+            ...getPartContent(2, 3, t, deviceType),
             image: {
               part: 2,
               srcNumber: 3,
@@ -108,7 +117,7 @@ export const generatePartContents = (
             },
           },
           {
-            ...getPartContent(2, 4, t),
+            ...getPartContent(2, 4, t, deviceType),
             image: {
               part: 2,
               srcNumber: 4,
@@ -116,7 +125,7 @@ export const generatePartContents = (
             },
           },
           {
-            ...getPartContent(2, 5, t),
+            ...getPartContent(2, 5, t, deviceType),
             image: {
               part: 2,
               srcNumber: 5,
@@ -125,16 +134,16 @@ export const generatePartContents = (
             link: "https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=9680&menu=83",
           },
           {
-            ...getPartContent(2, 6, t),
+            ...getPartContent(2, 6, t, deviceType),
           },
           {
-            ...getPartContent(2, 7, t),
+            ...getPartContent(2, 7, t, deviceType),
           },
           {
-            ...getPartContent(2, 8, t),
+            ...getPartContent(2, 8, t, deviceType),
           },
           {
-            ...getPartContent(2, 9, t),
+            ...getPartContent(2, 9, t, deviceType),
             link: "https://www.kaist.ac.kr/Upload/kr/download/KAISTian_Newsletter_2021Summer_20210827.pdf",
             image: {
               part: 2,
@@ -143,7 +152,7 @@ export const generatePartContents = (
             },
           },
           {
-            ...getPartContent(2, 10, t),
+            ...getPartContent(2, 10, t, deviceType),
             link: "https://www.mk.co.kr/news/society/9900467",
             image: {
               part: 2,
@@ -152,10 +161,10 @@ export const generatePartContents = (
             },
           },
           {
-            ...getPartContent(2, 11, t),
+            ...getPartContent(2, 11, t, deviceType),
           },
           {
-            ...getPartContent(2, 12, t),
+            ...getPartContent(2, 12, t, deviceType),
             modalImage: {
               part: 2,
               modalNumber: 1,
@@ -164,19 +173,19 @@ export const generatePartContents = (
             },
           },
           {
-            ...getPartContent(2, 13, t),
+            ...getPartContent(2, 13, t, deviceType),
           },
           {
-            ...getPartContent(2, 14, t),
+            ...getPartContent(2, 14, t, deviceType),
           },
           {
-            ...getPartContent(2, 15, t),
+            ...getPartContent(2, 15, t, deviceType),
           },
           {
-            ...getPartContent(2, 16, t),
+            ...getPartContent(2, 16, t, deviceType),
           },
           {
-            ...getPartContent(2, 17, t),
+            ...getPartContent(2, 17, t, deviceType),
             link: "https://news.kaist.ac.kr/news/html/news/?mode=V&mng_no=17031",
             image: {
               part: 2,
@@ -185,7 +194,7 @@ export const generatePartContents = (
             },
           },
           {
-            ...getPartContent(2, 18, t),
+            ...getPartContent(2, 18, t, deviceType),
             link: "https://news.kaist.ac.kr/news/html/news/?mode=V&mng_no=17251&skey=college&sval=%EA%B3%B5%EA%B3%BC%EB%8C%80%ED%95%99&list_s_date=&list_e_date=&GotoPage=52",
             image: {
               part: 2,
@@ -199,7 +208,7 @@ export const generatePartContents = (
         year: 2022,
         cardContents: [
           {
-            ...getPartContent(2, 19, t),
+            ...getPartContent(2, 19, t, deviceType),
             link: "https://www.yna.co.kr/view/AKR20220429053800063?input=1195m",
             image: {
               part: 2,
@@ -213,7 +222,7 @@ export const generatePartContents = (
   },
   {
     part: 3,
-    title: getPartHeaderTitle(3, t),
+    title: getPartHeaderTitle(3, t, deviceType),
     startTerm: t("Part3.startTerm"),
     endTerm: safeTranslate(t, "Part3.endTerm"),
     detailsByYear: [
@@ -221,7 +230,7 @@ export const generatePartContents = (
         year: 2021,
         cardContents: [
           {
-            ...getPartContent(3, 1, t),
+            ...getPartContent(3, 1, t, deviceType),
           },
         ],
       },
@@ -229,7 +238,7 @@ export const generatePartContents = (
         year: 2022,
         cardContents: [
           {
-            ...getPartContent(3, 2, t),
+            ...getPartContent(3, 2, t, deviceType),
             modalImage: {
               part: 3,
               modalNumber: 2,
@@ -239,7 +248,7 @@ export const generatePartContents = (
             },
           },
           {
-            ...getPartContent(3, 3, t),
+            ...getPartContent(3, 3, t, deviceType),
             image: {
               part: 3,
               srcNumber: 1,
@@ -247,7 +256,7 @@ export const generatePartContents = (
             },
           },
           {
-            ...getPartContent(3, 4, t),
+            ...getPartContent(3, 4, t, deviceType),
           },
         ],
       },
@@ -255,7 +264,7 @@ export const generatePartContents = (
         year: 2023,
         cardContents: [
           {
-            ...getPartContent(3, 5, t),
+            ...getPartContent(3, 5, t, deviceType),
           },
         ],
       },
@@ -263,7 +272,7 @@ export const generatePartContents = (
   },
   {
     part: 4,
-    title: getPartHeaderTitle(4, t),
+    title: getPartHeaderTitle(4, t, deviceType),
     startTerm: t("Part4.startTerm"),
     endTerm: safeTranslate(t, "Part4.endTerm"),
     detailsByYear: [
@@ -271,7 +280,7 @@ export const generatePartContents = (
         year: 2022,
         cardContents: [
           {
-            ...getPartContent(4, 1, t),
+            ...getPartContent(4, 1, t, deviceType),
           },
         ],
       },
@@ -279,7 +288,7 @@ export const generatePartContents = (
         year: 2023,
         cardContents: [
           {
-            ...getPartContent(4, 2, t),
+            ...getPartContent(4, 2, t, deviceType),
             image: {
               part: 4,
               srcNumber: 1,
@@ -292,10 +301,10 @@ export const generatePartContents = (
         year: 2024,
         cardContents: [
           {
-            ...getPartContent(4, 3, t),
+            ...getPartContent(4, 3, t, deviceType),
           },
           {
-            ...getPartContent(4, 4, t),
+            ...getPartContent(4, 4, t, deviceType),
             image: {
               part: 4,
               srcNumber: 2,
@@ -303,7 +312,7 @@ export const generatePartContents = (
             },
           },
           {
-            ...getPartContent(4, 5, t),
+            ...getPartContent(4, 5, t, deviceType),
             image: {
               part: 4,
               srcNumber: 3,
@@ -311,7 +320,7 @@ export const generatePartContents = (
             },
           },
           {
-            ...getPartContent(4, 6, t),
+            ...getPartContent(4, 6, t, deviceType),
             modalImage: {
               part: 4,
               modalNumber: 3,
@@ -321,10 +330,10 @@ export const generatePartContents = (
             },
           },
           {
-            ...getPartContent(4, 7, t),
+            ...getPartContent(4, 7, t, deviceType),
           },
           {
-            ...getPartContent(4, 8, t),
+            ...getPartContent(4, 8, t, deviceType),
             image: {
               part: 4,
               srcNumber: 4,

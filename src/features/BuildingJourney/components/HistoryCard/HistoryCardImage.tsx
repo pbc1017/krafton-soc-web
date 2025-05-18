@@ -47,16 +47,16 @@ const thumbnailSize = {
 
 const modalSize = {
   desktop: {
-    width: 907,
-    height: 535,
+    width: 960,
+    height: 510,
   },
   tablet: {
-    width: 670,
-    height: 356,
+    width: 640,
+    height: 340,
   },
   mobile: {
-    width: 353,
-    height: 188,
+    width: 352,
+    height: 187,
   },
 };
 

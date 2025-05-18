@@ -31,7 +31,7 @@ const ImageContainer = styled.div`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     height: 500px;
   }
-  &::after {
+  /* &::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -39,7 +39,7 @@ const ImageContainer = styled.div`
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
     z-index: 2;
-  }
+  } */
 `;
 
 const BannerImage = styled.div`
@@ -154,7 +154,9 @@ const ChairmanMessage: React.FC = () => {
 
         <IntroductionContainer>
           <NameContainer>
-            <Text color={theme.colors.black}>{t(`introduction`)}</Text>
+            <Text color={theme.colors.black}>
+              {t(`introduction.${deviceType}`)}
+            </Text>
           </NameContainer>
           <DateContainer>
             <Text color={theme.colors.black}>{t("date")}</Text>

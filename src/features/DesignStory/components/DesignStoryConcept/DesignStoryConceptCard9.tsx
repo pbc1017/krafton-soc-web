@@ -38,18 +38,18 @@ const CardLeftImage = styled.div`
   position: relative;
 `;
 
-const CardLeftImageCaption = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+// const CardLeftImageCaption = styled.div`
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
 
-  text-align: left;
-  font-size: 14px;
-  font-weight: ${theme.fonts.weights.regular};
-  line-height: 120%;
-  color: ${theme.colors.black};
-`;
+//   text-align: left;
+//   font-size: 14px;
+//   font-weight: ${theme.fonts.weights.regular};
+//   line-height: 120%;
+//   color: ${theme.colors.black};
+// `;
 
 const CardRightContainer = styled.section`
   width: 432px;
@@ -114,9 +114,9 @@ const DesignStoryConceptCard9 = () => {
             fill
           />
         </CardLeftImage>
-        <CardLeftImageCaption>
+        {/* <CardLeftImageCaption>
           <Text>{"Along, A-long Table and Concrete Wall"}</Text>
-        </CardLeftImageCaption>
+        </CardLeftImageCaption> */}
       </CardLeftContainer>
       {isDesktop && <Spacer width={24} />}
       <CardRightContainer>

@@ -28,14 +28,22 @@
   },
   "BuildingJourney": {
     "chairmanMessage": {
-      "message": "““I first met Professor Young-Gul Kim, Executive Director of the KAIST Development Foundation, in October 2017. That encounter led to the beginning of donations such as the KAIST-Indonesia Volunteer Corps, and the trust built through this relationship eventually extended to the KAIST 50th Anniversary Memorial Hall project, which was initiated around 2020 by President Sung-Chul Shin.\n\nWhile meeting various people involved in the 50th Anniversary Memorial Hall project, I had the opportunity to meet Professor Myung-Ho Kim, then Head of the School of Computing. At that time, I decided to dedicate a portion of the donation I had pledged to KAIST to the expansion of the School of Computing. Around that period, I also began exchanging thoughts with several fellow alumni and acquaintances, which ultimately led to KRAFTON’s 11 billion KRW matching grant donation in 2021.”",
-      "introduction": "ByungGyu Chang, KRAFTON Chairman and KAIST School of Computing Alumnus",
+      "message": "“I first met Professor Young-Gul Kim, Executive Director of the KAIST Development Foundation, in October 2017. That encounter led to the beginning of donations such as the KAIST-Indonesia Volunteer Corps, and the trust built through this relationship eventually extended to the KAIST 50th Anniversary Memorial Hall project, which was initiated around 2020 by President Sung-Chul Shin.\n\nWhile meeting various people involved in the 50th Anniversary Memorial Hall project, I had the opportunity to meet Professor Myung-Ho Kim, then Head of the School of Computing. At that time, I decided to dedicate a portion of the donation I had pledged to KAIST to the expansion of the School of Computing. Around that period, I also began exchanging thoughts with several fellow alumni and acquaintances, which ultimately led to KRAFTON’s 11 billion KRW matching grant donation in 2021.”",
+      "introduction": {
+        "desktop": "ByungGyu Chang, KRAFTON Chairman and KAIST School of Computing Alumnus",
+        "tablet": "ByungGyu Chang, KRAFTON Chairman and KAIST School of Computing Alumnus",
+        "mobile": "ByungGyu Chang,\nKRAFTON Chairman and KAIST School of Computing Alumnus"
+      },
       "date": "April 3, 2025"
     },
     "Parts": {
       "Part1": {
         "PartHeader": {
-          "title": "Preparing for Expansion"
+          "title": {
+            "desktop": "Preparing for Expansion",
+            "tablet": "Preparing for Expansion",
+            "mobile": "Preparing for Expansion"
+          }
         },
         "startTerm": "2020.08",
         "endTerm": "2021.05",
@@ -44,204 +52,405 @@
             "startTerm": "08.07",
             "endTerm": "UNDEFINED"
           },
-          "title": "Discussion on the Need for Expansion at the School of Computing During SW Junggle MOU Ceremony",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "Discussion on the Need for Expansion at the School of\nComputing During SW Junggle MOU Ceremony",
+            "tablet": "Discussion on the Need for Expansion at the School of\nComputing During SW Junggle MOU Ceremony",
+            "mobile": "Discussion on the Need for Expansion at\nthe School of Computing During\nSW Junggle MOU Ceremony"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card2": {
           "duration": {
             "startTerm": "09.21",
             "endTerm": "10.05"
           },
-          "title": "Discussion on KRAFTON's Donation to KAIST and Support for Expansion",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "Discussion on KRAFTON's Donation to KAIST and Support for Expansion",
+            "tablet": "Discussion on KRAFTON's Donation to KAIST and Support for Expansion",
+            "mobile": "Discussion on KRAFTON's Donation to KAIST and Support for Expansion"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card3": {
           "duration": {
             "startTerm": "March",
             "endTerm": "UNDEFINED"
           },
-          "title": "Professor Sukyoung Ryu Appointed as Head of the School of Computing",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "Professor Sukyoung Ryu Appointed as\nHead of the School of Computing",
+            "tablet": "Professor Sukyoung Ryu Appointed as\nHead of the School of Computing",
+            "mobile": "Professor Sukyoung Ryu Appointed\nas Head of the School of Computing"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card4": {
           "duration": {
             "startTerm": "01.20",
             "endTerm": "03.16"
           },
-          "title": "Discussion on Use of Expansion Space and KRAFTON-Linked Programs",
-          "detail": "01.20 Discussion on Promoting KAIST-KRAFTON Collaborative Activities and Programs\n03.09–16 Refinement of KAIST-KRAFTON Collaborative Activities and Programs"
+          "title": {
+            "desktop": "Discussion on Use of Expansion Space and KRAFTON-Linked Programs",
+            "tablet": "Discussion on Use of Expansion Space and KRAFTON-Linked Programs",
+            "mobile": "Discussion on Use of Expansion Space and KRAFTON-Linked Programs"
+          },
+          "detail": {
+            "desktop": "01.20 Discussion on Promoting KAIST-KRAFTON Collaborative Activities and Programs\n03.09-16 Refinement of KAIST-KRAFTON Collaborative Activities and Programs",
+            "tablet": "01.20 Discussion on Promoting KAIST-KRAFTON Collaborative Activities and Programs\n03.09-16 Refinement of KAIST-KRAFTON Collaborative Activities and Programs",
+            "mobile": "01.20 Discussion on Promoting KAIST-KRAFTON Collaborative Activities and Programs\n03.09-16 Refinement of KAIST-KRAFTON Collaborative Activities and Programs"
+          }
         },
         "Card5": {
           "duration": {
             "startTerm": "04.21",
             "endTerm": "May"
           },
-          "title": "Working Group Formed for KRAFTON–KAIST Donation and Collaboration",
-          "detail": "04.21 Discussion on Donation for Expansion and Promotion of MOU Signing\n04.28 Finalization of Expansion Plan: Construction of One Building Worth KRW 20 Billion and Execution Through MOU\nApril Discussion on Expansion Donation Plan and Direction for Matching Grant\nMay Confirmation of Expansion Donation Plan and Adjustment of Individual/Matching Donation Amounts"
+          "title": {
+            "desktop": "Working Group Formed for KRAFTON-KAIST Donation and Collaboration",
+            "tablet": "Working Group Formed for KRAFTON-KAIST Donation and Collaboration",
+            "mobile": "Working Group Formed for KRAFTON-KAIST Donation and Collaboration"
+          },
+          "detail": {
+            "desktop": "04.21 Discussion on Donation for Expansion and Promotion of MOU Signing\n04.28 Finalization of Expansion Plan: Construction of One Building Worth KRW 20 Billion and Execution Through MOU\nApril Discussion on Expansion Donation Plan and Direction for Matching Grant\nMay Confirmation of Expansion Donation Plan and Adjustment of Individual/Matching Donation Amounts",
+            "tablet": "04.21 Discussion on Donation for Expansion and Promotion of MOU Signing\n04.28 Finalization of Expansion Plan: Construction of One Building Worth KRW 20 Billion and Execution Through MOU\nApril Discussion on Expansion Donation Plan and Direction for Matching Grant\nMay Confirmation of Expansion Donation Plan and Adjustment of Individual/Matching Donation Amounts",
+            "mobile": "04.21 Discussion on Donation for Expansion and Promotion of MOU Signing\n04.28 Finalization of Expansion Plan: Construction of One Building Worth KRW 20 Billion and Execution Through MOU\nApril Discussion on Expansion Donation Plan and Direction for Matching Grant\nMay Confirmation of Expansion Donation Plan and Adjustment of Individual/Matching Donation Amounts"
+          }
         }
       },
       "Part2": {
         "PartHeader": {
-          "title": "Expansion Execution & Fundraising"
+          "title": {
+            "desktop": "Expansion Execution & Fundraising",
+            "tablet": "Expansion Execution & Fundraising",
+            "mobile": "Expansion Execution & Fundraising"
+          }
         },
         "startTerm": "2021.03",
         "endTerm": "2022.04",
         "Card1": {
           "duration": {
-            "startTerm": "03.26",
-            "endTerm": "05.06"
+            "startTerm": "08.07",
+            "endTerm": "UNDEFINED"
           },
-          "title": "Donation by 11 School of Computing Alumni from Devsisters",
-          "detail": "Sungjin Hong (Class of ’06), Nojun Myung (’09), Daeyoung Won (’10), Junseong Lee (’10), Changwon Lee (’11), Nakhyun Choi (’11), Jaeui Ma (’12), Sungyoon Jung (’14), Taehyun Hwang (’14), Junsu Lee (’15), Jaeyoung Hwang (’16)"
+          "title": {
+            "desktop": "Donation by 11 School of Computing Alumni from Devsisters",
+            "tablet": "Donation by 11 School of Computing Alumni from Devsisters",
+            "mobile": "Donation by 11 School of Computing Alumni from Devsisters"
+          },
+          "detail": {
+            "desktop": "Sungjin Hong (Class of ’06), Nojun Myung (’09), Daeyoung Won (’10), Junseong Lee (’10),\nChangwon Lee (’11), Nakhyun Choi (’11), Jaeui Ma (’12), Sungyoon Jung (’14),\nTaehyun Hwang (’14), Junsu Lee (’15), Jaeyoung Hwang (’16)",
+            "tablet": "Sungjin Hong (Class of ’06), Nojun Myung (’09), Daeyoung Won (’10),\nJunseong Lee (’10), Changwon Lee (’11), Nakhyun Choi (’11), Jaeui Ma (’12),\nSungyoon Jung (’14), Taehyun Hwang (’14), Junsu Lee (’15), Jaeyoung Hwang (’16)",
+            "mobile": "Sungjin Hong (Class of ’06), Nojun Myung (’09),\nDaeyoung Won (’10),Junseong Lee (’10),\nChangwon Lee (’11), Nakhyun Choi (’11), Jaeui Ma (’12),\nSungyoon Jung (’14), Taehyun Hwang (’14),\nJunsu Lee (’15), Jaeyoung Hwang (’16)"
+          }
         },
         "Card2": {
           "duration": {
             "startTerm": "04.08",
             "endTerm": "UNDEFINED"
           },
-          "title": "Bomjun Kim (Class of ’93) Donates KRW 100 Million",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "Bomjun Kim (Class of ’93) Donates KRW 100 Million",
+            "tablet": "Bomjun Kim (Class of ’93) Donates KRW 100 Million",
+            "mobile": "Bomjun Kim (Class of ’93) Donates KRW 100 Million"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card3": {
           "duration": {
             "startTerm": "04.30",
             "endTerm": "05.31"
           },
-          "title": "ByungGyu Chang, Changhan Kim, and 11 Others Declare Donation Commitment and Prepare for the Donation Pledge Ceremony",
-          "detail": "ByungGyu Chang: 2B KRW, Changhan Kim: 600M KRW, Woonghee Cho: 600M KRW, Seungwoo Shin: 600M KRW, Sungjoong Lew: 500M KRW, Jinseok Park: 500M KRW, Sangkyun Kim: 100M KRW, Jaehan Sim: 100M KRW, Changho Lee: 100M KRW, Woojae Jung: 100M KRW, Jaeheon Yang: 300M KRW"
+          "title": {
+            "desktop": "ByungGyu Chang, Changhan Kim, and 11 Others Declare Donation \nCommitment and Prepare for the Donation Pledge Ceremony",
+            "tablet": "ByungGyu Chang, Changhan Kim, and 11 Others Declare Donation \nCommitment and Prepare for the Donation Pledge Ceremony",
+            "mobile": "ByungGyu Chang, Changhan Kim, and\n11 Others Declare Donation Commitment\nand Prepare for the Donation Pledge\nCeremony"
+          },
+          "detail": {
+            "desktop": "ByungGyu Chang: 2B KRW, Changhan Kim: 600M KRW, Woonghee Cho: 600M KRW,\nSeungwoo Shin: 600M KRW, Sungjoong Lew: 500M KRW, Jinseok Park: 500M KRW,\nSangkyun Kim: 100M KRW, Jaehan Sim: 100M KRW, Changho Lee: 100M KRW, \nWoojae Jung: 100M KRW, Jaeheon Yang: 300M KRW",
+            "tablet": "ByungGyu Chang: 2B KRW, Changhan Kim: 600M KRW, Woonghee Cho: 600M KRW,\nSeungwoo Shin: 600M KRW, Sungjoong Lew: 500M KRW, Jinseok Park: 500M KRW,\nSangkyun Kim: 100M KRW, Jaehan Sim: 100M KRW, Changho Lee: 100M KRW, \nWoojae Jung: 100M KRW, Jaeheon Yang: 300M KRW",
+            "mobile": "ByungGyu Chang: 2B KRW, Changhan Kim: 600M KRW,\nWoonghee Cho: 600M KRW, Seungwoo Shin: 600M KRW,\nSungjoong Lew: 500M KRW, Jinseok Park: 500M KRW,\nSangkyun Kim: 100M KRW, Jaehan Sim: 100M KRW,\nChangho Lee: 100M KRW, Woojae Jung: 100M KRW,\nJaeheon Yang: 300M KRW"
+          }
         },
         "Card4": {
           "duration": {
             "startTerm": "05.04",
             "endTerm": "UNDEFINED"
           },
-          "title": "Discussion on Finalizing the Expansion Execution and Budget with the KAIST Construction Team",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "Discussion on Finalizing the Expansion Execution and\nBudget with the KAIST Construction Team",
+            "tablet": "Discussion on Finalizing the Expansion Execution and\nBudget with the KAIST Construction Team",
+            "mobile": "Discussion on Finalizing the Expansion\nExecution and Budget with the KAIST\nConstruction Team"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card5": {
           "duration": {
             "startTerm": "05.07",
             "endTerm": "UNDEFINED"
           },
-          "title": "Hayearn Suh (Class of ’95) and Donghun Han (Class of ’96), Alumni Couple, Donate KRW 20 Million",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "Hayearn Suh (Class of ’95) and Donghun Han (Class of ’96),\nAlumni Couple, Donate KRW 20 Million",
+            "tablet": "Hayearn Suh (Class of ’95) and Donghun Han (Class of ’96),\nAlumni Couple, Donate KRW 20 Million",
+            "mobile": "Hayearn Suh (Class of ’95) and\nDonghun Han (Class of ’96),\nAlumni Couple, Donate KRW 20 Million"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card6": {
           "duration": {
             "startTerm": "05.10",
             "endTerm": "UNDEFINED"
           },
-          "title": "Discussion on MOU Signing for the KRAFTON–KAIST School of Computing Expansion Project",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "Discussion on MOU Signing for the KRAFTON-KAIST School of Computing Expansion Project",
+            "tablet": "Discussion on MOU Signing for the KRAFTON-KAIST\nSchool of Computing Expansion Project",
+            "mobile": "Discussion on MOU Signing for the\nKRAFTON-KAIST School of Computing\nExpansion Project"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card7": {
           "duration": {
             "startTerm": "05.17",
             "endTerm": "05.28"
           },
-          "title": "Execution of Donations, Completion of Individual MOUs, and Final Preparation for Confirmation",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "Execution of Donations, Completion of Individual MOUs, and Final Preparation for Confirmation",
+            "tablet": "Execution of Donations, Completion of Individual MOUs,\nand Final Preparation for Confirmation",
+            "mobile": "Execution of Donations, Completion of\nIndividual MOUs, and Final Preparation for Confirmation"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card8": {
           "duration": {
             "startTerm": "05.21",
             "endTerm": "UNDEFINED"
           },
-          "title": "Discussion on Timeline and Estimated Costs for the School of Computing Expansion",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "Discussion on Timeline and Estimated Costs for the School of Computing Expansion",
+            "tablet": "Discussion on Timeline and Estimated Costs for the\nSchool of Computing Expansion",
+            "mobile": "Discussion on Timeline and Estimated\nCosts for the School of Computing\nExpansion"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card9": {
           "duration": {
             "startTerm": "06.04",
             "endTerm": "UNDEFINED"
           },
-          "title": "KRAFTON & School of Computing Alumni Hold KAIST School of Computing Donation Pledge Ceremony and Interviews",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "KRAFTON & School of Computing Alumni Hold KAIST School of\nComputing Donation Pledge Ceremony and Interviews",
+            "tablet": "KRAFTON & School of Computing Alumni Hold KAIST School of\nComputing Donation Pledge Ceremony and Interviews",
+            "mobile": "KRAFTON & School of Computing Alumni Hold KAIST School of\nComputing Donation Pledge\nCeremony and Interviews"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
+
         "Card10": {
           "duration": {
             "startTerm": "06.04",
             "endTerm": "UNDEFINED"
           },
-          "title": "KRAFTON Officially Announces KRW 11 Billion Donation to KAIST",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "KRAFTON Officially Announces KRW 11 Billion Donation to KAIST",
+            "tablet": "KRAFTON Officially Announces KRW 11 Billion Donation to KAIST",
+            "mobile": "KRAFTON Officially Announces\nKRW 11 Billion Donation to KAIST"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card11": {
           "duration": {
             "startTerm": "06.25",
             "endTerm": "UNDEFINED"
           },
-          "title": "Launch of the School of Computing Expansion Project Steering Committee",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "Launch of the School of Computing Expansion Project Steering Committee",
+            "tablet": "Launch of the School of Computing Expansion Project Steering Committee",
+            "mobile": "Launch of the School of Computing\nExpansion Project Steering Committee"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card12": {
           "duration": {
             "startTerm": "06.26",
             "endTerm": "07.07"
           },
-          "title": "Fundraising for the Expansion Project Among School of Computing Members",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "Fundraising for the Expansion Project Among School of Computing Members",
+            "tablet": "Fundraising for the Expansion Project Among School of Computing Members",
+            "mobile": "Fundraising for the Expansion\nProject Among School of\nComputing Members"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card13": {
           "duration": {
             "startTerm": "06.30",
             "endTerm": "UNDEFINED"
           },
-          "title": "Donation by Two KRAFTON Employees Who Are Also KAIST Alumni",
-          "detail": "Sungyong Kim, Jaeseok Huh"
+          "title": {
+            "desktop": "Donation by Two KRAFTON Employees Who Are Also KAIST Alumni",
+            "tablet": "Donation by Two KRAFTON Employees Who Are Also KAIST Alumni",
+            "mobile": "Donation by Two KRAFTON Employees\nWho Are Also KAIST Alumni"
+          },
+          "detail": {
+            "desktop": "Sungyong Kim, Jaeseok Huh",
+            "tablet": "Sungyong Kim, Jaeseok Huh",
+            "mobile": "Sungyong Kim, Jaeseok Huh"
+          }
         },
         "Card14": {
           "duration": {
             "startTerm": "07.08",
             "endTerm": "UNDEFINED"
           },
-          "title": "Discussion on Expansion Design and Incorporation of KRAFTON's Corporate Identity",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "Discussion on Expansion Design and Incorporation of KRAFTON's Corporate Identity",
+            "tablet": "Discussion on Expansion Design and Incorporation of KRAFTON's Corporate Identity",
+            "mobile": "Discussion on Expansion Design and\nIncorporation of KRAFTON's Corporate\nIdentity"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card15": {
           "duration": {
             "startTerm": "07.20",
             "endTerm": "UNDEFINED"
           },
-          "title": "2nd Meeting of the School of Computing Expansion Project Steering Committee",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "2nd Meeting of the School of Computing Expansion Project Steering Committee",
+            "tablet": "2nd Meeting of the School of Computing Expansion Project Steering Committee",
+            "mobile": "2nd Meeting of the School of Computing\nExpansion Project Steering Committee"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card16": {
           "duration": {
             "startTerm": "08.23",
             "endTerm": "11.05"
           },
-          "title": "Deliberation on the School of Computing Expansion and Progress on Follow-up Procedures",
-          "detail": "08.23 Completion of Deliberation by the Expansion Construction Committee\n09.07 Adjustment of Expansion Project Schedule and Completion of Construction Committee Deliberation; Follow-up Procedures Underway\n11.05 Completion of Preliminary Review for Public Construction and Preparation for Formation of the Deliberation Committee"
+          "title": {
+            "desktop": "Deliberation on the School of Computing Expansion and Progress on Follow-up Procedures",
+            "tablet": "Deliberation on the School of Computing Expansion and Progress on Follow-up Procedures",
+            "mobile": "Deliberation on the School of Computing\nExpansion and Progress on Follow-up\nProcedures"
+          },
+          "detail": {
+            "desktop": "08.23 Completion of Deliberation by the Expansion Construction Committee\n09.07 Adjustment of Expansion Project Schedule and Completion of Construction Committee Deliberation; Follow-up Procedures Underway\n11.05 Completion of Preliminary Review for Public Construction and Preparation for Formation of the Deliberation Committee",
+            "tablet": "08.23 Completion of Deliberation by the Expansion Construction Committee\n09.07 Adjustment of Expansion Project Schedule and Completion of Construction Committee Deliberation; Follow-up Procedures Underway\n11.05 Completion of Preliminary Review for Public Construction and Preparation for Formation of the Deliberation Committee",
+            "mobile": "08.23 Completion of Deliberation by the Expansion Construction Committee\n09.07 Adjustment of Expansion Project Schedule and Completion of Construction Committee Deliberation; Follow-up Procedures Underway\n11.05 Completion of Preliminary Review for Public Construction and Preparation for Formation of the Deliberation Committee"
+          }
         },
         "Card17": {
           "duration": {
             "startTerm": "11.04",
             "endTerm": "UNDEFINED"
           },
-          "title": "Junha Park (Class of ’99) Donates KRW 100 Million",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "Junha Park (Class of ’99) Donates KRW 100 Million",
+            "tablet": "Junha Park (Class of ’99) Donates KRW 100 Million",
+            "mobile": "Junha Park (Class of ’99) Donates\nKRW 100 Million"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card18": {
           "duration": {
             "startTerm": "11.14",
             "endTerm": "UNDEFINED"
           },
-          "title": "ELICE CEO and Employees Donate KRW 300 Million",
-          "detail": "Suin Kim, Changhyeon Kim, Jeongguk Park"
+          "title": {
+            "desktop": "ELICE CEO and Employees Donate KRW 300 Million",
+            "tablet": "ELICE CEO and Employees Donate KRW 300 Million",
+            "mobile": "ELICE CEO and Employees Donate KRW 300 Million"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card19": {
           "duration": {
             "startTerm": "04.29",
             "endTerm": "UNDEFINED"
           },
-          "title": "17 KAIST Alumni Currently at KRAFTON Donate KRW 100 Million",
-          "detail": "17 KAIST Alumni from KRAFTON HQ, PUBG STUDIOS (10 members), and 5minlab (7 members)\nGeonwoo Kim, Sanghyeon Kim, Shihwan Kim, JungHun Kim, Chansoo Kim, Kyungdo Park, Moon Park, Soochan Park, Hyeonchan Byeon, Jinseok Oh, Sangheon Lee, Seongwon Lee, Seungmin Lee, Haechan Lee, ByungGyu Chang, Kiryang Jeong, YunMook Choi"
+          "title": {
+            "desktop": "17 KAIST Alumni Currently at KRAFTON Donate KRW 100 Million",
+            "tablet": "17 KAIST Alumni Currently at KRAFTON Donate KRW 100 Million",
+            "mobile": "17 KAIST Alumni Currently at\nKRAFTON Donate KRW 100 Million"
+          },
+          "detail": {
+            "desktop": "17 KAIST Alumni from KRAFTON HQ, PUBG STUDIOS (10 members), and 5minlab (7 members)\nGeonwoo Kim, Sanghyeon Kim, Shihwan Kim, JungHun Kim, Chansoo Kim, Kyungdo Park, Moon Park, Soochan Park, Hyeonchan Byeon, Jinseok Oh, Sangheon Lee, Seongwon Lee, Seungmin Lee, Haechan Lee, ByungGyu Chang, Kiryang Jeong, YunMook Choi",
+            "tablet": "17 KAIST Alumni from KRAFTON HQ, PUBG STUDIOS (10 members), and 5minlab (7 members)\nGeonwoo Kim, Sanghyeon Kim, Shihwan Kim, JungHun Kim, Chansoo Kim, Kyungdo Park, Moon Park, Soochan Park, Hyeonchan Byeon, Jinseok Oh, Sangheon Lee, Seongwon Lee, Seungmin Lee, Haechan Lee, ByungGyu Chang, Kiryang Jeong, YunMook Choi",
+            "mobile": "17 KAIST Alumni from KRAFTON HQ, PUBG STUDIOS (10 members), and 5minlab (7 members)\nGeonwoo Kim, Sanghyeon Kim, Shihwan Kim, JungHun Kim, Chansoo Kim, Kyungdo Park, Moon Park, Soochan Park, Hyeonchan Byeon, Jinseok Oh, Sangheon Lee, Seongwon Lee, Seungmin Lee, Haechan Lee, ByungGyu Chang, Kiryang Jeong, YunMook Choi"
+          }
         }
       },
       "Part3": {
         "PartHeader": {
-          "title": "Expansion Project Implementation"
+          "title": {
+            "desktop": "Expansion Project Implementation",
+            "tablet": "Expansion Project Implementation",
+            "mobile": "Expansion Project Implementation"
+          }
         },
         "startTerm": "2021.12",
         "endTerm": "2023.04",
@@ -250,45 +459,89 @@
             "startTerm": "12.28",
             "endTerm": "UNDEFINED"
           },
-          "title": "School of Computing Expansion Project Information Session Held",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "School of Computing Expansion Project Information Session Held",
+            "tablet": "School of Computing Expansion Project Information Session Held",
+            "mobile": "School of Computing Expansion Project Information Session Held"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card2": {
           "duration": {
             "startTerm": "03.16",
             "endTerm": "04.26"
           },
-          "title": "Design Competition Held and Finalized for Expansion Construction",
-          "detail": "03.16 Design Competition Review Briefing and Preliminary Material Distribution\n03.17 Discussion on Selection of Design Proposal\n03.18 Design Competition Review Held\n03.27 Official Announcement of Construction Start Within KAIST\n04.06–10 Groundbreaking Ceremony Not Held to Emphasize Spirit of Social Contribution\n04.26 Design Competition Review Completed and Final Design Selected"
+          "title": {
+            "desktop": "Design Competition Held and Finalized for Expansion Construction",
+            "tablet": "Design Competition Held and Finalized for Expansion Construction",
+            "mobile": "Design Competition Held and Finalized for Expansion Construction"
+          },
+          "detail": {
+            "desktop": "03.16 Design Competition Review Briefing and Preliminary Material Distribution\n03.17 Discussion on Selection of Design Proposal\n03.18 Design Competition Review Held\n03.27 Official Announcement of Construction Start Within KAIST\n04.06-10 Groundbreaking Ceremony Not Held to Emphasize Spirit of Social Contribution\n04.26 Design Competition Review Completed and Final Design Selected",
+            "tablet": "03.16 Design Competition Review Briefing and Preliminary Material Distribution\n03.17 Discussion on Selection of Design Proposal\n03.18 Design Competition Review Held\n03.27 Official Announcement of Construction Start Within KAIST\n04.06-10 Groundbreaking Ceremony Not Held to Emphasize Spirit of Social Contribution\n04.26 Design Competition Review Completed and Final Design Selected",
+            "mobile": "03.16 Design Competition Review Briefing and Preliminary Material Distribution\n03.17 Discussion on Selection of Design Proposal\n03.18 Design Competition Review Held\n03.27 Official Announcement of Construction Start Within KAIST\n04.06-10 Groundbreaking Ceremony Not Held to Emphasize Spirit of Social Contribution\n04.26 Design Competition Review Completed and Final Design Selected"
+          }
         },
         "Card3": {
           "duration": {
             "startTerm": "03.29",
             "endTerm": "09.23"
           },
-          "title": "External Expansion Building Construction Underway",
-          "detail": "03.29 Tree Relocation Work on Construction Site Around the School of Computing\n04.05–09 Connection and Pouring Work Between New and Existing Buildings\n05.25–06.23 Main Construction of the Expansion Building Begins\n07.08 Additional Parking Construction for Solar Panel Installation\n07.19–08.01 Second Phase of Parking Construction for Solar Panel Installation\n07.28 Resumption of Building Construction After Suspension Due to Heavy Rain\n09.23 Third Phase of Parking Construction for Solar Panel Installation"
+          "title": {
+            "desktop": "External Expansion Building Construction Underway",
+            "tablet": "External Expansion Building Construction Underway",
+            "mobile": "External Expansion Building Construction Underway"
+          },
+          "detail": {
+            "desktop": "03.29 Tree Relocation Work on Construction Site Around the School of Computing\n04.05-09 Connection and Pouring Work Between New and Existing Buildings\n05.25-06.23 Main Construction of the Expansion Building Begins\n07.08 Additional Parking Construction for Solar Panel Installation\n07.19-08.01 Second Phase of Parking Construction for Solar Panel Installation\n07.28 Resumption of Building Construction After Suspension Due to Heavy Rain\n09.23 Third Phase of Parking Construction for Solar Panel Installation",
+            "tablet": "03.29 Tree Relocation Work on Construction Site Around the School of Computing\n04.05-09 Connection and Pouring Work Between New and Existing Buildings\n05.25-06.23 Main Construction of the Expansion Building Begins\n07.08 Additional Parking Construction for Solar Panel Installation\n07.19-08.01 Second Phase of Parking Construction for Solar Panel Installation\n07.28 Resumption of Building Construction After Suspension Due to Heavy Rain\n09.23 Third Phase of Parking Construction for Solar Panel Installation",
+            "mobile": "03.29 Tree Relocation Work on Construction Site Around the School of Computing\n04.05-09 Connection and Pouring Work Between New and Existing Buildings\n05.25-06.23 Main Construction of the Expansion Building Begins\n07.08 Additional Parking Construction for Solar Panel Installation\n07.19-08.01 Second Phase of Parking Construction for Solar Panel Installation\n07.28 Resumption of Building Construction After Suspension Due to Heavy Rain\n09.23 Third Phase of Parking Construction for Solar Panel Installation"
+          }
         },
         "Card4": {
           "duration": {
             "startTerm": "05.02",
             "endTerm": "08.11"
           },
-          "title": "Implementation of Architectural Design for the School of Computing Expansion",
-          "detail": "05.02 Mid-Design Review Meeting for the School of Computing Expansion\n08.11 Discussion on Mid-Design Coordination Items\n08.11 Value Engineering (VE) Review of Mid-Design for the Expansion"
+          "title": {
+            "desktop": "Implementation of Architectural Design for the School of Computing Expansion",
+            "tablet": "Implementation of Architectural Design for the School of Computing Expansion",
+            "mobile": "Implementation of Architectural Design for the School of Computing Expansion"
+          },
+          "detail": {
+            "desktop": "05.02 Mid-Design Review Meeting for the School of Computing Expansion\n08.11 Discussion on Mid-Design Coordination Items\n08.11 Value Engineering (VE) Review of Mid-Design for the Expansion",
+            "tablet": "05.02 Mid-Design Review Meeting for the School of Computing Expansion\n08.11 Discussion on Mid-Design Coordination Items\n08.11 Value Engineering (VE) Review of Mid-Design for the Expansion",
+            "mobile": "05.02 Mid-Design Review Meeting for the School of Computing Expansion\n08.11 Discussion on Mid-Design Coordination Items\n08.11 Value Engineering (VE) Review of Mid-Design for the Expansion"
+          }
         },
         "Card5": {
           "duration": {
             "startTerm": "02.09",
             "endTerm": "04.13"
           },
-          "title": "Execution of School of Computing Expansion Construction",
-          "detail": "02.09 Final Report on Detailed Design for the School of Computing Expansion\n04.13 Presentation of Interior Design Plan for the School of Computing Expansion"
+          "title": {
+            "desktop": "Execution of School of Computing Expansion Construction",
+            "tablet": "Execution of School of Computing Expansion Construction",
+            "mobile": "Execution of School of Computing Expansion Construction"
+          },
+          "detail": {
+            "desktop": "02.09 Final Report on Detailed Design for the School of Computing Expansion\n04.13 Presentation of Interior Design Plan for the School of Computing Expansion",
+            "tablet": "02.09 Final Report on Detailed Design for the School of Computing Expansion\n04.13 Presentation of Interior Design Plan for the School of Computing Expansion",
+            "mobile": "02.09 Final Report on Detailed Design for the School of Computing Expansion\n04.13 Presentation of Interior Design Plan for the School of Computing Expansion"
+          }
         }
       },
       "Part4": {
         "PartHeader": {
-          "title": "KRAFTON X SoC\nSpace Experience Design"
+          "title": {
+            "desktop": "KRAFTON X SoC\nSpace Experience Design",
+            "tablet": "KRAFTON X SoC\nSpace Experience Design",
+            "mobile": "KRAFTON X SoC\nSpace Experience Design"
+          }
         },
         "startTerm": "2022.03",
         "endTerm": "2024.12",
@@ -297,64 +550,128 @@
             "startTerm": "03.24",
             "endTerm": "04.04"
           },
-          "title": "KRAFTON X SoC Space Experience Design Working Group Formed",
-          "detail": "03.24 Initial Discussion on Space Experience Design in Expansion Building\n04.04 Working-Level Meeting on Space Design for Expansion Building"
+          "title": {
+            "desktop": "KRAFTON X SoC Space Experience Design Working Group Formed",
+            "tablet": "KRAFTON X SoC Space Experience Design Working Group Formed",
+            "mobile": "KRAFTON X SoC Space Experience Design Working Group Formed"
+          },
+          "detail": {
+            "desktop": "03.24 Initial Discussion on Space Experience Design in Expansion Building\n04.04 Working-Level Meeting on Space Design for Expansion Building",
+            "tablet": "03.24 Initial Discussion on Space Experience Design in Expansion Building\n04.04 Working-Level Meeting on Space Design for Expansion Building",
+            "mobile": "03.24 Initial Discussion on Space Experience Design in Expansion Building\n04.04 Working-Level Meeting on Space Design for Expansion Building"
+          }
         },
         "Card2": {
           "duration": {
             "startTerm": "04.13",
             "endTerm": "12.18"
           },
-          "title": "Direction Setting for KRAFTON X SoC Space Design",
-          "detail": "04.13 Naming & Design Direction Meeting\n08.29 On-Site Visit and Environmental Survey at KAIST\n09.04–11.27 Design Direction Meetings and Feedback Collection\n12.18 Interior Design Firm Selection Underway"
+          "title": {
+            "desktop": "Direction Setting for KRAFTON X SoC Space Design",
+            "tablet": "Direction Setting for KRAFTON X SoC Space Design",
+            "mobile": "Direction Setting for KRAFTON X SoC Space Design"
+          },
+          "detail": {
+            "desktop": "04.13 Naming & Design Direction Meeting\n08.29 On-Site Visit and Environmental Survey at KAIST\n09.04-11.27 Design Direction Meetings and Feedback Collection\n12.18 Interior Design Firm Selection Underway",
+            "tablet": "04.13 Naming & Design Direction Meeting\n08.29 On-Site Visit and Environmental Survey at KAIST\n09.04-11.27 Design Direction Meetings and Feedback Collection\n12.18 Interior Design Firm Selection Underway",
+            "mobile": "04.13 Naming & Design Direction Meeting\n08.29 On-Site Visit and Environmental Survey at KAIST\n09.04-11.27 Design Direction Meetings and Feedback Collection\n12.18 Interior Design Firm Selection Underway"
+          }
         },
         "Card3": {
           "duration": {
             "startTerm": "01.31",
             "endTerm": "06.13"
           },
-          "title": "Interior Design Firm Selection and Planning",
-          "detail": "01.31 First Phase of Interior Design Planning\n02.21 First Meeting Between Interior Firm and KAIST Working Team\n04.02 Proposal and Discussion on Space Utilization with KRAFTON HR\n06.11–13 Second Phase of Design Planning and Second Meeting with KAIST Team"
+          "title": {
+            "desktop": "Interior Design Firm Selection and Planning",
+            "tablet": "Interior Design Firm Selection and Planning",
+            "mobile": "Interior Design Firm Selection and Planning"
+          },
+          "detail": {
+            "desktop": "01.31 First Phase of Interior Design Planning\n02.21 First Meeting Between Interior Firm and KAIST Working Team\n04.02 Proposal and Discussion on Space Utilization with KRAFTON HR\n06.11-13 Second Phase of Design Planning and Second Meeting with KAIST Team",
+            "tablet": "01.31 First Phase of Interior Design Planning\n02.21 First Meeting Between Interior Firm and KAIST Working Team\n04.02 Proposal and Discussion on Space Utilization with KRAFTON HR\n06.11-13 Second Phase of Design Planning and Second Meeting with KAIST Team",
+            "mobile": "01.31 First Phase of Interior Design Planning\n02.21 First Meeting Between Interior Firm and KAIST Working Team\n04.02 Proposal and Discussion on Space Utilization with KRAFTON HR\n06.11-13 Second Phase of Design Planning and Second Meeting with KAIST Team"
+          }
         },
         "Card4": {
           "duration": {
             "startTerm": "06.15",
             "endTerm": "12.11"
           },
-          "title": "Interior Design Execution",
-          "detail": "06.15–07.04 Detailed Design Discussions with Interior Firm\n07.18–08.15 Biweekly Interior Design Review Meetings\n09.10–09.27 Draft Designs for Donor Recognition Space\n10.01–12.10 Microsite Development, Collaboration with Students, and Direction Planning\n12.11 Material Change for Reinforcement of Exterior Windows"
+          "title": {
+            "desktop": "Interior Design Execution",
+            "tablet": "Interior Design Execution",
+            "mobile": "Interior Design Execution"
+          },
+          "detail": {
+            "desktop": "06.15-07.04 Detailed Design Discussions with Interior Firm\n07.18-08.15 Biweekly Interior Design Review Meetings\n09.10-09.27 Draft Designs for Donor Recognition Space\n10.01-12.10 Microsite Development, Collaboration with Students, and Direction Planning\n12.11 Material Change for Reinforcement of Exterior Windows",
+            "tablet": "06.15-07.04 Detailed Design Discussions with Interior Firm\n07.18-08.15 Biweekly Interior Design Review Meetings\n09.10-09.27 Draft Designs for Donor Recognition Space\n10.01-12.10 Microsite Development, Collaboration with Students, and Direction Planning\n12.11 Material Change for Reinforcement of Exterior Windows",
+            "mobile": "06.15-07.04 Detailed Design Discussions with Interior Firm\n07.18-08.15 Biweekly Interior Design Review Meetings\n09.10-09.27 Draft Designs for Donor Recognition Space\n10.01-12.10 Microsite Development, Collaboration with Students, and Direction Planning\n12.11 Material Change for Reinforcement of Exterior Windows"
+          }
         },
         "Card5": {
           "duration": {
             "startTerm": "11.04",
             "endTerm": "UNDEFINED"
           },
-          "title": "Donor Space Interior Construction in Progress",
-          "detail": "UNDEFINED"
+          "title": {
+            "desktop": "Donor Space Interior Construction in Progress",
+            "tablet": "Donor Space Interior Construction in Progress",
+            "mobile": "Donor Space Interior Construction in Progress"
+          },
+          "detail": {
+            "desktop": "UNDEFINED",
+            "tablet": "UNDEFINED",
+            "mobile": "UNDEFINED"
+          }
         },
         "Card6": {
           "duration": {
             "startTerm": "09.10",
             "endTerm": "10.30"
           },
-          "title": "Donor Space Interior Construction in Progress",
-          "detail": "09.10–10.30 Naming and Message Contest for Donors; List Compilation"
+          "title": {
+            "desktop": "Donor Space Interior Construction in Progress",
+            "tablet": "Donor Space Interior Construction in Progress",
+            "mobile": "Donor Space Interior Construction in Progress"
+          },
+          "detail": {
+            "desktop": "09.10-10.30 Naming and Message Contest for Donors; List Compilation",
+            "tablet": "09.10-10.30 Naming and Message Contest for Donors; List Compilation",
+            "mobile": "09.10-10.30 Naming and Message Contest for Donors; List Compilation"
+          }
         },
         "Card7": {
           "duration": {
             "startTerm": "10.29",
             "endTerm": "10.31"
           },
-          "title": "KRAFTON X SoC Representative Message Finalized & Building Name Discussion",
-          "detail": "KRAFTON X SoC Representative Message Finalized & Building Name Discussion"
+          "title": {
+            "desktop": "KRAFTON X SoC Representative Message Finalized & Building Name Discussion",
+            "tablet": "KRAFTON X SoC Representative Message Finalized & Building Name Discussion",
+            "mobile": "KRAFTON X SoC Representative Message Finalized & Building Name Discussion"
+          },
+          "detail": {
+            "desktop": "10.29-10.31 KRAFTON X SoC Representative Message Finalized & Building Name Discussion",
+            "tablet": "10.29-10.31 KRAFTON X SoC Representative Message Finalized & Building Name Discussion",
+            "mobile": "10.29-10.31 KRAFTON X SoC Representative Message Finalized & Building Name Discussion"
+          }
         },
         "Card8": {
           "duration": {
             "startTerm": "11월",
             "endTerm": "12.03"
           },
-          "title": "KRAFTON X SoC Building Name Finalized & Announced",
-          "detail": "November: Two Donor Messages Selected\n11.17 Announcement of Selected Donor Messages & Building Name\n12.03 Finalization of Building Name, Additional Donation, and Supplemental Agreement Between KRAFTON and KAIST"
+          "title": {
+            "desktop": "KRAFTON X SoC Building Name Finalized & Announced",
+            "tablet": "KRAFTON X SoC Building Name Finalized & Announced",
+            "mobile": "KRAFTON X SoC Building Name Finalized & Announced"
+          },
+          "detail": {
+            "desktop": "November: Two Donor Messages Selected\n11.17 Announcement of Selected Donor Messages & Building Name\n12.03 Finalization of Building Name, Additional Donation, and Supplemental Agreement Between KRAFTON and KAIST",
+            "tablet": "November: Two Donor Messages Selected\n11.17 Announcement of Selected Donor Messages & Building Name\n12.03 Finalization of Building Name, Additional Donation, and Supplemental Agreement Between KRAFTON and KAIST",
+            "mobile": "November: Two Donor Messages Selected\n11.17 Announcement of Selected Donor Messages & Building Name\n12.03 Finalization of Building Name, Additional Donation, and Supplemental Agreement Between KRAFTON and KAIST"
+          }
         }
       }
     }
@@ -420,7 +737,7 @@
     "Message": {
       "ChiefMessage": {
         "title": "A New Beginning",
-        "content": "“This space is where positive impact flows in a virtuous cycle. It began with a generous donation from KRAFTON alumni and employees, and since then, more and more alumni, professors, and even current students have joined the movement.\nWhat drives this wave of giving is gratitude—gratitude for the open and free communication fostered by brilliant professors and inspiring students, for a space where diverse individuals could feel at ease in their differences, and for the time when we could dream freely and boldly.\nThough we can never fully repay our teachers and peers who gave us those precious moments and that nurturing space, we can pay it forward. This is a space of connection where we share our gratitude with the next generation. I hope that in this space, free spirits will soar and spark innovations that lead to a happier world for all.”",
+        "content": "“This space is where positive impact flows in a virtuous cycle. It began with a generous donation from KRAFTON alumni and employees, and since then, more and more alumni, professors, and even current students have joined the movement.\nWhat drives this wave of giving is gratitude—gratitude for the open and free communication fostered by brilliant professors and inspiring students, for a space where diverse individuals could feel at ease in their differences,\nand for the time when we could dream freely and boldly.\nThough we can never fully repay our teachers and peers who gave us those precious moments and that nurturing space, we can pay it forward. This is a space of connection where we share our gratitude with the next generation. I hope that in this space, free spirits will soar and spark innovations that lead to a happier world for all.”",
         "introduction": "Sukyoung Ryu, Head of the KAIST School of Computing",
         "date": "March 18, 2025"
       },

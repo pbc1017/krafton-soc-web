@@ -3,6 +3,7 @@
 import styled from "@emotion/styled";
 import { useTranslations } from "next-intl";
 
+import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 // import { useCallback } from "react"; // useCallback은 더 이상 사용되지 않습니다.
 import { theme } from "@krafton-soc/common/styles/theme";
 import BuildingJourneyBanner from "@krafton-soc/features/BuildingJourney/components/BuildingJourneyBanner";
@@ -40,8 +41,9 @@ const PartContainer = styled.div`
 
 const BuildingJourney: React.FC = () => {
   const t = useTranslations("BuildingJourney.Parts");
+  const { deviceType } = useResponsiveStore();
 
-  const partContents = generatePartContents(t);
+  const partContents = generatePartContents(t, deviceType);
 
   return (
     <BuildingJourneyContainer>
