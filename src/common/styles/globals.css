@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 :root {
   background: #ffffff;
   min-height: 100vh;
   --font-pretendard:
-    'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', Arial,
-    sans-serif;
+    "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
@@ -23,6 +23,8 @@
 p,
 body {
   margin: 0;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 ul,

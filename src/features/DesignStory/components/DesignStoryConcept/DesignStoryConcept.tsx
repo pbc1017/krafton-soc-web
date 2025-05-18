@@ -30,6 +30,7 @@ const DesignStoryConceptContainer = styled.div`
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     padding: 0 24px;
+    max-width: 1000px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {

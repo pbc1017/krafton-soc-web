@@ -4,7 +4,6 @@ import styled from "@emotion/styled";
 import { useTranslations } from "next-intl";
 
 import Text from "@krafton-soc/common/components/Text";
-import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const DesignStoryConceptFinalContainer = styled.section`
@@ -43,19 +42,24 @@ const DesignStoryConceptFinalQuoteContainer = styled.div`
 `;
 
 const DesignStoryConceptFinalQuoteText = styled.div`
-  width: 100%;
+  width: 801px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  font-size: 48px;
+  font-size: 40px;
   font-weight: ${theme.fonts.weights.semibold};
   color: ${theme.colors.black};
   line-height: 130%;
   text-align: center;
 
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 596px;
+  }
+
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     font-size: 26px;
+    width: 353px;
   }
 `;
 
@@ -73,7 +77,7 @@ const DesignStoryConceptFinalQuoteAuthor = styled.div`
 `;
 
 const DesignStoryConceptFinalWish = styled.div`
-  width: 100%;
+  width: 630px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,27 +88,31 @@ const DesignStoryConceptFinalWish = styled.div`
   color: ${theme.colors.black};
   line-height: 180%;
 
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 616px;
+  }
+
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 313px;
     font-size: 16px;
   }
 `;
 
 const DesignStoryConceptFinal = () => {
   const t = useTranslations("DesignStory.Concept.Final");
-  const { deviceType } = useResponsiveStore();
 
   return (
     <DesignStoryConceptFinalContainer>
       <DesignStoryConceptFinalQuoteContainer>
         <DesignStoryConceptFinalQuoteText>
-          <Text>{t(`quote.${deviceType}`)}</Text>
+          <Text>{t(`quote`)}</Text>
         </DesignStoryConceptFinalQuoteText>
         <DesignStoryConceptFinalQuoteAuthor>
           <Text>{`- Grady Booch (Developer of UML) -`}</Text>
         </DesignStoryConceptFinalQuoteAuthor>
       </DesignStoryConceptFinalQuoteContainer>
       <DesignStoryConceptFinalWish>
-        <Text>{t(`wish.${deviceType}`)}</Text>
+        <Text>{t(`wish`)}</Text>
       </DesignStoryConceptFinalWish>
     </DesignStoryConceptFinalContainer>
   );

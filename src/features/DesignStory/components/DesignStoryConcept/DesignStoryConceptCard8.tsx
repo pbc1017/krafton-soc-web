@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import Text from "@krafton-soc/common/components/Text";
 import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
@@ -36,8 +37,8 @@ const CardImage = styled.div`
     position: relative;
   }
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    width: 300px;
-    height: 400px;
+    width: 210px;
+    height: 293px;
     position: relative;
   }
 `;
@@ -67,6 +68,15 @@ const CardRightText = styled.div`
   font-weight: ${theme.fonts.weights.regular};
   line-height: 180%;
   color: ${theme.colors.black};
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 338px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 16px;
+    width: 333px;
+  }
 `;
 
 const CardRightImage = styled.div`
@@ -79,15 +89,15 @@ const CardRightImage = styled.div`
     position: relative;
   }
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    width: 300px;
-    height: 250px;
+    width: 200px;
+    height: 184px;
     position: relative;
   }
 `;
 
 const DesignStoryConceptCard8 = () => {
   const { deviceType } = useResponsiveStore();
-
+  const t = useTranslations("DesignStory.Concept.Card8");
   return (
     <CardContainer>
       <CardImage>
@@ -99,11 +109,7 @@ const DesignStoryConceptCard8 = () => {
       </CardImage>
       <CardRightContainer>
         <CardRightText>
-          <Text>
-            {
-              "‘Along, A-long Table’과 같은 오브제를 통해 \n유산(Legacy)의 지속성과 연속성이 테이블까지 이어지며, \n이를 사용하는 후배들에게 자연스럽게 전해지기를 바랐습니다."
-            }
-          </Text>
+          <Text>{t(`text`)}</Text>
         </CardRightText>
         <CardRightImage>
           <Image

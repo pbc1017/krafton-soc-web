@@ -13,6 +13,7 @@ const GalleryContainer = styled.section`
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  padding: 0 30px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     max-width: 1000px;

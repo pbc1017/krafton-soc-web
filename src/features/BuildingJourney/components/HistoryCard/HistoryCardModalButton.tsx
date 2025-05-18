@@ -197,8 +197,6 @@ const HistoryCardModalButton = ({
     [modalNumber, locale, deviceType, windowWidth],
   );
 
-  console.log(width, height);
-
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 

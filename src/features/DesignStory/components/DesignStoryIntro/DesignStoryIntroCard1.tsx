@@ -153,10 +153,10 @@ const DesignStoryIntroStart = () => {
       {isDesktop && <Spacer width={27} />}
       <TextContainer>
         <TextTitle>
-          <Text>{t(`title.${deviceType}`)}</Text>
+          <Text>{t(`title`)}</Text>
         </TextTitle>
         <TextContent>
-          <Text>{t(`content.${deviceType}`)}</Text>
+          <Text>{t(`content`)}</Text>
         </TextContent>
       </TextContainer>
     </IntroStartContainer>

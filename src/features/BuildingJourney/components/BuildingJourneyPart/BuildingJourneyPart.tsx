@@ -68,9 +68,9 @@ const HistoryCardContainer = styled.div`
 
 export interface PartProps {
   part: number;
-  title: string;
-  startTerm: string;
-  endTerm: string;
+  title?: string;
+  startTerm?: string;
+  endTerm?: string;
   detailsByYear: {
     year: number;
     cardContents: HistoryCardProps[];
@@ -88,9 +88,9 @@ const BuildingJourneyPart = ({
     <PartContainer>
       <PartHeader
         part={part}
-        title={title}
-        startTerm={startTerm}
-        endTerm={endTerm}
+        title={title ?? ""}
+        startTerm={startTerm ?? ""}
+        endTerm={endTerm ?? ""}
       />
       <PartContentContainer>
         {detailsByYear.map(({ year, cardContents }) => (
