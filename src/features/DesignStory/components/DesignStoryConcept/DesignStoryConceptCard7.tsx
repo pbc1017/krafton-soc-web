@@ -40,8 +40,6 @@ const CardLeftContainer = styled.section`
   //background-color: green;
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     width: 100%;
-    align-items: center;
-    text-align: center;
     gap: 60px;
     justify-content: flex-start;
   }
@@ -81,8 +79,13 @@ const CardLeftText = styled.div`
   line-height: 180%;
   color: ${theme.colors.black};
 
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 437px;
+  }
+
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     font-size: 16px;
+    width: 333px;
   }
 `;
 
@@ -100,7 +103,7 @@ const CardRightContainer = styled.section`
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     width: 100%;
-    max-width: 764px;
+    max-width: 100%;
     min-width: unset;
     flex-grow: 0;
     flex-shrink: 0;
@@ -114,6 +117,10 @@ const CardRightImage = styled.div`
   aspect-ratio: 764 / 573;
   position: relative;
   max-width: 764px;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    max-width: 100%;
+  }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     margin: 0 -20px;
@@ -132,6 +139,10 @@ const CardRightImageCaption = styled.div`
   font-weight: ${theme.fonts.weights.regular};
   line-height: 120%;
   color: ${theme.colors.black};
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 12px;
+  }
 `;
 
 const DesignStoryConceptCard7 = () => {
@@ -145,7 +156,7 @@ const DesignStoryConceptCard7 = () => {
           <Text>{"Express Intuitive \nContinuity"}</Text>
         </CardLeftTitle>
         <CardLeftText>
-          <Text>{t(`text.${deviceType}`)}</Text>
+          <Text>{t(`text`)}</Text>
         </CardLeftText>
       </CardLeftContainer>
       {isDesktop && <Spacer width={24} />}

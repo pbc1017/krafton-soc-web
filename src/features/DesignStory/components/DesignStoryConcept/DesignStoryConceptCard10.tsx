@@ -2,6 +2,7 @@
 
 import styled from "@emotion/styled";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import Text from "@krafton-soc/common/components/Text";
 import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
@@ -16,19 +17,17 @@ const CardContainer = styled.section`
   margin-top: 250px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    width: fit-content;
+    width: 100%;
     margin-top: 70px;
+    margin-left: 239px;
     flex-direction: column-reverse;
     align-items: flex-start;
     gap: 40px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    width: fit-content;
     margin-top: 80px;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    gap: 40px;
+    margin-left: 53px;
   }
 `;
 
@@ -43,28 +42,42 @@ const CardText = styled.div`
   font-size: 18px;
   line-height: 180%;
   color: ${theme.colors.black};
+  width: 411px;
+
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 437px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 280px;
+    font-size: 16px;
+  }
 `;
 
 const CardImage = styled.div`
   width: 654px;
-  height: 597px;
+  height: auto;
+  aspect-ratio: 654 / 597;
   position: relative;
 
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 100%;
+  }
+
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    width: 320px;
-    height: 290px;
-    position: relative;
+    width: 100%;
   }
 `;
 
 const DesignStoryConceptCard10 = () => {
   const { deviceType } = useResponsiveStore();
+  const t = useTranslations("DesignStory.Concept.Card10");
 
   return (
     <div style={{ width: "100%", display: "flex", justifyContent: "flex-end" }}>
       <CardContainer>
         <CardText>
-          <Text>{`기존에 막힌 창호에 개방형 대형 창호를 설계하여  \n‘내부와 내부의 경계를 열어 연결되고, 마주 보고 소통하는’\n요소를 반영했습니다. \n\n이곳에서 학생들이 앉거나 누울 수도 있고, 밖을 바라보거나\n나갈 수도 있는 자유롭고 주도적인 공간을 경험할 수 있도록\n했으며, 이 공간에서 개인의 자유로움만큼 사고의 자유로움도\n확장될 수 있기를 기대했습니다.`}</Text>
+          <Text>{t(`text`)}</Text>
         </CardText>
         <CardImage>
           <Image
