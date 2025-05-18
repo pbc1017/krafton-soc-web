@@ -134,10 +134,10 @@ const DesignStoryConceptCard3 = () => {
     <CardContainer>
       <CardTextContainer>
         <CardTextTitle>
-          <Text>{t(`title.${deviceType}`)}</Text>
+          <Text>{t(`title`)}</Text>
         </CardTextTitle>
         <CardTextContent>
-          <Text>{t(`content.${deviceType}`)}</Text>
+          <Text>{t(`content`)}</Text>
         </CardTextContent>
       </CardTextContainer>
       {isDesktop && <Spacer width={24} />}

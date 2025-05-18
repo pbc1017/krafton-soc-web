@@ -101,7 +101,7 @@ const DesignStoryBanner: React.FC = () => {
       </BannerImage>
       <BannerTextContainer>
         <BannerTitleText>
-          <Text>{t(`title.${deviceType}`)}</Text>
+          <Text>{t(`title`)}</Text>
         </BannerTitleText>
         {locale === "ko" && (
           <>
@@ -109,7 +109,7 @@ const DesignStoryBanner: React.FC = () => {
               <Text>{"\n"}</Text>
             </BannerTitleText>
             <BannerSubText>
-              <Text>{t(`subTitle.${deviceType}`)}</Text>
+              <Text>{t(`subTitle`)}</Text>
             </BannerSubText>
           </>
         )}

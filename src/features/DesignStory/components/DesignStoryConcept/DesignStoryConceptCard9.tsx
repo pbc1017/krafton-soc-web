@@ -1,39 +1,40 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
+import Spacer from "@krafton-soc/common/components/Spacer";
 import Text from "@krafton-soc/common/components/Text";
 import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const CardContainer = styled.section`
-  width: 1285px;
-  height: 600px;
+  max-width: 1285px;
+  width: 100%;
+  min-height: 500px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
 
   margin-top: 250px;
-
-  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    margin-top: 160px;
-  }
 `;
 
 const CardLeftContainer = styled.section`
-  width: 762px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 762px;
+  min-width: 300px;
 
   display: flex;
   flex-direction: column;
-
-  align-items: flex-end;
 
   gap: 10px;
 `;
 
 const CardLeftImage = styled.div`
   width: 100%;
-  height: 469px;
+  height: auto;
+  aspect-ratio: 762 / 469;
   position: relative;
 `;
 
@@ -52,7 +53,7 @@ const CardLeftImageCaption = styled.div`
 
 const CardRightContainer = styled.section`
   width: 432px;
-  height: 100%;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -65,6 +66,7 @@ const CardRightTextContainer = styled.section`
   flex-direction: column;
   justify-content: space-between;
   gap: 40px;
+  padding-bottom: 70px;
 `;
 
 const CardRightTitle = styled.div`
@@ -95,10 +97,12 @@ const CardRightImage = styled.div`
   width: 232px;
   height: 230px;
   position: relative;
+  align-self: flex-end;
 `;
 
 const DesignStoryConceptCard9 = () => {
-  const { deviceType } = useResponsiveStore();
+  const { deviceType, isDesktop } = useResponsiveStore();
+  const t = useTranslations("DesignStory.Concept.Card9");
 
   return (
     <CardContainer>
@@ -114,17 +118,14 @@ const DesignStoryConceptCard9 = () => {
           <Text>{"Along, A-long Table and Concrete Wall"}</Text>
         </CardLeftImageCaption>
       </CardLeftContainer>
+      {isDesktop && <Spacer width={24} />}
       <CardRightContainer>
         <CardRightTextContainer>
           <CardRightTitle>
             <Text>{"Beyond Boundaries,\nConnecting Views"}</Text>
           </CardRightTitle>
           <CardRightText>
-            <Text>
-              {
-                "폐쇄적인 건물 내부에 갇힌 학생들의 공간이 아닌, 5개의\n중첩된 레이어(외부 조경, 콘크리트 테이블, 실내 조경, 평상,\n외부 석재 조경)를 통해 내 외부 시선이 자연스럽게 연결되도록\n디자인했습니다."
-              }
-            </Text>
+            <Text>{t(`text`)}</Text>
           </CardRightText>
         </CardRightTextContainer>
         <CardRightImage>

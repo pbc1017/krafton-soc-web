@@ -4,7 +4,6 @@ import styled from "@emotion/styled";
 import { useTranslations } from "next-intl";
 
 import Text from "@krafton-soc/common/components/Text";
-import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const TitleContainer = styled.div`
@@ -68,12 +67,14 @@ const SubTitleLeft = styled.div`
   font-weight: ${theme.fonts.weights.medium};
   color: ${theme.colors.black};
   line-height: 120%;
+  min-width: 424px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     font-size: 32px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 333px;
   }
   //background-color: cyan;
 `;
@@ -83,13 +84,16 @@ const SubTitleRight = styled.div`
   font-weight: ${theme.fonts.weights.regular};
   color: ${theme.colors.black};
   line-height: 180%;
+  width: 849px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     font-size: 16px;
+    width: 318px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     line-height: 175%;
+    width: 333px;
   }
 
   //background-color: yellow;
@@ -97,7 +101,6 @@ const SubTitleRight = styled.div`
 
 const DesignStoryConceptTitle = () => {
   const t = useTranslations("DesignStory.Concept.Title");
-  const { deviceType } = useResponsiveStore();
 
   return (
     <TitleContainer>
@@ -109,7 +112,7 @@ const DesignStoryConceptTitle = () => {
           <Text>{"Human-Centered\nIdeology"}</Text>
         </SubTitleLeft>
         <SubTitleRight>
-          <Text>{t(`subTitle.${deviceType}`)}</Text>
+          <Text>{t(`subTitle`)}</Text>
         </SubTitleRight>
       </SubTitleContainer>
     </TitleContainer>

@@ -82,6 +82,7 @@ const CardText = styled.div`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     align-self: flex-start;
     width: 353px !important;
+    font-size: 16px;
   }
 `;
 
@@ -100,7 +101,7 @@ const DesignStoryConceptCard6 = () => {
       </CardImage>
       {deviceType === "desktop" && <Spacer width={24} />}
       <CardText>
-        <Text>{t(`text.${deviceType}`)}</Text>
+        <Text>{t(`text`)}</Text>
       </CardText>
     </CardContainer>
   );

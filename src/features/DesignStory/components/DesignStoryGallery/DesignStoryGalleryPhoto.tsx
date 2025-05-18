@@ -20,7 +20,6 @@ const LeftButton = styled.div`
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
 
   width: 49px;
   height: 49px;
@@ -29,7 +28,7 @@ const LeftButton = styled.div`
     color: ${theme.colors.white};
   }
 
-  transform: rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
 
   img {
     filter: brightness(0.4) saturate(100%) invert(0%) sepia(0%) saturate(0%)
@@ -45,12 +44,11 @@ const RightButton = styled.div`
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translateY(-50%);
 
   width: 49px;
   height: 49px;
 
-  transform: rotate(0deg);
+  transform: translateY(-50%) rotate(0deg);
   img {
     filter: brightness(0.4) saturate(100%) invert(0%) sepia(0%) saturate(0%)
       hue-rotate(0deg) brightness(100%) contrast(100%);

@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import Text from "@krafton-soc/common/components/Text";
 import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
@@ -12,6 +13,9 @@ const CardContainer = styled.section`
 
   margin-top: 250px;
   gap: 80px;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    margin-top: 160px;
+  }
 `;
 
 const CardLeftContainer = styled.section`
@@ -62,10 +66,14 @@ const CardRightTitle = styled.div`
   font-weight: ${theme.fonts.weights.medium};
   line-height: 120%;
   color: ${theme.colors.black};
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 32px;
+  }
 `;
 
 const CardRightText = styled.div`
-  width: 100%;
+  width: 392px;
   display: flex;
   flex-direction: column;
 
@@ -74,6 +82,11 @@ const CardRightText = styled.div`
   font-weight: ${theme.fonts.weights.regular};
   line-height: 180%;
   color: ${theme.colors.black};
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 353px;
+    font-size: 16px;
+  }
 `;
 
 const CardRightImage = styled.div`
@@ -84,6 +97,7 @@ const CardRightImage = styled.div`
 
 const DesignStoryConceptCard9small = () => {
   const { deviceType } = useResponsiveStore();
+  const t = useTranslations("DesignStory.Concept.Card9");
 
   return (
     <CardContainer>
@@ -92,11 +106,7 @@ const DesignStoryConceptCard9small = () => {
           <Text>{"Beyond Boundaries,\nConnecting Views"}</Text>
         </CardRightTitle>
         <CardRightText>
-          <Text>
-            {
-              "폐쇄적인 건물 내부에 갇힌 학생들의 공간이 아닌, 5개의\n중첩된 레이어(외부 조경, 콘크리트 테이블, 실내 조경, 평상,\n외부 석재 조경)를 통해 내 외부 시선이 자연스럽게 연결되도록\n디자인했습니다."
-            }
-          </Text>
+          <Text>{t(`text`)}</Text>
         </CardRightText>
       </CardTextContainer>
       <CardLeftContainer>

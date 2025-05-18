@@ -135,7 +135,7 @@ const DesignStoryConceptCard5 = () => {
           <Text>{"A Line of Giving, \nA Cycle of Connection"}</Text>
         </CardLeftTitle>
         <CardLeftText>
-          <Text>{t(`text.${deviceType}`)}</Text>
+          <Text>{t(`text`)}</Text>
         </CardLeftText>
       </CardLeftContainer>
       <Spacer width={20} />

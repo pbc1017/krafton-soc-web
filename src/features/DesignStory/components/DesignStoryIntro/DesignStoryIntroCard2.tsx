@@ -45,6 +45,7 @@ const ImageContainer = styled.section`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     padding-left: 20px;
     width: 100%;
+    max-width: unset;
     align-self: flex-end;
     box-sizing: border-box;
   }
@@ -146,10 +147,10 @@ const DesignStoryIntroConnect = () => {
       {isDesktop && (
         <TextContainer>
           <TextTitle>
-            <Text>{t(`title.${deviceType}`)}</Text>
+            <Text>{t(`title`)}</Text>
           </TextTitle>
           <TextContent>
-            <Text>{t(`content.${deviceType}`)}</Text>
+            <Text>{t(`content`)}</Text>
           </TextContent>
         </TextContainer>
       )}
@@ -169,10 +170,10 @@ const DesignStoryIntroConnect = () => {
       {!isDesktop && (
         <TextContainer>
           <TextTitle>
-            <Text>{t(`title.${deviceType}`)}</Text>
+            <Text>{t(`title`)}</Text>
           </TextTitle>
           <TextContent>
-            <Text>{t(`content.${deviceType}`)}</Text>
+            <Text>{t(`content`)}</Text>
           </TextContent>
         </TextContainer>
       )}

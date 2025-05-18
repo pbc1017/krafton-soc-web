@@ -45,12 +45,14 @@ const PartTitle = styled.div`
   line-height: 52px;
   color: ${theme.colors.black};
   letter-spacing: 0.5px;
+  text-align: center;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     font-size: 30px;
+    width: 289px;
   }
 `;
 
