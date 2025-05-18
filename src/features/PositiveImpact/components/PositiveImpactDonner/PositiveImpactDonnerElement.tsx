@@ -35,7 +35,6 @@ const TableElementPerson = styled.div`
   letter-spacing: 4.8px;
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    font-weight: ${theme.fonts.weights.regular};
     font-size: 14px;
     letter-spacing: 2.8px;
   }
@@ -55,7 +54,6 @@ const TableElementForeigner = styled.div`
 
   color: ${theme.colors.black};
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    font-weight: ${theme.fonts.weights.regular};
     font-size: 12px;
     letter-spacing: 2.8px;
   }
@@ -82,7 +80,6 @@ const TableElementCompanyName = styled.div`
 
   color: ${theme.colors.black};
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    font-weight: ${theme.fonts.weights.regular};
     font-size: 13.6px;
     letter-spacing: 2.8px;
   }
@@ -102,7 +99,6 @@ const TableElementCompanyType = styled.div`
   color: ${theme.colors.black};
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    font-weight: ${theme.fonts.weights.regular};
     font-size: 8px;
   }
 `;
@@ -129,7 +125,6 @@ const TableElementTwinBuildingName = styled.div`
 
   letter-spacing: 4.8px;
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    font-weight: ${theme.fonts.weights.regular};
     font-size: 14px;
     letter-spacing: 2.8px;
   }
@@ -151,7 +146,6 @@ const TableElementTwinBuildingText = styled.div`
   letter-spacing: 2.4px;
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    font-weight: ${theme.fonts.weights.regular};
     font-size: 8px;
     letter-spacing: 1.6px;
   }
