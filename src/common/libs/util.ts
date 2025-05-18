@@ -1,5 +1,5 @@
 type ResponsiveValue<T> = {
-  pc: T;
+  desktop: T;
   tablet: T;
   mobile: T;
 };
@@ -11,7 +11,7 @@ const wrappingNumberToPx = (value: number | string) =>
 
 export const getResponsiveValue = <T extends number | string>(
   value: ResponsiveType<T> | undefined,
-  device: "pc" | "tablet" | "mobile",
+  device: "desktop" | "tablet" | "mobile",
   defaultValue: number | string,
 ): string => {
   if (typeof value === "object" && value?.[device])

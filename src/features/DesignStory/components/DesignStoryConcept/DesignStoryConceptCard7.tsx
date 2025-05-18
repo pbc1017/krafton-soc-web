@@ -1,35 +1,54 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
+import Spacer from "@krafton-soc/common/components/Spacer";
 import Text from "@krafton-soc/common/components/Text";
 import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const CardContainer = styled.section`
-  width: 1285px;
-  height: 600px;
+  max-width: 1285px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
 
   margin-top: 250px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     margin-top: 160px;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+    box-sizing: border-box;
   }
 
-  //background-color: red;
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    gap: 80px;
+  }
 `;
 
 const CardLeftContainer = styled.section`
   width: 406px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-shrink: 0;
 
   //background-color: green;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 100%;
+    gap: 60px;
+    justify-content: flex-start;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 353px !important;
+    align-self: flex-start;
+    gap: 40px;
+  }
 `;
 
 const CardLeftTitle = styled.div`
@@ -44,6 +63,9 @@ const CardLeftTitle = styled.div`
   color: ${theme.colors.black};
 
   //background-color: pink;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    font-size: 32px;
+  }
 `;
 
 const CardLeftText = styled.div`
@@ -57,11 +79,20 @@ const CardLeftText = styled.div`
   line-height: 180%;
   color: ${theme.colors.black};
 
-  //background-color: yellow;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 437px;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 16px;
+    width: 333px;
+  }
 `;
 
 const CardRightContainer = styled.section`
-  width: 764px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 350px;
 
   display: flex;
   flex-direction: column;
@@ -70,15 +101,31 @@ const CardRightContainer = styled.section`
 
   gap: 10px;
 
-  //background-color: yellowgreen;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    width: 100%;
+    max-width: 100%;
+    min-width: unset;
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-items: center;
+  }
 `;
 
 const CardRightImage = styled.div`
   width: 100%;
-  height: 573px;
+  height: auto;
+  aspect-ratio: 764 / 573;
   position: relative;
+  max-width: 764px;
 
-  //background-color: blue;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    max-width: 100%;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    margin: 0 -20px;
+    width: calc(100% + 40px);
+  }
 `;
 
 const CardRightImageCaption = styled.div`
@@ -93,11 +140,14 @@ const CardRightImageCaption = styled.div`
   line-height: 120%;
   color: ${theme.colors.black};
 
-  //background-color: orange;
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 12px;
+  }
 `;
 
 const DesignStoryConceptCard7 = () => {
-  const { deviceType } = useResponsiveStore();
+  const { deviceType, isDesktop } = useResponsiveStore();
+  const t = useTranslations("DesignStory.Concept.Card7");
 
   return (
     <CardContainer>
@@ -106,13 +156,10 @@ const DesignStoryConceptCard7 = () => {
           <Text>{"Express Intuitive \nContinuity"}</Text>
         </CardLeftTitle>
         <CardLeftText>
-          <Text>
-            {
-              "설명으로 드러나지 않는 섬세한 기부자 공간으로서 \n더욱 Bold한 디자인을 적용하여, 사용자들에게 직관적으로\n메시지를 전달할 수 있는 강한 오브제적 요소와 \n공간감을 제공하고자 했습니다.\n\n‘Intuitive Continuity’를 구현하기 위해 Concrete라는 \n물성과 질감을 활용하여 공간을 하나의 언어로 통합하고, \n단순한 미학적 선택이 아닌, 공간의 지속성과 일관성을 \n유지하려 했습니다."
-            }
-          </Text>
+          <Text>{t(`text`)}</Text>
         </CardLeftText>
       </CardLeftContainer>
+      {isDesktop && <Spacer width={24} />}
       <CardRightContainer>
         <CardRightImage>
           <Image

@@ -8,12 +8,12 @@ import { getResponsiveValue, ResponsiveType } from "../libs/util";
 
 const VerticalLineStyle = styled.div<VerticalLineProps>`
   // 반응형 PC
-  height: ${({ height }) => getResponsiveValue(height, "pc", "100%")};
+  height: ${({ height }) => getResponsiveValue(height, "desktop", "100%")};
   background-color: ${({ lineColor }) =>
-    getResponsiveValue(lineColor, "pc", theme.colors.dividerLine)};
-  margin-top: ${({ marginTop }) => getResponsiveValue(marginTop, "pc", 0)};
+    getResponsiveValue(lineColor, "desktop", theme.colors.dividerLine)};
+  margin-top: ${({ marginTop }) => getResponsiveValue(marginTop, "desktop", 0)};
   margin-bottom: ${({ marginBottom }) =>
-    getResponsiveValue(marginBottom, "pc", 0)};
+    getResponsiveValue(marginBottom, "desktop", 0)};
 
   // 반응형 태블릿
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {

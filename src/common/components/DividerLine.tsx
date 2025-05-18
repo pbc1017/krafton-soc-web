@@ -14,12 +14,12 @@ type DividerLineProps = {
 };
 
 const HorizontalLine = styled.div<DividerLineProps>`
-  width: ${({ width }) => getResponsiveValue(width, "pc", "100%")};
+  width: ${({ width }) => getResponsiveValue(width, "desktop", "100%")};
   background-color: ${({ lineColor }) =>
-    getResponsiveValue(lineColor, "pc", theme.colors.dividerLine)};
-  margin-top: ${({ marginTop }) => getResponsiveValue(marginTop, "pc", 0)};
+    getResponsiveValue(lineColor, "desktop", theme.colors.dividerLine)};
+  margin-top: ${({ marginTop }) => getResponsiveValue(marginTop, "desktop", 0)};
   margin-bottom: ${({ marginBottom }) =>
-    getResponsiveValue(marginBottom, "pc", 0)};
+    getResponsiveValue(marginBottom, "desktop", 0)};
 
   @media (max-width: 1024px) {
     width: ${({ width }) => getResponsiveValue(width, "tablet", "100%")};

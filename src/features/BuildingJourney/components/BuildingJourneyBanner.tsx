@@ -77,6 +77,7 @@ const ChairmanMessageContainer = styled.div`
 const MessageContainer = styled.div`
   font-size: 18px;
   line-height: 32px;
+  width: 642px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     width: 680px;
@@ -141,21 +142,19 @@ const ChairmanMessage: React.FC = () => {
         </BannerImage>
       </ImageContainer>
       <VerticalLine
-        height={{ pc: 200, tablet: 120, mobile: 120 }}
+        height={{ desktop: 200, tablet: 120, mobile: 120 }}
         lineColor={theme.colors.black}
-        marginTop={{ pc: 70, tablet: 52, mobile: 40 }}
-        marginBottom={{ pc: 70, tablet: 52, mobile: 40 }}
+        marginTop={{ desktop: 70, tablet: 52, mobile: 40 }}
+        marginBottom={{ desktop: 70, tablet: 52, mobile: 40 }}
       />
       <ChairmanMessageContainer>
         <MessageContainer>
-          <Text color={theme.colors.black}>{t(`message.${deviceType}`)}</Text>
+          <Text color={theme.colors.black}>{t(`message`)}</Text>
         </MessageContainer>
 
         <IntroductionContainer>
           <NameContainer>
-            <Text color={theme.colors.black}>
-              {t(`introduction.${deviceType}`)}
-            </Text>
+            <Text color={theme.colors.black}>{t(`introduction`)}</Text>
           </NameContainer>
           <DateContainer>
             <Text color={theme.colors.black}>{t("date")}</Text>

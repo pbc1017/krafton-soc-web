@@ -23,34 +23,22 @@
     "section3": {
       "title": "Where Positive\nInfluence Comes\nFull Circle",
       "description": "This is a space of connection where we pay it forward with gratitude to our juniors.",
-      "descriptionDesktop": "This is a space of connection where we pay it forward with gratitude to our juniors.",
       "speaker": "Sukyoung Ryu, \nHead of the KAIST School of \nComputing, said"
     }
   },
   "BuildingJourney": {
     "chairmanMessage": {
-      "message": {
-        "desktop": "“I first met Professor Young-Gul Kim, Executive Director of the KAIST Development\nFoundation, in October 2017. That encounter led to the beginning of donations such\nas the KAIST-Indonesia Volunteer Corps, and the trust built through this\nrelationship eventually extended to the KAIST 50th Anniversary Memorial Hall\nproject, which was initiated around 2020 by President Sung-Chul Shin.\n\nWhile meeting various people involved in the 50th Anniversary Memorial Hall\nproject, I had the opportunity to meet Professor Myung-Ho Kim, then Head of the\nSchool of Computing. At that time, I decided to dedicate a portion of the donation I\nhad pledged to KAIST to the expansion of the School of Computing. Around that\nperiod, I also began exchanging thoughts with several fellow alumni and\nacquaintances, which ultimately led to KRAFTON’s 11 billion KRW matching grant\ndonation in 2021.”",
-        "tablet": "“I first met Professor Young-Gul Kim, Executive Director of the KAIST Development\nFoundation, in October 2017. That encounter led to the beginning of donations such\nas the KAIST-Indonesia Volunteer Corps, and the trust built through this\nrelationship eventually extended to the KAIST 50th Anniversary Memorial Hall\nproject, which was initiated around 2020 by President Sung-Chul Shin.\n\nWhile meeting various people involved in the 50th Anniversary Memorial Hall\nproject, I had the opportunity to meet Professor Myung-Ho Kim, then Head of the\nSchool of Computing. At that time, I decided to dedicate a portion of the donation I\nhad pledged to KAIST to the expansion of the School of Computing. Around that\nperiod, I also began exchanging thoughts with several fellow alumni and\nacquaintances, which ultimately led to KRAFTON’s 11 billion KRW matching grant\ndonation in 2021.”",
-        "mobile": "“I first met Professor Young-Gul Kim, Executive Director of the KAIST Development\nFoundation, in October 2017. That encounter led to the beginning of donations such\nas the KAIST-Indonesia Volunteer Corps, and the trust built through this\nrelationship eventually extended to the KAIST 50th Anniversary Memorial Hall\nproject, which was initiated around 2020 by President Sung-Chul Shin.\n\nWhile meeting various people involved in the 50th Anniversary Memorial Hall\nproject, I had the opportunity to meet Professor Myung-Ho Kim, then Head of the\nSchool of Computing. At that time, I decided to dedicate a portion of the donation I\nhad pledged to KAIST to the expansion of the School of Computing. Around that\nperiod, I also began exchanging thoughts with several fellow alumni and\nacquaintances, which ultimately led to KRAFTON’s 11 billion KRW matching grant\ndonation in 2021.”"
-      },
-      "introduction": {
-        "desktop": "ByungGyu Chang, KRAFTON Chairman and KAIST School of Computing Alumnus",
-        "tablet": "ByungGyu Chang,\nKRAFTON Chairman and KAIST School of Computing Alumnus",
-        "mobile": "ByungGyu Chang,\nKRAFTON Chairman and KAIST School of Computing Alumnus"
-      },
-
+      "message": "““I first met Professor Young-Gul Kim, Executive Director of the KAIST Development Foundation, in October 2017. That encounter led to the beginning of donations such as the KAIST-Indonesia Volunteer Corps, and the trust built through this relationship eventually extended to the KAIST 50th Anniversary Memorial Hall project, which was initiated around 2020 by President Sung-Chul Shin.\n\nWhile meeting various people involved in the 50th Anniversary Memorial Hall project, I had the opportunity to meet Professor Myung-Ho Kim, then Head of the School of Computing. At that time, I decided to dedicate a portion of the donation I had pledged to KAIST to the expansion of the School of Computing. Around that period, I also began exchanging thoughts with several fellow alumni and acquaintances, which ultimately led to KRAFTON’s 11 billion KRW matching grant donation in 2021.”",
+      "introduction": "ByungGyu Chang, KRAFTON Chairman and KAIST School of Computing Alumnus",
       "date": "April 3, 2025"
     },
     "Parts": {
       "Part1": {
         "PartHeader": {
-          "title": {
-            "desktop": "Preparing for Expansion",
-            "tablet": "Preparing for Expansion",
-            "mobile": "Preparing for Expansion"
-          }
+          "title": "Preparing for Expansion"
         },
+        "startTerm": "2020.08",
+        "endTerm": "2021.05",
         "Card1": {
           "duration": {
             "startTerm": "08.07",
@@ -507,62 +495,78 @@
   },
   "DesignStory": {
     "banner": {
-      "title": {
-        "desktop": "KRAFTON X SoC, Design Story",
-        "tablet": "KRAFTON X SoC, Design Story",
-        "mobile": "KRAFTON X SoC,\nDesign Story"
-      },
-      "subTitle": {
-        "desktop": "KRAFTON X SoC, Design Story",
-        "tablet": "KRAFTON X SoC, Design Story",
-        "mobile": "KRAFTON X SoC, Design Story"
-      }
+      "title": "KRAFTON X SoC, Design Story",
+      "subTitle": "KRAFTON X SoC, Design Story"
     },
     "Intro": {
       "Card1": {
-        "title": {
-          "desktop": "Looking Back,\nOur Beginning",
-          "tablet": "Looking Back,\nOur Beginning",
-          "mobile": "Looking Back,\nOur Beginning"
-        },
-        "content": {
-          "desktop": "When the first discussions began, the question we asked was: “What meaning will this space hold for its users?” Rather than seeing it as a finished product, we aimed to make invisible positive impact visible through space.\n\nThis space stands as a tangible point of connection within a larger flow—a marker, not an endpoint. We hope it becomes a starting point for new connection.\n\nMay those who experience this space feel part of a greater chain of change—and discover the connections they, too, will create.",
-          "tablet": "When the first discussions began, the question we asked was: “What meaning will this space hold for its users?” Rather than seeing it as a finished product, we aimed to make invisible positive impact visible through space.\n\nThis space stands as a tangible point of connection within a larger flow—a marker, not an endpoint. We hope it becomes a starting point for new connections.\n\nMay those who experience this space feel part of a greater chain of change—and discover the connections they, too, will create.",
-          "mobile": "When the first discussions began, the question we asked was: “What meaning will this space hold for its users?” Rather than seeing it as a finished product, we aimed to make invisible positive impact visible through space.\n\nThis space stands as a tangible point of connection within a larger flow—a marker, not an endpoint. We hope it becomes a starting point for new connections.\n\nMay those who experience this space feel part of a greater chain of change—and discover the connections they, too, will create."
-        }
+        "title": "Looking Back,\nOur Beginning",
+        "content": "When the first discussions began, the question we asked was: “What meaning will this space hold for its users?” Rather than seeing it as a finished product, we aimed to make invisible positive impact visible through space.\n\nThis space stands as a tangible point of connection within a larger flow—a marker, not an endpoint. We hope it becomes a starting point for new connections.\n\nMay those who experience this space feel part of a greater chain of change—and discover the connections they, too, will create."
       },
       "Card2": {
-        "title": {
-          "desktop": "Connecting\nEverything",
-          "tablet": "Connecting\nEverything",
-          "mobile": "Connecting\nEverything"
-        },
-        "content": {
-          "desktop": "The KRAFTON X SoC space was created as a place where people stay, connect, and share new ideas—linking knowledge and people, technology and people, and people to people, with humanity at the center.\n\nIt began with a single word: connection. Along the way, we reflected deeply on how that connection can truly be experienced.",
-          "tablet": "The KRAFTON X SoC space was created as a place where people stay, connect, and share new ideas—linking knowledge and people, technology and people, and people to people, with humanity at the center.\n\nIt began with a single word: connection. Along the way, we reflected deeply on how that connection can truly be experienced.",
-          "mobile": "The KRAFTON X SoC space was created as a place where people stay, connect, and share new ideas—linking knowledge and people, technology and people, and people to people, with humanity at the center.\n\nIt began with a single word: connection. Along the way, we reflected deeply on how that connection can truly be experienced."
-        }
+        "title": "Connecting Everything",
+        "content": "The KRAFTON X SoC space was created as a place where people stay, connect, and share new ideas—linking knowledge and people, technology and people, and people to people, with humanity at the center.\n\nIt began with a single word: connection. Along the way, we reflected deeply on how that connection can truly be experienced."
       }
     },
     "Concept": {
       "Title": {
-        "subTitle": {
-          "desktop": "This exploration of connection began with a shared belief between the KAIST School of Computing and\nKRAFTON: a human-centric philosophy — the clear value that technological advancement must\nultimately serve humanity.",
-          "tablet": "This exploration of connection began with a shared belief\nbetween the KAIST School of Computing and KRAFTON: \na human-centric philosophy — the clear value\nthat technological advancement must\nultimately serve humanity.",
-          "mobile": "This exploration of connection began with a shared belief between the KAIST School of Computing and KRAFTON: a human-centric philosophy — the clear value that technological advancement must ultimately serve humanity."
-        }
-      },
-      "Card1": {
-        "title": "Human-Centered Ideology",
-        "content": "We believe that the true value of design lies in its ability to connect people and technology, and that the best designs are those that are human-centered and user-friendly."
+        "subTitle": "This exploration of connection began with a shared belief between the KAIST School of Computing and KRAFTON: a human-centric philosophy — the clear value that technological advancement must ultimately serve humanity."
       },
       "Final": {
-        "wish": {
-          "desktop": "Just as countless hidden techniques are required in architecture to erase a\nsingle visible line, this space, too, pushes beyond structural and technical\nlimits to quietly optimize a sense of calm. We hope that all of these efforts\nare seamlessly embedded into the space—so that our intentions are fully felt\nby the students and everyone who visits here.",
-          "tablet": "Just as countless hidden techniques are required in architecture to erase a single visible line, this space, too, pushes beyond structural and technical limits to quietly optimize a sense of calm. We hope that all of these efforts are seamlessly embedded into the space—so that our intentions are fully felt by the students and everyone who visits here.",
-          "mobile": "Just as countless hidden techniques are required in architecture to erase a single visible line, this space, too, pushes beyond structural and technical limits to quietly optimize a sense of calm. We hope that all of these efforts are seamlessly embedded into the space—so that our intentions are fully felt by the students and everyone who visits here."
-        }
+        "quote": "The function of good software is to make the complex appear to be simple",
+        "wish": "Just as countless hidden techniques are required in architecture to erase a single visible line, this space, too, pushes beyond structural and technical limits to quietly optimize a sense of calm. We hope that all of these efforts are seamlessly embedded into the space—so that our intentions are fully felt by the students and everyone who visits here."
+      },
+      "Card2": {
+        "title": "The spatial design was developed through countless reflections, going beyond simple functional layouts or decorative elements to create an environment that users can intuitively experience and actively engage with."
+      },
+      "Card3": {
+        "title": "Heritage,\nNot a Narrative",
+        "content": "‘Heritage, Not a Narrative’ was a key concept throughout this project. Rather than highlighting individual donors, the design subtly reflects their wish to leave a legacy for future generations.\n\nMessages engraved on a super mirror, nestled among the plants of the Reflective Jungle, respond to movement—shifting and reflecting—becoming part of an ongoing, shared experience."
+      },
+      "Card4": {
+        "text": "Donors were not meant to be seen as mere traces of the past or fixed history, but as living connectors—linking the present and future through the space itself."
+      },
+      "Card5": {
+        "text": "The donor nameplate is not a simple list of names. Each name connects to the next in a single line, symbolizing that giving is not a one-time act, but part of a virtuous, ongoing flow.\n\nMore than honoring donors, the design encourages the spirit of Pay It Forward to grow naturally. As students pass by, they remember the warmth of those who came before them—and imagine the day they, too, will leave their name on this line."
+      },
+      "Card6": {
+        "text": "We aimed to visually express how small donations come together to create greater meaning, and how connected hearts open up new possibilities. Through this plate, we didn’t want to leave just a record—we hoped to create a space where positive impact continues, without end."
+      },
+      "Card7": {
+        "text": "As a subtle donor space that doesn’t rely on explanation, we applied a bolder design approach—creating strong, object-like elements and spatial presence to intuitively convey the message to users.\n\nTo realize Intuitive Continuity, we used the material and texture of concrete to unify the space as a single language—not as a purely aesthetic choice, but to ensure spatial consistency and lasting presence."
+      },
+      "Card8": {
+        "text": "Through objects like the Along, A-long Table, we hoped to extend the continuity and longevity of legacy—passing it on naturally to the next generation who gather around and use the table."
+      },
+      "Card9": {
+        "text": "Rather than creating a closed-off space for students, the design connects inside and outside through five overlapping layers—external landscaping, concrete table, indoor greenery, wooden floor seating, and exterior stone landscaping—allowing visual flow and openness throughout the space."
+      },
+      "Card10": {
+        "text": "Previously blocked windows were redesigned as large, openable ones—reflecting the idea of “opening boundaries within” to foster connection and face-to-face interaction.\n\nThis space allows students to sit, lie down, look outside, or step out freely—encouraging a sense of autonomy. Just as the body feels free here, we hoped the mind would also expand, opening up new ways of thinking."
       }
+    }
+  },
+  "PositiveImpact": {
+    "Banner": {
+      "title": "Where Positive Influence Comes Full Circle",
+      "subTitle": "UNDEFINED"
+    },
+    "Message": {
+      "ChiefMessage": {
+        "title": "A New Beginning",
+        "content": "“This space is where positive impact flows in a virtuous cycle. It began with a generous donation from KRAFTON alumni and employees, and since then, more and more alumni, professors, and even current students have joined the movement.\nWhat drives this wave of giving is gratitude—gratitude for the open and free communication fostered by brilliant professors and inspiring students, for a space where diverse individuals could feel at ease in their differences, and for the time when we could dream freely and boldly.\nThough we can never fully repay our teachers and peers who gave us those precious moments and that nurturing space, we can pay it forward. This is a space of connection where we share our gratitude with the next generation. I hope that in this space, free spirits will soar and spark innovations that lead to a happier world for all.”",
+        "introduction": "Sukyoung Ryu, Head of the KAIST School of Computing",
+        "date": "March 18, 2025"
+      },
+      "Card1": {
+        "content": "Connecting Data and People.\nBeyond limits, be someone who connects hearts.",
+        "introduction": "Seongwon Lee, KAIST School of Computing Alumnus"
+      },
+      "Card2": {
+        "content": "Technology Exists for People.\nYour challenge will change lives.",
+        "introduction": "Sungjin Hong, KAIST School of Computing Alumnus"
+      },
+      "Introduction": "Messages from Two Selected Contributors to the School of Computing Expansion"
     }
   }
 }

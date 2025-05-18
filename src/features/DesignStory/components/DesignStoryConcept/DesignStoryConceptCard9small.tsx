@@ -2,38 +2,35 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import Spacer from "@krafton-soc/common/components/Spacer";
 import Text from "@krafton-soc/common/components/Text";
 import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const CardContainer = styled.section`
-  max-width: 1285px;
   width: 100%;
-  min-height: 500px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
+  flex-direction: column;
 
   margin-top: 250px;
+  gap: 80px;
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    margin-top: 160px;
+  }
 `;
 
 const CardLeftContainer = styled.section`
-  flex-grow: 1;
-  flex-shrink: 1;
-  max-width: 762px;
-  min-width: 300px;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
+
+  align-items: flex-end;
 
   gap: 10px;
 `;
 
 const CardLeftImage = styled.div`
   width: 100%;
-  height: auto;
   aspect-ratio: 762 / 469;
   position: relative;
 `;
@@ -51,22 +48,12 @@ const CardLeftImageCaption = styled.div`
   color: ${theme.colors.black};
 `;
 
-const CardRightContainer = styled.section`
-  width: 432px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-`;
-
-const CardRightTextContainer = styled.section`
+const CardTextContainer = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 40px;
-  padding-bottom: 70px;
+  gap: 60px;
 `;
 
 const CardRightTitle = styled.div`
@@ -79,10 +66,14 @@ const CardRightTitle = styled.div`
   font-weight: ${theme.fonts.weights.medium};
   line-height: 120%;
   color: ${theme.colors.black};
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 32px;
+  }
 `;
 
 const CardRightText = styled.div`
-  width: 100%;
+  width: 392px;
   display: flex;
   flex-direction: column;
 
@@ -91,21 +82,33 @@ const CardRightText = styled.div`
   font-weight: ${theme.fonts.weights.regular};
   line-height: 180%;
   color: ${theme.colors.black};
+
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 353px;
+    font-size: 16px;
+  }
 `;
 
 const CardRightImage = styled.div`
   width: 232px;
-  height: 230px;
+  aspect-ratio: 232 / 258;
   position: relative;
-  align-self: flex-end;
 `;
 
-const DesignStoryConceptCard9 = () => {
-  const { deviceType, isDesktop } = useResponsiveStore();
+const DesignStoryConceptCard9small = () => {
+  const { deviceType } = useResponsiveStore();
   const t = useTranslations("DesignStory.Concept.Card9");
 
   return (
     <CardContainer>
+      <CardTextContainer>
+        <CardRightTitle>
+          <Text>{"Beyond Boundaries,\nConnecting Views"}</Text>
+        </CardRightTitle>
+        <CardRightText>
+          <Text>{t(`text`)}</Text>
+        </CardRightText>
+      </CardTextContainer>
       <CardLeftContainer>
         <CardLeftImage>
           <Image
@@ -118,16 +121,9 @@ const DesignStoryConceptCard9 = () => {
           <Text>{"Along, A-long Table and Concrete Wall"}</Text>
         </CardLeftImageCaption>
       </CardLeftContainer>
-      {isDesktop && <Spacer width={24} />}
-      <CardRightContainer>
-        <CardRightTextContainer>
-          <CardRightTitle>
-            <Text>{"Beyond Boundaries,\nConnecting Views"}</Text>
-          </CardRightTitle>
-          <CardRightText>
-            <Text>{t(`text`)}</Text>
-          </CardRightText>
-        </CardRightTextContainer>
+      <div
+        style={{ width: "100%", display: "flex", justifyContent: "flex-end" }}
+      >
         <CardRightImage>
           <Image
             src={`/images/DesignStory/Concept/디자인이야기_Con14_${deviceType}.png`}
@@ -135,9 +131,9 @@ const DesignStoryConceptCard9 = () => {
             fill
           />
         </CardRightImage>
-      </CardRightContainer>
+      </div>
     </CardContainer>
   );
 };
 
-export default DesignStoryConceptCard9;
+export default DesignStoryConceptCard9small;

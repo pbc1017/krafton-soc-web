@@ -74,6 +74,7 @@ const CardTextContent = styled.section`
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     font-size: 16px;
+    width: 333px;
   }
 `;
 
@@ -94,8 +95,6 @@ const CardImageContainer = styled.section`
     flex-grow: 0;
     flex-shrink: 0;
   }
-  @media (max-width: ${theme.breakpoints.mobileTablet}) {
-  }
 `;
 
 const CardImage = styled.div`
@@ -105,8 +104,8 @@ const CardImage = styled.div`
   position: relative;
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    width: calc(100% + 60px);
-    margin: 0 -30px;
+    width: calc(100% + 40px);
+    margin: 0 -20px;
   }
 `;
 
@@ -135,10 +134,10 @@ const DesignStoryConceptCard3 = () => {
     <CardContainer>
       <CardTextContainer>
         <CardTextTitle>
-          <Text>{t(`title.${deviceType}`)}</Text>
+          <Text>{t(`title`)}</Text>
         </CardTextTitle>
         <CardTextContent>
-          <Text>{t(`content.${deviceType}`)}</Text>
+          <Text>{t(`content`)}</Text>
         </CardTextContent>
       </CardTextContainer>
       {isDesktop && <Spacer width={24} />}

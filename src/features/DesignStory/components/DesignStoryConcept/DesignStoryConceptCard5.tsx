@@ -36,7 +36,7 @@ const CardLeftContainer = styled.section`
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    width: 353px;
+    width: 333px;
     gap: 40px;
   }
 `;
@@ -101,9 +101,9 @@ const CardRightImage = styled.div`
   position: relative;
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    width: calc(100% + 60px) !important;
+    width: calc(100% + 40px) !important;
     max-width: unset;
-    margin: 0 -30px;
+    margin: 0 -20px;
   }
 `;
 
@@ -135,7 +135,7 @@ const DesignStoryConceptCard5 = () => {
           <Text>{"A Line of Giving, \nA Cycle of Connection"}</Text>
         </CardLeftTitle>
         <CardLeftText>
-          <Text>{t(`text.${deviceType}`)}</Text>
+          <Text>{t(`text`)}</Text>
         </CardLeftText>
       </CardLeftContainer>
       <Spacer width={20} />

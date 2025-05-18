@@ -65,7 +65,13 @@ const FoldableNavMenu: React.FC<{
         style={{ cursor: "pointer", alignSelf: "flex-end", marginTop: "24px" }}
       />
       {navItems.map((item: NavItem) => (
-        <NavText key={item.href} onClick={() => router.push(item.href)}>
+        <NavText
+          key={item.href}
+          onClick={() => {
+            router.push(item.href);
+            setIsFoldableNavMenuOpen(false);
+          }}
+        >
           {item.label}
         </NavText>
       ))}
