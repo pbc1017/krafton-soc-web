@@ -104,8 +104,8 @@ const CardImage = styled.div`
   position: relative;
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    width: calc(100% + 60px);
-    margin: 0 -30px;
+    width: calc(100% + 40px);
+    margin: 0 -20px;
   }
 `;
 
