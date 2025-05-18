@@ -28,14 +28,14 @@
   },
   "BuildingJourney": {
     "chairmanMessage": {
-      "message": "“제가 KAIST 발전재단 상임이사 김영걸 교수님을 처음 만난 것은 2017년 10월이었습니다. 이 인연으로 KAIST-인도네시아 봉사단 같은 기부가 시작되었고, 이 신뢰 관계는 2020년 즈음 신성철 총장님이 추진하신 50주년 기념관 사업까지 이어졌습니다.\n\n50주년 기념관 관련하여 여러 사람들을 만나는 중 전산학부 학부장 김명호 교수님을 만났고, 당시 제가 KAIST에 약정한 기부금 중 일부는 전산학부 증축에 쓰겠다고 결심했습니다. 이 즈음부터 모교 출신인 여러 동료이자 지인들과 이야기가 오갔고, 결과적으로 2021년 110억원 크래프톤 매칭 그랜트 기부까지 이어졌습니다.”",
-      "introduction": "KAIST 전산학부 동문 장병규 KRAFTON 의장",
-      "date": "2025. 04. 03."
+      "message": "““I first met Professor Young-Gul Kim, Executive Director of the KAIST Development Foundation, in October 2017. That encounter led to the beginning of donations such as the KAIST-Indonesia Volunteer Corps, and the trust built through this relationship eventually extended to the KAIST 50th Anniversary Memorial Hall project, which was initiated around 2020 by President Sung-Chul Shin.\n\nWhile meeting various people involved in the 50th Anniversary Memorial Hall project, I had the opportunity to meet Professor Myung-Ho Kim, then Head of the School of Computing. At that time, I decided to dedicate a portion of the donation I had pledged to KAIST to the expansion of the School of Computing. Around that period, I also began exchanging thoughts with several fellow alumni and acquaintances, which ultimately led to KRAFTON’s 11 billion KRW matching grant donation in 2021.”",
+      "introduction": "ByungGyu Chang, KRAFTON Chairman and KAIST School of Computing Alumnus",
+      "date": "April 3, 2025"
     },
     "Parts": {
       "Part1": {
         "PartHeader": {
-          "title": "증축 준비"
+          "title": "Preparing for Expansion"
         },
         "startTerm": "2020.08",
         "endTerm": "2021.05",
@@ -44,7 +44,7 @@
             "startTerm": "08.07",
             "endTerm": "UNDEFINED"
           },
-          "title": "SW사관학교 정글 업무협약식에서 전산학부 건물 증축의 필요성 논의",
+          "title": "Discussion on the Need for Expansion at the School of Computing During SW Junggle MOU Ceremony",
           "detail": "UNDEFINED"
         },
         "Card2": {
@@ -52,15 +52,15 @@
             "startTerm": "09.21",
             "endTerm": "10.05"
           },
-          "title": "크래프톤 KAIST 기부 및 전산학부 증축 지원 논의",
+          "title": "Discussion on KRAFTON's Donation to KAIST and Support for Expansion",
           "detail": "UNDEFINED"
         },
         "Card3": {
           "duration": {
-            "startTerm": "3월",
+            "startTerm": "March",
             "endTerm": "UNDEFINED"
           },
-          "title": "류석영 교수 학부장 취임",
+          "title": "Professor Sukyoung Ryu Appointed as Head of the School of Computing",
           "detail": "UNDEFINED"
         },
         "Card4": {
@@ -68,21 +68,21 @@
             "startTerm": "01.20",
             "endTerm": "03.16"
           },
-          "title": "KAIST 전산학부 증축 공간 활용 및 KRAFTON 연계 프로그램 논의",
-          "detail": "01.20 KAIST-KRAFTON 연계 활동 및 프로그램 추진 협의\n03.09-16 KAIST-KRAFTON 연계 활동 및 프로그램 구체화"
+          "title": "Discussion on Use of Expansion Space and KRAFTON-Linked Programs",
+          "detail": "01.20 Discussion on Promoting KAIST-KRAFTON Collaborative Activities and Programs\n03.09–16 Refinement of KAIST-KRAFTON Collaborative Activities and Programs"
         },
         "Card5": {
           "duration": {
             "startTerm": "04.21",
-            "endTerm": "5월"
+            "endTerm": "May"
           },
-          "title": "크래프톤 KAIST 기부 관련 협의체 구성 및 논의",
-          "detail": "04.21 증축 기부 협의 및 약정식(MOU) 체결 추진을 위한 논의\n04.28 증축 개발 구체화, 200억 규모 1개 동 건립 계획, 약정식(MOU)을 통한 실행\n4월 증축 기부 계획 및 Matching Grant 추진 방향 논의\n5월 증축 기부 방향 확정 및 개인/매칭 구체적인 기부 규모 조율"
+          "title": "Working Group Formed for KRAFTON–KAIST Donation and Collaboration",
+          "detail": "04.21 Discussion on Donation for Expansion and Promotion of MOU Signing\n04.28 Finalization of Expansion Plan: Construction of One Building Worth KRW 20 Billion and Execution Through MOU\nApril Discussion on Expansion Donation Plan and Direction for Matching Grant\nMay Confirmation of Expansion Donation Plan and Adjustment of Individual/Matching Donation Amounts"
         }
       },
       "Part2": {
         "PartHeader": {
-          "title": "증축 실행 & 기부금 모금"
+          "title": "Expansion Execution & Fundraising"
         },
         "startTerm": "2021.03",
         "endTerm": "2022.04",
@@ -91,15 +91,15 @@
             "startTerm": "03.26",
             "endTerm": "05.06"
           },
-          "title": "데브시스터즈의 전산학부 동문 11인 기부",
-          "detail": "06학번 홍성진, 09학번 명노준, 10학번 원대영, 10학번 이준성, 11학번 이창원, \n11학번 최낙현, 12학번 마재의, 14학번 정성윤, 14학번 황태현, 15학번 이준수, \n16학번 황재영"
+          "title": "Donation by 11 School of Computing Alumni from Devsisters",
+          "detail": "Sungjin Hong (Class of ’06), Nojun Myung (’09), Daeyoung Won (’10), Junseong Lee (’10), Changwon Lee (’11), Nakhyun Choi (’11), Jaeui Ma (’12), Sungyoon Jung (’14), Taehyun Hwang (’14), Junsu Lee (’15), Jaeyoung Hwang (’16)"
         },
         "Card2": {
           "duration": {
             "startTerm": "04.08",
             "endTerm": "UNDEFINED"
           },
-          "title": "학부 93학번 김범준 동문 1억 원 기부",
+          "title": "Bomjun Kim (Class of ’93) Donates KRW 100 Million",
           "detail": "UNDEFINED"
         },
         "Card3": {
@@ -107,15 +107,15 @@
             "startTerm": "04.30",
             "endTerm": "05.31"
           },
-          "title": "장병규, 김창한 등 11인, 기부 입장 표명 및 기부금 약정식 준비",
-          "detail": "장병규 20억, 김창한 6억, 조웅희 6억, 신승우 6억, 류성중 5억, 박진석 5억, \n김상균 1억, 심재한 1억원, 이창호 1억, 정우재 1억, 양재헌 3억"
+          "title": "ByungGyu Chang, Changhan Kim, and 11 Others Declare Donation Commitment and Prepare for the Donation Pledge Ceremony",
+          "detail": "ByungGyu Chang: 2B KRW, Changhan Kim: 600M KRW, Woonghee Cho: 600M KRW, Seungwoo Shin: 600M KRW, Sungjoong Lew: 500M KRW, Jinseok Park: 500M KRW, Sangkyun Kim: 100M KRW, Jaehan Sim: 100M KRW, Changho Lee: 100M KRW, Woojae Jung: 100M KRW, Jaeheon Yang: 300M KRW"
         },
         "Card4": {
           "duration": {
             "startTerm": "05.04",
             "endTerm": "UNDEFINED"
           },
-          "title": "KAIST 건설팀과 증축 실행 구체화 및 예산 논의",
+          "title": "Discussion on Finalizing the Expansion Execution and Budget with the KAIST Construction Team",
           "detail": "UNDEFINED"
         },
         "Card5": {
@@ -123,7 +123,7 @@
             "startTerm": "05.07",
             "endTerm": "UNDEFINED"
           },
-          "title": "학부 95학번 서하연, 96학번 한동훈 동문 부부 2,000만 원 기부",
+          "title": "Hayearn Suh (Class of ’95) and Donghun Han (Class of ’96), Alumni Couple, Donate KRW 20 Million",
           "detail": "UNDEFINED"
         },
         "Card6": {
@@ -131,7 +131,7 @@
             "startTerm": "05.10",
             "endTerm": "UNDEFINED"
           },
-          "title": "KRAFTON-KAIST 전산학부 증축 건립 프로젝트 관련 약정식(MOU) 체결 논의",
+          "title": "Discussion on MOU Signing for the KRAFTON–KAIST School of Computing Expansion Project",
           "detail": "UNDEFINED"
         },
         "Card7": {
@@ -139,7 +139,7 @@
             "startTerm": "05.17",
             "endTerm": "05.28"
           },
-          "title": "기부금 집행, 개인 기부자 약정식(MOU) 조율 완료 및 기부 최종 확정 준비",
+          "title": "Execution of Donations, Completion of Individual MOUs, and Final Preparation for Confirmation",
           "detail": "UNDEFINED"
         },
         "Card8": {
@@ -147,7 +147,7 @@
             "startTerm": "05.21",
             "endTerm": "UNDEFINED"
           },
-          "title": "전산학부 증축 건립을 위한 예상 일정 및 소요 비용 논의",
+          "title": "Discussion on Timeline and Estimated Costs for the School of Computing Expansion",
           "detail": "UNDEFINED"
         },
         "Card9": {
@@ -155,7 +155,7 @@
             "startTerm": "06.04",
             "endTerm": "UNDEFINED"
           },
-          "title": "크래프톤 & 전산학부 동문, KAIST 전산학부 기부 약정식 및 인터뷰 개최",
+          "title": "KRAFTON & School of Computing Alumni Hold KAIST School of Computing Donation Pledge Ceremony and Interviews",
           "detail": "UNDEFINED"
         },
         "Card10": {
@@ -163,7 +163,7 @@
             "startTerm": "06.04",
             "endTerm": "UNDEFINED"
           },
-          "title": "크래프톤, KAIST에 110억 원 기부 공식 발표",
+          "title": "KRAFTON Officially Announces KRW 11 Billion Donation to KAIST",
           "detail": "UNDEFINED"
         },
         "Card11": {
@@ -171,7 +171,7 @@
             "startTerm": "06.25",
             "endTerm": "UNDEFINED"
           },
-          "title": "전산학부 증축 건립 추진위원회 발족",
+          "title": "Launch of the School of Computing Expansion Project Steering Committee",
           "detail": "UNDEFINED"
         },
         "Card12": {
@@ -179,7 +179,7 @@
             "startTerm": "06.26",
             "endTerm": "07.07"
           },
-          "title": "전산학부 구성원 대상 증축기금 조성",
+          "title": "Fundraising for the Expansion Project Among School of Computing Members",
           "detail": "UNDEFINED"
         },
         "Card13": {
@@ -187,15 +187,15 @@
             "startTerm": "06.30",
             "endTerm": "UNDEFINED"
           },
-          "title": "크래프톤 재직 동문 2인 기부",
-          "detail": "김성용, 허재석"
+          "title": "Donation by Two KRAFTON Employees Who Are Also KAIST Alumni",
+          "detail": "Sungyong Kim, Jaeseok Huh"
         },
         "Card14": {
           "duration": {
             "startTerm": "07.08",
             "endTerm": "UNDEFINED"
           },
-          "title": "증축 설계 및 크래프톤 기업 정체성 반영 협의",
+          "title": "Discussion on Expansion Design and Incorporation of KRAFTON's Corporate Identity",
           "detail": "UNDEFINED"
         },
         "Card15": {
@@ -203,7 +203,7 @@
             "startTerm": "07.20",
             "endTerm": "UNDEFINED"
           },
-          "title": "전산학부 증축 건립 추진위원회 2차 회의",
+          "title": "2nd Meeting of the School of Computing Expansion Project Steering Committee",
           "detail": "UNDEFINED"
         },
         "Card16": {
@@ -211,15 +211,15 @@
             "startTerm": "08.23",
             "endTerm": "11.05"
           },
-          "title": "전산학부 증축 심의 및 후속 절차 진행",
-          "detail": "08.23 증축 건설위원회 심의 완료\n09.07 증축 사업 추진 일정 조정 및 건설위원회 심의 완료, 후속 절차 진행\n11.05 공공건축 사전 검토 완료 및 심의위원회 구성 준비"
+          "title": "Deliberation on the School of Computing Expansion and Progress on Follow-up Procedures",
+          "detail": "08.23 Completion of Deliberation by the Expansion Construction Committee\n09.07 Adjustment of Expansion Project Schedule and Completion of Construction Committee Deliberation; Follow-up Procedures Underway\n11.05 Completion of Preliminary Review for Public Construction and Preparation for Formation of the Deliberation Committee"
         },
         "Card17": {
           "duration": {
             "startTerm": "11.04",
             "endTerm": "UNDEFINED"
           },
-          "title": "학부 99학번 박준하 동문 1억 원 기부",
+          "title": "Junha Park (Class of ’99) Donates KRW 100 Million",
           "detail": "UNDEFINED"
         },
         "Card18": {
@@ -227,21 +227,21 @@
             "startTerm": "11.14",
             "endTerm": "UNDEFINED"
           },
-          "title": "엘리스 임직원(김재원 외 3인) 3억 원 기부",
-          "detail": "김수인, 김창현, 박정국"
+          "title": "ELICE CEO and Employees Donate KRW 300 Million",
+          "detail": "Suin Kim, Changhyeon Kim, Jeongguk Park"
         },
         "Card19": {
           "duration": {
             "startTerm": "04.29",
             "endTerm": "UNDEFINED"
           },
-          "title": "크래프톤 재직 동문 17인 1억 원 기부",
-          "detail": "KRAFTON HQ, PUBG STUDIOS 10인, 5minlab 7인 총 17인\n김건우, 김상현, 김시환, 김정헌, 김찬수, 박경도, 박문형, 박수찬, 변현찬, \n오진석, 이상헌, 이성원, 이승민, 이해찬, 장병규, 정기량, 최윤묵"
+          "title": "17 KAIST Alumni Currently at KRAFTON Donate KRW 100 Million",
+          "detail": "17 KAIST Alumni from KRAFTON HQ, PUBG STUDIOS (10 members), and 5minlab (7 members)\nGeonwoo Kim, Sanghyeon Kim, Shihwan Kim, JungHun Kim, Chansoo Kim, Kyungdo Park, Moon Park, Soochan Park, Hyeonchan Byeon, Jinseok Oh, Sangheon Lee, Seongwon Lee, Seungmin Lee, Haechan Lee, ByungGyu Chang, Kiryang Jeong, YunMook Choi"
         }
       },
       "Part3": {
         "PartHeader": {
-          "title": "증축 사업 추진"
+          "title": "Expansion Project Implementation"
         },
         "startTerm": "2021.12",
         "endTerm": "2023.04",
@@ -250,7 +250,7 @@
             "startTerm": "12.28",
             "endTerm": "UNDEFINED"
           },
-          "title": "전산학부 증축 사업 설명회 개최",
+          "title": "School of Computing Expansion Project Information Session Held",
           "detail": "UNDEFINED"
         },
         "Card2": {
@@ -258,37 +258,37 @@
             "startTerm": "03.16",
             "endTerm": "04.26"
           },
-          "title": "전산학부 증축 공사 실행을 위한 설계 공모 개최 및 확정",
-          "detail": "03.16 증축 공사 설계 공모 심사 안내 및 사전 자료 교부\n03.17 공모 설계안 선정을 위한 논의\n03.18 증축 공사 설계 공모 심사 개최\n03.27 증축 공사 착공 KAIST 내 공식 공지\n04.06-10 증축 기공식, 사회환원 의미로 미 개최 \n04.26 증축 공사 설계 공모 심사 완료 및 선정"
+          "title": "Design Competition Held and Finalized for Expansion Construction",
+          "detail": "03.16 Design Competition Review Briefing and Preliminary Material Distribution\n03.17 Discussion on Selection of Design Proposal\n03.18 Design Competition Review Held\n03.27 Official Announcement of Construction Start Within KAIST\n04.06–10 Groundbreaking Ceremony Not Held to Emphasize Spirit of Social Contribution\n04.26 Design Competition Review Completed and Final Design Selected"
         },
         "Card3": {
           "duration": {
             "startTerm": "03.29",
             "endTerm": "09.23"
           },
-          "title": "전산학부 증축 외부 빌딩 공사 착공 및 시공 진행",
-          "detail": "03.29 전산학부 주변 건설 부지 수목 이식 공사 진행\n04.05-09 증축 건물과 기존 건물 간의 연결 및 타설 작업 진행\n05.25-06.23 증축 건축 실제 공사 착수\n07.08 태양광 발전기 설치를 위한 주차 공간 추가 공사\n07.19-08.01 태양광 발전기 설치를 위한 주차 공간 추가 2차 공사\n07.28 장마로 인해 중단되었던 건물 공사 재착수\n09.23 태양광 발전기 설치를 위한 주차 공간 추가 3차 공사"
+          "title": "External Expansion Building Construction Underway",
+          "detail": "03.29 Tree Relocation Work on Construction Site Around the School of Computing\n04.05–09 Connection and Pouring Work Between New and Existing Buildings\n05.25–06.23 Main Construction of the Expansion Building Begins\n07.08 Additional Parking Construction for Solar Panel Installation\n07.19–08.01 Second Phase of Parking Construction for Solar Panel Installation\n07.28 Resumption of Building Construction After Suspension Due to Heavy Rain\n09.23 Third Phase of Parking Construction for Solar Panel Installation"
         },
         "Card4": {
           "duration": {
             "startTerm": "05.02",
             "endTerm": "08.11"
           },
-          "title": "전산학부 증축 건축 설계 실시",
-          "detail": "05.02 전산학부 증축 중간 설계 보고 회의 개최\n08.11 전산학부 증축 중간 설계 협의 사항 논의\n08.11 전산학부 증축 중간 설계 경제성(VE) 검토"
+          "title": "Implementation of Architectural Design for the School of Computing Expansion",
+          "detail": "05.02 Mid-Design Review Meeting for the School of Computing Expansion\n08.11 Discussion on Mid-Design Coordination Items\n08.11 Value Engineering (VE) Review of Mid-Design for the Expansion"
         },
         "Card5": {
           "duration": {
             "startTerm": "02.09",
             "endTerm": "04.13"
           },
-          "title": "전산학부 증축 건축 실행",
-          "detail": "02.09 전산학부 증축 실시 설계 최종 보고\n04.13 전산학부 증축 인테리어 계획안 발표"
+          "title": "Execution of School of Computing Expansion Construction",
+          "detail": "02.09 Final Report on Detailed Design for the School of Computing Expansion\n04.13 Presentation of Interior Design Plan for the School of Computing Expansion"
         }
       },
       "Part4": {
         "PartHeader": {
-          "title": "KRAFTON X SoC 공간 경험 디자인"
+          "title": "KRAFTON X SoC\nSpace Experience Design"
         },
         "startTerm": "2022.03",
         "endTerm": "2024.12",
@@ -297,39 +297,39 @@
             "startTerm": "03.24",
             "endTerm": "04.04"
           },
-          "title": "KRAFTON X SoC 공간 경험 디자인 조성 협의체 구성",
-          "detail": "03.24 증축 건물의 KRAFTON X SoC 공간 경험 디자인 구성 논의 착수\n04.04 증축 건물의 KRAFTON X SoC 공간 경험 디자인 구성 실무진 논의"
+          "title": "KRAFTON X SoC Space Experience Design Working Group Formed",
+          "detail": "03.24 Initial Discussion on Space Experience Design in Expansion Building\n04.04 Working-Level Meeting on Space Design for Expansion Building"
         },
         "Card2": {
           "duration": {
             "startTerm": "04.13",
             "endTerm": "12.18"
           },
-          "title": "KRAFTON X SoC 공간 경험 디자인 방향 설정",
-          "detail": "04.13 증축 건물 네이밍 및 공간 경험 디자인 방향성 논의 회의 개최\n08.29 KAIST 현장 답사 및 외부 환경 조사\n09.04-11.27 공간 경험 디자인 방향성 논의 회의 개최 및 피드백 수렴\n12.18 인테리어 업체 선정 진행"
+          "title": "Direction Setting for KRAFTON X SoC Space Design",
+          "detail": "04.13 Naming & Design Direction Meeting\n08.29 On-Site Visit and Environmental Survey at KAIST\n09.04–11.27 Design Direction Meetings and Feedback Collection\n12.18 Interior Design Firm Selection Underway"
         },
         "Card3": {
           "duration": {
             "startTerm": "01.31",
             "endTerm": "06.13"
           },
-          "title": "인테리어 디자인 설계를 위한 업체 선정",
-          "detail": "01.31 1차 인테리어 디자인 설계\n02.21 인테리어 디자인 업체와 KAIST 실무진 1차 미팅 진행\n04.02 KRAFTON HR, 공간 활용 방안 제안 및 논의 \n06.11-13 2차 인테리어 디자인 설계 및 KAIST 실무진 2차 미팅 진행"
+          "title": "Interior Design Firm Selection and Planning",
+          "detail": "01.31 First Phase of Interior Design Planning\n02.21 First Meeting Between Interior Firm and KAIST Working Team\n04.02 Proposal and Discussion on Space Utilization with KRAFTON HR\n06.11–13 Second Phase of Design Planning and Second Meeting with KAIST Team"
         },
         "Card4": {
           "duration": {
             "startTerm": "06.15",
             "endTerm": "12.11"
           },
-          "title": "인테리어 디자인 설계 및 공사 진행",
-          "detail": "06.15-07.04 인테리어 업체와 상세 디자인 설계 관련 논의 진행\n07.18-08.15 인테리어 설계 격주 정기 회의 진행\n09.10-09.27 기부자 공간 구성을 위한 디자인 시안 제작 \n10.01-12.10 마이크로 사이트 제작, 재학생 협업 진행 및 제작 방향성 논의\n12.11 외부 창호 보강을 위한 자재 변경"
+          "title": "Interior Design Execution",
+          "detail": "06.15–07.04 Detailed Design Discussions with Interior Firm\n07.18–08.15 Biweekly Interior Design Review Meetings\n09.10–09.27 Draft Designs for Donor Recognition Space\n10.01–12.10 Microsite Development, Collaboration with Students, and Direction Planning\n12.11 Material Change for Reinforcement of Exterior Windows"
         },
         "Card5": {
           "duration": {
             "startTerm": "11.04",
             "endTerm": "UNDEFINED"
           },
-          "title": "기부자 공간 인테리어 시공 진행",
+          "title": "Donor Space Interior Construction in Progress",
           "detail": "UNDEFINED"
         },
         "Card6": {
@@ -337,24 +337,24 @@
             "startTerm": "09.10",
             "endTerm": "10.30"
           },
-          "title": "기부의 의미 전달을 위한 메시지 & 건물 네이밍 공모",
-          "detail": "09.10~10.30 기부자 대상, 건물명 & 기부자 메시지 공모 및 리스트 취합"
+          "title": "Donor Space Interior Construction in Progress",
+          "detail": "09.10–10.30 Naming and Message Contest for Donors; List Compilation"
         },
         "Card7": {
           "duration": {
             "startTerm": "10.29",
             "endTerm": "10.31"
           },
-          "title": "KRAFTON X SoC 대표글 확정 및 건물명 논의",
-          "detail": "10.29-10.31 대표글 확정 및 건물명 선정을 위한 논의"
+          "title": "KRAFTON X SoC Representative Message Finalized & Building Name Discussion",
+          "detail": "KRAFTON X SoC Representative Message Finalized & Building Name Discussion"
         },
         "Card8": {
           "duration": {
             "startTerm": "11월",
             "endTerm": "12.03"
           },
-          "title": "KRAFTON X SoC 건물명 확정 및 공표",
-          "detail": "11월 기부자 2인 메시지 선정\n11.17 채택된 기부 메시지 & 건물명 공지\n12.03 KRAFTON SoC 건물명 및 추가 기부, KRAFTON-KAIST 간 부가 합의서 작성 진행"
+          "title": "KRAFTON X SoC Building Name Finalized & Announced",
+          "detail": "November: Two Donor Messages Selected\n11.17 Announcement of Selected Donor Messages & Building Name\n12.03 Finalization of Building Name, Additional Donation, and Supplemental Agreement Between KRAFTON and KAIST"
         }
       }
     }
@@ -362,53 +362,53 @@
   "DesignStory": {
     "banner": {
       "title": "KRAFTON X SoC, Design Story",
-      "subTitle": "KRAFTON X SoC, 디자인 이야기"
+      "subTitle": "KRAFTON X SoC, Design Story"
     },
     "Intro": {
       "Card1": {
-        "title": "우리의 시작을\n돌아보다",
-        "content": "처음 논의가 시작될 때, 우리가 가장 중요하게 던진 질문은 \"이 공간이 사용자들에게 어떤 의미를 가질 것인가?\"였습니다. 단순히 하나의 결과물로서 완성되는 것이 아닌 보이지 않는 선한 영향력을 공간을 통해 가시화하고자 했습니다.\n\n이 공간은 거대한 연결의 흐름 속에서 눈에 보이는 하나의 연결점이자 이정표와 같은 역할을 합니다. 그렇기에 이곳이 하나의 끝이 아니라, 새로운 연결이 시작되는 장소가 되기를 바랍니다.\n\n이 공간을 경험하는 사람들이 거대한 고리로 연결되어, 어떤 변화를 만들어 가는지, 그리고 자신은 그 흐름 속에서 어떤 연결을 만들어갈 것인지 자연스럽게 느낄 수 있기를 기대합니다."
+        "title": "Looking Back,\nOur Beginning",
+        "content": "When the first discussions began, the question we asked was: “What meaning will this space hold for its users?” Rather than seeing it as a finished product, we aimed to make invisible positive impact visible through space.\n\nThis space stands as a tangible point of connection within a larger flow—a marker, not an endpoint. We hope it becomes a starting point for new connections.\n\nMay those who experience this space feel part of a greater chain of change—and discover the connections they, too, will create."
       },
       "Card2": {
-        "title": "모든 것을 연결하다",
-        "content": "KRAFTON X SoC 공간은 사람들이 머물고 교류하며 새로운 아이디어를 나누는 장이 되어 '지식과 사람', '기술과 사람', '사람과 사람' 이 연결되고 그안에 인간이 중심이 되어있다는 의미를 담고자 하였습니다. \n\n시작은 '연결'이라는 하나의 단어였지만, 그 과정 속에서 우리는 '연결이 어떻게 경험될 수 있는가'에 대한 더 깊은 고민을 담았습니다."
+        "title": "Connecting Everything",
+        "content": "The KRAFTON X SoC space was created as a place where people stay, connect, and share new ideas—linking knowledge and people, technology and people, and people to people, with humanity at the center.\n\nIt began with a single word: connection. Along the way, we reflected deeply on how that connection can truly be experienced."
       }
     },
     "Concept": {
       "Title": {
-        "subTitle": "이러한 연결에 대한 고민은 KAIST 전산학부와 KRAFTON이 공유하는 'Human-Centric' 이념, 즉 기술의 발전은 결국 인간을 향해야 한다는 명확한 가치에서 출발했습니다."
+        "subTitle": "This exploration of connection began with a shared belief between the KAIST School of Computing and KRAFTON: a human-centric philosophy — the clear value that technological advancement must ultimately serve humanity."
       },
       "Final": {
         "quote": "The function of good software is to make the complex appear to be simple",
-        "wish": "마치 건축 디자인에서 하나의 선을 지우기 위해 숨어 있는 수많은 기술이 필요하듯, 이 공간에서도 무의식적으로 평온한 공간을 최적화하기 위해 구조적, 기술적 한계를 넘어서려 했습니다. 이러한 모든 과정이 공간에 녹아들어, 우리의 의지가 학생들과 이곳을 방문하는 모든 이들에게 오롯이 전달되기를 바랍니다."
+        "wish": "Just as countless hidden techniques are required in architecture to erase a single visible line, this space, too, pushes beyond structural and technical limits to quietly optimize a sense of calm. We hope that all of these efforts are seamlessly embedded into the space—so that our intentions are fully felt by the students and everyone who visits here."
       },
       "Card2": {
-        "title": "공간 설계는 수많은 고민을 거듭하며 단순한 기능적 배치나 장식적 요소를 넘어, 사용자들이 직관적으로 경험하고 참여할 수 있도록 이루어졌습니다."
+        "title": "The spatial design was developed through countless reflections, going beyond simple functional layouts or decorative elements to create an environment that users can intuitively experience and actively engage with."
       },
       "Card3": {
         "title": "Heritage,\nNot a Narrative",
-        "content": "Heritage, Not a Narrative'는 이번 프로젝트를 관통하는 가장 중요한 개념이었습니다. 기부자들이 자신의 존재를 부각시키기보다, 후배들에게 자연스럽게 유산을 남기고자 하는 의지를 담아 공간 속에서 은은하게 드러나도록 디자인했습니다.\n\n함께 성장하는 'Reflective Jungle'의 식물 사이로 슈퍼미러에 새겨진 기부자의 메시지는 단순한 일방적인 기념물이 아니라, 사용자의 움직임에 따라 변화하고 투영되는 요소로 작용합니다."
+        "content": "‘Heritage, Not a Narrative’ was a key concept throughout this project. Rather than highlighting individual donors, the design subtly reflects their wish to leave a legacy for future generations.\n\nMessages engraved on a super mirror, nestled among the plants of the Reflective Jungle, respond to movement—shifting and reflecting—becoming part of an ongoing, shared experience."
       },
       "Card4": {
-        "text": "기부자는 단순한 과거의 흔적이나 고정된 히스토리가 아니라, 공간적 매개체를 통해 현재와 미래가 연결되는 존재로 기능하도록 의도했습니다."
+        "text": "Donors were not meant to be seen as mere traces of the past or fixed history, but as living connectors—linking the present and future through the space itself."
       },
       "Card5": {
-        "text": "기부자 명단 플레이트는 단순한 이름의 나열이 아닙니다. 앞선 기부자의 이름이 다음 기부자의 이름과 한 줄로 이어지는 방식은, 기부가 단절된 행위가 아니라 하나의 선순환적 흐름이라는 의미를 담고 있습니다. \n\n단순히 기부자를 기리는 것을 넘어, 'Pay It Forward' 정신이 자연스럽게 확장될 수 있도록 구성되었습니다. 기부를 받은 후배들은 이곳을 지나며 선배들의 따뜻한 마음을 기억하고, 언젠가 자신도 이 선 위에 이름을 남길 날을 떠올릴 수 있도록 의도했습니다."
+        "text": "The donor nameplate is not a simple list of names. Each name connects to the next in a single line, symbolizing that giving is not a one-time act, but part of a virtuous, ongoing flow.\n\nMore than honoring donors, the design encourages the spirit of Pay It Forward to grow naturally. As students pass by, they remember the warmth of those who came before them—and imagine the day they, too, will leave their name on this line."
       },
       "Card6": {
-        "text": "우리는 작은 기부가 모여 더 큰 의미를 만들고, 연결된 마음들이 새로운 가능성을 만들어 가는 과정을 시각적으로 표현하고자 했습니다. 이 플레이트로 단순한 기록이 아니라, 선한 영향력이 끊임없이 이어지는 공간이 되기를 바랐습니다. "
+        "text": "We aimed to visually express how small donations come together to create greater meaning, and how connected hearts open up new possibilities. Through this plate, we didn’t want to leave just a record—we hoped to create a space where positive impact continues, without end."
       },
       "Card7": {
-        "text": "설명으로 드러나지 않는 섬세한 기부자 공간으로서 더욱 Bold한 디자인을 적용하여, 사용자들에게 직관적으로 메시지를 전달할 수 있는 강한 오브제적 요소와 공간감을 제공하고자 했습니다.\n\n'Intuitive Continuity'를 구현하기 위해 Concrete라는 물성과 질감을 활용하여 공간을 하나의 언어로 통합하고, 단순한 미학적 선택이 아닌, 공간의 지속성과 일관성을 유지하려 했습니다."
+        "text": "As a subtle donor space that doesn’t rely on explanation, we applied a bolder design approach—creating strong, object-like elements and spatial presence to intuitively convey the message to users.\n\nTo realize Intuitive Continuity, we used the material and texture of concrete to unify the space as a single language—not as a purely aesthetic choice, but to ensure spatial consistency and lasting presence."
       },
       "Card8": {
-        "text": "‘Along, A-long Table’과 같은 오브제를 통해 유산(Legacy)의 지속성과 연속성이 테이블까지 이어지며, 이를 사용하는 후배들에게 자연스럽게 전해지기를 바랐습니다."
+        "text": "Through objects like the Along, A-long Table, we hoped to extend the continuity and longevity of legacy—passing it on naturally to the next generation who gather around and use the table."
       },
       "Card9": {
-        "text": "폐쇄적인 건물 내부에 갇힌 학생들의 공간이 아닌, 5개의 중첩된 레이어(외부 조경, 콘크리트 테이블, 실내 조경, 평상, 외부 석재 조경)를 통해 내 외부 시선이 자연스럽게 연결되도록 디자인했습니다."
+        "text": "Rather than creating a closed-off space for students, the design connects inside and outside through five overlapping layers—external landscaping, concrete table, indoor greenery, wooden floor seating, and exterior stone landscaping—allowing visual flow and openness throughout the space."
       },
       "Card10": {
-        "text": "기존에 막힌 창호에 개방형 대형 창호를 설계하여 ‘내부와 내부의 경계를 열어 연결되고, 마주 보고 소통하는’ 요소를 반영했습니다. \n\n이곳에서 학생들이 앉거나 누울 수도 있고, 밖을 바라보거나 나갈 수도 있는 자유롭고 주도적인 공간을 경험할 수 있도록 했으며, 이 공간에서 개인의 자유로움만큼 사고의 자유로움도 확장될 수 있기를 기대했습니다."
+        "text": "Previously blocked windows were redesigned as large, openable ones—reflecting the idea of “opening boundaries within” to foster connection and face-to-face interaction.\n\nThis space allows students to sit, lie down, look outside, or step out freely—encouraging a sense of autonomy. Just as the body feels free here, we hoped the mind would also expand, opening up new ways of thinking."
       }
     }
   },
