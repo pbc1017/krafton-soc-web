@@ -27,7 +27,7 @@ const CardContainer = styled.div`
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     margin-top: 80px;
-    align-items: flex-start;
+    align-items: flex-end;
     width: 100%;
     padding-left: 0px;
     // padding-left: 239px; 는 tabletDesktop에서 상속됩니다.
@@ -77,14 +77,19 @@ const CardText = styled.div`
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    align-self: flex-start;
-    width: 333px !important;
     font-size: 16px;
+    /* align-self: flex-start;
+    width: 333px !important;
+    margin-left: 93px; */
+    width: min(calc(100% - 93px), 333px);
+    min-width: unset;
+    margin-left: 93px;
+    align-self: flex-start;
   }
 `;
 
 const DesignStoryConceptCard6 = () => {
-  const { deviceType } = useResponsiveStore();
+  const { deviceType, isDesktop } = useResponsiveStore();
   const t = useTranslations("DesignStory.Concept.Card6");
 
   return (
@@ -96,7 +101,7 @@ const DesignStoryConceptCard6 = () => {
           fill
         />
       </CardImage>
-      {deviceType === "desktop" && <Spacer width={24} />}
+      {isDesktop && <Spacer width={24} />}
       <CardText>
         <Text>{t(`text`)}</Text>
       </CardText>
