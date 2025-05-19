@@ -168,7 +168,7 @@ export const generatePartContents = (
             modalImage: {
               part: 2,
               modalNumber: 1,
-              filename: "0626_전산학부 구성원 대상 증축기금 조성",
+              filename: "0626",
               alt: "전산학부 구성원 대상 증축기금 조성 사진",
             },
           },
@@ -242,8 +242,7 @@ export const generatePartContents = (
             modalImage: {
               part: 3,
               modalNumber: 2,
-              filename:
-                "0316_전산학부 증축 공사 실행을 위한 설계 공모 개최 및 확정",
+              filename: "0316",
               alt: "전산학부 증축 공사 실행을 위한 설계 공모 개최 및 확정 사진",
             },
           },
@@ -324,8 +323,7 @@ export const generatePartContents = (
             modalImage: {
               part: 4,
               modalNumber: 3,
-              filename:
-                "0910_기부의 의미 전달을 위한 메시지 & 건물 네이밍 공모",
+              filename: "0910",
               alt: "기부의 의미 전달을 위한 메시지 & 건물 네이밍 공모 사진",
             },
           },
@@ -342,7 +340,7 @@ export const generatePartContents = (
             modalImage: {
               part: 4,
               modalNumber: 4,
-              filename: "11월_KRAFTON X SoC 건물명 확정 및 공표",
+              filename: "1100",
               alt: "KRAFTON X SoC 건물명 확정 및 공표 사진",
             },
           },

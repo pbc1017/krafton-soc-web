@@ -84,7 +84,7 @@ const CardRightText = styled.div`
   color: ${theme.colors.black};
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    width: 353px;
+    width: 333px;
     font-size: 16px;
   }
 `;

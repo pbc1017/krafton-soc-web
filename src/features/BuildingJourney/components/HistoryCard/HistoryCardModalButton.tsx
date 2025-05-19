@@ -36,7 +36,7 @@ const getImageSrc = (
   locale: Locale,
   deviceType: DeviceType,
 ) =>
-  `/images/BuildingJourney/modal/Part${part}_${filename}_${locale === "ko" ? "KR" : "EN"}_${deviceType}.png`;
+  `/images/BuildingJourney/modal/Part${part}_${filename}_${locale}_${deviceType}.png`;
 
 type ModalImageSize = {
   width: number;
