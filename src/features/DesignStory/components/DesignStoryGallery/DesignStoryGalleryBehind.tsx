@@ -19,8 +19,6 @@ const BehindContainer = styled.div`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     margin-top: 220px;
   }
-
-  //background-color: yellow;
 `;
 
 const BehindTitle = styled.div`

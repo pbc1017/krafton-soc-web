@@ -20,7 +20,6 @@ const PartHeaderContainer = styled.div`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     gap: 20px;
   }
-  // background-color: darksalmon;
 `;
 
 const PartNumber = styled.div`

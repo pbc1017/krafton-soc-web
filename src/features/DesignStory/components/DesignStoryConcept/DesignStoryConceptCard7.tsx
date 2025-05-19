@@ -37,7 +37,6 @@ const CardLeftContainer = styled.section`
   justify-content: space-between;
   flex-shrink: 0;
 
-  //background-color: green;
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     width: 100%;
     gap: 60px;
@@ -62,7 +61,6 @@ const CardLeftTitle = styled.div`
   line-height: 120%;
   color: ${theme.colors.black};
 
-  //background-color: pink;
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     font-size: 32px;
   }

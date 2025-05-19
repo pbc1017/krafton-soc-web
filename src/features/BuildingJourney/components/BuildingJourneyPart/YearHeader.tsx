@@ -18,7 +18,6 @@ const YearHeaderContainer = styled.div`
   font-weight: ${theme.fonts.weights.bold};
   line-height: 32px;
   color: ${theme.colors.black};
-  // background-color: red;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     font-size: 26px;

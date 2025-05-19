@@ -43,8 +43,6 @@ const CardImage = styled.div`
   position: relative;
   max-width: 871px;
 
-  //background-color: magenta;
-
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     width: 100%;
     max-width: 100%;
@@ -72,8 +70,6 @@ const CardText = styled.div`
   line-height: 180%;
   color: ${theme.colors.black};
   font-family: ${theme.fonts.families.pretendard};
-
-  //background-color: green;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
     width: 457px;
