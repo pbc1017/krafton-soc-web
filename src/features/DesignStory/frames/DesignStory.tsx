@@ -63,17 +63,15 @@ const ConceptContainer = styled.div`
 
 const GalleryContainer = styled.div`
   width: 100%;
-  padding-bottom: 64px;
+  padding-bottom: 130px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    padding-bottom: 117px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    padding-bottom: 67px;
   }
 `;
 
