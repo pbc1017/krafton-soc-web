@@ -75,6 +75,7 @@ const SubTitleLeft = styled.div`
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     width: 333px;
+    min-width: 333px;
   }
   //background-color: cyan;
 `;
