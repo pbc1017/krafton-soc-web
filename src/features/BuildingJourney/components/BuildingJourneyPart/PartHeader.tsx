@@ -51,7 +51,7 @@ const PartTitle = styled.div`
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     font-size: 30px;
-    width: 289px;
+    width: 292px;
   }
 `;
 
