@@ -25,7 +25,6 @@ const PartContainer = styled.section`
     width: max(353px, calc(353 / 393 * 100%));
     gap: 170px;
   }
-  // background-color: darkkhaki;
 `;
 
 const PartContentContainer = styled.div`
@@ -43,8 +42,6 @@ const PartContentContainer = styled.div`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     gap: 100px;
   }
-
-  // background-color: saddlebrown;
 `;
 
 const YearContainer = styled.div`
@@ -53,8 +50,6 @@ const YearContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 25px;
-
-  // background-color: darkblue;
 `;
 
 const HistoryCardContainer = styled.div`
@@ -63,7 +58,6 @@ const HistoryCardContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
-  // background-color: magenta;
 `;
 
 export interface PartProps {

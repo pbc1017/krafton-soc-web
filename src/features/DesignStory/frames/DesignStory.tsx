@@ -43,8 +43,6 @@ const IntroContainer = styled.div`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     padding-bottom: 220px;
   }
-
-  //background-color: red;
 `;
 
 const ConceptContainer = styled.div`
@@ -61,8 +59,6 @@ const ConceptContainer = styled.div`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     padding-bottom: 220px;
   }
-
-  //background-color: blue;
 `;
 
 const GalleryContainer = styled.div`
@@ -79,8 +75,6 @@ const GalleryContainer = styled.div`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     padding-bottom: 67px;
   }
-
-  //background-color: green;
 `;
 
 const DesignStory: React.FC = () => {

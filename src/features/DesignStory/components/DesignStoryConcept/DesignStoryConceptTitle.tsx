@@ -59,7 +59,6 @@ const SubTitleContainer = styled.div`
     justify-content: center;
     gap: 40px;
   }
-  //background-color: red;
 `;
 
 const SubTitleLeft = styled.div`
@@ -75,8 +74,8 @@ const SubTitleLeft = styled.div`
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     width: 333px;
+    min-width: 333px;
   }
-  //background-color: cyan;
 `;
 
 const SubTitleRight = styled.div`
@@ -95,8 +94,6 @@ const SubTitleRight = styled.div`
     line-height: 175%;
     width: 333px;
   }
-
-  //background-color: yellow;
 `;
 
 const DesignStoryConceptTitle = () => {

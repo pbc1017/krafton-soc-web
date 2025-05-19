@@ -54,7 +54,6 @@ const MessageCardDirectionContainer = styled.div<MessageCardDirectionContainerPr
   flex-direction: row;
   justify-content: ${({ isReversed }) =>
     isReversed ? "flex-end" : "flex-start"};
-  // background-color: red;
 `;
 
 const MessageCardContainer = styled.div`
@@ -69,7 +68,6 @@ const MessageCardContainer = styled.div`
     align-items: flex-start;
     width: 312px;
   }
-  // background-color: blue;
 `;
 
 const MessageCardImage = styled.div`
