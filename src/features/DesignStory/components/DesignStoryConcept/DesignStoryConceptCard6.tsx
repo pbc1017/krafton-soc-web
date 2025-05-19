@@ -84,7 +84,7 @@ const CardText = styled.div`
     width: min(calc(100% - 93px), 333px);
     min-width: unset;
     margin-left: 93px;
-    align-self: flex-end;
+    align-self: flex-start;
   }
 `;
 
