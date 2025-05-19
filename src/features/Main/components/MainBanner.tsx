@@ -9,6 +9,7 @@ import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStor
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const BannerContainer = styled.section`
+  position: relative;
   margin-top: 72px;
   width: 100%;
   height: 837px;

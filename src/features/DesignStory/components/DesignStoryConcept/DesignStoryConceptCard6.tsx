@@ -52,6 +52,7 @@ const CardImage = styled.div`
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     width: calc(100% - 93px);
+    min-width: unset;
     margin-left: 93px;
     align-self: flex-end;
   }
@@ -77,7 +78,7 @@ const CardText = styled.div`
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     align-self: flex-start;
-    width: 353px !important;
+    width: 333px !important;
     font-size: 16px;
   }
 `;

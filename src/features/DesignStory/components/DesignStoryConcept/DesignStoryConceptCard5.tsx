@@ -100,6 +100,10 @@ const CardRightImage = styled.div`
   aspect-ratio: 567 / 432;
   position: relative;
 
+  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
+    max-width: unset;
+  }
+
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     width: calc(100% + 40px) !important;
     max-width: unset;
