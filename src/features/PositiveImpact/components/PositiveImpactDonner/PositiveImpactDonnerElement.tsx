@@ -79,28 +79,11 @@ const TableElementCompanyName = styled.div`
 
   color: ${theme.colors.black};
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    font-size: 13.6px;
-    letter-spacing: 2.8px;
-  }
-`;
-//// 기업명
-const TableElementCompanyNameLong = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-  font-size: 24px;
-  line-height: 120%;
-  font-weight: ${theme.fonts.weights.semibold};
-
-  color: ${theme.colors.black};
-  @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    font-size: 13.6px;
+    font-size: 12px;
     letter-spacing: 0;
   }
 `;
+
 //// (주)
 const TableElementCompanyType = styled.div`
   display: flex;
@@ -176,15 +159,10 @@ const TableElementCompany: React.FC<TableElementNameProps> = ({ name }) => {
   return (
     <TableElementCompanyContainer>
       <TableElementCompanyType>{"(주)"}</TableElementCompanyType>
-      {name.length > 4 ? (
-        <TableElementCompanyNameLong>
-          <Text>{name}</Text>
-        </TableElementCompanyNameLong>
-      ) : (
-        <TableElementCompanyName>
-          <Text>{name}</Text>
-        </TableElementCompanyName>
-      )}
+
+      <TableElementCompanyName>
+        <Text>{name}</Text>
+      </TableElementCompanyName>
     </TableElementCompanyContainer>
   );
 };
