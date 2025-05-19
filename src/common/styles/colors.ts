@@ -10,6 +10,7 @@ export const colors = {
   dividerLine: "rgba(0, 0, 0, 0.20)",
   hoverGray: "rgba(0, 0, 0, 0.40)",
   historyCardLine: "rgba(0, 0, 0, 0.40)",
+  mobileHeaderBorder: "#DEE5ED",
 } as const;
 
 export type ColorType = keyof typeof colors;

@@ -22,7 +22,6 @@ const HistoryCardContainer = styled.div`
   width: 100%;
 
   gap: 20px;
-  // background-color: darkcyan;
 `;
 
 const HistoryCardContentContainer = styled.div`
@@ -31,7 +30,6 @@ const HistoryCardContentContainer = styled.div`
   justify-content: space-between;
 
   width: 100%;
-  // background-color: aqua;
 `;
 
 interface DescriptionContainerProps {
@@ -58,7 +56,6 @@ const HistoryCardTextContainer = styled.div<DescriptionContainerProps>`
   }
 
   font-family: ${theme.fonts.families.pretendard};
-  // background-color: red;
 `;
 
 const HistoryCardDuration = styled.div`
@@ -73,7 +70,6 @@ const HistoryCardDuration = styled.div`
     width: 100%;
     font-size: 16px;
   }
-  // background-color: blue;
 `;
 
 const HistoryCardDescriptionContainer = styled.div<DescriptionContainerProps>`
@@ -93,7 +89,6 @@ const HistoryCardDescriptionContainer = styled.div<DescriptionContainerProps>`
   }
 
   overflow: visible;
-  // background-color: orange;
 `;
 
 const HistoryCardTitleContainer = styled.div`
@@ -105,7 +100,6 @@ const HistoryCardTitleContainer = styled.div`
 
   gap: 5px;
   overflow: visible;
-  // background-color: purple;
 `;
 
 const HistoryCardTitle = styled.div`
@@ -118,7 +112,6 @@ const HistoryCardTitle = styled.div`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     font-size: 18px;
   }
-  // background-color: pink;
 `;
 
 const HistoryCardDetail = styled.div`
@@ -132,7 +125,6 @@ const HistoryCardDetail = styled.div`
     font-size: 14px;
     line-height: 23px;
   }
-  // background-color: brown;
 `;
 
 const HistoryCardTabletImageContainer = styled.div`

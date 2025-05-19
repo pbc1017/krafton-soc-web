@@ -36,13 +36,12 @@ const DesignStoryConceptContainer = styled.div`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     padding: 0 20px;
   }
-  /* background-color: yellow; */
 `;
 
 const DesignStoryConceptTitleContainer = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 180px;
@@ -52,7 +51,6 @@ const DesignStoryConceptTitleContainer = styled.div`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     margin-bottom: 80px;
   }
-  /* background-color: green; */
 `;
 
 const DesignStoryConceptCardContainer = styled.div`
@@ -61,7 +59,6 @@ const DesignStoryConceptCardContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: blue; */
 `;
 
 const DesignStoryConceptCardEndingContainer = styled.div`
@@ -78,7 +75,6 @@ const DesignStoryConceptCardEndingContainer = styled.div`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     margin-top: 220px;
   }
-  /* background-color: red; */
 `;
 
 const DesignStoryConcept = () => {
