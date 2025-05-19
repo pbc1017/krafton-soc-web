@@ -15,6 +15,7 @@ const FrameContainer = styled.div`
   flex-direction: column;
   align-items: center;
   z-index: 0;
+  /* background-color: red; */
 `;
 
 const BannerContainer = styled.div`
@@ -62,7 +63,7 @@ const ConceptContainer = styled.div`
     padding-bottom: 220px;
   }
 
-  //background-color: blue;
+  /* background-color: blue; */
 `;
 
 const GalleryContainer = styled.div`
@@ -80,7 +81,7 @@ const GalleryContainer = styled.div`
     padding-bottom: 67px;
   }
 
-  //background-color: green;
+  /* background-color: green; */
 `;
 
 const DesignStory: React.FC = () => {

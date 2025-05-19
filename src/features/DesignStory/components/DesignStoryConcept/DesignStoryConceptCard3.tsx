@@ -45,6 +45,9 @@ const CardTextContainer = styled.section`
     gap: 20px;
     justify-content: flex-start;
   }
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    width: 333px;
+  }
 `;
 
 const CardTextTitle = styled.section`
