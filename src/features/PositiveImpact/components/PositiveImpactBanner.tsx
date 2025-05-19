@@ -10,7 +10,7 @@ import { theme } from "@krafton-soc/common/styles/theme";
 
 const BannerContainer = styled.section`
   width: 100%;
-
+  margin-top: 72px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,7 +61,7 @@ const BannerTitleText = styled.div`
   color: ${theme.colors.white};
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    font-size: 28px;
+    font-size: 26px;
   }
 `;
 

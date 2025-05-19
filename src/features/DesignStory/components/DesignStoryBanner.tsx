@@ -62,7 +62,7 @@ const BannerTitleText = styled.div`
   color: ${theme.colors.white};
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    font-size: 28px;
+    font-size: 26px;
   }
 `;
 

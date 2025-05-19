@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 
 import Text from "@krafton-soc/common/components/Text";
-import { useResponsiveStore } from "@krafton-soc/common/stores/useResponsiveStore";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 export interface DonnerDataType {
@@ -27,7 +26,7 @@ const TableElementPerson = styled.div`
 
   text-align: center;
   font-size: 24px;
-  line-height: 180%;
+  line-height: 260%;
   font-weight: ${theme.fonts.weights.semibold};
 
   color: ${theme.colors.black};
@@ -55,7 +54,7 @@ const TableElementForeigner = styled.div`
   color: ${theme.colors.black};
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     font-size: 12px;
-    letter-spacing: 2.8px;
+    letter-spacing: 0;
   }
 `;
 
@@ -82,6 +81,24 @@ const TableElementCompanyName = styled.div`
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
     font-size: 13.6px;
     letter-spacing: 2.8px;
+  }
+`;
+//// 기업명
+const TableElementCompanyNameLong = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: ${theme.fonts.weights.semibold};
+
+  color: ${theme.colors.black};
+  @media (max-width: ${theme.breakpoints.mobileTablet}) {
+    font-size: 13.6px;
+    letter-spacing: 0;
   }
 `;
 //// (주)
@@ -156,15 +173,18 @@ type TableElementNameProps = {
 };
 
 const TableElementCompany: React.FC<TableElementNameProps> = ({ name }) => {
-  const { isMobile } = useResponsiveStore();
   return (
     <TableElementCompanyContainer>
       <TableElementCompanyType>{"(주)"}</TableElementCompanyType>
-      <TableElementCompanyName>
-        <Text fs={name.length > 4 ? (isMobile ? "10px" : "23px") : undefined}>
-          {name}
-        </Text>
-      </TableElementCompanyName>
+      {name.length > 4 ? (
+        <TableElementCompanyNameLong>
+          <Text>{name}</Text>
+        </TableElementCompanyNameLong>
+      ) : (
+        <TableElementCompanyName>
+          <Text>{name}</Text>
+        </TableElementCompanyName>
+      )}
     </TableElementCompanyContainer>
   );
 };

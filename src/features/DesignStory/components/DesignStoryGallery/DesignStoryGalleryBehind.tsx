@@ -4,7 +4,7 @@ import Text from "@krafton-soc/common/components/Text";
 import { theme } from "@krafton-soc/common/styles/theme";
 
 const BehindContainer = styled.div`
-  margin-top: 65px;
+  margin-top: 130px;
   width: 173px;
   display: flex;
   flex-direction: column;
@@ -13,11 +13,9 @@ const BehindContainer = styled.div`
   gap: 23px;
 
   @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    margin-top: 160px;
   }
 
   @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    margin-top: 220px;
   }
 `;
 

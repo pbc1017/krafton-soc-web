@@ -34,19 +34,14 @@ const BannerImage = styled.div`
 `;
 
 const ContentContainer = styled.div`
-  margin-top: -434px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 1;
-
-  @media (max-width: ${theme.breakpoints.tabletDesktop}) {
-    margin-top: -194px;
-  }
-
-  @media (max-width: ${theme.breakpoints.mobileTablet}) {
-    margin-top: -201px;
-  }
 `;
 
 const TitleContainer = styled.div`
