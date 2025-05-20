@@ -108,7 +108,7 @@ export const donnerData: DonnerDataType[] = [
   },
   {
     name: "신승우",
-    twinBuilding: true,
+    // twinBuilding: true,
   },
   {
     name: "심재한",
