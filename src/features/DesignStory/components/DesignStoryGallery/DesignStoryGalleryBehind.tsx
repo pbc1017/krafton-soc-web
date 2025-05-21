@@ -119,7 +119,7 @@ const DesignStoryGalleryBehind = () => {
   return (
     <BehindContainer>
       <BehindTitle>
-        <Text>{"Behind the Project"}</Text>
+        <Text>{"1F Lounge Space"}</Text>
       </BehindTitle>
       <BehindMemberCardContainer>
         {behindMemberData.map((data, index) => (
